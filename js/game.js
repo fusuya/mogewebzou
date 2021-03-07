@@ -11941,7 +11941,7 @@ var clwTetris_src_game_tetrisState = (function() {
   })();
   function tetrisStartState() {
       this.startProcess = function (_this) {
-          loadFont('.//');
+          loadFont('js/');
           var area = makeTextArea('font-size', 25, 'text-align', 'center', 'x', 400, 'y', 300);
           _this.textAreaEntity = area;
           addTextToArea(area, 'text', 'Press z key or Click to start', 'color', 16777215);
@@ -11979,7 +11979,7 @@ var clwTetris_src_game_tetrisState = (function() {
           };
       };
       var startProcess = 'undefined' === typeof startProcess ? function (_this) {
-          loadFont('./');
+          loadFont('js/');
           var area = makeTextArea('font-size', 25, 'text-align', 'center', 'x', 400, 'y', 300);
           _this.textAreaEntity = area;
           addTextToArea(area, 'text', 'Press z key or Click to start', 'color', 16777215);

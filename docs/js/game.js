@@ -8,14 +8,14 @@ var psExperiment_defines_defmethod = (function() {
       return this;
   };
   function makeDispatchItem() {
-      var _js8362 = arguments.length;
-      for (var n8361 = 0; n8361 < _js8362; n8361 += 2) {
-          switch (arguments[n8361]) {
+      var _js2119 = arguments.length;
+      for (var n2118 = 0; n2118 < _js2119; n2118 += 2) {
+          switch (arguments[n2118]) {
           case 'type-list':
-              typeList = arguments[n8361 + 1];
+              typeList = arguments[n2118 + 1];
               break;
           case 'func':
-              func = arguments[n8361 + 1];
+              func = arguments[n2118 + 1];
           };
       };
       var typeList;
@@ -40,21 +40,21 @@ var psExperiment_defines_defmethod = (function() {
       if (testInstanceList.length !== targetTypeList.length) {
           throw 'Message: ' + 'Failed assertion: ~A' + '; Args: ' + (testInstanceList.length === targetTypeList.length);
       };
-      var _js8364 = testInstanceList.length;
-      var _js8366 = targetTypeList.length;
-      var FIRST8367 = true;
-      for (var _js8363 = 0; _js8363 < _js8364; _js8363 += 1) {
-          var testInstance = testInstanceList[_js8363];
-          var _js8365 = FIRST8367 ? 0 : _js8365 + 1;
-          if (_js8365 >= _js8366) {
+      var _js2121 = testInstanceList.length;
+      var _js2123 = targetTypeList.length;
+      var FIRST2124 = true;
+      for (var _js2120 = 0; _js2120 < _js2121; _js2120 += 1) {
+          var testInstance = testInstanceList[_js2120];
+          var _js2122 = FIRST2124 ? 0 : _js2122 + 1;
+          if (_js2122 >= _js2123) {
               break;
           };
-          var targetType = targetTypeList[_js8365];
+          var targetType = targetTypeList[_js2122];
           if (!instanceDispatchP(testInstance, targetType)) {
               __PS_MV_REG = [];
               return null;
           };
-          FIRST8367 = null;
+          FIRST2124 = null;
       };
       __PS_MV_REG = [];
       return true;
@@ -68,21 +68,21 @@ var psExperiment_defines_defmethod = (function() {
       if (testTypeList.length !== targetTypeList.length) {
           throw 'Message: ' + 'Failed assertion: ~A' + '; Args: ' + (testTypeList.length === targetTypeList.length);
       };
-      var _js8369 = testTypeList.length;
-      var _js8371 = targetTypeList.length;
-      var FIRST8372 = true;
-      for (var _js8368 = 0; _js8368 < _js8369; _js8368 += 1) {
-          var testType = testTypeList[_js8368];
-          var _js8370 = FIRST8372 ? 0 : _js8370 + 1;
-          if (_js8370 >= _js8371) {
+      var _js2126 = testTypeList.length;
+      var _js2128 = targetTypeList.length;
+      var FIRST2129 = true;
+      for (var _js2125 = 0; _js2125 < _js2126; _js2125 += 1) {
+          var testType = testTypeList[_js2125];
+          var _js2127 = FIRST2129 ? 0 : _js2127 + 1;
+          if (_js2127 >= _js2128) {
               break;
           };
-          var targetType = targetTypeList[_js8370];
+          var targetType = targetTypeList[_js2127];
           if (!typeDispatchP(testType, targetType)) {
               __PS_MV_REG = [];
               return null;
           };
-          FIRST8372 = null;
+          FIRST2129 = null;
       };
       __PS_MV_REG = [];
       return true;
@@ -117,14 +117,14 @@ var psExperiment_defines_defmethod = (function() {
       });
   };
   function findDispatchFuncIndex(functionName, instanceList) {
-      var _js8374 = arguments.length;
-      for (var n8373 = 2; n8373 < _js8374; n8373 += 2) {
-          switch (arguments[n8373]) {
+      var _js2131 = arguments.length;
+      for (var n2130 = 2; n2130 < _js2131; n2130 += 2) {
+          switch (arguments[n2130]) {
           case 'from':
-              from = arguments[n8373 + 1];
+              from = arguments[n2130 + 1];
               break;
           case 'if-does-not-exist':
-              ifDoesNotExist = arguments[n8373 + 1];
+              ifDoesNotExist = arguments[n2130 + 1];
           };
       };
       var from = 'undefined' === typeof from ? 0 : from;
@@ -133,8 +133,8 @@ var psExperiment_defines_defmethod = (function() {
       if (!dispatchItemList) {
           throw 'Message: ' + 'There is no generic function \"~A\"' + '; Args: ' + functionName;
       };
-      var _js8375 = dispatchItemList.length;
-      for (var i = from; i < _js8375; i += 1) {
+      var _js2132 = dispatchItemList.length;
+      for (var i = from; i < _js2132; i += 1) {
           var item = dispatchItemList[i];
           if (instanceListDispatchP(instanceList, item.typeList)) {
               __PS_MV_REG = [];
@@ -265,14 +265,14 @@ var clWeb2dGame_utils_stageGenerator = (function() {
       return this;
   };
   function makeElement() {
-      var _js8377 = arguments.length;
-      for (var n8376 = 0; n8376 < _js8377; n8376 += 2) {
-          switch (arguments[n8376]) {
+      var _js2134 = arguments.length;
+      for (var n2133 = 0; n2133 < _js2134; n2133 += 2) {
+          switch (arguments[n2133]) {
           case 'time':
-              time = arguments[n8376 + 1];
+              time = arguments[n2133 + 1];
               break;
           case 'func':
-              func = arguments[n8376 + 1];
+              func = arguments[n2133 + 1];
           };
       };
       var time = 'undefined' === typeof time ? 0 : time;
@@ -294,14 +294,14 @@ var clWeb2dGame_utils_stageGenerator = (function() {
       return this;
   };
   function makeInterpreter() {
-      var _js8379 = arguments.length;
-      for (var n8378 = 0; n8378 < _js8379; n8378 += 2) {
-          switch (arguments[n8378]) {
+      var _js2136 = arguments.length;
+      for (var n2135 = 0; n2135 < _js2136; n2135 += 2) {
+          switch (arguments[n2135]) {
           case 'func':
-              func = arguments[n8378 + 1];
+              func = arguments[n2135 + 1];
               break;
           case 'include-list':
-              includeList = arguments[n8378 + 1];
+              includeList = arguments[n2135 + 1];
           };
       };
       var func;
@@ -321,14 +321,14 @@ var clWeb2dGame_utils_stageGenerator = (function() {
       return this;
   };
   function makeStage() {
-      var _js8381 = arguments.length;
-      for (var n8380 = 0; n8380 < _js8381; n8380 += 2) {
-          switch (arguments[n8380]) {
+      var _js2138 = arguments.length;
+      for (var n2137 = 0; n2137 < _js2138; n2137 += 2) {
+          switch (arguments[n2137]) {
           case 'current-time':
-              currentTime = arguments[n8380 + 1];
+              currentTime = arguments[n2137 + 1];
               break;
           case 'element-list':
-              elementList = arguments[n8380 + 1];
+              elementList = arguments[n2137 + 1];
           };
       };
       var currentTime = 'undefined' === typeof currentTime ? 0 : currentTime;
@@ -364,18 +364,18 @@ var clWeb2dGame_utils_stageGenerator = (function() {
       return ++stage.currentTime;
   };
   function addElementToStage(stage, time, func) {
-      var gSequence8382;
-      var gKey8383;
+      var gSequence2139;
+      var gKey2140;
       stage.elementList.unshift(makeElement('time', time, 'func', func));
       stage.elementList;
       __PS_MV_REG = [];
-      return stage.elementList = (gSequence8382 = stage.elementList, gKey8383 = null, (gSequence8382.sort(function (a, b) {
+      return stage.elementList = (gSequence2139 = stage.elementList, gKey2140 = null, (gSequence2139.sort(function (a, b) {
           var keyA = a;
           var keyB = b;
           return (function (a, b) {
               return a.time < b.time;
           })(keyA, keyB) ? -1 : 1;
-      }), gSequence8382));
+      }), gSequence2139));
   };
   if ('undefined' === typeof STAGEELEMENTINTERPRETERTABLE) {
       var STAGEELEMENTINTERPRETERTABLE = {  };
@@ -401,14 +401,14 @@ var clWeb2dGame_utils_stageGenerator = (function() {
   };
   registerStageElementInterpreter('general', function (stage0, args1, immediateP2) {
       return (function () {
-          var _js8385 = arguments.length;
-          for (var n8384 = 0; n8384 < _js8385; n8384 += 2) {
-              switch (arguments[n8384]) {
+          var _js2142 = arguments.length;
+          for (var n2141 = 0; n2141 < _js2142; n2141 += 2) {
+              switch (arguments[n2141]) {
               case 'time':
-                  time = arguments[n8384 + 1];
+                  time = arguments[n2141 + 1];
                   break;
               case 'func':
-                  func = arguments[n8384 + 1];
+                  func = arguments[n2141 + 1];
               };
           };
           var time;
@@ -460,8 +460,8 @@ var clPsEcs_utils = (function() {
       if (!((object instanceof (typeof type === 'string' ? eval(type) : type)))) {
           throw '\'TYPE-ERROR: (EXPECTED-TYPE TYPE DATUM OBJECT)';
       };
-      for (var callback = null, _js_idx8386 = 0; _js_idx8386 < hooks.length; _js_idx8386 += 1) {
-          callback = hooks[_js_idx8386];
+      for (var callback = null, _js_idx2143 = 0; _js_idx2143 < hooks.length; _js_idx2143 += 1) {
+          callback = hooks[_js_idx2143];
           callback(object, isAdded);
       };
   };
@@ -486,20 +486,20 @@ var clPsEcs_basicProcess = (function() {
       return this;
   };
   function makeFuncWithPred() {
-      var _js8388 = arguments.length;
-      for (var n8387 = 0; n8387 < _js8388; n8387 += 2) {
-          switch (arguments[n8387]) {
+      var _js2145 = arguments.length;
+      for (var n2144 = 0; n2144 < _js2145; n2144 += 2) {
+          switch (arguments[n2144]) {
           case 'func':
-              func = arguments[n8387 + 1];
+              func = arguments[n2144 + 1];
               break;
           case 'pred':
-              pred = arguments[n8387 + 1];
+              pred = arguments[n2144 + 1];
               break;
           case 'rest-timeout-frame':
-              restTimeoutFrame = arguments[n8387 + 1];
+              restTimeoutFrame = arguments[n2144 + 1];
               break;
           case 'name':
-              name = arguments[n8387 + 1];
+              name = arguments[n2144 + 1];
           };
       };
       var func;
@@ -521,11 +521,11 @@ var clPsEcs_basicProcess = (function() {
       var FUNCWITHPREDLIST = [];
   };
   function executeAllRegisteredFuncsWithPred() {
-      var copy8391;
-      var copy8394;
+      var copy2148;
+      var copy2151;
       var executedList = [];
-      for (var funcWithPred = null, _js_arrvar8390 = (copy8391 = FUNCWITHPREDLIST.concat(), copy8391.reverse()), _js_idx8389 = 0; _js_idx8389 < _js_arrvar8390.length; _js_idx8389 += 1) {
-          funcWithPred = _js_arrvar8390[_js_idx8389];
+      for (var funcWithPred = null, _js_arrvar2147 = (copy2148 = FUNCWITHPREDLIST.concat(), copy2148.reverse()), _js_idx2146 = 0; _js_idx2146 < _js_arrvar2147.length; _js_idx2146 += 1) {
+          funcWithPred = _js_arrvar2147[_js_idx2146];
           if (funcWithPred.pred()) {
               funcWithPred.func();
               executedList.unshift(funcWithPred);
@@ -539,11 +539,11 @@ var clPsEcs_basicProcess = (function() {
               };
           };
       };
-      for (var executed = null, _js_idx8392 = 0; _js_idx8392 < executedList.length; _js_idx8392 += 1) {
-          executed = executedList[_js_idx8392];
-          FUNCWITHPREDLIST = (copy8394 = FUNCWITHPREDLIST, copy8394.filter(function (x) {
-              return !(function (target8393) {
-                  return executed === target8393;
+      for (var executed = null, _js_idx2149 = 0; _js_idx2149 < executedList.length; _js_idx2149 += 1) {
+          executed = executedList[_js_idx2149];
+          FUNCWITHPREDLIST = (copy2151 = FUNCWITHPREDLIST, copy2151.filter(function (x) {
+              return !(function (target2150) {
+                  return executed === target2150;
               })(x);
           }));
       };
@@ -553,14 +553,14 @@ var clPsEcs_basicProcess = (function() {
    * The name is not used in the process but it is useful for debug.
    */
   function registerFuncWithPred(func, pred) {
-      var _js8394 = arguments.length;
-      for (var n8393 = 2; n8393 < _js8394; n8393 += 2) {
-          switch (arguments[n8393]) {
+      var _js2151 = arguments.length;
+      for (var n2150 = 2; n2150 < _js2151; n2150 += 2) {
+          switch (arguments[n2150]) {
           case 'timeout-frame':
-              timeoutFrame = arguments[n8393 + 1];
+              timeoutFrame = arguments[n2150 + 1];
               break;
           case 'name':
-              name = arguments[n8393 + 1];
+              name = arguments[n2150 + 1];
           };
       };
       var timeoutFrame = 'undefined' === typeof timeoutFrame ? -1 : timeoutFrame;
@@ -627,14 +627,14 @@ var clPsEcs_framePromise = (function() {
       return this;
   };
   function makeFramePromise() {
-      var _js8396 = arguments.length;
-      for (var n8395 = 0; n8395 < _js8396; n8395 += 2) {
-          switch (arguments[n8395]) {
+      var _js2153 = arguments.length;
+      for (var n2152 = 0; n2152 < _js2153; n2152 += 2) {
+          switch (arguments[n2152]) {
           case 'result':
-              result = arguments[n8395 + 1];
+              result = arguments[n2152 + 1];
               break;
           case 'resolved-p':
-              resolvedP = arguments[n8395 + 1];
+              resolvedP = arguments[n2152 + 1];
           };
       };
       var result;
@@ -664,11 +664,11 @@ var clPsEcs_framePromise = (function() {
   };
   /** Register the callback as a following promise of the promise. The callback is invoked after the promise is resolved. Then, it accepts a return value of the promise. */
   function framePromiseThen(promise, callback) {
-      var _js8398 = arguments.length;
-      for (var n8397 = 2; n8397 < _js8398; n8397 += 2) {
-          switch (arguments[n8397]) {
+      var _js2155 = arguments.length;
+      for (var n2154 = 2; n2154 < _js2155; n2154 += 2) {
+          switch (arguments[n2154]) {
           case 'timeout-frame':
-              timeoutFrame = arguments[n8397 + 1];
+              timeoutFrame = arguments[n2154 + 1];
           };
       };
       var timeoutFrame = 'undefined' === typeof timeoutFrame ? -1 : timeoutFrame;
@@ -684,11 +684,11 @@ var clPsEcs_framePromise = (function() {
   };
   /** Register the callback as a following promise of the promise list. The callback is invoked after all of the promise are resolved. Then, it accepts a return value list of the promises. */
   function framePromiseAll(promiseList, callback) {
-      var _js8400 = arguments.length;
-      for (var n8399 = 2; n8399 < _js8400; n8399 += 2) {
-          switch (arguments[n8399]) {
+      var _js2157 = arguments.length;
+      for (var n2156 = 2; n2156 < _js2157; n2156 += 2) {
+          switch (arguments[n2156]) {
           case 'timeout-frame':
-              timeoutFrame = arguments[n8399 + 1];
+              timeoutFrame = arguments[n2156 + 1];
           };
       };
       var timeoutFrame = 'undefined' === typeof timeoutFrame ? -1 : timeoutFrame;
@@ -732,17 +732,17 @@ var clPsEcs_flatTree = (function() {
       return this;
   };
   function makeFlatTreeNode() {
-      var _js8402 = arguments.length;
-      for (var n8401 = 0; n8401 < _js8402; n8401 += 2) {
-          switch (arguments[n8401]) {
+      var _js2159 = arguments.length;
+      for (var n2158 = 0; n2158 < _js2159; n2158 += 2) {
+          switch (arguments[n2158]) {
           case 'parent':
-              parent = arguments[n8401 + 1];
+              parent = arguments[n2158 + 1];
               break;
           case 'children':
-              children = arguments[n8401 + 1];
+              children = arguments[n2158 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n8401 + 1];
+              registerp = arguments[n2158 + 1];
           };
       };
       var parent;
@@ -787,8 +787,8 @@ var clPsEcs_flatTree = (function() {
               lst.unshift(oneNode);
               lst;
               oneNode.registerp = true;
-              for (var child = null, _js_arrvar8404 = oneNode.children, _js_idx8403 = 0; _js_idx8403 < _js_arrvar8404.length; _js_idx8403 += 1) {
-                  child = _js_arrvar8404[_js_idx8403];
+              for (var child = null, _js_arrvar2161 = oneNode.children, _js_idx2160 = 0; _js_idx2160 < _js_arrvar2161.length; _js_idx2160 += 1) {
+                  child = _js_arrvar2161[_js_idx2160];
                   rec(child);
               };
           };
@@ -805,7 +805,7 @@ var clPsEcs_flatTree = (function() {
    * Because this function destruct the place-lst, caller should overwrite place-lst by new returned list.
    */
   function deleteFlatTreeNode(node, placeLst, callback) {
-      var copy8406;
+      var copy2163;
       if (callback === undefined) {
           callback = execNothing;
       };
@@ -816,25 +816,25 @@ var clPsEcs_flatTree = (function() {
           throw 'Can\'t delete a not-registered flat-node';
       };
       if (node.parent) {
-          node.parent.children = (copy8406 = node.parent.children, copy8406.filter(function (x) {
-              return !(function (target8405) {
-                  return node === target8405;
+          node.parent.children = (copy2163 = node.parent.children, copy2163.filter(function (x) {
+              return !(function (target2162) {
+                  return node === target2162;
               })(x);
           }));
           node.parent = null;
       };
       var rec = function (oneNode, lst) {
-          var copy8408;
+          var copy2165;
           if (oneNode.registerp) {
-              var removedLst = (copy8408 = lst, copy8408.filter(function (x) {
-                  return !(function (target8407) {
-                      return oneNode === target8407;
+              var removedLst = (copy2165 = lst, copy2165.filter(function (x) {
+                  return !(function (target2164) {
+                      return oneNode === target2164;
                   })(x);
               }));
               callback(oneNode);
               oneNode.registerp = null;
-              for (var child = null, _js_arrvar8410 = oneNode.children, _js_idx8409 = 0; _js_idx8409 < _js_arrvar8410.length; _js_idx8409 += 1) {
-                  child = _js_arrvar8410[_js_idx8409];
+              for (var child = null, _js_arrvar2167 = oneNode.children, _js_idx2166 = 0; _js_idx2166 < _js_arrvar2167.length; _js_idx2166 += 1) {
+                  child = _js_arrvar2167[_js_idx2166];
                   removedLst = rec(child, removedLst);
               };
               __PS_MV_REG = [];
@@ -857,15 +857,15 @@ var clPsEcs_flatTree = (function() {
           callback = execNothing;
       };
       var deleteLst = [];
-      for (var node = null, _js_idx8411 = 0; _js_idx8411 < placeLst.length; _js_idx8411 += 1) {
-          node = placeLst[_js_idx8411];
+      for (var node = null, _js_idx2168 = 0; _js_idx2168 < placeLst.length; _js_idx2168 += 1) {
+          node = placeLst[_js_idx2168];
           if (predicate(node)) {
               deleteLst.unshift(node);
               deleteLst;
           };
       };
-      for (var node = null, _js_idx8412 = 0; _js_idx8412 < deleteLst.length; _js_idx8412 += 1) {
-          node = deleteLst[_js_idx8412];
+      for (var node = null, _js_idx2169 = 0; _js_idx2169 < deleteLst.length; _js_idx2169 += 1) {
+          node = deleteLst[_js_idx2169];
           if (node.registerp) {
               placeLst = deleteFlatTreeNode(node, placeLst, callback);
           };
@@ -875,7 +875,7 @@ var clPsEcs_flatTree = (function() {
   };
   /** Move a flat-tree node under a new-parent. */
   function moveFlatTreeNode(node, newParent) {
-      var copy8416;
+      var copy2173;
       if (!((node instanceof (typeof flatTreeNode === 'string' ? eval(flatTreeNode) : flatTreeNode)))) {
           throw '\'TYPE-ERROR: (The place is \'NODE\'. The expected type is \'FLAT-TREE-NODE\')';
       };
@@ -892,9 +892,9 @@ var clPsEcs_flatTree = (function() {
       };
       if (oldParent) {
           __PS_MV_REG = [];
-          return oldParent.children = (copy8416 = oldParent.children, copy8416.filter(function (x) {
-              return !(function (target8415) {
-                  return node === target8415;
+          return oldParent.children = (copy2173 = oldParent.children, copy2173.filter(function (x) {
+              return !(function (target2172) {
+                  return node === target2172;
               })(x);
           }));
       };
@@ -938,17 +938,17 @@ var clPsEcs_ecs = (function() {
       return this;
   };
   function makeEcsComponent() {
-      var _js8418 = arguments.length;
-      for (var n8417 = 0; n8417 < _js8418; n8417 += 2) {
-          switch (arguments[n8417]) {
+      var _js2175 = arguments.length;
+      for (var n2174 = 0; n2174 < _js2175; n2174 += 2) {
+          switch (arguments[n2174]) {
           case 'parent':
-              parent = arguments[n8417 + 1];
+              parent = arguments[n2174 + 1];
               break;
           case 'children':
-              children = arguments[n8417 + 1];
+              children = arguments[n2174 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n8417 + 1];
+              registerp = arguments[n2174 + 1];
           };
       };
       var parent;
@@ -983,24 +983,24 @@ var clPsEcs_ecs = (function() {
           if (!((topComponent instanceof (typeof flatTreeNode === 'string' ? eval(flatTreeNode) : flatTreeNode)))) {
               throw '\'TYPE-ERROR: (The place is \'TOP-COMPONENT\'. The expected type is \'FLAT-TREE-NODE\')';
           };
-          var rec2100 = function (comp) {
+          var rec1158 = function (comp) {
               if (predicate(comp)) {
                   __PS_MV_REG = [];
                   throw { '__ps_block_tag' : 'findAComponent', '__ps_value' : comp };
               };
-              for (var child = null, _js_arrvar8420 = comp.children, _js_idx8419 = 0; _js_idx8419 < _js_arrvar8420.length; _js_idx8419 += 1) {
-                  child = _js_arrvar8420[_js_idx8419];
-                  rec2100(child);
+              for (var child = null, _js_arrvar2177 = comp.children, _js_idx2176 = 0; _js_idx2176 < _js_arrvar2177.length; _js_idx2176 += 1) {
+                  child = _js_arrvar2177[_js_idx2176];
+                  rec1158(child);
               };
           };
-          rec2100(topComponent);
+          rec1158(topComponent);
           __PS_MV_REG = [];
           return null;
-      } catch (_ps_err8421) {
-          if (_ps_err8421 && 'findAComponent' === _ps_err8421['__ps_block_tag']) {
-              return _ps_err8421['__ps_value'];
+      } catch (_ps_err2178) {
+          if (_ps_err2178 && 'findAComponent' === _ps_err2178['__ps_block_tag']) {
+              return _ps_err2178['__ps_value'];
           } else {
-              throw _ps_err8421;
+              throw _ps_err2178;
           };
       };
   };
@@ -1017,26 +1017,26 @@ var clPsEcs_ecs = (function() {
       return this;
   };
   function makeEcsEntity() {
-      var _js8423 = arguments.length;
-      for (var n8422 = 0; n8422 < _js8423; n8422 += 2) {
-          switch (arguments[n8422]) {
+      var _js2180 = arguments.length;
+      for (var n2179 = 0; n2179 < _js2180; n2179 += 2) {
+          switch (arguments[n2179]) {
           case 'parent':
-              parent = arguments[n8422 + 1];
+              parent = arguments[n2179 + 1];
               break;
           case 'children':
-              children = arguments[n8422 + 1];
+              children = arguments[n2179 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n8422 + 1];
+              registerp = arguments[n2179 + 1];
               break;
           case 'id':
-              id = arguments[n8422 + 1];
+              id = arguments[n2179 + 1];
               break;
           case 'tags':
-              tags = arguments[n8422 + 1];
+              tags = arguments[n2179 + 1];
               break;
           case 'components':
-              components = arguments[n8422 + 1];
+              components = arguments[n2179 + 1];
           };
       };
       var parent;
@@ -1075,8 +1075,8 @@ var clPsEcs_ecs = (function() {
       return ENTITYLIST;
   };
   function cleanEcsEntities() {
-      for (var entity = null, _js_arrvar8425 = getEntityList(), _js_idx8424 = 0; _js_idx8424 < _js_arrvar8425.length; _js_idx8424 += 1) {
-          entity = _js_arrvar8425[_js_idx8424];
+      for (var entity = null, _js_arrvar2182 = getEntityList(), _js_idx2181 = 0; _js_idx2181 < _js_arrvar2182.length; _js_idx2181 += 1) {
+          entity = _js_arrvar2182[_js_idx2181];
           entity.registerp = null;
       };
       __PS_MV_REG = [];
@@ -1084,20 +1084,20 @@ var clPsEcs_ecs = (function() {
   };
   /** Get a component from entity by component-type */
   function getEcsComponent(componentType, entity) {
-      for (var x8426 = null, _js_arrvar8428 = entity.components, _js_idx8427 = 0; _js_idx8427 < _js_arrvar8428.length; _js_idx8427 += 1) {
-          x8426 = _js_arrvar8428[_js_idx8427];
+      for (var x2183 = null, _js_arrvar2185 = entity.components, _js_idx2184 = 0; _js_idx2184 < _js_arrvar2185.length; _js_idx2184 += 1) {
+          x2183 = _js_arrvar2185[_js_idx2184];
           if ((function (component) {
               __PS_MV_REG = [];
               return (component instanceof (typeof componentType === 'string' ? eval(componentType) : componentType));
-          })(x8426)) {
-              return x8426;
+          })(x2183)) {
+              return x2183;
           };
       };
   };
   /** Find a registered entity by predicate */
   function findAEntity(predicate) {
-      for (var entity = null, _js_arrvar8430 = getEntityList(), _js_idx8429 = 0; _js_idx8429 < _js_arrvar8430.length; _js_idx8429 += 1) {
-          entity = _js_arrvar8430[_js_idx8429];
+      for (var entity = null, _js_arrvar2187 = getEntityList(), _js_idx2186 = 0; _js_idx2186 < _js_arrvar2187.length; _js_idx2186 += 1) {
+          entity = _js_arrvar2187[_js_idx2186];
           if (predicate(entity)) {
               __PS_MV_REG = [];
               return entity;
@@ -1120,8 +1120,8 @@ var clPsEcs_ecs = (function() {
       if (!((entity instanceof (typeof ecsEntity === 'string' ? eval(ecsEntity) : ecsEntity)))) {
           throw '\'TYPE-ERROR: (The place is \'ENTITY\'. The expected type is \'ECS-ENTITY\')';
       };
-      for (var tag = null, _js_idx8431 = 0; _js_idx8431 < tags.length; _js_idx8431 += 1) {
-          tag = tags[_js_idx8431];
+      for (var tag = null, _js_idx2188 = 0; _js_idx2188 < tags.length; _js_idx2188 += 1) {
+          tag = tags[_js_idx2188];
           checkTagType(tag);
           entity.tags[tag] = true;
       };
@@ -1146,8 +1146,8 @@ var clPsEcs_ecs = (function() {
   };
   function checkEntityTags(entity) {
       var tags = Array.prototype.slice.call(arguments, 1);
-      for (var tag = null, _js_idx8432 = 0; _js_idx8432 < tags.length; _js_idx8432 += 1) {
-          tag = tags[_js_idx8432];
+      for (var tag = null, _js_idx2189 = 0; _js_idx2189 < tags.length; _js_idx2189 += 1) {
+          tag = tags[_js_idx2189];
           if (!hasEntityTag(entity, tag)) {
               throw 'Message: ' + 'The entity has not a tag \'~A\'.' + '; Args: ' + tag;
           };
@@ -1191,29 +1191,29 @@ var clPsEcs_ecs = (function() {
       return this;
   };
   function makeEcsSystem() {
-      var _js8434 = arguments.length;
-      for (var n8433 = 0; n8433 < _js8434; n8433 += 2) {
-          switch (arguments[n8433]) {
+      var _js2191 = arguments.length;
+      for (var n2190 = 0; n2190 < _js2191; n2190 += 2) {
+          switch (arguments[n2190]) {
           case 'enable':
-              enable = arguments[n8433 + 1];
+              enable = arguments[n2190 + 1];
               break;
           case 'target-entities':
-              targetEntities = arguments[n8433 + 1];
+              targetEntities = arguments[n2190 + 1];
               break;
           case 'target-component-types':
-              targetComponentTypes = arguments[n8433 + 1];
+              targetComponentTypes = arguments[n2190 + 1];
               break;
           case 'process':
-              process = arguments[n8433 + 1];
+              process = arguments[n2190 + 1];
               break;
           case 'process-all':
-              processAll = arguments[n8433 + 1];
+              processAll = arguments[n2190 + 1];
               break;
           case 'add-entity-hook':
-              addEntityHook = arguments[n8433 + 1];
+              addEntityHook = arguments[n2190 + 1];
               break;
           case 'delete-entity-hook':
-              deleteEntityHook = arguments[n8433 + 1];
+              deleteEntityHook = arguments[n2190 + 1];
           };
       };
       var enable = 'undefined' === typeof enable ? true : enable;
@@ -1247,25 +1247,25 @@ var clPsEcs_ecs = (function() {
   };
   function ecsMain() {
       executeEcsBasicProcess();
-      for (var pair2101 = null, _js_arrvar8436 = getEcsSystemList(), _js_idx8435 = 0; _js_idx8435 < _js_arrvar8436.length; _js_idx8435 += 1) {
-          pair2101 = _js_arrvar8436[_js_idx8435];
-          var system = pair2101[1];
+      for (var pair1159 = null, _js_arrvar2193 = getEcsSystemList(), _js_idx2192 = 0; _js_idx2192 < _js_arrvar2193.length; _js_idx2192 += 1) {
+          pair1159 = _js_arrvar2193[_js_idx2192];
+          var system = pair1159[1];
           if (system.enable) {
               system.processAll(system);
-              for (var entity = null, _js_arrvar8438 = system.targetEntities, _js_idx8437 = 0; _js_idx8437 < _js_arrvar8438.length; _js_idx8437 += 1) {
-                  entity = _js_arrvar8438[_js_idx8437];
+              for (var entity = null, _js_arrvar2195 = system.targetEntities, _js_idx2194 = 0; _js_idx2194 < _js_arrvar2195.length; _js_idx2194 += 1) {
+                  entity = _js_arrvar2195[_js_idx2194];
                   system.process(entity);
               };
           };
       };
   };
   function isRegisteredEntity(entity, system) {
-      for (var x8438 = null, _js_arrvar8440 = system.targetEntities, _js_idx8439 = 0; _js_idx8439 < _js_arrvar8440.length; _js_idx8439 += 1) {
-          x8438 = _js_arrvar8440[_js_idx8439];
-          if ((function (target8437) {
-              return entity === target8437;
-          })(x8438)) {
-              return x8438;
+      for (var x2195 = null, _js_arrvar2197 = system.targetEntities, _js_idx2196 = 0; _js_idx2196 < _js_arrvar2197.length; _js_idx2196 += 1) {
+          x2195 = _js_arrvar2197[_js_idx2196];
+          if ((function (target2194) {
+              return entity === target2194;
+          })(x2195)) {
+              return x2195;
           };
       };
   };
@@ -1284,12 +1284,12 @@ var clPsEcs_ecs = (function() {
       if (isTargetEntity(entity, system)) {
           system.addEntityHook(entity);
           if (!(function () {
-              for (var x8441 = null, _js_arrvar8443 = system.targetEntities, _js_idx8442 = 0; _js_idx8442 < _js_arrvar8443.length; _js_idx8442 += 1) {
-                  x8441 = _js_arrvar8443[_js_idx8442];
+              for (var x2198 = null, _js_arrvar2200 = system.targetEntities, _js_idx2199 = 0; _js_idx2199 < _js_arrvar2200.length; _js_idx2199 += 1) {
+                  x2198 = _js_arrvar2200[_js_idx2199];
                   if ((function (elem) {
                       return entity === elem;
-                  })(x8441)) {
-                      return x8441;
+                  })(x2198)) {
+                      return x2198;
                   };
               };
           })()) {
@@ -1301,35 +1301,35 @@ var clPsEcs_ecs = (function() {
       };
   };
   function pushEntityToAllTargetSystem(entity) {
-      for (var pair2102 = null, _js_arrvar8445 = getEcsSystemList(), _js_idx8444 = 0; _js_idx8444 < _js_arrvar8445.length; _js_idx8444 += 1) {
-          pair2102 = _js_arrvar8445[_js_idx8444];
-          var system = pair2102[1];
+      for (var pair1160 = null, _js_arrvar2202 = getEcsSystemList(), _js_idx2201 = 0; _js_idx2201 < _js_arrvar2202.length; _js_idx2201 += 1) {
+          pair1160 = _js_arrvar2202[_js_idx2201];
+          var system = pair1160[1];
           pushEntityToSystemIfNeeded(entity, system);
       };
   };
   function deleteEntityFromSystemIfRegistered(entity, system) {
-      var copy8447;
+      var copy2204;
       if (isRegisteredEntity(entity, system)) {
           system.deleteEntityHook(entity);
           __PS_MV_REG = [];
-          return system.targetEntities = (copy8447 = system.targetEntities, copy8447.filter(function (x) {
-              return !(function (target8446) {
-                  return entity === target8446;
+          return system.targetEntities = (copy2204 = system.targetEntities, copy2204.filter(function (x) {
+              return !(function (target2203) {
+                  return entity === target2203;
               })(x);
           }));
       };
   };
   function deleteEntityFromAllSystems(entity) {
-      for (var pair2103 = null, _js_arrvar8449 = getEcsSystemList(), _js_idx8448 = 0; _js_idx8448 < _js_arrvar8449.length; _js_idx8448 += 1) {
-          pair2103 = _js_arrvar8449[_js_idx8448];
-          var system = pair2103[1];
+      for (var pair1161 = null, _js_arrvar2206 = getEcsSystemList(), _js_idx2205 = 0; _js_idx2205 < _js_arrvar2206.length; _js_idx2205 += 1) {
+          pair1161 = _js_arrvar2206[_js_idx2205];
+          var system = pair1161[1];
           deleteEntityFromSystemIfRegistered(entity, system);
       };
   };
   function deleteEntityFromNoLongerBelongSystems(entity) {
-      for (var pair2104 = null, _js_arrvar8451 = getEcsSystemList(), _js_idx8450 = 0; _js_idx8450 < _js_arrvar8451.length; _js_idx8450 += 1) {
-          pair2104 = _js_arrvar8451[_js_idx8450];
-          var system = pair2104[1];
+      for (var pair1162 = null, _js_arrvar2208 = getEcsSystemList(), _js_idx2207 = 0; _js_idx2207 < _js_arrvar2208.length; _js_idx2207 += 1) {
+          pair1162 = _js_arrvar2208[_js_idx2207];
+          var system = pair1162[1];
           if (!isTargetEntity(entity, system)) {
               deleteEntityFromSystemIfRegistered(entity, system);
           };
@@ -1375,14 +1375,14 @@ var clPsEcs_ecs = (function() {
       if (!((entity instanceof (typeof flatTreeNode === 'string' ? eval(flatTreeNode) : flatTreeNode)))) {
           throw '\'TYPE-ERROR: (The place is \'ENTITY\'. The expected type is \'FLAT-TREE-NODE\')';
       };
-      var rec2105 = function (target) {
+      var rec1163 = function (target) {
           pushEntityToAllTargetSystem(target);
-          for (var child = null, _js_arrvar8453 = target.children, _js_idx8452 = 0; _js_idx8452 < _js_arrvar8453.length; _js_idx8452 += 1) {
-              child = _js_arrvar8453[_js_idx8452];
-              rec2105(child);
+          for (var child = null, _js_arrvar2210 = target.children, _js_idx2209 = 0; _js_idx2209 < _js_arrvar2210.length; _js_idx2209 += 1) {
+              child = _js_arrvar2210[_js_idx2209];
+              rec1163(child);
           };
       };
-      rec2105(entity);
+      rec1163(entity);
       __PS_MV_REG = [];
       return entity;
   };
@@ -1406,15 +1406,15 @@ var clPsEcs_ecs = (function() {
       if (!((entity instanceof (typeof flatTreeNode === 'string' ? eval(flatTreeNode) : flatTreeNode)))) {
           throw '\'TYPE-ERROR: (The place is \'ENTITY\'. The expected type is \'FLAT-TREE-NODE\')';
       };
-      var rec2106 = function (target) {
+      var rec1164 = function (target) {
           deleteEntityFromAllSystems(target);
-          for (var child = null, _js_arrvar8455 = target.children, _js_idx8454 = 0; _js_idx8454 < _js_arrvar8455.length; _js_idx8454 += 1) {
-              child = _js_arrvar8455[_js_idx8454];
-              rec2106(child);
+          for (var child = null, _js_arrvar2212 = target.children, _js_idx2211 = 0; _js_idx2211 < _js_arrvar2212.length; _js_idx2211 += 1) {
+              child = _js_arrvar2212[_js_idx2211];
+              rec1164(child);
           };
       };
       __PS_MV_REG = [];
-      return rec2106(entity);
+      return rec1164(entity);
   };
   /** Move an entity under a new-parent. */
   function moveEcsEntity(entity, newParent) {
@@ -1434,12 +1434,12 @@ var clPsEcs_ecs = (function() {
           throw '\'TYPE-ERROR: (The place is \'SYSTEM\'. The expected type is \'ECS-SYSTEM\')';
       };
       var found = (function () {
-          for (var x8456 = null, _js_idx8457 = 0; _js_idx8457 < ECSSYSTEMLIST.length; _js_idx8457 += 1) {
-              x8456 = ECSSYSTEMLIST[_js_idx8457];
+          for (var x2213 = null, _js_idx2214 = 0; _js_idx2214 < ECSSYSTEMLIST.length; _js_idx2214 += 1) {
+              x2213 = ECSSYSTEMLIST[_js_idx2214];
               if ((function (pair) {
                   return pair[0] === name;
-              })(x8456)) {
-                  return x8456;
+              })(x2213)) {
+                  return x2213;
               };
           };
       })();
@@ -1449,8 +1449,8 @@ var clPsEcs_ecs = (function() {
           ECSSYSTEMLIST = ECSSYSTEMLIST.concat([[name, system]]);
       };
       system.targetEntities = [];
-      for (var entity = null, _js_arrvar8459 = getEntityList(), _js_idx8458 = 0; _js_idx8458 < _js_arrvar8459.length; _js_idx8458 += 1) {
-          entity = _js_arrvar8459[_js_idx8458];
+      for (var entity = null, _js_arrvar2216 = getEntityList(), _js_idx2215 = 0; _js_idx2215 < _js_arrvar2216.length; _js_idx2215 += 1) {
+          entity = _js_arrvar2216[_js_idx2215];
           pushEntityToSystemIfNeeded(entity, system);
       };
       __PS_MV_REG = [];
@@ -1458,12 +1458,12 @@ var clPsEcs_ecs = (function() {
   };
   function checkComponentUniqueness(component, entity) {
       if ((function () {
-          for (var x8465 = null, _js_arrvar8467 = entity.components, _js_idx8466 = 0; _js_idx8466 < _js_arrvar8467.length; _js_idx8466 += 1) {
-              x8465 = _js_arrvar8467[_js_idx8466];
-              if ((function (target8464) {
-                  return component === target8464;
-              })(x8465)) {
-                  return x8465;
+          for (var x2222 = null, _js_arrvar2224 = entity.components, _js_idx2223 = 0; _js_idx2223 < _js_arrvar2224.length; _js_idx2223 += 1) {
+              x2222 = _js_arrvar2224[_js_idx2223];
+              if ((function (target2221) {
+                  return component === target2221;
+              })(x2222)) {
+                  return x2222;
               };
           };
       })()) {
@@ -1480,8 +1480,8 @@ var clPsEcs_ecs = (function() {
               throw '\'TYPE-ERROR: (The place is \'PARENT-COMPONENT\'. The expected type is \'ECS-COMPONENT\')';
           };
       };
-      for (var component = null, _js_idx8468 = 0; _js_idx8468 < componentList.length; _js_idx8468 += 1) {
-          component = componentList[_js_idx8468];
+      for (var component = null, _js_idx2225 = 0; _js_idx2225 < componentList.length; _js_idx2225 += 1) {
+          component = componentList[_js_idx2225];
           if (!((component instanceof (typeof ecsComponent === 'string' ? eval(ecsComponent) : ecsComponent)))) {
               throw '\'TYPE-ERROR: (The place is \'COMPONENT\'. The expected type is \'ECS-COMPONENT\')';
           };
@@ -1507,12 +1507,12 @@ var clPsEcs_ecs = (function() {
   };
   function addDeleteComponentHook(callback) {
       if (!(function () {
-          for (var x8469 = null, _js_idx8470 = 0; _js_idx8470 < DELETECOMPONENTHOOKS.length; _js_idx8470 += 1) {
-              x8469 = DELETECOMPONENTHOOKS[_js_idx8470];
+          for (var x2226 = null, _js_idx2227 = 0; _js_idx2227 < DELETECOMPONENTHOOKS.length; _js_idx2227 += 1) {
+              x2226 = DELETECOMPONENTHOOKS[_js_idx2227];
               if ((function (elem) {
                   return callback === elem;
-              })(x8469)) {
-                  return x8469;
+              })(x2226)) {
+                  return x2226;
               };
           };
       })()) {
@@ -1523,11 +1523,11 @@ var clPsEcs_ecs = (function() {
       return DELETECOMPONENTHOOKS;
   };
   function deleteDeleteComponentHook(callback) {
-      var copy8472;
+      var copy2229;
       var preLength = DELETECOMPONENTHOOKS.length;
-      DELETECOMPONENTHOOKS = (copy8472 = DELETECOMPONENTHOOKS, copy8472.filter(function (x) {
-          return !(function (target8471) {
-              return callback === target8471;
+      DELETECOMPONENTHOOKS = (copy2229 = DELETECOMPONENTHOOKS, copy2229.filter(function (x) {
+          return !(function (target2228) {
+              return callback === target2228;
           })(x);
       }));
       if (preLength === DELETECOMPONENTHOOKS.length) {
@@ -1540,8 +1540,8 @@ var clPsEcs_ecs = (function() {
       };
       var preLength = entity.components.length;
       entity.components = deleteFlatTreeNodeIf(predicate, entity.components, function (component) {
-          for (var hook = null, _js_idx8473 = 0; _js_idx8473 < DELETECOMPONENTHOOKS.length; _js_idx8473 += 1) {
-              hook = DELETECOMPONENTHOOKS[_js_idx8473];
+          for (var hook = null, _js_idx2230 = 0; _js_idx2230 < DELETECOMPONENTHOOKS.length; _js_idx2230 += 1) {
+              hook = DELETECOMPONENTHOOKS[_js_idx2230];
               hook(component);
           };
       });
@@ -1643,17 +1643,17 @@ var clWeb2dGame_core_gameState = (function() {
       return this;
   };
   function makeGameState() {
-      var _js8475 = arguments.length;
-      for (var n8474 = 0; n8474 < _js8475; n8474 += 2) {
-          switch (arguments[n8474]) {
+      var _js2232 = arguments.length;
+      for (var n2231 = 0; n2231 < _js2232; n2231 += 2) {
+          switch (arguments[n2231]) {
           case 'start-process':
-              startProcess = arguments[n8474 + 1];
+              startProcess = arguments[n2231 + 1];
               break;
           case 'process':
-              process = arguments[n8474 + 1];
+              process = arguments[n2231 + 1];
               break;
           case 'end-process':
-              endProcess = arguments[n8474 + 1];
+              endProcess = arguments[n2231 + 1];
           };
       };
       var startProcess = 'undefined' === typeof startProcess ? function (_this) {
@@ -1683,17 +1683,17 @@ var clWeb2dGame_core_gameState = (function() {
       return this;
   };
   function makeGameStateManager() {
-      var _js8477 = arguments.length;
-      for (var n8476 = 0; n8476 < _js8477; n8476 += 2) {
-          switch (arguments[n8476]) {
+      var _js2234 = arguments.length;
+      for (var n2233 = 0; n2233 < _js2234; n2233 += 2) {
+          switch (arguments[n2233]) {
           case 'current-state':
-              currentState = arguments[n8476 + 1];
+              currentState = arguments[n2233 + 1];
               break;
           case 'next-state':
-              nextState = arguments[n8476 + 1];
+              nextState = arguments[n2233 + 1];
               break;
           case 'sub-state':
-              subState = arguments[n8476 + 1];
+              subState = arguments[n2233 + 1];
           };
       };
       var currentState = 'undefined' === typeof currentState ? makeEmptyGameState() : currentState;
@@ -1973,17 +1973,17 @@ var clWeb2dGame_utils_debug_performance = (function() {
       return this;
   };
   function makePerformanceTimerManager() {
-      var _js8479 = arguments.length;
-      for (var n8478 = 0; n8478 < _js8479; n8478 += 2) {
-          switch (arguments[n8478]) {
+      var _js2236 = arguments.length;
+      for (var n2235 = 0; n2235 < _js2236; n2235 += 2) {
+          switch (arguments[n2235]) {
           case 'tree':
-              tree = arguments[n8478 + 1];
+              tree = arguments[n2235 + 1];
               break;
           case 'current-node':
-              currentNode = arguments[n8478 + 1];
+              currentNode = arguments[n2235 + 1];
               break;
           case 'target-fps':
-              targetFps = arguments[n8478 + 1];
+              targetFps = arguments[n2235 + 1];
           };
       };
       var tree;
@@ -2008,20 +2008,20 @@ var clWeb2dGame_utils_debug_performance = (function() {
       return this;
   };
   function makePerformanceTimerElement() {
-      var _js8481 = arguments.length;
-      for (var n8480 = 0; n8480 < _js8481; n8480 += 2) {
-          switch (arguments[n8480]) {
+      var _js2238 = arguments.length;
+      for (var n2237 = 0; n2237 < _js2238; n2237 += 2) {
+          switch (arguments[n2237]) {
           case 'name':
-              name = arguments[n8480 + 1];
+              name = arguments[n2237 + 1];
               break;
           case 'results':
-              results = arguments[n8480 + 1];
+              results = arguments[n2237 + 1];
               break;
           case 'count':
-              count = arguments[n8480 + 1];
+              count = arguments[n2237 + 1];
               break;
           case 'color':
-              color = arguments[n8480 + 1];
+              color = arguments[n2237 + 1];
           };
       };
       var name = 'undefined' === typeof name ? '' : name;
@@ -2045,14 +2045,14 @@ var clWeb2dGame_utils_debug_performance = (function() {
       return this;
   };
   function makePerformanceTimerNode() {
-      var _js8483 = arguments.length;
-      for (var n8482 = 0; n8482 < _js8483; n8482 += 2) {
-          switch (arguments[n8482]) {
+      var _js2240 = arguments.length;
+      for (var n2239 = 0; n2239 < _js2240; n2239 += 2) {
+          switch (arguments[n2239]) {
           case 'element':
-              element = arguments[n8482 + 1];
+              element = arguments[n2239 + 1];
               break;
           case 'children':
-              children = arguments[n8482 + 1];
+              children = arguments[n2239 + 1];
           };
       };
       var element;
@@ -2073,17 +2073,17 @@ var clWeb2dGame_utils_debug_performance = (function() {
       return this;
   };
   function makeRingBuffer() {
-      var _js8485 = arguments.length;
-      for (var n8484 = 0; n8484 < _js8485; n8484 += 2) {
-          switch (arguments[n8484]) {
+      var _js2242 = arguments.length;
+      for (var n2241 = 0; n2241 < _js2242; n2241 += 2) {
+          switch (arguments[n2241]) {
           case 'array':
-              array = arguments[n8484 + 1];
+              array = arguments[n2241 + 1];
               break;
           case 'count':
-              count = arguments[n8484 + 1];
+              count = arguments[n2241 + 1];
               break;
           case 'next':
-              next = arguments[n8484 + 1];
+              next = arguments[n2241 + 1];
           };
       };
       var array;
@@ -2113,11 +2113,11 @@ var clWeb2dGame_utils_debug_performance = (function() {
           var validLength = Math.min(buffer.count, buffer.array.length);
           __PS_MV_REG = [];
           return (function () {
-              var sum8486 = 0;
+              var sum2243 = 0;
               for (var i = 0; i < validLength; i += 1) {
-                  sum8486 += buffer.array[i];
+                  sum2243 += buffer.array[i];
               };
-              return sum8486;
+              return sum2243;
           })() / validLength;
       } else {
           __PS_MV_REG = [];
@@ -2135,12 +2135,12 @@ var clWeb2dGame_utils_debug_performance = (function() {
           throw '\'TYPE-ERROR: (The place is \'MANAGER\'. The expected type is \'PERFORMANCE-TIMER-MANAGER\')';
       };
       var foundNode = manager.currentNode != null ? (function () {
-          for (var x8487 = null, _js_arrvar8489 = manager.currentNode.children, _js_idx8488 = 0; _js_idx8488 < _js_arrvar8489.length; _js_idx8488 += 1) {
-              x8487 = _js_arrvar8489[_js_idx8488];
+          for (var x2244 = null, _js_arrvar2246 = manager.currentNode.children, _js_idx2245 = 0; _js_idx2245 < _js_arrvar2246.length; _js_idx2245 += 1) {
+              x2244 = _js_arrvar2246[_js_idx2245];
               if ((function (node) {
                   return node.element.name === name;
-              })(x8487)) {
-                  return x8487;
+              })(x2244)) {
+                  return x2244;
               };
           };
       })() : manager.tree;
@@ -2163,11 +2163,11 @@ var clWeb2dGame_utils_debug_performance = (function() {
       };
   };
   function dumpPerformanceCounter() {
-      var _js8491 = arguments.length;
-      for (var n8490 = 0; n8490 < _js8491; n8490 += 2) {
-          switch (arguments[n8490]) {
+      var _js2248 = arguments.length;
+      for (var n2247 = 0; n2247 < _js2248; n2247 += 2) {
+          switch (arguments[n2247]) {
           case 'timer':
-              timer = arguments[n8490 + 1];
+              timer = arguments[n2247 + 1];
           };
       };
       var timer = 'undefined' === typeof timer ? PERFORMANCETIMER : timer;
@@ -2181,14 +2181,14 @@ var clWeb2dGame_utils_debug_performance = (function() {
           return temp;
       };
       var rec = function (result, node) {
-          var element8492 = node.element;
-          var children8493 = node.children;
-          var timeMs = ringBufferAverage(element8492.results);
-          result = result + '(' + element8492.name + ':' + formatNumber(timeMs, 2, 2);
-          if (children8493.length) {
+          var element2249 = node.element;
+          var children2250 = node.children;
+          var timeMs = ringBufferAverage(element2249.results);
+          result = result + '(' + element2249.name + ':' + formatNumber(timeMs, 2, 2);
+          if (children2250.length) {
               result += ' ';
-              for (var child = null, _js_idx8494 = 0; _js_idx8494 < children8493.length; _js_idx8494 += 1) {
-                  child = children8493[_js_idx8494];
+              for (var child = null, _js_idx2251 = 0; _js_idx2251 < children2250.length; _js_idx2251 += 1) {
+                  child = children2250[_js_idx2251];
                   result = rec(result, child);
               };
           };
@@ -2292,11 +2292,11 @@ var clWeb2dGame_inputs_gui = (function() {
       return initGui();
   };
   function addPanelFolder(name) {
-      var _js8496 = arguments.length;
-      for (var n8495 = 1; n8495 < _js8496; n8495 += 2) {
-          switch (arguments[n8495]) {
+      var _js2253 = arguments.length;
+      for (var n2252 = 1; n2252 < _js2253; n2252 += 2) {
+          switch (arguments[n2252]) {
           case 'open-p':
-              openP = arguments[n8495 + 1];
+              openP = arguments[n2252 + 1];
           };
       };
       var openP = 'undefined' === typeof openP ? true : openP;
@@ -2308,14 +2308,14 @@ var clWeb2dGame_inputs_gui = (function() {
       return folder;
   };
   function addPanelBool(name, initValue) {
-      var _js8498 = arguments.length;
-      for (var n8497 = 2; n8497 < _js8498; n8497 += 2) {
-          switch (arguments[n8497]) {
+      var _js2255 = arguments.length;
+      for (var n2254 = 2; n2254 < _js2255; n2254 += 2) {
+          switch (arguments[n2254]) {
           case 'on-change':
-              onChange = arguments[n8497 + 1];
+              onChange = arguments[n2254 + 1];
               break;
           case 'folder':
-              folder = arguments[n8497 + 1];
+              folder = arguments[n2254 + 1];
           };
       };
       var onChange;
@@ -2325,23 +2325,23 @@ var clWeb2dGame_inputs_gui = (function() {
       return (folder ? folder : GUIPANEL).add(GUIPANELPARAMS, name).onChange(onChange);
   };
   function addPanelNumber(name, initValue) {
-      var _js8500 = arguments.length;
-      for (var n8499 = 2; n8499 < _js8500; n8499 += 2) {
-          switch (arguments[n8499]) {
+      var _js2257 = arguments.length;
+      for (var n2256 = 2; n2256 < _js2257; n2256 += 2) {
+          switch (arguments[n2256]) {
           case 'on-change':
-              onChange = arguments[n8499 + 1];
+              onChange = arguments[n2256 + 1];
               break;
           case 'folder':
-              folder = arguments[n8499 + 1];
+              folder = arguments[n2256 + 1];
               break;
           case 'min':
-              min = arguments[n8499 + 1];
+              min = arguments[n2256 + 1];
               break;
           case 'max':
-              max = arguments[n8499 + 1];
+              max = arguments[n2256 + 1];
               break;
           case 'step':
-              step = arguments[n8499 + 1];
+              step = arguments[n2256 + 1];
           };
       };
       var onChange;
@@ -2354,14 +2354,14 @@ var clWeb2dGame_inputs_gui = (function() {
       return (folder ? folder : GUIPANEL).add(GUIPANELPARAMS, name, min, max, step).onChange(onChange);
   };
   function addPanelButton(name) {
-      var _js8502 = arguments.length;
-      for (var n8501 = 1; n8501 < _js8502; n8501 += 2) {
-          switch (arguments[n8501]) {
+      var _js2259 = arguments.length;
+      for (var n2258 = 1; n2258 < _js2259; n2258 += 2) {
+          switch (arguments[n2258]) {
           case 'on-change':
-              onChange = arguments[n8501 + 1];
+              onChange = arguments[n2258 + 1];
               break;
           case 'folder':
-              folder = arguments[n8501 + 1];
+              folder = arguments[n2258 + 1];
           };
       };
       var onChange;
@@ -2441,14 +2441,14 @@ var clWeb2dGame_graphics_font = (function() {
    * After that you can get it by get-font-promise with the name and the weight
    */
   function loadFont(relativePath) {
-      var _js8504 = arguments.length;
-      for (var n8503 = 1; n8503 < _js8504; n8503 += 2) {
-          switch (arguments[n8503]) {
+      var _js2261 = arguments.length;
+      for (var n2260 = 1; n2260 < _js2261; n2260 += 2) {
+          switch (arguments[n2260]) {
           case 'name':
-              name = arguments[n8503 + 1];
+              name = arguments[n2260 + 1];
               break;
           case 'weight':
-              weight = arguments[n8503 + 1];
+              weight = arguments[n2260 + 1];
           };
       };
       var name = 'undefined' === typeof name ? 'helvetiker' : name;
@@ -2557,8 +2557,8 @@ var clWeb2dGame_utils_debug_logger = (function() {
               EVENTLOGTEXTLIST = EVENTLOGTEXTLIST.slice(0, MAXEVENTLOGCOUNT);
           };
           var log = '';
-          for (var oneLine = null, _js_idx8505 = 0; _js_idx8505 < EVENTLOGTEXTLIST.length; _js_idx8505 += 1) {
-              oneLine = EVENTLOGTEXTLIST[_js_idx8505];
+          for (var oneLine = null, _js_idx2262 = 0; _js_idx2262 < EVENTLOGTEXTLIST.length; _js_idx2262 += 1) {
+              oneLine = EVENTLOGTEXTLIST[_js_idx2262];
               log = log + oneLine + '<br>';
           };
           __PS_MV_REG = [];
@@ -2678,23 +2678,23 @@ var clWeb2dGame_core_basicComponents = (function() {
       return this;
   };
   function makeVector2d() {
-      var _js8507 = arguments.length;
-      for (var n8506 = 0; n8506 < _js8507; n8506 += 2) {
-          switch (arguments[n8506]) {
+      var _js2264 = arguments.length;
+      for (var n2263 = 0; n2263 < _js2264; n2263 += 2) {
+          switch (arguments[n2263]) {
           case 'parent':
-              parent = arguments[n8506 + 1];
+              parent = arguments[n2263 + 1];
               break;
           case 'children':
-              children = arguments[n8506 + 1];
+              children = arguments[n2263 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n8506 + 1];
+              registerp = arguments[n2263 + 1];
               break;
           case 'x':
-              x = arguments[n8506 + 1];
+              x = arguments[n2263 + 1];
               break;
           case 'y':
-              y = arguments[n8506 + 1];
+              y = arguments[n2263 + 1];
           };
       };
       var parent;
@@ -2734,26 +2734,26 @@ var clWeb2dGame_core_basicComponents = (function() {
       return this;
   };
   function makePoint2d() {
-      var _js8509 = arguments.length;
-      for (var n8508 = 0; n8508 < _js8509; n8508 += 2) {
-          switch (arguments[n8508]) {
+      var _js2266 = arguments.length;
+      for (var n2265 = 0; n2265 < _js2266; n2265 += 2) {
+          switch (arguments[n2265]) {
           case 'parent':
-              parent = arguments[n8508 + 1];
+              parent = arguments[n2265 + 1];
               break;
           case 'children':
-              children = arguments[n8508 + 1];
+              children = arguments[n2265 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n8508 + 1];
+              registerp = arguments[n2265 + 1];
               break;
           case 'x':
-              x = arguments[n8508 + 1];
+              x = arguments[n2265 + 1];
               break;
           case 'y':
-              y = arguments[n8508 + 1];
+              y = arguments[n2265 + 1];
               break;
           case 'angle':
-              angle = arguments[n8508 + 1];
+              angle = arguments[n2265 + 1];
           };
       };
       var parent;
@@ -2794,23 +2794,23 @@ var clWeb2dGame_core_basicComponents = (function() {
       return this;
   };
   function makeSpeed2d() {
-      var _js8511 = arguments.length;
-      for (var n8510 = 0; n8510 < _js8511; n8510 += 2) {
-          switch (arguments[n8510]) {
+      var _js2268 = arguments.length;
+      for (var n2267 = 0; n2267 < _js2268; n2267 += 2) {
+          switch (arguments[n2267]) {
           case 'parent':
-              parent = arguments[n8510 + 1];
+              parent = arguments[n2267 + 1];
               break;
           case 'children':
-              children = arguments[n8510 + 1];
+              children = arguments[n2267 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n8510 + 1];
+              registerp = arguments[n2267 + 1];
               break;
           case 'x':
-              x = arguments[n8510 + 1];
+              x = arguments[n2267 + 1];
               break;
           case 'y':
-              y = arguments[n8510 + 1];
+              y = arguments[n2267 + 1];
           };
       };
       var parent;
@@ -2851,29 +2851,29 @@ var clWeb2dGame_core_basicComponents = (function() {
       return this;
   };
   function makeRect2d() {
-      var _js8513 = arguments.length;
-      for (var n8512 = 0; n8512 < _js8513; n8512 += 2) {
-          switch (arguments[n8512]) {
+      var _js2270 = arguments.length;
+      for (var n2269 = 0; n2269 < _js2270; n2269 += 2) {
+          switch (arguments[n2269]) {
           case 'parent':
-              parent = arguments[n8512 + 1];
+              parent = arguments[n2269 + 1];
               break;
           case 'children':
-              children = arguments[n8512 + 1];
+              children = arguments[n2269 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n8512 + 1];
+              registerp = arguments[n2269 + 1];
               break;
           case 'x':
-              x = arguments[n8512 + 1];
+              x = arguments[n2269 + 1];
               break;
           case 'y':
-              y = arguments[n8512 + 1];
+              y = arguments[n2269 + 1];
               break;
           case 'width':
-              width = arguments[n8512 + 1];
+              width = arguments[n2269 + 1];
               break;
           case 'height':
-              height = arguments[n8512 + 1];
+              height = arguments[n2269 + 1];
           };
       };
       var parent;
@@ -2917,26 +2917,26 @@ var clWeb2dGame_core_basicComponents = (function() {
       return this;
   };
   function makeRotate2d() {
-      var _js8515 = arguments.length;
-      for (var n8514 = 0; n8514 < _js8515; n8514 += 2) {
-          switch (arguments[n8514]) {
+      var _js2272 = arguments.length;
+      for (var n2271 = 0; n2271 < _js2272; n2271 += 2) {
+          switch (arguments[n2271]) {
           case 'parent':
-              parent = arguments[n8514 + 1];
+              parent = arguments[n2271 + 1];
               break;
           case 'children':
-              children = arguments[n8514 + 1];
+              children = arguments[n2271 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n8514 + 1];
+              registerp = arguments[n2271 + 1];
               break;
           case 'speed':
-              speed = arguments[n8514 + 1];
+              speed = arguments[n2271 + 1];
               break;
           case 'angle':
-              angle = arguments[n8514 + 1];
+              angle = arguments[n2271 + 1];
               break;
           case 'radious':
-              radious = arguments[n8514 + 1];
+              radious = arguments[n2271 + 1];
           };
       };
       var parent;
@@ -2976,20 +2976,20 @@ var clWeb2dGame_core_basicComponents = (function() {
       return this;
   };
   function makeParams() {
-      var _js8517 = arguments.length;
-      for (var n8516 = 0; n8516 < _js8517; n8516 += 2) {
-          switch (arguments[n8516]) {
+      var _js2274 = arguments.length;
+      for (var n2273 = 0; n2273 < _js2274; n2273 += 2) {
+          switch (arguments[n2273]) {
           case 'parent':
-              parent = arguments[n8516 + 1];
+              parent = arguments[n2273 + 1];
               break;
           case 'children':
-              children = arguments[n8516 + 1];
+              children = arguments[n2273 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n8516 + 1];
+              registerp = arguments[n2273 + 1];
               break;
           case 'table':
-              table = arguments[n8516 + 1];
+              table = arguments[n2273 + 1];
           };
       };
       var parent;
@@ -3027,20 +3027,20 @@ var clWeb2dGame_core_basicComponents = (function() {
       return this;
   };
   function makeScript2d() {
-      var _js8519 = arguments.length;
-      for (var n8518 = 0; n8518 < _js8519; n8518 += 2) {
-          switch (arguments[n8518]) {
+      var _js2276 = arguments.length;
+      for (var n2275 = 0; n2275 < _js2276; n2275 += 2) {
+          switch (arguments[n2275]) {
           case 'parent':
-              parent = arguments[n8518 + 1];
+              parent = arguments[n2275 + 1];
               break;
           case 'children':
-              children = arguments[n8518 + 1];
+              children = arguments[n2275 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n8518 + 1];
+              registerp = arguments[n2275 + 1];
               break;
           case 'func':
-              func = arguments[n8518 + 1];
+              func = arguments[n2275 + 1];
           };
       };
       var parent;
@@ -3090,28 +3090,28 @@ var clWeb2dGame_core_basicComponents = (function() {
       return makePoint2d('x', point.x, 'y', point.y, 'angle', point.angle);
   };
   function getEntityParam(entity, key) {
-      var params8520 = (found = getEcsComponent(params, entity), found ? found : (function () {
+      var params2277 = (found = getEcsComponent(params, entity), found ? found : (function () {
           throw 'PARAMS is not included in the entity';
       })());
       __PS_MV_REG = [];
-      return params8520.table[key];
+      return params2277.table[key];
   };
   function setEntityParam(entity) {
       var keyValuePair = Array.prototype.slice.call(arguments, 1);
-      var params8521 = getEcsComponent(params, entity);
+      var params2278 = getEcsComponent(params, entity);
       var len = keyValuePair.length;
       if ((len % 2 + 2) % 2 !== 0) {
           throw 'Message: ' + 'Failed assertion: ~A' + '; Args: ' + ((len % 2 + 2) % 2 === 0);
       };
-      if (!params8521) {
-          params8521 = makeParams();
-          addEcsComponent(params8521, entity);
+      if (!params2278) {
+          params2278 = makeParams();
+          addEcsComponent(params2278, entity);
       };
-      var _js8522 = len / 2;
-      for (var i = 0; i < _js8522; i += 1) {
+      var _js2279 = len / 2;
+      for (var i = 0; i < _js2279; i += 1) {
           var key = keyValuePair[i * 2];
           var value = keyValuePair[i * 2 + 1];
-          params8521.table[key] = value;
+          params2278.table[key] = value;
       };
       __PS_MV_REG = [];
       return keyValuePair[len - 1];
@@ -3315,13 +3315,13 @@ var clWeb2dGame_inputs_input = (function() {
       return inputOffCount(KEYSTATUS[button]);
   };
   function processKeyboardInput() {
-      var hashTable8523 = BUTTONTOKEYBOARD;
-      for (var key = null, _js_arrvar8525 = Object.keys(hashTable8523), _js_idx8524 = 0; _js_idx8524 < _js_arrvar8525.length; _js_idx8524 += 1) {
-          key = _js_arrvar8525[_js_idx8524];
+      var hashTable2280 = BUTTONTOKEYBOARD;
+      for (var key = null, _js_arrvar2282 = Object.keys(hashTable2280), _js_idx2281 = 0; _js_idx2281 < _js_arrvar2282.length; _js_idx2281 += 1) {
+          key = _js_arrvar2282[_js_idx2281];
           (function (button, key) {
               __PS_MV_REG = [];
               return KEYSTATUS[button] = calcNextInputCount(KEYSTATUS[button], KEYBOARD.pressed(key));
-          })(key, hashTable8523[key]);
+          })(key, hashTable2280[key]);
       };
   };
   if ('undefined' === typeof _mouseX) {
@@ -3535,14 +3535,14 @@ var clWeb2dGame_inputs_input = (function() {
       return this;
   };
   function makeMouseEvent() {
-      var _js8527 = arguments.length;
-      for (var n8526 = 0; n8526 < _js8527; n8526 += 2) {
-          switch (arguments[n8526]) {
+      var _js2284 = arguments.length;
+      for (var n2283 = 0; n2283 < _js2284; n2283 += 2) {
+          switch (arguments[n2283]) {
           case 'x':
-              x = arguments[n8526 + 1];
+              x = arguments[n2283 + 1];
               break;
           case 'y':
-              y = arguments[n8526 + 1];
+              y = arguments[n2283 + 1];
           };
       };
       var x;
@@ -3598,20 +3598,20 @@ var clWeb2dGame_inputs_input = (function() {
       return this;
   };
   function makeTouchEventElement() {
-      var _js8529 = arguments.length;
-      for (var n8528 = 0; n8528 < _js8529; n8528 += 2) {
-          switch (arguments[n8528]) {
+      var _js2286 = arguments.length;
+      for (var n2285 = 0; n2285 < _js2286; n2285 += 2) {
+          switch (arguments[n2285]) {
           case 'x':
-              x = arguments[n8528 + 1];
+              x = arguments[n2285 + 1];
               break;
           case 'y':
-              y = arguments[n8528 + 1];
+              y = arguments[n2285 + 1];
               break;
           case 'id':
-              id = arguments[n8528 + 1];
+              id = arguments[n2285 + 1];
               break;
           case 'count':
-              count = arguments[n8528 + 1];
+              count = arguments[n2285 + 1];
           };
       };
       var x;
@@ -3634,11 +3634,11 @@ var clWeb2dGame_inputs_input = (function() {
       return this;
   };
   function makeTouchEvent() {
-      var _js8531 = arguments.length;
-      for (var n8530 = 0; n8530 < _js8531; n8530 += 2) {
-          switch (arguments[n8530]) {
+      var _js2288 = arguments.length;
+      for (var n2287 = 0; n2287 < _js2288; n2287 += 2) {
+          switch (arguments[n2287]) {
           case 'touches':
-              touches = arguments[n8530 + 1];
+              touches = arguments[n2287 + 1];
           };
       };
       var touches;
@@ -3661,16 +3661,16 @@ var clWeb2dGame_inputs_input = (function() {
       if (!elem) {
           return 'up';
       };
-      var count8532 = elem.count;
-      if (count8532 === 0) {
+      var count2289 = elem.count;
+      if (count2289 === 0) {
           return 'up';
-      } else if (count8532 === 1) {
+      } else if (count2289 === 1) {
           return 'down-now';
-      } else if (count8532 > 1) {
+      } else if (count2289 > 1) {
           return 'down';
-      } else if (count8532 === -1) {
+      } else if (count2289 === -1) {
           return 'down';
-      } else if (count8532 === -2) {
+      } else if (count2289 === -2) {
           return 'up-now';
       } else {
           return 'up';
@@ -3679,25 +3679,25 @@ var clWeb2dGame_inputs_input = (function() {
   function getTotalTouchState() {
       var count = 0;
       var result = null;
-      var hashTable8533 = getTouchStateHash();
-      for (var key = null, _js_arrvar8535 = Object.keys(hashTable8533), _js_idx8534 = 0; _js_idx8534 < _js_arrvar8535.length; _js_idx8534 += 1) {
-          key = _js_arrvar8535[_js_idx8534];
-          (function (id, hashValue2107) {
-              return hashValue2107.count !== 0 ? ++count : null;
-          })(key, hashTable8533[key]);
+      var hashTable2290 = getTouchStateHash();
+      for (var key = null, _js_arrvar2292 = Object.keys(hashTable2290), _js_idx2291 = 0; _js_idx2291 < _js_arrvar2292.length; _js_idx2291 += 1) {
+          key = _js_arrvar2292[_js_idx2291];
+          (function (id, hashValue1165) {
+              return hashValue1165.count !== 0 ? ++count : null;
+          })(key, hashTable2290[key]);
       };
       switch (count) {
       case 0:
           result = 'up';
           break;
       case 1:
-          var hashTable8536 = getTouchStateHash();
-          for (var key = null, _js_arrvar8538 = Object.keys(hashTable8536), _js_idx8537 = 0; _js_idx8537 < _js_arrvar8538.length; _js_idx8537 += 1) {
-              key = _js_arrvar8538[_js_idx8537];
-              (function (id, hashValue2108) {
+          var hashTable2293 = getTouchStateHash();
+          for (var key = null, _js_arrvar2295 = Object.keys(hashTable2293), _js_idx2294 = 0; _js_idx2294 < _js_arrvar2295.length; _js_idx2294 += 1) {
+              key = _js_arrvar2295[_js_idx2294];
+              (function (id, hashValue1166) {
                   __PS_MV_REG = [];
-                  return hashValue2108.count !== 0 ? (result = getTouchState(id)) : null;
-              })(key, hashTable8536[key]);
+                  return hashValue1166.count !== 0 ? (result = getTouchState(id)) : null;
+              })(key, hashTable2293[key]);
           };
           break;
       default:
@@ -3719,11 +3719,11 @@ var clWeb2dGame_inputs_input = (function() {
               __PS_MV_REG = [];
               return calcPriority(newState) > calcPriority(oldState);
           };
-          var hashTable8539 = getTouchStateHash();
-          for (var key = null, _js_arrvar8541 = Object.keys(hashTable8539), _js_idx8540 = 0; _js_idx8540 < _js_arrvar8541.length; _js_idx8540 += 1) {
-              key = _js_arrvar8541[_js_idx8540];
-              (function (id, hashValue2109) {
-                  if (hashValue2109.count !== 0) {
+          var hashTable2296 = getTouchStateHash();
+          for (var key = null, _js_arrvar2298 = Object.keys(hashTable2296), _js_idx2297 = 0; _js_idx2297 < _js_arrvar2298.length; _js_idx2297 += 1) {
+              key = _js_arrvar2298[_js_idx2297];
+              (function (id, hashValue1167) {
+                  if (hashValue1167.count !== 0) {
                       var state = getTouchState(id);
                       __PS_MV_REG = [];
                       return result == null || priorP(state, result) ? (result = state) : null;
@@ -3731,7 +3731,7 @@ var clWeb2dGame_inputs_input = (function() {
                       __PS_MV_REG = [];
                       return null;
                   };
-              })(key, hashTable8539[key]);
+              })(key, hashTable2296[key]);
           };
       };
       if (!result) {
@@ -3750,15 +3750,15 @@ var clWeb2dGame_inputs_input = (function() {
   function getTotalTouchAverage(fn, defaultValue) {
       var sum = 0;
       var count = 0;
-      var hashTable8542 = getTouchStateHash();
-      for (var key = null, _js_arrvar8544 = Object.keys(hashTable8542), _js_idx8543 = 0; _js_idx8543 < _js_arrvar8544.length; _js_idx8543 += 1) {
-          key = _js_arrvar8544[_js_idx8543];
-          (function (id, hashValue2110) {
-              if (hashValue2110.count !== 0) {
+      var hashTable2299 = getTouchStateHash();
+      for (var key = null, _js_arrvar2301 = Object.keys(hashTable2299), _js_idx2300 = 0; _js_idx2300 < _js_arrvar2301.length; _js_idx2300 += 1) {
+          key = _js_arrvar2301[_js_idx2300];
+          (function (id, hashValue1168) {
+              if (hashValue1168.count !== 0) {
                   sum += fn(id);
                   return ++count;
               };
-          })(key, hashTable8542[key]);
+          })(key, hashTable2299[key]);
       };
       __PS_MV_REG = [];
       return count > 0 ? sum / count : defaultValue;
@@ -3779,9 +3779,9 @@ var clWeb2dGame_inputs_input = (function() {
       return getTotalTouchAverage(getTouchY, 0);
   };
   function processTouchInput() {
-      var hashTable8545 = TOUCHSTATEHASH;
-      for (var key = null, _js_arrvar8547 = Object.keys(hashTable8545), _js_idx8546 = 0; _js_idx8546 < _js_arrvar8547.length; _js_idx8546 += 1) {
-          key = _js_arrvar8547[_js_idx8546];
+      var hashTable2302 = TOUCHSTATEHASH;
+      for (var key = null, _js_arrvar2304 = Object.keys(hashTable2302), _js_idx2303 = 0; _js_idx2303 < _js_arrvar2304.length; _js_idx2303 += 1) {
+          key = _js_arrvar2304[_js_idx2303];
           (function (id, state) {
               if (state.count >= 0) {
                   return ++state.count;
@@ -3796,7 +3796,7 @@ var clWeb2dGame_inputs_input = (function() {
                       });
                   };
               };
-          })(key, hashTable8545[key]);
+          })(key, hashTable2302[key]);
       };
   };
   function setXyOfTouchEventElement(elem, rawTouchEvent) {
@@ -3815,20 +3815,20 @@ var clWeb2dGame_inputs_input = (function() {
   };
   function initTouchEvent(e) {
       var result = makeTouchEvent('touches', new Array(e.touches.length));
-      var touches8548 = result.touches;
+      var touches2305 = result.touches;
       for (var i = 0; i < e.changedTouches.length; i += 1) {
           var touch = e.changedTouches[i];
           var elem = makeTouchEventElement('id', touch.identifier);
           setXyOfTouchEventElement(elem, touch);
-          touches8548[i] = elem;
+          touches2305[i] = elem;
       };
       __PS_MV_REG = [];
       return result;
   };
   function onTouchStart(e) {
       var event = initTouchEvent(e);
-      for (var eventElem = null, _js_arrvar8550 = event.touches, _js_idx8549 = 0; _js_idx8549 < _js_arrvar8550.length; _js_idx8549 += 1) {
-          eventElem = _js_arrvar8550[_js_idx8549];
+      for (var eventElem = null, _js_arrvar2307 = event.touches, _js_idx2306 = 0; _js_idx2306 < _js_arrvar2307.length; _js_idx2306 += 1) {
+          eventElem = _js_arrvar2307[_js_idx2306];
           TOUCHSTATEHASH[eventElem.id] = eventElem;
       };
       __PS_MV_REG = [];
@@ -3837,8 +3837,8 @@ var clWeb2dGame_inputs_input = (function() {
   function onTouchEnd(e) {
       if (e.touches.length === 0) {
       };
-      for (var touch = null, _js_arrvar8552 = e.changedTouches, _js_idx8551 = 0; _js_idx8551 < _js_arrvar8552.length; _js_idx8551 += 1) {
-          touch = _js_arrvar8552[_js_idx8551];
+      for (var touch = null, _js_arrvar2309 = e.changedTouches, _js_idx2308 = 0; _js_idx2308 < _js_arrvar2309.length; _js_idx2308 += 1) {
+          touch = _js_arrvar2309[_js_idx2308];
           var eventElem = TOUCHSTATEHASH[touch.identifier];
           if (!eventElem) {
               throw 'Message: ' + 'Failed assertion: ~A' + '; Args: ' + eventElem;
@@ -3849,8 +3849,8 @@ var clWeb2dGame_inputs_input = (function() {
       return callTouchEndCallbacks(initTouchEvent(e));
   };
   function onTouchMoveEvent(e) {
-      for (var touch = null, _js_arrvar8554 = e.changedTouches, _js_idx8553 = 0; _js_idx8553 < _js_arrvar8554.length; _js_idx8553 += 1) {
-          touch = _js_arrvar8554[_js_idx8553];
+      for (var touch = null, _js_arrvar2311 = e.changedTouches, _js_idx2310 = 0; _js_idx2310 < _js_arrvar2311.length; _js_idx2310 += 1) {
+          touch = _js_arrvar2311[_js_idx2310];
           var eventElem = TOUCHSTATEHASH[touch.identifier];
           if (!eventElem) {
               throw 'Message: ' + 'Failed assertion: ~A' + '; Args: ' + eventElem;
@@ -3990,20 +3990,20 @@ var clWeb2dGame_utils_basicGenerator = (function() {
   /* --- define objects --- */
   clWeb2dGame_utils_stageGenerator._internal.registerStageElementInterpreter('point', function (stage0, args1, immediateP2) {
       return (function () {
-          var _js8556 = arguments.length;
-          for (var n8555 = 0; n8555 < _js8556; n8555 += 2) {
-              switch (arguments[n8555]) {
+          var _js2313 = arguments.length;
+          for (var n2312 = 0; n2312 < _js2313; n2312 += 2) {
+              switch (arguments[n2312]) {
               case 'time':
-                  time = arguments[n8555 + 1];
+                  time = arguments[n2312 + 1];
                   break;
               case 'x':
-                  x = arguments[n8555 + 1];
+                  x = arguments[n2312 + 1];
                   break;
               case 'y':
-                  y = arguments[n8555 + 1];
+                  y = arguments[n2312 + 1];
                   break;
               case 'angle':
-                  angle = arguments[n8555 + 1];
+                  angle = arguments[n2312 + 1];
               };
           };
           var time;
@@ -4019,17 +4019,17 @@ var clWeb2dGame_utils_basicGenerator = (function() {
   }, []);
   clWeb2dGame_utils_stageGenerator._internal.registerStageElementInterpreter('speed', function (stage0, args1, immediateP2) {
       return (function () {
-          var _js8558 = arguments.length;
-          for (var n8557 = 0; n8557 < _js8558; n8557 += 2) {
-              switch (arguments[n8557]) {
+          var _js2315 = arguments.length;
+          for (var n2314 = 0; n2314 < _js2315; n2314 += 2) {
+              switch (arguments[n2314]) {
               case 'time':
-                  time = arguments[n8557 + 1];
+                  time = arguments[n2314 + 1];
                   break;
               case 'x':
-                  x = arguments[n8557 + 1];
+                  x = arguments[n2314 + 1];
                   break;
               case 'y':
-                  y = arguments[n8557 + 1];
+                  y = arguments[n2314 + 1];
               };
           };
           var time;
@@ -4132,17 +4132,17 @@ var clWeb2dGame_graphics_texture = (function() {
       return this;
   };
   function makeTexture2d() {
-      var _js8560 = arguments.length;
-      for (var n8559 = 0; n8559 < _js8560; n8559 += 2) {
-          switch (arguments[n8559]) {
+      var _js2317 = arguments.length;
+      for (var n2316 = 0; n2316 < _js2317; n2316 += 2) {
+          switch (arguments[n2316]) {
           case 'path-list':
-              pathList = arguments[n8559 + 1];
+              pathList = arguments[n2316 + 1];
               break;
           case 'material':
-              material = arguments[n8559 + 1];
+              material = arguments[n2316 + 1];
               break;
           case 'rect-uv':
-              rectUv = arguments[n8559 + 1];
+              rectUv = arguments[n2316 + 1];
           };
       };
       var pathList = 'undefined' === typeof pathList ? [] : pathList;
@@ -4164,14 +4164,14 @@ var clWeb2dGame_graphics_texture = (function() {
       return this;
   };
   function makeRawImageBitmap() {
-      var _js8562 = arguments.length;
-      for (var n8561 = 0; n8561 < _js8562; n8561 += 2) {
-          switch (arguments[n8561]) {
+      var _js2319 = arguments.length;
+      for (var n2318 = 0; n2318 < _js2319; n2318 += 2) {
+          switch (arguments[n2318]) {
           case 'promise':
-              promise = arguments[n8561 + 1];
+              promise = arguments[n2318 + 1];
               break;
           case 'ref-count':
-              refCount = arguments[n8561 + 1];
+              refCount = arguments[n2318 + 1];
           };
       };
       var promise;
@@ -4206,14 +4206,14 @@ var clWeb2dGame_graphics_texture = (function() {
       return TEXTUREPROMISETABLE[name];
   };
   function getLoadTexturePromise() {
-      var _js8564 = arguments.length;
-      for (var n8563 = 0; n8563 < _js8564; n8563 += 2) {
-          switch (arguments[n8563]) {
+      var _js2321 = arguments.length;
+      for (var n2320 = 0; n2320 < _js2321; n2320 += 2) {
+          switch (arguments[n2320]) {
           case 'path':
-              path = arguments[n8563 + 1];
+              path = arguments[n2320 + 1];
               break;
           case 'loader':
-              loader = arguments[n8563 + 1];
+              loader = arguments[n2320 + 1];
           };
       };
       var path;
@@ -4258,29 +4258,29 @@ var clWeb2dGame_graphics_texture = (function() {
   };
   /** Asynchronously Load texture by path and register it by name */
   function loadTexture() {
-      var _js8566 = arguments.length;
-      for (var n8565 = 0; n8565 < _js8566; n8565 += 2) {
-          switch (arguments[n8565]) {
+      var _js2323 = arguments.length;
+      for (var n2322 = 0; n2322 < _js2323; n2322 += 2) {
+          switch (arguments[n2322]) {
           case 'path':
-              path = arguments[n8565 + 1];
+              path = arguments[n2322 + 1];
               break;
           case 'name':
-              name = arguments[n8565 + 1];
+              name = arguments[n2322 + 1];
               break;
           case 'alpha-path':
-              alphaPath = arguments[n8565 + 1];
+              alphaPath = arguments[n2322 + 1];
               break;
           case 'x':
-              x = arguments[n8565 + 1];
+              x = arguments[n2322 + 1];
               break;
           case 'y':
-              y = arguments[n8565 + 1];
+              y = arguments[n2322 + 1];
               break;
           case 'width':
-              width = arguments[n8565 + 1];
+              width = arguments[n2322 + 1];
               break;
           case 'height':
-              height = arguments[n8565 + 1];
+              height = arguments[n2322 + 1];
           };
       };
       var path;
@@ -4314,14 +4314,14 @@ var clWeb2dGame_graphics_texture = (function() {
       };
       __PS_MV_REG = [];
       return framePromiseThen(texPromise, function (tex) {
-          var copy8570;
-          TEXTUREPROMISETABLE = (copy8570 = TEXTUREPROMISETABLE, copy8570.filter(function (x) {
-              return !(function (target8569) {
-                  return texPromise === target8569;
+          var copy2327;
+          TEXTUREPROMISETABLE = (copy2327 = TEXTUREPROMISETABLE, copy2327.filter(function (x) {
+              return !(function (target2326) {
+                  return texPromise === target2326;
               })(x);
           }));
-          for (var path = null, _js_arrvar8568 = tex.pathList, _js_idx8567 = 0; _js_idx8567 < _js_arrvar8568.length; _js_idx8567 += 1) {
-              path = _js_arrvar8568[_js_idx8567];
+          for (var path = null, _js_arrvar2325 = tex.pathList, _js_idx2324 = 0; _js_idx2324 < _js_arrvar2325.length; _js_idx2324 += 1) {
+              path = _js_arrvar2325[_js_idx2324];
               var raw = findRawImageBitmap(path);
               if (!raw) {
                   throw 'Message: ' + 'The path \"~A\" is not loaded.' + '; Args: ' + path;
@@ -4453,14 +4453,14 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
   var getDefaultEcsEntityParent = clPsEcs_ecs.getDefaultEcsEntityParent;
   /* --- define objects --- */
   function pushVerticesTo(geometry, rawVertexLst) {
-      for (var vertexAsLst = null, _js_idx8571 = 0; _js_idx8571 < rawVertexLst.length; _js_idx8571 += 1) {
-          vertexAsLst = rawVertexLst[_js_idx8571];
+      for (var vertexAsLst = null, _js_idx2328 = 0; _js_idx2328 < rawVertexLst.length; _js_idx2328 += 1) {
+          vertexAsLst = rawVertexLst[_js_idx2328];
           geometry.vertices.push(new THREE.Vector3(vertexAsLst[0], vertexAsLst[1], 0));
       };
   };
   function pushFacesTo(geometry, rawFaceLst) {
-      for (var faceAsLst = null, _js_idx8572 = 0; _js_idx8572 < rawFaceLst.length; _js_idx8572 += 1) {
-          faceAsLst = rawFaceLst[_js_idx8572];
+      for (var faceAsLst = null, _js_idx2329 = 0; _js_idx2329 < rawFaceLst.length; _js_idx2329 += 1) {
+          faceAsLst = rawFaceLst[_js_idx2329];
           geometry.faces.push(new THREE.Face3(faceAsLst[0], faceAsLst[1], faceAsLst[2]));
       };
   };
@@ -4488,17 +4488,17 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       return ['width', getMeshWidth(mesh), 'height', getMeshHeight(mesh)];
   };
   function makeLine() {
-      var _js8574 = arguments.length;
-      for (var n8573 = 0; n8573 < _js8574; n8573 += 2) {
-          switch (arguments[n8573]) {
+      var _js2331 = arguments.length;
+      for (var n2330 = 0; n2330 < _js2331; n2330 += 2) {
+          switch (arguments[n2330]) {
           case 'pos-a':
-              posA = arguments[n8573 + 1];
+              posA = arguments[n2330 + 1];
               break;
           case 'pos-b':
-              posB = arguments[n8573 + 1];
+              posB = arguments[n2330 + 1];
               break;
           case 'color':
-              color = arguments[n8573 + 1];
+              color = arguments[n2330 + 1];
           };
       };
       var posA;
@@ -4515,14 +4515,14 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       return makeLineModel(geometry1, color);
   };
   function makeLines() {
-      var _js8576 = arguments.length;
-      for (var n8575 = 0; n8575 < _js8576; n8575 += 2) {
-          switch (arguments[n8575]) {
+      var _js2333 = arguments.length;
+      for (var n2332 = 0; n2332 < _js2333; n2332 += 2) {
+          switch (arguments[n2332]) {
           case 'pnt-list':
-              pntList = arguments[n8575 + 1];
+              pntList = arguments[n2332 + 1];
               break;
           case 'color':
-              color = arguments[n8575 + 1];
+              color = arguments[n2332 + 1];
           };
       };
       var pntList;
@@ -4533,25 +4533,25 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
           __PS_MV_REG = [];
           return pushVerticesTo(geometry2, rest);
       };
-      for (var pnt = null, _js_idx8577 = 0; _js_idx8577 < pntList.length; _js_idx8577 += 1) {
-          pnt = pntList[_js_idx8577];
+      for (var pnt = null, _js_idx2334 = 0; _js_idx2334 < pntList.length; _js_idx2334 += 1) {
+          pnt = pntList[_js_idx2334];
           pushVertices([pnt[0], pnt[1]]);
       };
       __PS_MV_REG = [];
       return makeLineModel(geometry2, color);
   };
   function makeSolidRect() {
-      var _js8579 = arguments.length;
-      for (var n8578 = 0; n8578 < _js8579; n8578 += 2) {
-          switch (arguments[n8578]) {
+      var _js2336 = arguments.length;
+      for (var n2335 = 0; n2335 < _js2336; n2335 += 2) {
+          switch (arguments[n2335]) {
           case 'width':
-              width = arguments[n8578 + 1];
+              width = arguments[n2335 + 1];
               break;
           case 'height':
-              height = arguments[n8578 + 1];
+              height = arguments[n2335 + 1];
               break;
           case 'color':
-              color = arguments[n8578 + 1];
+              color = arguments[n2335 + 1];
           };
       };
       var width;
@@ -4574,17 +4574,17 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       return makeSolidModel(geometry3, color);
   };
   function makeWiredRect() {
-      var _js8581 = arguments.length;
-      for (var n8580 = 0; n8580 < _js8581; n8580 += 2) {
-          switch (arguments[n8580]) {
+      var _js2338 = arguments.length;
+      for (var n2337 = 0; n2337 < _js2338; n2337 += 2) {
+          switch (arguments[n2337]) {
           case 'width':
-              width = arguments[n8580 + 1];
+              width = arguments[n2337 + 1];
               break;
           case 'height':
-              height = arguments[n8580 + 1];
+              height = arguments[n2337 + 1];
               break;
           case 'color':
-              color = arguments[n8580 + 1];
+              color = arguments[n2337 + 1];
           };
       };
       var width;
@@ -4612,17 +4612,17 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       if (!((texture instanceof (typeof texture2d === 'string' ? eval(texture2d) : texture2d)))) {
           throw '\'TYPE-ERROR: (The place is \'TEXTURE\'. The expected type is \'TEXTURE-2D\')';
       };
-      var object8582 = texture.rectUv;
+      var object2339 = texture.rectUv;
       var uvs = geometry.faceVertexUvs[0];
       var countOuter = 0;
-      for (var uv = null, _js_arrvar8584 = makeRectUvs(object8582.x + object8582.width * x, object8582.y + object8582.height * y, object8582.width * width, object8582.height * height), _js_idx8583 = 0; _js_idx8583 < _js_arrvar8584.length; _js_idx8583 += 1) {
-          uv = _js_arrvar8584[_js_idx8583];
+      for (var uv = null, _js_arrvar2341 = makeRectUvs(object2339.x + object2339.width * x, object2339.y + object2339.height * y, object2339.width * width, object2339.height * height), _js_idx2340 = 0; _js_idx2340 < _js_arrvar2341.length; _js_idx2340 += 1) {
+          uv = _js_arrvar2341[_js_idx2340];
           if (countOuter >= uvs.length) {
               uvs.push(uv);
           } else {
               var countInner = 0;
-              for (var vector = null, _js_idx8585 = 0; _js_idx8585 < uv.length; _js_idx8585 += 1) {
-                  vector = uv[_js_idx8585];
+              for (var vector = null, _js_idx2342 = 0; _js_idx2342 < uv.length; _js_idx2342 += 1) {
+                  vector = uv[_js_idx2342];
                   uvs[countOuter][countInner].x = vector.x;
                   uvs[countOuter][countInner].y = vector.y;
                   ++countInner;
@@ -4663,20 +4663,20 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       return [textureWidth * widthScale, textureHeight * heightScale];
   };
   function makeTextureModel() {
-      var _js8586 = arguments.length;
-      for (var n8585 = 0; n8585 < _js8586; n8585 += 2) {
-          switch (arguments[n8585]) {
+      var _js2343 = arguments.length;
+      for (var n2342 = 0; n2342 < _js2343; n2342 += 2) {
+          switch (arguments[n2342]) {
           case 'width':
-              width = arguments[n8585 + 1];
+              width = arguments[n2342 + 1];
               break;
           case 'height':
-              height = arguments[n8585 + 1];
+              height = arguments[n2342 + 1];
               break;
           case 'size-type':
-              sizeType = arguments[n8585 + 1];
+              sizeType = arguments[n2342 + 1];
               break;
           case 'texture':
-              texture = arguments[n8585 + 1];
+              texture = arguments[n2342 + 1];
           };
       };
       var width;
@@ -4707,20 +4707,20 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
    *  (This is equals to (:width 1 :height 1 :size-type :relative).
    */
   function makeTextureModelPromise() {
-      var _js8588 = arguments.length;
-      for (var n8587 = 0; n8587 < _js8588; n8587 += 2) {
-          switch (arguments[n8587]) {
+      var _js2345 = arguments.length;
+      for (var n2344 = 0; n2344 < _js2345; n2344 += 2) {
+          switch (arguments[n2344]) {
           case 'width':
-              width = arguments[n8587 + 1];
+              width = arguments[n2344 + 1];
               break;
           case 'height':
-              height = arguments[n8587 + 1];
+              height = arguments[n2344 + 1];
               break;
           case 'size-type':
-              sizeType = arguments[n8587 + 1];
+              sizeType = arguments[n2344 + 1];
               break;
           case 'texture-name':
-              textureName = arguments[n8587 + 1];
+              textureName = arguments[n2344 + 1];
           };
       };
       var width;
@@ -4734,20 +4734,20 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       });
   };
   function makeSolidRegularPolygon() {
-      var _js8590 = arguments.length;
-      for (var n8589 = 0; n8589 < _js8590; n8589 += 2) {
-          switch (arguments[n8589]) {
+      var _js2347 = arguments.length;
+      for (var n2346 = 0; n2346 < _js2347; n2346 += 2) {
+          switch (arguments[n2346]) {
           case 'r':
-              r = arguments[n8589 + 1];
+              r = arguments[n2346 + 1];
               break;
           case 'n':
-              n = arguments[n8589 + 1];
+              n = arguments[n2346 + 1];
               break;
           case 'start-angle':
-              startAngle = arguments[n8589 + 1];
+              startAngle = arguments[n2346 + 1];
               break;
           case 'color':
-              color = arguments[n8589 + 1];
+              color = arguments[n2346 + 1];
           };
       };
       var r;
@@ -4777,20 +4777,20 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       return makeSolidModel(geometry5, color);
   };
   function makeWiredRegularPolygon() {
-      var _js8592 = arguments.length;
-      for (var n8591 = 0; n8591 < _js8592; n8591 += 2) {
-          switch (arguments[n8591]) {
+      var _js2349 = arguments.length;
+      for (var n2348 = 0; n2348 < _js2349; n2348 += 2) {
+          switch (arguments[n2348]) {
           case 'r':
-              r = arguments[n8591 + 1];
+              r = arguments[n2348 + 1];
               break;
           case 'n':
-              n = arguments[n8591 + 1];
+              n = arguments[n2348 + 1];
               break;
           case 'start-angle':
-              startAngle = arguments[n8591 + 1];
+              startAngle = arguments[n2348 + 1];
               break;
           case 'color':
-              color = arguments[n8591 + 1];
+              color = arguments[n2348 + 1];
           };
       };
       var r;
@@ -4811,14 +4811,14 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       return makeLineModel(geometry6, color);
   };
   function makeSolidCircle() {
-      var _js8594 = arguments.length;
-      for (var n8593 = 0; n8593 < _js8594; n8593 += 2) {
-          switch (arguments[n8593]) {
+      var _js2351 = arguments.length;
+      for (var n2350 = 0; n2350 < _js2351; n2350 += 2) {
+          switch (arguments[n2350]) {
           case 'r':
-              r = arguments[n8593 + 1];
+              r = arguments[n2350 + 1];
               break;
           case 'color':
-              color = arguments[n8593 + 1];
+              color = arguments[n2350 + 1];
           };
       };
       var r;
@@ -4827,14 +4827,14 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       return makeSolidRegularPolygon('r', r, 'n', 60, 'color', color);
   };
   function makeWiredCircle() {
-      var _js8596 = arguments.length;
-      for (var n8595 = 0; n8595 < _js8596; n8595 += 2) {
-          switch (arguments[n8595]) {
+      var _js2353 = arguments.length;
+      for (var n2352 = 0; n2352 < _js2353; n2352 += 2) {
+          switch (arguments[n2352]) {
           case 'r':
-              r = arguments[n8595 + 1];
+              r = arguments[n2352 + 1];
               break;
           case 'color':
-              color = arguments[n8595 + 1];
+              color = arguments[n2352 + 1];
           };
       };
       var r;
@@ -4843,14 +4843,14 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       return makeWiredRegularPolygon('r', r, 'n', 60, 'color', color);
   };
   function makeWiredPolygon() {
-      var _js8598 = arguments.length;
-      for (var n8597 = 0; n8597 < _js8598; n8597 += 2) {
-          switch (arguments[n8597]) {
+      var _js2355 = arguments.length;
+      for (var n2354 = 0; n2354 < _js2355; n2354 += 2) {
+          switch (arguments[n2354]) {
           case 'pnt-list':
-              pntList = arguments[n8597 + 1];
+              pntList = arguments[n2354 + 1];
               break;
           case 'color':
-              color = arguments[n8597 + 1];
+              color = arguments[n2354 + 1];
           };
       };
       var pntList;
@@ -4861,8 +4861,8 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
           __PS_MV_REG = [];
           return pushVerticesTo(geometry7, rest);
       };
-      for (var pnt = null, _js_idx8599 = 0; _js_idx8599 < pntList.length; _js_idx8599 += 1) {
-          pnt = pntList[_js_idx8599];
+      for (var pnt = null, _js_idx2356 = 0; _js_idx2356 < pntList.length; _js_idx2356 += 1) {
+          pnt = pntList[_js_idx2356];
           pushVertices(pnt);
       };
       pushVertices(pntList[0]);
@@ -4870,14 +4870,14 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       return makeLineModel(geometry7, color);
   };
   function makeSolidPolygon() {
-      var _js8601 = arguments.length;
-      for (var n8600 = 0; n8600 < _js8601; n8600 += 2) {
-          switch (arguments[n8600]) {
+      var _js2358 = arguments.length;
+      for (var n2357 = 0; n2357 < _js2358; n2357 += 2) {
+          switch (arguments[n2357]) {
           case 'pnt-list':
-              pntList = arguments[n8600 + 1];
+              pntList = arguments[n2357 + 1];
               break;
           case 'color':
-              color = arguments[n8600 + 1];
+              color = arguments[n2357 + 1];
           };
       };
       var pntList;
@@ -4893,8 +4893,8 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
           __PS_MV_REG = [];
           return pushFacesTo(geometry8, rest);
       };
-      for (var pnt = null, _js_idx8602 = 0; _js_idx8602 < pntList.length; _js_idx8602 += 1) {
-          pnt = pntList[_js_idx8602];
+      for (var pnt = null, _js_idx2359 = 0; _js_idx2359 < pntList.length; _js_idx2359 += 1) {
+          pnt = pntList[_js_idx2359];
           pushVertices(pnt);
       };
       var len = pntList.length;
@@ -4911,20 +4911,20 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       return model2d;
   };
   function makeTextModelPromise(text) {
-      var _js8604 = arguments.length;
-      for (var n8603 = 1; n8603 < _js8604; n8603 += 2) {
-          switch (arguments[n8603]) {
+      var _js2361 = arguments.length;
+      for (var n2360 = 1; n2360 < _js2361; n2360 += 2) {
+          switch (arguments[n2360]) {
           case 'size':
-              size = arguments[n8603 + 1];
+              size = arguments[n2360 + 1];
               break;
           case 'color':
-              color = arguments[n8603 + 1];
+              color = arguments[n2360 + 1];
               break;
           case 'curve-segments':
-              curveSegments = arguments[n8603 + 1];
+              curveSegments = arguments[n2360 + 1];
               break;
           case 'font-name':
-              fontName = arguments[n8603 + 1];
+              fontName = arguments[n2360 + 1];
           };
       };
       var size;
@@ -5091,8 +5091,8 @@ var clWeb2dGame_utils_calc = (function() {
           return makeVector2d();
       } else {
           var result = cloneVector2d(vectors[0]);
-          for (var vec = null, _js_arrvar8606 = vectors.slice(1), _js_idx8605 = 0; _js_idx8605 < _js_arrvar8606.length; _js_idx8605 += 1) {
-              vec = _js_arrvar8606[_js_idx8605];
+          for (var vec = null, _js_arrvar2363 = vectors.slice(1), _js_idx2362 = 0; _js_idx2362 < _js_arrvar2363.length; _js_idx2362 += 1) {
+              vec = _js_arrvar2363[_js_idx2362];
               incfVector2d(result, vec);
           };
           __PS_MV_REG = [];
@@ -5112,8 +5112,8 @@ var clWeb2dGame_utils_calc = (function() {
           return makeVector2d();
       } else {
           var result = cloneVector2d(vectors[0]);
-          for (var vec = null, _js_arrvar8608 = vectors.slice(1), _js_idx8607 = 0; _js_idx8607 < _js_arrvar8608.length; _js_idx8607 += 1) {
-              vec = _js_arrvar8608[_js_idx8607];
+          for (var vec = null, _js_arrvar2365 = vectors.slice(1), _js_idx2364 = 0; _js_idx2364 < _js_arrvar2365.length; _js_idx2364 += 1) {
+              vec = _js_arrvar2365[_js_idx2364];
               decfVector2d(result, vec);
           };
           __PS_MV_REG = [];
@@ -5151,11 +5151,11 @@ var clWeb2dGame_utils_calc = (function() {
   };
   /** Rotate point-2d using rotate-2d structure. */
   function rotatefPointBy(point2d, rotate2d) {
-      var speed8609 = rotate2d.speed;
-      incfRotateDiff(point2d, rotate2d.radious, rotate2d.angle, speed8609);
-      point2d.angle += speed8609;
+      var speed2366 = rotate2d.speed;
+      incfRotateDiff(point2d, rotate2d.radious, rotate2d.angle, speed2366);
+      point2d.angle += speed2366;
       __PS_MV_REG = [];
-      return rotate2d.angle += speed8609;
+      return rotate2d.angle += speed2366;
   };
   /**
    * Move the vector to a point of cirle parameterized by
@@ -5542,20 +5542,20 @@ var clWeb2dGame_physics_collision = (function() {
       return this;
   };
   function makeBoundingBox2d() {
-      var _js8611 = arguments.length;
-      for (var n8610 = 0; n8610 < _js8611; n8610 += 2) {
-          switch (arguments[n8610]) {
+      var _js2368 = arguments.length;
+      for (var n2367 = 0; n2367 < _js2368; n2367 += 2) {
+          switch (arguments[n2367]) {
           case 'left':
-              left = arguments[n8610 + 1];
+              left = arguments[n2367 + 1];
               break;
           case 'right':
-              right = arguments[n8610 + 1];
+              right = arguments[n2367 + 1];
               break;
           case 'bottom':
-              bottom = arguments[n8610 + 1];
+              bottom = arguments[n2367 + 1];
               break;
           case 'top':
-              top = arguments[n8610 + 1];
+              top = arguments[n2367 + 1];
           };
       };
       var left = 'undefined' === typeof left ? -100000 : left;
@@ -5588,32 +5588,32 @@ var clWeb2dGame_physics_collision = (function() {
       return this;
   };
   function makePhysic2d() {
-      var _js8613 = arguments.length;
-      for (var n8612 = 0; n8612 < _js8613; n8612 += 2) {
-          switch (arguments[n8612]) {
+      var _js2370 = arguments.length;
+      for (var n2369 = 0; n2369 < _js2370; n2369 += 2) {
+          switch (arguments[n2369]) {
           case 'parent':
-              parent = arguments[n8612 + 1];
+              parent = arguments[n2369 + 1];
               break;
           case 'children':
-              children = arguments[n8612 + 1];
+              children = arguments[n2369 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n8612 + 1];
+              registerp = arguments[n2369 + 1];
               break;
           case 'kind':
-              kind = arguments[n8612 + 1];
+              kind = arguments[n2369 + 1];
               break;
           case 'offset':
-              offset = arguments[n8612 + 1];
+              offset = arguments[n2369 + 1];
               break;
           case 'target-tags':
-              targetTags = arguments[n8612 + 1];
+              targetTags = arguments[n2369 + 1];
               break;
           case 'bounding-box':
-              boundingBox = arguments[n8612 + 1];
+              boundingBox = arguments[n2369 + 1];
               break;
           case 'on-collision':
-              onCollision = arguments[n8612 + 1];
+              onCollision = arguments[n2369 + 1];
           };
       };
       var parent;
@@ -5667,35 +5667,35 @@ var clWeb2dGame_physics_collision = (function() {
       return this;
   };
   function makePhysicCircle() {
-      var _js8615 = arguments.length;
-      for (var n8614 = 0; n8614 < _js8615; n8614 += 2) {
-          switch (arguments[n8614]) {
+      var _js2372 = arguments.length;
+      for (var n2371 = 0; n2371 < _js2372; n2371 += 2) {
+          switch (arguments[n2371]) {
           case 'parent':
-              parent = arguments[n8614 + 1];
+              parent = arguments[n2371 + 1];
               break;
           case 'children':
-              children = arguments[n8614 + 1];
+              children = arguments[n2371 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n8614 + 1];
+              registerp = arguments[n2371 + 1];
               break;
           case 'kind':
-              kind = arguments[n8614 + 1];
+              kind = arguments[n2371 + 1];
               break;
           case 'offset':
-              offset = arguments[n8614 + 1];
+              offset = arguments[n2371 + 1];
               break;
           case 'target-tags':
-              targetTags = arguments[n8614 + 1];
+              targetTags = arguments[n2371 + 1];
               break;
           case 'bounding-box':
-              boundingBox = arguments[n8614 + 1];
+              boundingBox = arguments[n2371 + 1];
               break;
           case 'on-collision':
-              onCollision = arguments[n8614 + 1];
+              onCollision = arguments[n2371 + 1];
               break;
           case 'r':
-              r = arguments[n8614 + 1];
+              r = arguments[n2371 + 1];
           };
       };
       var parent;
@@ -5751,35 +5751,35 @@ var clWeb2dGame_physics_collision = (function() {
       return this;
   };
   function makePhysicPolygon() {
-      var _js8617 = arguments.length;
-      for (var n8616 = 0; n8616 < _js8617; n8616 += 2) {
-          switch (arguments[n8616]) {
+      var _js2374 = arguments.length;
+      for (var n2373 = 0; n2373 < _js2374; n2373 += 2) {
+          switch (arguments[n2373]) {
           case 'parent':
-              parent = arguments[n8616 + 1];
+              parent = arguments[n2373 + 1];
               break;
           case 'children':
-              children = arguments[n8616 + 1];
+              children = arguments[n2373 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n8616 + 1];
+              registerp = arguments[n2373 + 1];
               break;
           case 'kind':
-              kind = arguments[n8616 + 1];
+              kind = arguments[n2373 + 1];
               break;
           case 'offset':
-              offset = arguments[n8616 + 1];
+              offset = arguments[n2373 + 1];
               break;
           case 'target-tags':
-              targetTags = arguments[n8616 + 1];
+              targetTags = arguments[n2373 + 1];
               break;
           case 'bounding-box':
-              boundingBox = arguments[n8616 + 1];
+              boundingBox = arguments[n2373 + 1];
               break;
           case 'on-collision':
-              onCollision = arguments[n8616 + 1];
+              onCollision = arguments[n2373 + 1];
               break;
           case 'pnt-list':
-              pntList = arguments[n8616 + 1];
+              pntList = arguments[n2373 + 1];
           };
       };
       var parent;
@@ -5821,20 +5821,20 @@ var clWeb2dGame_physics_collision = (function() {
   })();
   function makePhysicRect() {
       var process;
-      var _js8619 = arguments.length;
-      for (var n8618 = 0; n8618 < _js8619; n8618 += 2) {
-          switch (arguments[n8618]) {
+      var _js2376 = arguments.length;
+      for (var n2375 = 0; n2375 < _js2376; n2375 += 2) {
+          switch (arguments[n2375]) {
           case 'x':
-              x = arguments[n8618 + 1];
+              x = arguments[n2375 + 1];
               break;
           case 'y':
-              y = arguments[n8618 + 1];
+              y = arguments[n2375 + 1];
               break;
           case 'width':
-              width = arguments[n8618 + 1];
+              width = arguments[n2375 + 1];
               break;
           case 'height':
-              height = arguments[n8618 + 1];
+              height = arguments[n2375 + 1];
           };
       };
       var x = 'undefined' === typeof x ? 0 : x;
@@ -5842,8 +5842,8 @@ var clWeb2dGame_physics_collision = (function() {
       var width = 'undefined' === typeof width ? 0 : width;
       var height = 'undefined' === typeof height ? 0 : height;
       var rest = Array.prototype.slice.call(arguments, 0);
-      for (var key = null, _js_arrvar8621 = ['x', 'y', 'width', 'height'], _js_idx8620 = 0; _js_idx8620 < _js_arrvar8621.length; _js_idx8620 += 1) {
-          key = _js_arrvar8621[_js_idx8620];
+      for (var key = null, _js_arrvar2378 = ['x', 'y', 'width', 'height'], _js_idx2377 = 0; _js_idx2377 < _js_arrvar2378.length; _js_idx2377 += 1) {
+          key = _js_arrvar2378[_js_idx2377];
           if (rest.length % 2 !== 0) {
               throw 'Message: ' + 'Invalid plist: ~A' + '; Args: ' + rest;
           };
@@ -5999,8 +5999,8 @@ var clWeb2dGame_physics_collision = (function() {
   };
   function makeGlobalPointList(coordinate, offset, vecList) {
       var globalPointList = [];
-      for (var vec = null, _js_idx8622 = 0; _js_idx8622 < vecList.length; _js_idx8622 += 1) {
-          vec = vecList[_js_idx8622];
+      for (var vec = null, _js_idx2379 = 0; _js_idx2379 < vecList.length; _js_idx2379 += 1) {
+          vec = vecList[_js_idx2379];
           var point = clonePoint2d(offset);
           incfVector2d(point, vec);
           transformfPoint(point, coordinate);
@@ -6012,33 +6012,33 @@ var clWeb2dGame_physics_collision = (function() {
   };
   /** Update bounding box in the physic in global coordinate */
   function updateBoundingBox(physic, globalCoordinate) {
-      var object8623 = physic.boundingBox;
+      var object2380 = physic.boundingBox;
       var globalPoint = clonePoint2d(physic.offset);
       transformfPoint(globalPoint, globalCoordinate);
-      var gKeyform8624 = physic;
-      if ((gKeyform8624 instanceof (typeof physicCircle === 'string' ? eval(physicCircle) : physicCircle))) {
-          object8623.left = globalPoint.x - physic.r;
-          object8623.right = globalPoint.x + physic.r;
-          object8623.bottom = globalPoint.y - physic.r;
-          object8623.top = globalPoint.y + physic.r;
-      } else if ((gKeyform8624 instanceof (typeof physicPolygon === 'string' ? eval(physicPolygon) : physicPolygon))) {
+      var gKeyform2381 = physic;
+      if ((gKeyform2381 instanceof (typeof physicCircle === 'string' ? eval(physicCircle) : physicCircle))) {
+          object2380.left = globalPoint.x - physic.r;
+          object2380.right = globalPoint.x + physic.r;
+          object2380.bottom = globalPoint.y - physic.r;
+          object2380.top = globalPoint.y + physic.r;
+      } else if ((gKeyform2381 instanceof (typeof physicPolygon === 'string' ? eval(physicPolygon) : physicPolygon))) {
           var bufferPnt = makePoint2d();
           var initializedP = null;
-          for (var pnt = null, _js_arrvar8626 = physic.pntList, _js_idx8625 = 0; _js_idx8625 < _js_arrvar8626.length; _js_idx8625 += 1) {
-              pnt = _js_arrvar8626[_js_idx8625];
+          for (var pnt = null, _js_arrvar2383 = physic.pntList, _js_idx2382 = 0; _js_idx2382 < _js_arrvar2383.length; _js_idx2382 += 1) {
+              pnt = _js_arrvar2383[_js_idx2382];
               copyPoint2dTo(bufferPnt, pnt);
               transformfPoint(bufferPnt, globalPoint);
-              if (!initializedP || bufferPnt.x < object8623.left) {
-                  object8623.left = bufferPnt.x;
+              if (!initializedP || bufferPnt.x < object2380.left) {
+                  object2380.left = bufferPnt.x;
               };
-              if (!initializedP || bufferPnt.x > object8623.right) {
-                  object8623.right = bufferPnt.x;
+              if (!initializedP || bufferPnt.x > object2380.right) {
+                  object2380.right = bufferPnt.x;
               };
-              if (!initializedP || bufferPnt.y < object8623.bottom) {
-                  object8623.bottom = bufferPnt.y;
+              if (!initializedP || bufferPnt.y < object2380.bottom) {
+                  object2380.bottom = bufferPnt.y;
               };
-              if (!initializedP || bufferPnt.y > object8623.top) {
-                  object8623.top = bufferPnt.y;
+              if (!initializedP || bufferPnt.y > object2380.top) {
+                  object2380.top = bufferPnt.y;
               };
               initializedP = true;
           };
@@ -6085,7 +6085,7 @@ var clWeb2dGame_physics_collision = (function() {
       var ph1 = (found = getEcsComponent(physic2d, entity1), found ? found : (function () {
           throw 'PHYSIC-2D is not included in the entity';
       })());
-      var ph2 = (found8627 = getEcsComponent(physic2d, entity2), found8627 ? found8627 : (function () {
+      var ph2 = (found2384 = getEcsComponent(physic2d, entity2), found2384 ? found2384 : (function () {
           throw 'PHYSIC-2D is not included in the entity';
       })());
       __PS_MV_REG = [];
@@ -6103,15 +6103,15 @@ var clWeb2dGame_physics_collision = (function() {
           __PS_MV_REG = [];
           return true;
       };
-      for (var tag = null, _js_arrvar8629 = ph1.targetTags, _js_idx8628 = 0; _js_idx8628 < _js_arrvar8629.length; _js_idx8628 += 1) {
-          tag = _js_arrvar8629[_js_idx8628];
+      for (var tag = null, _js_arrvar2386 = ph1.targetTags, _js_idx2385 = 0; _js_idx2385 < _js_arrvar2386.length; _js_idx2385 += 1) {
+          tag = _js_arrvar2386[_js_idx2385];
           if (hasEntityTag(entity2, tag)) {
               __PS_MV_REG = [];
               return true;
           };
       };
-      for (var tag = null, _js_arrvar8631 = ph2.targetTags, _js_idx8630 = 0; _js_idx8630 < _js_arrvar8631.length; _js_idx8630 += 1) {
-          tag = _js_arrvar8631[_js_idx8630];
+      for (var tag = null, _js_arrvar2388 = ph2.targetTags, _js_idx2387 = 0; _js_idx2387 < _js_arrvar2388.length; _js_idx2387 += 1) {
+          tag = _js_arrvar2388[_js_idx2387];
           if (hasEntityTag(entity1, tag)) {
               __PS_MV_REG = [];
               return true;
@@ -6287,38 +6287,38 @@ var clWeb2dGame_inputs_ui = (function() {
       return this;
   };
   function makeUiComponent() {
-      var _js8633 = arguments.length;
-      for (var n8632 = 0; n8632 < _js8633; n8632 += 2) {
-          switch (arguments[n8632]) {
+      var _js2390 = arguments.length;
+      for (var n2389 = 0; n2389 < _js2390; n2389 += 2) {
+          switch (arguments[n2389]) {
           case 'parent':
-              parent = arguments[n8632 + 1];
+              parent = arguments[n2389 + 1];
               break;
           case 'children':
-              children = arguments[n8632 + 1];
+              children = arguments[n2389 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n8632 + 1];
+              registerp = arguments[n2389 + 1];
               break;
           case 'on-click-down':
-              onClickDown = arguments[n8632 + 1];
+              onClickDown = arguments[n2389 + 1];
               break;
           case 'on-click-up':
-              onClickUp = arguments[n8632 + 1];
+              onClickUp = arguments[n2389 + 1];
               break;
           case 'on-mouse-enter':
-              onMouseEnter = arguments[n8632 + 1];
+              onMouseEnter = arguments[n2389 + 1];
               break;
           case 'on-mouse-leave':
-              onMouseLeave = arguments[n8632 + 1];
+              onMouseLeave = arguments[n2389 + 1];
               break;
           case 'on-mouse-hover':
-              onMouseHover = arguments[n8632 + 1];
+              onMouseHover = arguments[n2389 + 1];
               break;
           case 'on-mouse-not-hover':
-              onMouseNotHover = arguments[n8632 + 1];
+              onMouseNotHover = arguments[n2389 + 1];
               break;
           case 'mouse-hover-p':
-              mouseHoverP = arguments[n8632 + 1];
+              mouseHoverP = arguments[n2389 + 1];
           };
       };
       var parent;
@@ -6366,38 +6366,38 @@ var clWeb2dGame_inputs_ui = (function() {
       this.targetEntities = [];
       this.targetComponentTypes = [point2d, uiComponent, physic2d];
       this.process = function (entity) {
-          var physic2d8634 = (found = getEcsComponent(physic2d, entity), found ? found : (function () {
+          var physic2d2391 = (found = getEcsComponent(physic2d, entity), found ? found : (function () {
               throw 'PHYSIC-2D is not included in the entity';
           })());
-          var uiComponent8635 = (found8636 = getEcsComponent(uiComponent, entity), found8636 ? found8636 : (function () {
+          var uiComponent2392 = (found2393 = getEcsComponent(uiComponent, entity), found2393 ? found2393 : (function () {
               throw 'UI-COMPONENT is not included in the entity';
           })());
           var mousePnt = makePoint2d('x', getMouseX(), 'y', getMouseY());
           var mousePhysic = makePhysicCircle('r', 0);
-          var collideP = collidePhysicsP(physic2d8634, calcGlobalPoint(entity), mousePhysic, mousePnt);
+          var collideP = collidePhysicsP(physic2d2391, calcGlobalPoint(entity), mousePhysic, mousePnt);
           if (collideP) {
-              if (uiComponent8635.onMouseHover) {
-                  uiComponent8635.onMouseHover();
+              if (uiComponent2392.onMouseHover) {
+                  uiComponent2392.onMouseHover();
               };
-              if (uiComponent8635.onMouseEnter && !uiComponent8635.mouseHoverP) {
-                  uiComponent8635.onMouseEnter();
+              if (uiComponent2392.onMouseEnter && !uiComponent2392.mouseHoverP) {
+                  uiComponent2392.onMouseEnter();
               };
-              uiComponent8635.mouseHoverP = true;
+              uiComponent2392.mouseHoverP = true;
           } else {
-              if (uiComponent8635.onMouseNotHover) {
-                  uiComponent8635.onMouseNotHover();
+              if (uiComponent2392.onMouseNotHover) {
+                  uiComponent2392.onMouseNotHover();
               };
-              if (uiComponent8635.onMouseLeave && uiComponent8635.mouseHoverP) {
-                  uiComponent8635.onMouseLeave();
+              if (uiComponent2392.onMouseLeave && uiComponent2392.mouseHoverP) {
+                  uiComponent2392.onMouseLeave();
               };
-              uiComponent8635.mouseHoverP = null;
+              uiComponent2392.mouseHoverP = null;
           };
           switch (getLeftMouseState()) {
           case 'down-now':
               if (collideP) {
                   CURRENTTARGET = entity;
                   __PS_MV_REG = [];
-                  return uiComponent8635.onClickDown ? uiComponent8635.onClickDown() : null;
+                  return uiComponent2392.onClickDown ? uiComponent2392.onClickDown() : null;
               } else {
                   __PS_MV_REG = [];
                   return null;
@@ -6405,7 +6405,7 @@ var clWeb2dGame_inputs_ui = (function() {
           case 'up-now':
               if (collideP && CURRENTTARGET === entity && findTheEntity(entity)) {
                   __PS_MV_REG = [];
-                  return uiComponent8635.onClickUp ? uiComponent8635.onClickUp() : null;
+                  return uiComponent2392.onClickUp ? uiComponent2392.onClickUp() : null;
               } else {
                   __PS_MV_REG = [];
                   return null;
@@ -6424,67 +6424,67 @@ var clWeb2dGame_inputs_ui = (function() {
       return this;
   };
   function makeUiSystem() {
-      var _js8638 = arguments.length;
-      for (var n8637 = 0; n8637 < _js8638; n8637 += 2) {
-          switch (arguments[n8637]) {
+      var _js2395 = arguments.length;
+      for (var n2394 = 0; n2394 < _js2395; n2394 += 2) {
+          switch (arguments[n2394]) {
           case 'enable':
-              enable = arguments[n8637 + 1];
+              enable = arguments[n2394 + 1];
               break;
           case 'target-entities':
-              targetEntities = arguments[n8637 + 1];
+              targetEntities = arguments[n2394 + 1];
               break;
           case 'target-component-types':
-              targetComponentTypes = arguments[n8637 + 1];
+              targetComponentTypes = arguments[n2394 + 1];
               break;
           case 'process':
-              process = arguments[n8637 + 1];
+              process = arguments[n2394 + 1];
               break;
           case 'process-all':
-              processAll = arguments[n8637 + 1];
+              processAll = arguments[n2394 + 1];
               break;
           case 'add-entity-hook':
-              addEntityHook = arguments[n8637 + 1];
+              addEntityHook = arguments[n2394 + 1];
               break;
           case 'delete-entity-hook':
-              deleteEntityHook = arguments[n8637 + 1];
+              deleteEntityHook = arguments[n2394 + 1];
           };
       };
       var enable = 'undefined' === typeof enable ? true : enable;
       var targetEntities = 'undefined' === typeof targetEntities ? [] : targetEntities;
       var targetComponentTypes = 'undefined' === typeof targetComponentTypes ? [point2d, uiComponent, physic2d] : targetComponentTypes;
       var process = 'undefined' === typeof process ? function (entity) {
-          var physic2d8639 = (found = getEcsComponent(physic2d, entity), found ? found : (function () {
+          var physic2d2396 = (found = getEcsComponent(physic2d, entity), found ? found : (function () {
               throw 'PHYSIC-2D is not included in the entity';
           })());
-          var uiComponent8640 = (found8641 = getEcsComponent(uiComponent, entity), found8641 ? found8641 : (function () {
+          var uiComponent2397 = (found2398 = getEcsComponent(uiComponent, entity), found2398 ? found2398 : (function () {
               throw 'UI-COMPONENT is not included in the entity';
           })());
           var mousePnt = makePoint2d('x', getMouseX(), 'y', getMouseY());
           var mousePhysic = makePhysicCircle('r', 0);
-          var collideP = collidePhysicsP(physic2d8639, calcGlobalPoint(entity), mousePhysic, mousePnt);
+          var collideP = collidePhysicsP(physic2d2396, calcGlobalPoint(entity), mousePhysic, mousePnt);
           if (collideP) {
-              if (uiComponent8640.onMouseHover) {
-                  uiComponent8640.onMouseHover();
+              if (uiComponent2397.onMouseHover) {
+                  uiComponent2397.onMouseHover();
               };
-              if (uiComponent8640.onMouseEnter && !uiComponent8640.mouseHoverP) {
-                  uiComponent8640.onMouseEnter();
+              if (uiComponent2397.onMouseEnter && !uiComponent2397.mouseHoverP) {
+                  uiComponent2397.onMouseEnter();
               };
-              uiComponent8640.mouseHoverP = true;
+              uiComponent2397.mouseHoverP = true;
           } else {
-              if (uiComponent8640.onMouseNotHover) {
-                  uiComponent8640.onMouseNotHover();
+              if (uiComponent2397.onMouseNotHover) {
+                  uiComponent2397.onMouseNotHover();
               };
-              if (uiComponent8640.onMouseLeave && uiComponent8640.mouseHoverP) {
-                  uiComponent8640.onMouseLeave();
+              if (uiComponent2397.onMouseLeave && uiComponent2397.mouseHoverP) {
+                  uiComponent2397.onMouseLeave();
               };
-              uiComponent8640.mouseHoverP = null;
+              uiComponent2397.mouseHoverP = null;
           };
           switch (getLeftMouseState()) {
           case 'down-now':
               if (collideP) {
                   CURRENTTARGET = entity;
                   __PS_MV_REG = [];
-                  return uiComponent8640.onClickDown ? uiComponent8640.onClickDown() : null;
+                  return uiComponent2397.onClickDown ? uiComponent2397.onClickDown() : null;
               } else {
                   __PS_MV_REG = [];
                   return null;
@@ -6492,7 +6492,7 @@ var clWeb2dGame_inputs_ui = (function() {
           case 'up-now':
               if (collideP && CURRENTTARGET === entity && findTheEntity(entity)) {
                   __PS_MV_REG = [];
-                  return uiComponent8640.onClickUp ? uiComponent8640.onClickUp() : null;
+                  return uiComponent2397.onClickUp ? uiComponent2397.onClickUp() : null;
               } else {
                   __PS_MV_REG = [];
                   return null;
@@ -6642,32 +6642,32 @@ var clWeb2dGame_graphics_drawModelSystem = (function() {
       return this;
   };
   function makeModel2d() {
-      var _js8643 = arguments.length;
-      for (var n8642 = 0; n8642 < _js8643; n8642 += 2) {
-          switch (arguments[n8642]) {
+      var _js2400 = arguments.length;
+      for (var n2399 = 0; n2399 < _js2400; n2399 += 2) {
+          switch (arguments[n2399]) {
           case 'parent':
-              parent = arguments[n8642 + 1];
+              parent = arguments[n2399 + 1];
               break;
           case 'children':
-              children = arguments[n8642 + 1];
+              children = arguments[n2399 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n8642 + 1];
+              registerp = arguments[n2399 + 1];
               break;
           case 'model':
-              model = arguments[n8642 + 1];
+              model = arguments[n2399 + 1];
               break;
           case 'depth':
-              depth = arguments[n8642 + 1];
+              depth = arguments[n2399 + 1];
               break;
           case 'offset':
-              offset = arguments[n8642 + 1];
+              offset = arguments[n2399 + 1];
               break;
           case 'state':
-              state = arguments[n8642 + 1];
+              state = arguments[n2399 + 1];
               break;
           case 'label':
-              label = arguments[n8642 + 1];
+              label = arguments[n2399 + 1];
           };
       };
       var parent;
@@ -6708,11 +6708,11 @@ var clWeb2dGame_graphics_drawModelSystem = (function() {
       this.targetEntities = [];
       this.targetComponentTypes = [point2d, model2d];
       this.process = function (entity) {
-          var point2d8644 = (found = getEcsComponent(point2d, entity), found ? found : (function () {
+          var point2d2401 = (found = getEcsComponent(point2d, entity), found ? found : (function () {
               throw 'POINT-2D is not included in the entity';
           })());
-          for (var modelc = null, _js_arrvar8646 = entity.components, _js_idx8645 = 0; _js_idx8645 < _js_arrvar8646.length; _js_idx8645 += 1) {
-              modelc = _js_arrvar8646[_js_idx8645];
+          for (var modelc = null, _js_arrvar2403 = entity.components, _js_idx2402 = 0; _js_idx2402 < _js_arrvar2403.length; _js_idx2402 += 1) {
+              modelc = _js_arrvar2403[_js_idx2402];
               if ((modelc instanceof (typeof model2d === 'string' ? eval(model2d) : model2d))) {
                   var newPos = calcGlobalPoint(entity, modelc.offset);
                   modelc.model.position.set(newPos.x, newPos.y, modelc.depth);
@@ -6732,40 +6732,40 @@ var clWeb2dGame_graphics_drawModelSystem = (function() {
       return this;
   };
   function makeDrawModelSystem() {
-      var _js8648 = arguments.length;
-      for (var n8647 = 0; n8647 < _js8648; n8647 += 2) {
-          switch (arguments[n8647]) {
+      var _js2405 = arguments.length;
+      for (var n2404 = 0; n2404 < _js2405; n2404 += 2) {
+          switch (arguments[n2404]) {
           case 'enable':
-              enable = arguments[n8647 + 1];
+              enable = arguments[n2404 + 1];
               break;
           case 'target-entities':
-              targetEntities = arguments[n8647 + 1];
+              targetEntities = arguments[n2404 + 1];
               break;
           case 'target-component-types':
-              targetComponentTypes = arguments[n8647 + 1];
+              targetComponentTypes = arguments[n2404 + 1];
               break;
           case 'process':
-              process = arguments[n8647 + 1];
+              process = arguments[n2404 + 1];
               break;
           case 'process-all':
-              processAll = arguments[n8647 + 1];
+              processAll = arguments[n2404 + 1];
               break;
           case 'add-entity-hook':
-              addEntityHook = arguments[n8647 + 1];
+              addEntityHook = arguments[n2404 + 1];
               break;
           case 'delete-entity-hook':
-              deleteEntityHook = arguments[n8647 + 1];
+              deleteEntityHook = arguments[n2404 + 1];
           };
       };
       var enable = 'undefined' === typeof enable ? true : enable;
       var targetEntities = 'undefined' === typeof targetEntities ? [] : targetEntities;
       var targetComponentTypes = 'undefined' === typeof targetComponentTypes ? [point2d, model2d] : targetComponentTypes;
       var process = 'undefined' === typeof process ? function (entity) {
-          var point2d8649 = (found = getEcsComponent(point2d, entity), found ? found : (function () {
+          var point2d2406 = (found = getEcsComponent(point2d, entity), found ? found : (function () {
               throw 'POINT-2D is not included in the entity';
           })());
-          for (var modelc = null, _js_arrvar8651 = entity.components, _js_idx8650 = 0; _js_idx8650 < _js_arrvar8651.length; _js_idx8650 += 1) {
-              modelc = _js_arrvar8651[_js_idx8650];
+          for (var modelc = null, _js_arrvar2408 = entity.components, _js_idx2407 = 0; _js_idx2407 < _js_arrvar2408.length; _js_idx2407 += 1) {
+              modelc = _js_arrvar2408[_js_idx2407];
               if ((modelc instanceof (typeof model2d === 'string' ? eval(model2d) : model2d))) {
                   var newPos = calcGlobalPoint(entity, modelc.offset);
                   modelc.model.position.set(newPos.x, newPos.y, modelc.depth);
@@ -6810,11 +6810,11 @@ var clWeb2dGame_graphics_drawModelSystem = (function() {
       var SCENEFORDRAWSYSTEM = null;
   };
   function enableModel2dIfState(entity, targetState) {
-      var _js8653 = arguments.length;
-      for (var n8652 = 2; n8652 < _js8653; n8652 += 2) {
-          switch (arguments[n8652]) {
+      var _js2410 = arguments.length;
+      for (var n2409 = 2; n2409 < _js2410; n2409 += 2) {
+          switch (arguments[n2409]) {
           case 'target-model-2d':
-              targetModel2d = arguments[n8652 + 1];
+              targetModel2d = arguments[n2409 + 1];
           };
       };
       var targetModel2d;
@@ -6832,8 +6832,8 @@ var clWeb2dGame_graphics_drawModelSystem = (function() {
           __PS_MV_REG = [];
           return enable(targetModel2d);
       } else {
-          for (var modelc = null, _js_arrvar8657 = entity.components, _js_idx8656 = 0; _js_idx8656 < _js_arrvar8657.length; _js_idx8656 += 1) {
-              modelc = _js_arrvar8657[_js_idx8656];
+          for (var modelc = null, _js_arrvar2414 = entity.components, _js_idx2413 = 0; _js_idx2413 < _js_arrvar2414.length; _js_idx2413 += 1) {
+              modelc = _js_arrvar2414[_js_idx2413];
               if ((modelc instanceof (typeof model2d === 'string' ? eval(model2d) : model2d))) {
                   enable(modelc);
               };
@@ -6841,11 +6841,11 @@ var clWeb2dGame_graphics_drawModelSystem = (function() {
       };
   };
   function enableModel2d(entity) {
-      var _js8659 = arguments.length;
-      for (var n8658 = 1; n8658 < _js8659; n8658 += 2) {
-          switch (arguments[n8658]) {
+      var _js2416 = arguments.length;
+      for (var n2415 = 1; n2415 < _js2416; n2415 += 2) {
+          switch (arguments[n2415]) {
           case 'target-model-2d':
-              targetModel2d = arguments[n8658 + 1];
+              targetModel2d = arguments[n2415 + 1];
           };
       };
       var targetModel2d;
@@ -6853,11 +6853,11 @@ var clWeb2dGame_graphics_drawModelSystem = (function() {
       return enableModel2dIfState(entity, 'disable', 'target-model-2d', targetModel2d);
   };
   function enableInvalidatedModel2d(entity) {
-      var _js8661 = arguments.length;
-      for (var n8660 = 1; n8660 < _js8661; n8660 += 2) {
-          switch (arguments[n8660]) {
+      var _js2418 = arguments.length;
+      for (var n2417 = 1; n2417 < _js2418; n2417 += 2) {
+          switch (arguments[n2417]) {
           case 'target-model-2d':
-              targetModel2d = arguments[n8660 + 1];
+              targetModel2d = arguments[n2417 + 1];
           };
       };
       var targetModel2d;
@@ -6877,19 +6877,19 @@ var clWeb2dGame_graphics_drawModelSystem = (function() {
       return targetModel2d.state = 'invalid';
   };
   function invalidateAllModel2d(entity) {
-      for (var model = null, _js_arrvar8663 = entity.components, _js_idx8662 = 0; _js_idx8662 < _js_arrvar8663.length; _js_idx8662 += 1) {
-          model = _js_arrvar8663[_js_idx8662];
+      for (var model = null, _js_arrvar2420 = entity.components, _js_idx2419 = 0; _js_idx2419 < _js_arrvar2420.length; _js_idx2419 += 1) {
+          model = _js_arrvar2420[_js_idx2419];
           if ((model instanceof (typeof model2d === 'string' ? eval(model2d) : model2d))) {
               invalidateModel2d(model);
           };
       };
   };
   function disableModel2d(entity) {
-      var _js8665 = arguments.length;
-      for (var n8664 = 1; n8664 < _js8665; n8664 += 2) {
-          switch (arguments[n8664]) {
+      var _js2422 = arguments.length;
+      for (var n2421 = 1; n2421 < _js2422; n2421 += 2) {
+          switch (arguments[n2421]) {
           case 'target-model-2d':
-              targetModel2d = arguments[n8664 + 1];
+              targetModel2d = arguments[n2421 + 1];
           };
       };
       var targetModel2d;
@@ -6900,8 +6900,8 @@ var clWeb2dGame_graphics_drawModelSystem = (function() {
           __PS_MV_REG = [];
           return disableModel2dIfRequired(targetModel2d);
       } else {
-          for (var modelc = null, _js_arrvar8669 = entity.components, _js_idx8668 = 0; _js_idx8668 < _js_arrvar8669.length; _js_idx8668 += 1) {
-              modelc = _js_arrvar8669[_js_idx8668];
+          for (var modelc = null, _js_arrvar2426 = entity.components, _js_idx2425 = 0; _js_idx2425 < _js_arrvar2426.length; _js_idx2425 += 1) {
+              modelc = _js_arrvar2426[_js_idx2425];
               if ((modelc instanceof (typeof model2d === 'string' ? eval(model2d) : model2d))) {
                   disableModel2dIfRequired(modelc);
               };
@@ -6915,8 +6915,8 @@ var clWeb2dGame_graphics_drawModelSystem = (function() {
       return addEcsComponent(newModel, entity);
   };
   function findModel2dByLabel(entity, label) {
-      for (var model = null, _js_arrvar8671 = entity.components, _js_idx8670 = 0; _js_idx8670 < _js_arrvar8671.length; _js_idx8670 += 1) {
-          model = _js_arrvar8671[_js_idx8670];
+      for (var model = null, _js_arrvar2428 = entity.components, _js_idx2427 = 0; _js_idx2427 < _js_arrvar2428.length; _js_idx2427 += 1) {
+          model = _js_arrvar2428[_js_idx2427];
           if ((model instanceof (typeof model2d === 'string' ? eval(model2d) : model2d))) {
               if (model.label === label) {
                   __PS_MV_REG = [];
@@ -7066,32 +7066,32 @@ var clWeb2dGame_graphics_textArea = (function() {
       return this;
   };
   function makeTextAreaComponent() {
-      var _js8673 = arguments.length;
-      for (var n8672 = 0; n8672 < _js8673; n8672 += 2) {
-          switch (arguments[n8672]) {
+      var _js2430 = arguments.length;
+      for (var n2429 = 0; n2429 < _js2430; n2429 += 2) {
+          switch (arguments[n2429]) {
           case 'parent':
-              parent = arguments[n8672 + 1];
+              parent = arguments[n2429 + 1];
               break;
           case 'children':
-              children = arguments[n8672 + 1];
+              children = arguments[n2429 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n8672 + 1];
+              registerp = arguments[n2429 + 1];
               break;
           case 'font-size':
-              fontSize = arguments[n8672 + 1];
+              fontSize = arguments[n2429 + 1];
               break;
           case 'text-align':
-              textAlign = arguments[n8672 + 1];
+              textAlign = arguments[n2429 + 1];
               break;
           case 'margin':
-              margin = arguments[n8672 + 1];
+              margin = arguments[n2429 + 1];
               break;
           case 'text-model-list':
-              textModelList = arguments[n8672 + 1];
+              textModelList = arguments[n2429 + 1];
               break;
           case 'depth':
-              depth = arguments[n8672 + 1];
+              depth = arguments[n2429 + 1];
           };
       };
       var parent;
@@ -7132,29 +7132,29 @@ var clWeb2dGame_graphics_textArea = (function() {
    * Note: "y" is top of the text. "x" depends on "text-align"
    */
   function makeTextArea() {
-      var _js8675 = arguments.length;
-      for (var n8674 = 0; n8674 < _js8675; n8674 += 2) {
-          switch (arguments[n8674]) {
+      var _js2432 = arguments.length;
+      for (var n2431 = 0; n2431 < _js2432; n2431 += 2) {
+          switch (arguments[n2431]) {
           case 'font-size':
-              fontSize = arguments[n8674 + 1];
+              fontSize = arguments[n2431 + 1];
               break;
           case 'text-align':
-              textAlign = arguments[n8674 + 1];
+              textAlign = arguments[n2431 + 1];
               break;
           case 'margin':
-              margin = arguments[n8674 + 1];
+              margin = arguments[n2431 + 1];
               break;
           case 'x':
-              x = arguments[n8674 + 1];
+              x = arguments[n2431 + 1];
               break;
           case 'y':
-              y = arguments[n8674 + 1];
+              y = arguments[n2431 + 1];
               break;
           case 'angle':
-              angle = arguments[n8674 + 1];
+              angle = arguments[n2431 + 1];
               break;
           case 'depth':
-              depth = arguments[n8674 + 1];
+              depth = arguments[n2431 + 1];
           };
       };
       var fontSize;
@@ -7166,12 +7166,12 @@ var clWeb2dGame_graphics_textArea = (function() {
       var depth = 'undefined' === typeof depth ? 0 : depth;
       var textAlignList = ['left', 'right', 'center'];
       if (!(function () {
-          for (var x8677 = null, _js_idx8678 = 0; _js_idx8678 < textAlignList.length; _js_idx8678 += 1) {
-              x8677 = textAlignList[_js_idx8678];
-              if ((function (target8676) {
-                  return textAlign === target8676;
-              })(x8677)) {
-                  return x8677;
+          for (var x2434 = null, _js_idx2435 = 0; _js_idx2435 < textAlignList.length; _js_idx2435 += 1) {
+              x2434 = textAlignList[_js_idx2435];
+              if ((function (target2433) {
+                  return textAlign === target2433;
+              })(x2434)) {
+                  return x2434;
               };
           };
       })()) {
@@ -7188,8 +7188,8 @@ var clWeb2dGame_graphics_textArea = (function() {
           throw 'TEXT-AREA-COMPONENT is not included in the entity';
       })());
       var maxWidth = 0;
-      for (var model = null, _js_idx8679 = 0; _js_idx8679 < area.textModelList.length; _js_idx8679 += 1) {
-          model = area.textModelList[_js_idx8679];
+      for (var model = null, _js_idx2436 = 0; _js_idx2436 < area.textModelList.length; _js_idx2436 += 1) {
+          model = area.textModelList[_js_idx2436];
           var width = getMeshWidth(model.model);
           if (width > maxWidth) {
               maxWidth = width;
@@ -7214,14 +7214,14 @@ var clWeb2dGame_graphics_textArea = (function() {
   };
   /** Add a new text to the area. The text is attached to bottom of the previous one. */
   function addTextToArea(areaEntity) {
-      var _js8681 = arguments.length;
-      for (var n8680 = 1; n8680 < _js8681; n8680 += 2) {
-          switch (arguments[n8680]) {
+      var _js2438 = arguments.length;
+      for (var n2437 = 1; n2437 < _js2438; n2437 += 2) {
+          switch (arguments[n2437]) {
           case 'text':
-              text = arguments[n8680 + 1];
+              text = arguments[n2437 + 1];
               break;
           case 'color':
-              color = arguments[n8680 + 1];
+              color = arguments[n2437 + 1];
           };
       };
       var text;
@@ -7243,8 +7243,8 @@ var clWeb2dGame_graphics_textArea = (function() {
       var area = (found = getEcsComponent(textAreaComponent, areaEntity), found ? found : (function () {
           throw 'TEXT-AREA-COMPONENT is not included in the entity';
       })());
-      for (var model = null, _js_idx8682 = 0; _js_idx8682 < area.textModelList.length; _js_idx8682 += 1) {
-          model = area.textModelList[_js_idx8682];
+      for (var model = null, _js_idx2439 = 0; _js_idx2439 < area.textModelList.length; _js_idx2439 += 1) {
+          model = area.textModelList[_js_idx2439];
           registerNextFrameFunc(function () {
               __PS_MV_REG = [];
               return deleteEcsComponent(model, areaEntity);
@@ -7424,14 +7424,14 @@ var clWeb2dGame_physics_collisionSystem = (function() {
           __PS_MV_REG = [];
           return makeModel2d('model', fnMakeGeometry(COLLIDERMODELCOLOR), 'depth', COLLIDERMODELDEPTH, 'offset', clonePoint2d(physic2d.offset));
       };
-      var gKeyform8683 = physic2d;
-      if ((gKeyform8683 instanceof (typeof physicCircle === 'string' ? eval(physicCircle) : physicCircle))) {
+      var gKeyform2440 = physic2d;
+      if ((gKeyform2440 instanceof (typeof physicCircle === 'string' ? eval(physicCircle) : physicCircle))) {
           __PS_MV_REG = [];
           return makeAModel(function (color) {
               __PS_MV_REG = [];
               return makeWiredCircle('color', color, 'r', physic2d.r);
           });
-      } else if ((gKeyform8683 instanceof (typeof physicPolygon === 'string' ? eval(physicPolygon) : physicPolygon))) {
+      } else if ((gKeyform2440 instanceof (typeof physicPolygon === 'string' ? eval(physicPolygon) : physicPolygon))) {
           __PS_MV_REG = [];
           return makeAModel(function (color) {
               __PS_MV_REG = [];
@@ -7446,11 +7446,11 @@ var clWeb2dGame_physics_collisionSystem = (function() {
   function addColliderModel(entity) {
       __PS_MV_REG = [];
       return registerNextFrameFunc(function () {
-          var physic2d8684 = (found = getEcsComponent(physic2d, entity), found ? found : (function () {
+          var physic2d2441 = (found = getEcsComponent(physic2d, entity), found ? found : (function () {
               throw 'PHYSIC-2D is not included in the entity';
           })());
           __PS_MV_REG = [];
-          return !findColliderModel(physic2d8684) ? addEcsComponent(generateColliderModel(physic2d8684), entity, physic2d8684) : null;
+          return !findColliderModel(physic2d2441) ? addEcsComponent(generateColliderModel(physic2d2441), entity, physic2d2441) : null;
       });
   };
   /** Find collider model that should be added as a child of physic */
@@ -7464,10 +7464,10 @@ var clWeb2dGame_physics_collisionSystem = (function() {
   function setfColliderModelEnable(value) {
       if (value !== COLLIDERMODELENABLE) {
           COLLIDERMODELENABLE = value;
-          for (var entity = null, _js_arrvar8686 = clPsEcs_ecs._internal.getEntityList(), _js_idx8685 = 0; _js_idx8685 < _js_arrvar8686.length; _js_idx8685 += 1) {
-              entity = _js_arrvar8686[_js_idx8685];
-              for (var physic = null, _js_arrvar8688 = entity.components, _js_idx8687 = 0; _js_idx8687 < _js_arrvar8688.length; _js_idx8687 += 1) {
-                  physic = _js_arrvar8688[_js_idx8687];
+          for (var entity = null, _js_arrvar2443 = clPsEcs_ecs._internal.getEntityList(), _js_idx2442 = 0; _js_idx2442 < _js_arrvar2443.length; _js_idx2442 += 1) {
+              entity = _js_arrvar2443[_js_idx2442];
+              for (var physic = null, _js_arrvar2445 = entity.components, _js_idx2444 = 0; _js_idx2444 < _js_arrvar2445.length; _js_idx2444 += 1) {
+                  physic = _js_arrvar2445[_js_idx2444];
                   if ((physic instanceof (typeof physic2d === 'string' ? eval(physic2d) : physic2d))) {
                       var model = findColliderModel(physic);
                       if (model) {
@@ -7502,20 +7502,20 @@ var clWeb2dGame_physics_collisionSystem = (function() {
       return this;
   };
   function makeCollisionEntityInfo() {
-      var _js8688 = arguments.length;
-      for (var n8687 = 0; n8687 < _js8688; n8687 += 2) {
-          switch (arguments[n8687]) {
+      var _js2445 = arguments.length;
+      for (var n2444 = 0; n2444 < _js2445; n2444 += 2) {
+          switch (arguments[n2444]) {
           case 'entity':
-              entity = arguments[n8687 + 1];
+              entity = arguments[n2444 + 1];
               break;
           case 'global-point':
-              globalPoint = arguments[n8687 + 1];
+              globalPoint = arguments[n2444 + 1];
               break;
           case 'physic':
-              physic = arguments[n8687 + 1];
+              physic = arguments[n2444 + 1];
               break;
           case 'target-entity-list':
-              targetEntityList = arguments[n8687 + 1];
+              targetEntityList = arguments[n2444 + 1];
           };
       };
       var entity;
@@ -7549,11 +7549,11 @@ var clWeb2dGame_physics_collisionSystem = (function() {
       return this;
   };
   function makeCollisionTargetCache() {
-      var _js8690 = arguments.length;
-      for (var n8689 = 0; n8689 < _js8690; n8689 += 2) {
-          switch (arguments[n8689]) {
+      var _js2447 = arguments.length;
+      for (var n2446 = 0; n2446 < _js2447; n2446 += 2) {
+          switch (arguments[n2446]) {
           case 'cache':
-              cache = arguments[n8689 + 1];
+              cache = arguments[n2446 + 1];
           };
       };
       var cache = 'undefined' === typeof cache ? [] : cache;
@@ -7583,13 +7583,13 @@ var clWeb2dGame_physics_collisionSystem = (function() {
       return cache.cache;
   };
   function findTargetPair(tagList, cache) {
-      for (var x8691 = null, _js_arrvar8693 = cache.cache, _js_idx8692 = 0; _js_idx8692 < _js_arrvar8693.length; _js_idx8692 += 1) {
-          x8691 = _js_arrvar8693[_js_idx8692];
+      for (var x2448 = null, _js_arrvar2450 = cache.cache, _js_idx2449 = 0; _js_idx2449 < _js_arrvar2450.length; _js_idx2449 += 1) {
+          x2448 = _js_arrvar2450[_js_idx2449];
           if ((function (pair) {
               __PS_MV_REG = [];
               return sameTagListP(tagList, pair[0]);
-          })(x8691)) {
-              return x8691;
+          })(x2448)) {
+              return x2448;
           };
       };
   };
@@ -7601,8 +7601,8 @@ var clWeb2dGame_physics_collisionSystem = (function() {
           return pair[1];
       };
       var result = [];
-      for (var info = null, _js_idx8694 = 0; _js_idx8694 < allEntityInfo.length; _js_idx8694 += 1) {
-          info = allEntityInfo[_js_idx8694];
+      for (var info = null, _js_idx2451 = 0; _js_idx2451 < allEntityInfo.length; _js_idx2451 += 1) {
+          info = allEntityInfo[_js_idx2451];
           if (judgeCollisionTargetTags(entityInfo.entity, entityInfo.physic, info.entity, info.physic)) {
               result.unshift(info);
               result;
@@ -7632,13 +7632,13 @@ var clWeb2dGame_physics_collisionSystem = (function() {
           return entity;
       };
       this.processAll = function (system) {
-          var prevNode2111 = clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode;
+          var prevNode1169 = clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode;
           try {
-              var before2112 = performance.now();
-              var element2113 = clWeb2dGame_utils_debug_performance._internal.pickPerformanceTimerElement('collision', 0);
+              var before1170 = performance.now();
+              var element1171 = clWeb2dGame_utils_debug_performance._internal.pickPerformanceTimerElement('collision', 0);
               var infoList = [];
-              for (var entity = null, _js_idx8695 = 0; _js_idx8695 < system.targetEntities.length; _js_idx8695 += 1) {
-                  entity = system.targetEntities[_js_idx8695];
+              for (var entity = null, _js_idx2452 = 0; _js_idx2452 < system.targetEntities.length; _js_idx2452 += 1) {
+                  entity = system.targetEntities[_js_idx2452];
                   var physic = getEcsComponent(physic2d, entity);
                   var globalPoint = calcGlobalPoint(entity);
                   updateBoundingBox(physic, globalPoint);
@@ -7646,19 +7646,19 @@ var clWeb2dGame_physics_collisionSystem = (function() {
                   infoList;
               };
               initTargetListOfInfoList(infoList);
-              var length8696 = infoList.length;
-              var _js8697 = length8696 - 1;
-              for (var outerIdx = 0; outerIdx < _js8697; outerIdx += 1) {
-                  var object8698 = infoList[outerIdx];
-                  for (var info2 = null, _js_idx8699 = 0; _js_idx8699 < object8698.targetEntityList.length; _js_idx8699 += 1) {
-                      info2 = object8698.targetEntityList[_js_idx8699];
-                      processCollision(object8698.entity, object8698.physic, object8698.globalPoint, info2.entity, info2.physic, info2.globalPoint);
+              var length2453 = infoList.length;
+              var _js2454 = length2453 - 1;
+              for (var outerIdx = 0; outerIdx < _js2454; outerIdx += 1) {
+                  var object2455 = infoList[outerIdx];
+                  for (var info2 = null, _js_idx2456 = 0; _js_idx2456 < object2455.targetEntityList.length; _js_idx2456 += 1) {
+                      info2 = object2455.targetEntityList[_js_idx2456];
+                      processCollision(object2455.entity, object2455.physic, object2455.globalPoint, info2.entity, info2.physic, info2.globalPoint);
                   };
               };
               __PS_MV_REG = [];
-              return clWeb2dGame_utils_debug_performance._internal.pushToRingBuffer(performance.now() - before2112, element2113.results);
+              return clWeb2dGame_utils_debug_performance._internal.pushToRingBuffer(performance.now() - before1170, element1171.results);
           } finally {
-              clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode = prevNode2111;
+              clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode = prevNode1169;
           };
       };
       this.addEntityHook = function (entity) {
@@ -7671,29 +7671,29 @@ var clWeb2dGame_physics_collisionSystem = (function() {
       return this;
   };
   function makeCollisionSystem() {
-      var _js8699 = arguments.length;
-      for (var n8698 = 0; n8698 < _js8699; n8698 += 2) {
-          switch (arguments[n8698]) {
+      var _js2456 = arguments.length;
+      for (var n2455 = 0; n2455 < _js2456; n2455 += 2) {
+          switch (arguments[n2455]) {
           case 'enable':
-              enable = arguments[n8698 + 1];
+              enable = arguments[n2455 + 1];
               break;
           case 'target-entities':
-              targetEntities = arguments[n8698 + 1];
+              targetEntities = arguments[n2455 + 1];
               break;
           case 'target-component-types':
-              targetComponentTypes = arguments[n8698 + 1];
+              targetComponentTypes = arguments[n2455 + 1];
               break;
           case 'process':
-              process = arguments[n8698 + 1];
+              process = arguments[n2455 + 1];
               break;
           case 'process-all':
-              processAll = arguments[n8698 + 1];
+              processAll = arguments[n2455 + 1];
               break;
           case 'add-entity-hook':
-              addEntityHook = arguments[n8698 + 1];
+              addEntityHook = arguments[n2455 + 1];
               break;
           case 'delete-entity-hook':
-              deleteEntityHook = arguments[n8698 + 1];
+              deleteEntityHook = arguments[n2455 + 1];
           };
       };
       var enable = 'undefined' === typeof enable ? true : enable;
@@ -7703,13 +7703,13 @@ var clWeb2dGame_physics_collisionSystem = (function() {
           return entity;
       } : process;
       var processAll = 'undefined' === typeof processAll ? function (system) {
-          var prevNode2114 = clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode;
+          var prevNode1172 = clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode;
           try {
-              var before2115 = performance.now();
-              var element2116 = clWeb2dGame_utils_debug_performance._internal.pickPerformanceTimerElement('collision', 0);
+              var before1173 = performance.now();
+              var element1174 = clWeb2dGame_utils_debug_performance._internal.pickPerformanceTimerElement('collision', 0);
               var infoList = [];
-              for (var entity = null, _js_idx8700 = 0; _js_idx8700 < system.targetEntities.length; _js_idx8700 += 1) {
-                  entity = system.targetEntities[_js_idx8700];
+              for (var entity = null, _js_idx2457 = 0; _js_idx2457 < system.targetEntities.length; _js_idx2457 += 1) {
+                  entity = system.targetEntities[_js_idx2457];
                   var physic = getEcsComponent(physic2d, entity);
                   var globalPoint = calcGlobalPoint(entity);
                   updateBoundingBox(physic, globalPoint);
@@ -7717,19 +7717,19 @@ var clWeb2dGame_physics_collisionSystem = (function() {
                   infoList;
               };
               initTargetListOfInfoList(infoList);
-              var length8701 = infoList.length;
-              var _js8702 = length8701 - 1;
-              for (var outerIdx = 0; outerIdx < _js8702; outerIdx += 1) {
-                  var object8703 = infoList[outerIdx];
-                  for (var info2 = null, _js_idx8704 = 0; _js_idx8704 < object8703.targetEntityList.length; _js_idx8704 += 1) {
-                      info2 = object8703.targetEntityList[_js_idx8704];
-                      processCollision(object8703.entity, object8703.physic, object8703.globalPoint, info2.entity, info2.physic, info2.globalPoint);
+              var length2458 = infoList.length;
+              var _js2459 = length2458 - 1;
+              for (var outerIdx = 0; outerIdx < _js2459; outerIdx += 1) {
+                  var object2460 = infoList[outerIdx];
+                  for (var info2 = null, _js_idx2461 = 0; _js_idx2461 < object2460.targetEntityList.length; _js_idx2461 += 1) {
+                      info2 = object2460.targetEntityList[_js_idx2461];
+                      processCollision(object2460.entity, object2460.physic, object2460.globalPoint, info2.entity, info2.physic, info2.globalPoint);
                   };
               };
               __PS_MV_REG = [];
-              return clWeb2dGame_utils_debug_performance._internal.pushToRingBuffer(performance.now() - before2115, element2116.results);
+              return clWeb2dGame_utils_debug_performance._internal.pushToRingBuffer(performance.now() - before1173, element1174.results);
           } finally {
-              clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode = prevNode2114;
+              clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode = prevNode1172;
           };
       } : processAll;
       var addEntityHook = 'undefined' === typeof addEntityHook ? function (entity) {
@@ -7919,47 +7919,47 @@ var clWeb2dGame_graphics_animation = (function() {
       return this;
   };
   function makeAnimation2d() {
-      var _js8704 = arguments.length;
-      for (var n8703 = 0; n8703 < _js8704; n8703 += 2) {
-          switch (arguments[n8703]) {
+      var _js2461 = arguments.length;
+      for (var n2460 = 0; n2460 < _js2461; n2460 += 2) {
+          switch (arguments[n2460]) {
           case 'parent':
-              parent = arguments[n8703 + 1];
+              parent = arguments[n2460 + 1];
               break;
           case 'children':
-              children = arguments[n8703 + 1];
+              children = arguments[n2460 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n8703 + 1];
+              registerp = arguments[n2460 + 1];
               break;
           case 'interval':
-              interval = arguments[n8703 + 1];
+              interval = arguments[n2460 + 1];
               break;
           case 'horiz-count':
-              horizCount = arguments[n8703 + 1];
+              horizCount = arguments[n2460 + 1];
               break;
           case 'vert-count':
-              vertCount = arguments[n8703 + 1];
+              vertCount = arguments[n2460 + 1];
               break;
           case 'model':
-              model = arguments[n8703 + 1];
+              model = arguments[n2460 + 1];
               break;
           case 'texture':
-              texture = arguments[n8703 + 1];
+              texture = arguments[n2460 + 1];
               break;
           case 'animation-end-callback':
-              animationEndCallback = arguments[n8703 + 1];
+              animationEndCallback = arguments[n2460 + 1];
               break;
           case 'goes-to-forward':
-              goesToForward = arguments[n8703 + 1];
+              goesToForward = arguments[n2460 + 1];
               break;
           case 'runs-animation':
-              runsAnimation = arguments[n8703 + 1];
+              runsAnimation = arguments[n2460 + 1];
               break;
           case 'interval-counter':
-              intervalCounter = arguments[n8703 + 1];
+              intervalCounter = arguments[n2460 + 1];
               break;
           case 'image-counter':
-              imageCounter = arguments[n8703 + 1];
+              imageCounter = arguments[n2460 + 1];
           };
       };
       var parent;
@@ -8006,26 +8006,26 @@ var clWeb2dGame_graphics_animation = (function() {
       return animation2d.prototype.constructor = animation2d;
   })();
   function initAnimation2d() {
-      var _js8706 = arguments.length;
-      for (var n8705 = 0; n8705 < _js8706; n8705 += 2) {
-          switch (arguments[n8705]) {
+      var _js2463 = arguments.length;
+      for (var n2462 = 0; n2462 < _js2463; n2462 += 2) {
+          switch (arguments[n2462]) {
           case 'interval':
-              interval = arguments[n8705 + 1];
+              interval = arguments[n2462 + 1];
               break;
           case 'horiz-count':
-              horizCount = arguments[n8705 + 1];
+              horizCount = arguments[n2462 + 1];
               break;
           case 'vert-count':
-              vertCount = arguments[n8705 + 1];
+              vertCount = arguments[n2462 + 1];
               break;
           case 'model':
-              model = arguments[n8705 + 1];
+              model = arguments[n2462 + 1];
               break;
           case 'texture':
-              texture = arguments[n8705 + 1];
+              texture = arguments[n2462 + 1];
               break;
           case 'animation-end-callback':
-              animationEndCallback = arguments[n8705 + 1];
+              animationEndCallback = arguments[n2462 + 1];
           };
       };
       var interval;
@@ -8089,14 +8089,14 @@ var clWeb2dGame_graphics_animation = (function() {
       return anime.goesToForward ? startReversedAnimation(anime) : startAnimation(anime);
   };
   function resetAnimation(anime) {
-      var _js8708 = arguments.length;
-      for (var n8707 = 1; n8707 < _js8708; n8707 += 2) {
-          switch (arguments[n8707]) {
+      var _js2465 = arguments.length;
+      for (var n2464 = 1; n2464 < _js2465; n2464 += 2) {
+          switch (arguments[n2464]) {
           case 'stop-p':
-              stopP = arguments[n8707 + 1];
+              stopP = arguments[n2464 + 1];
               break;
           case 'forward-p':
-              forwardP = arguments[n8707 + 1];
+              forwardP = arguments[n2464 + 1];
           };
       };
       var stopP = 'undefined' === typeof stopP ? true : stopP;
@@ -8119,7 +8119,7 @@ var clWeb2dGame_graphics_animation = (function() {
           throw 'Message: ' + 'The target animation counter is invalid (Max: ~D, Got: ~D)' + '; Args: ' + maxCount + ', ' + nextCounter;
       };
       anime.imageCounter = nextCounter;
-      var xCount = (n8709 = anime.vertCount, (nextCounter % n8709 + n8709) % n8709);
+      var xCount = (n2466 = anime.vertCount, (nextCounter % n2466 + n2466) % n2466);
       var yCount = anime.horizCount - Math.floor(nextCounter / anime.vertCount) - 1;
       var width = 1.0 / anime.vertCount;
       var height = 1.0 / anime.horizCount;
@@ -8265,17 +8265,17 @@ var clWeb2dGame_graphics_animationManager = (function() {
       return this;
   };
   function makeAnimationManager() {
-      var _js8711 = arguments.length;
-      for (var n8710 = 0; n8710 < _js8711; n8710 += 2) {
-          switch (arguments[n8710]) {
+      var _js2468 = arguments.length;
+      for (var n2467 = 0; n2467 < _js2468; n2467 += 2) {
+          switch (arguments[n2467]) {
           case 'entity':
-              entity = arguments[n8710 + 1];
+              entity = arguments[n2467 + 1];
               break;
           case 'animation-table':
-              animationTable = arguments[n8710 + 1];
+              animationTable = arguments[n2467 + 1];
               break;
           case 'current':
-              current = arguments[n8710 + 1];
+              current = arguments[n2467 + 1];
           };
       };
       var entity;
@@ -8299,11 +8299,11 @@ var clWeb2dGame_graphics_animationManager = (function() {
       return makeAnimationManager('entity', entity);
   };
   function switchCurrentAnimation(manager, name) {
-      var _js8713 = arguments.length;
-      for (var n8712 = 2; n8712 < _js8713; n8712 += 2) {
-          switch (arguments[n8712]) {
+      var _js2470 = arguments.length;
+      for (var n2469 = 2; n2469 < _js2470; n2469 += 2) {
+          switch (arguments[n2469]) {
           case 'forward-p':
-              forwardP = arguments[n8712 + 1];
+              forwardP = arguments[n2469 + 1];
           };
       };
       var forwardP = 'undefined' === typeof forwardP ? true : forwardP;
@@ -8460,8 +8460,8 @@ var clWeb2dGame_core_basicSystems = (function() {
       this.targetEntities = [];
       this.targetComponentTypes = [script2d];
       this.process = function (entity) {
-          for (var script = null, _js_arrvar8715 = entity.components, _js_idx8714 = 0; _js_idx8714 < _js_arrvar8715.length; _js_idx8714 += 1) {
-              script = _js_arrvar8715[_js_idx8714];
+          for (var script = null, _js_arrvar2472 = entity.components, _js_idx2471 = 0; _js_idx2471 < _js_arrvar2472.length; _js_idx2471 += 1) {
+              script = _js_arrvar2472[_js_idx2471];
               if ((script instanceof (typeof script2d === 'string' ? eval(script2d) : script2d))) {
                   script.func(entity);
               };
@@ -8479,37 +8479,37 @@ var clWeb2dGame_core_basicSystems = (function() {
       return this;
   };
   function makeScriptSystem() {
-      var _js8717 = arguments.length;
-      for (var n8716 = 0; n8716 < _js8717; n8716 += 2) {
-          switch (arguments[n8716]) {
+      var _js2474 = arguments.length;
+      for (var n2473 = 0; n2473 < _js2474; n2473 += 2) {
+          switch (arguments[n2473]) {
           case 'enable':
-              enable = arguments[n8716 + 1];
+              enable = arguments[n2473 + 1];
               break;
           case 'target-entities':
-              targetEntities = arguments[n8716 + 1];
+              targetEntities = arguments[n2473 + 1];
               break;
           case 'target-component-types':
-              targetComponentTypes = arguments[n8716 + 1];
+              targetComponentTypes = arguments[n2473 + 1];
               break;
           case 'process':
-              process = arguments[n8716 + 1];
+              process = arguments[n2473 + 1];
               break;
           case 'process-all':
-              processAll = arguments[n8716 + 1];
+              processAll = arguments[n2473 + 1];
               break;
           case 'add-entity-hook':
-              addEntityHook = arguments[n8716 + 1];
+              addEntityHook = arguments[n2473 + 1];
               break;
           case 'delete-entity-hook':
-              deleteEntityHook = arguments[n8716 + 1];
+              deleteEntityHook = arguments[n2473 + 1];
           };
       };
       var enable = 'undefined' === typeof enable ? true : enable;
       var targetEntities = 'undefined' === typeof targetEntities ? [] : targetEntities;
       var targetComponentTypes = 'undefined' === typeof targetComponentTypes ? [script2d] : targetComponentTypes;
       var process = 'undefined' === typeof process ? function (entity) {
-          for (var script = null, _js_arrvar8719 = entity.components, _js_idx8718 = 0; _js_idx8718 < _js_arrvar8719.length; _js_idx8718 += 1) {
-              script = _js_arrvar8719[_js_idx8718];
+          for (var script = null, _js_arrvar2476 = entity.components, _js_idx2475 = 0; _js_idx2475 < _js_arrvar2476.length; _js_idx2475 += 1) {
+              script = _js_arrvar2476[_js_idx2475];
               if ((script instanceof (typeof script2d === 'string' ? eval(script2d) : script2d))) {
                   script.func(entity);
               };
@@ -8553,8 +8553,8 @@ var clWeb2dGame_core_basicSystems = (function() {
       this.targetEntities = [];
       this.targetComponentTypes = [animation2d];
       this.process = function (entity) {
-          for (var anime = null, _js_arrvar8721 = entity.components, _js_idx8720 = 0; _js_idx8720 < _js_arrvar8721.length; _js_idx8720 += 1) {
-              anime = _js_arrvar8721[_js_idx8720];
+          for (var anime = null, _js_arrvar2478 = entity.components, _js_idx2477 = 0; _js_idx2477 < _js_arrvar2478.length; _js_idx2477 += 1) {
+              anime = _js_arrvar2478[_js_idx2477];
               if ((anime instanceof (typeof animation2d === 'string' ? eval(animation2d) : animation2d))) {
                   runAnimationProcess(anime);
               };
@@ -8572,37 +8572,37 @@ var clWeb2dGame_core_basicSystems = (function() {
       return this;
   };
   function makeAnimationSystem() {
-      var _js8723 = arguments.length;
-      for (var n8722 = 0; n8722 < _js8723; n8722 += 2) {
-          switch (arguments[n8722]) {
+      var _js2480 = arguments.length;
+      for (var n2479 = 0; n2479 < _js2480; n2479 += 2) {
+          switch (arguments[n2479]) {
           case 'enable':
-              enable = arguments[n8722 + 1];
+              enable = arguments[n2479 + 1];
               break;
           case 'target-entities':
-              targetEntities = arguments[n8722 + 1];
+              targetEntities = arguments[n2479 + 1];
               break;
           case 'target-component-types':
-              targetComponentTypes = arguments[n8722 + 1];
+              targetComponentTypes = arguments[n2479 + 1];
               break;
           case 'process':
-              process = arguments[n8722 + 1];
+              process = arguments[n2479 + 1];
               break;
           case 'process-all':
-              processAll = arguments[n8722 + 1];
+              processAll = arguments[n2479 + 1];
               break;
           case 'add-entity-hook':
-              addEntityHook = arguments[n8722 + 1];
+              addEntityHook = arguments[n2479 + 1];
               break;
           case 'delete-entity-hook':
-              deleteEntityHook = arguments[n8722 + 1];
+              deleteEntityHook = arguments[n2479 + 1];
           };
       };
       var enable = 'undefined' === typeof enable ? true : enable;
       var targetEntities = 'undefined' === typeof targetEntities ? [] : targetEntities;
       var targetComponentTypes = 'undefined' === typeof targetComponentTypes ? [animation2d] : targetComponentTypes;
       var process = 'undefined' === typeof process ? function (entity) {
-          for (var anime = null, _js_arrvar8725 = entity.components, _js_idx8724 = 0; _js_idx8724 < _js_arrvar8725.length; _js_idx8724 += 1) {
-              anime = _js_arrvar8725[_js_idx8724];
+          for (var anime = null, _js_arrvar2482 = entity.components, _js_idx2481 = 0; _js_idx2481 < _js_arrvar2482.length; _js_idx2481 += 1) {
+              anime = _js_arrvar2482[_js_idx2481];
               if ((anime instanceof (typeof animation2d === 'string' ? eval(animation2d) : animation2d))) {
                   runAnimationProcess(anime);
               };
@@ -8646,14 +8646,14 @@ var clWeb2dGame_core_basicSystems = (function() {
       this.targetEntities = [];
       this.targetComponentTypes = [point2d, speed2d];
       this.process = function (entity) {
-          var point2d8726 = (found = getEcsComponent(point2d, entity), found ? found : (function () {
+          var point2d2483 = (found = getEcsComponent(point2d, entity), found ? found : (function () {
               throw 'POINT-2D is not included in the entity';
           })());
-          var speed2d8727 = (found8728 = getEcsComponent(speed2d, entity), found8728 ? found8728 : (function () {
+          var speed2d2484 = (found2485 = getEcsComponent(speed2d, entity), found2485 ? found2485 : (function () {
               throw 'SPEED-2D is not included in the entity';
           })());
           __PS_MV_REG = [];
-          return incfVector2d(point2d8726, speed2d8727);
+          return incfVector2d(point2d2483, speed2d2484);
       };
       this.processAll = function (system) {
           return system;
@@ -8667,43 +8667,43 @@ var clWeb2dGame_core_basicSystems = (function() {
       return this;
   };
   function makeSimpleMoveSystem() {
-      var _js8730 = arguments.length;
-      for (var n8729 = 0; n8729 < _js8730; n8729 += 2) {
-          switch (arguments[n8729]) {
+      var _js2487 = arguments.length;
+      for (var n2486 = 0; n2486 < _js2487; n2486 += 2) {
+          switch (arguments[n2486]) {
           case 'enable':
-              enable = arguments[n8729 + 1];
+              enable = arguments[n2486 + 1];
               break;
           case 'target-entities':
-              targetEntities = arguments[n8729 + 1];
+              targetEntities = arguments[n2486 + 1];
               break;
           case 'target-component-types':
-              targetComponentTypes = arguments[n8729 + 1];
+              targetComponentTypes = arguments[n2486 + 1];
               break;
           case 'process':
-              process = arguments[n8729 + 1];
+              process = arguments[n2486 + 1];
               break;
           case 'process-all':
-              processAll = arguments[n8729 + 1];
+              processAll = arguments[n2486 + 1];
               break;
           case 'add-entity-hook':
-              addEntityHook = arguments[n8729 + 1];
+              addEntityHook = arguments[n2486 + 1];
               break;
           case 'delete-entity-hook':
-              deleteEntityHook = arguments[n8729 + 1];
+              deleteEntityHook = arguments[n2486 + 1];
           };
       };
       var enable = 'undefined' === typeof enable ? true : enable;
       var targetEntities = 'undefined' === typeof targetEntities ? [] : targetEntities;
       var targetComponentTypes = 'undefined' === typeof targetComponentTypes ? [point2d, speed2d] : targetComponentTypes;
       var process = 'undefined' === typeof process ? function (entity) {
-          var point2d8731 = (found = getEcsComponent(point2d, entity), found ? found : (function () {
+          var point2d2488 = (found = getEcsComponent(point2d, entity), found ? found : (function () {
               throw 'POINT-2D is not included in the entity';
           })());
-          var speed2d8732 = (found8733 = getEcsComponent(speed2d, entity), found8733 ? found8733 : (function () {
+          var speed2d2489 = (found2490 = getEcsComponent(speed2d, entity), found2490 ? found2490 : (function () {
               throw 'SPEED-2D is not included in the entity';
           })());
           __PS_MV_REG = [];
-          return incfVector2d(point2d8731, speed2d8732);
+          return incfVector2d(point2d2488, speed2d2489);
       } : process;
       var processAll = 'undefined' === typeof processAll ? function (system) {
           return system;
@@ -8901,10 +8901,10 @@ var clWeb2dGame_core_initializer = (function() {
       STATS = new Stats();
       var stats = STATS;
       stats.setMode(0);
-      var object8734 = stats.domElement.style;
-      object8734.position = 'absolute';
-      object8734.left = '0px';
-      object8734.top = '0px';
+      var object2491 = stats.domElement.style;
+      object2491.position = 'absolute';
+      object2491.left = '0px';
+      object2491.top = '0px';
       document.getElementById('stats-output').appendChild(stats.domElement);
       __PS_MV_REG = [];
       return stats;
@@ -8914,29 +8914,29 @@ var clWeb2dGame_core_initializer = (function() {
       return STATS ? STATS.update() : null;
   };
   function initDefaultSystems() {
-      var _js8736 = arguments.length;
-      for (var n8735 = 0; n8735 < _js8736; n8735 += 2) {
-          switch (arguments[n8735]) {
+      var _js2493 = arguments.length;
+      for (var n2492 = 0; n2492 < _js2493; n2492 += 2) {
+          switch (arguments[n2492]) {
           case 'scene':
-              scene = arguments[n8735 + 1];
+              scene = arguments[n2492 + 1];
               break;
           case 'script-system':
-              scriptSystem = arguments[n8735 + 1];
+              scriptSystem = arguments[n2492 + 1];
               break;
           case 'draw-system':
-              drawSystem = arguments[n8735 + 1];
+              drawSystem = arguments[n2492 + 1];
               break;
           case 'animation-system':
-              animationSystem = arguments[n8735 + 1];
+              animationSystem = arguments[n2492 + 1];
               break;
           case 'collision-system':
-              collisionSystem = arguments[n8735 + 1];
+              collisionSystem = arguments[n2492 + 1];
               break;
           case 'simple-move-system':
-              simpleMoveSystem = arguments[n8735 + 1];
+              simpleMoveSystem = arguments[n2492 + 1];
               break;
           case 'ui-system':
-              uiSystem = arguments[n8735 + 1];
+              uiSystem = arguments[n2492 + 1];
           };
       };
       var scene;
@@ -9010,38 +9010,38 @@ var clWeb2dGame_core_initializer = (function() {
    * We assume that the camera is initalized using cl-web-2d-game[.camera]:init-camera.
    */
   function start2dGame() {
-      var _js8738 = arguments.length;
-      for (var n8737 = 0; n8737 < _js8738; n8737 += 2) {
-          switch (arguments[n8737]) {
+      var _js2495 = arguments.length;
+      for (var n2494 = 0; n2494 < _js2495; n2494 += 2) {
+          switch (arguments[n2494]) {
           case 'screen-width':
-              screenWidth = arguments[n8737 + 1];
+              screenWidth = arguments[n2494 + 1];
               break;
           case 'screen-height':
-              screenHeight = arguments[n8737 + 1];
+              screenHeight = arguments[n2494 + 1];
               break;
           case 'camera':
-              camera = arguments[n8737 + 1];
+              camera = arguments[n2494 + 1];
               break;
           case 'rendered-dom':
-              renderedDom = arguments[n8737 + 1];
+              renderedDom = arguments[n2494 + 1];
               break;
           case 'stats-dom':
-              statsDom = arguments[n8737 + 1];
+              statsDom = arguments[n2494 + 1];
               break;
           case 'monitoring-log-dom':
-              monitoringLogDom = arguments[n8737 + 1];
+              monitoringLogDom = arguments[n2494 + 1];
               break;
           case 'event-log-dom':
-              eventLogDom = arguments[n8737 + 1];
+              eventLogDom = arguments[n2494 + 1];
               break;
           case 'resize-to-screen-p':
-              resizeToScreenP = arguments[n8737 + 1];
+              resizeToScreenP = arguments[n2494 + 1];
               break;
           case 'init-function':
-              initFunction = arguments[n8737 + 1];
+              initFunction = arguments[n2494 + 1];
               break;
           case 'update-function':
-              updateFunction = arguments[n8737 + 1];
+              updateFunction = arguments[n2494 + 1];
           };
       };
       var screenWidth;
@@ -9074,39 +9074,39 @@ var clWeb2dGame_core_initializer = (function() {
       initFunction(scene);
       var renderLoop = function () {
           requestAnimationFrame(renderLoop);
-          var prevNode2117 = clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode;
+          var prevNode1175 = clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode;
           try {
-              var before2118 = performance.now();
-              var element2119 = clWeb2dGame_utils_debug_performance._internal.pickPerformanceTimerElement('loop-top', 0);
-              var prevNode2120 = clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode;
+              var before1176 = performance.now();
+              var element1177 = clWeb2dGame_utils_debug_performance._internal.pickPerformanceTimerElement('loop-top', 0);
+              var prevNode1178 = clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode;
               try {
-                  var before2121 = performance.now();
-                  var element2122 = clWeb2dGame_utils_debug_performance._internal.pickPerformanceTimerElement('render', 0);
+                  var before1179 = performance.now();
+                  var element1180 = clWeb2dGame_utils_debug_performance._internal.pickPerformanceTimerElement('render', 0);
                   var scope = WTF.trace.enterScope('render');
                   renderer.render(scene, camera);
                   WTF.trace.leaveScope(scope, 'render');
-                  clWeb2dGame_utils_debug_performance._internal.pushToRingBuffer(performance.now() - before2121, element2122.results);
+                  clWeb2dGame_utils_debug_performance._internal.pushToRingBuffer(performance.now() - before1179, element1180.results);
               } finally {
-                  clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode = prevNode2120;
+                  clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode = prevNode1178;
               };
               updateStats();
-              var prevNode2123 = clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode;
+              var prevNode1181 = clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode;
               try {
-                  var before2124 = performance.now();
-                  var element2125 = clWeb2dGame_utils_debug_performance._internal.pickPerformanceTimerElement('update', 0);
-                  var scope8739 = WTF.trace.enterScope('update');
+                  var before1182 = performance.now();
+                  var element1183 = clWeb2dGame_utils_debug_performance._internal.pickPerformanceTimerElement('update', 0);
+                  var scope2496 = WTF.trace.enterScope('update');
                   clearMonitoringLog();
                   processInput();
                   ecsMain();
                   updateFunction();
-                  WTF.trace.leaveScope(scope8739, 'update');
-                  clWeb2dGame_utils_debug_performance._internal.pushToRingBuffer(performance.now() - before2124, element2125.results);
+                  WTF.trace.leaveScope(scope2496, 'update');
+                  clWeb2dGame_utils_debug_performance._internal.pushToRingBuffer(performance.now() - before1182, element1183.results);
               } finally {
-                  clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode = prevNode2123;
+                  clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode = prevNode1181;
               };
-              clWeb2dGame_utils_debug_performance._internal.pushToRingBuffer(performance.now() - before2118, element2119.results);
+              clWeb2dGame_utils_debug_performance._internal.pushToRingBuffer(performance.now() - before1176, element1177.results);
           } finally {
-              clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode = prevNode2117;
+              clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode = prevNode1175;
           };
           __PS_MV_REG = [];
           return addToMonitoringLog(dumpPerformanceCounter());
@@ -9223,23 +9223,23 @@ var clWeb2dGame_utils_debug_debugDrawer = (function() {
   var getDefaultEcsEntityParent = clPsEcs_ecs.getDefaultEcsEntityParent;
   /* --- define objects --- */
   function drawDebugModel() {
-      var _js8741 = arguments.length;
-      for (var n8740 = 0; n8740 < _js8741; n8740 += 2) {
-          switch (arguments[n8740]) {
+      var _js2498 = arguments.length;
+      for (var n2497 = 0; n2497 < _js2498; n2497 += 2) {
+          switch (arguments[n2497]) {
           case 'model':
-              model = arguments[n8740 + 1];
+              model = arguments[n2497 + 1];
               break;
           case 'point':
-              point = arguments[n8740 + 1];
+              point = arguments[n2497 + 1];
               break;
           case 'tag-list':
-              tagList = arguments[n8740 + 1];
+              tagList = arguments[n2497 + 1];
               break;
           case 'parent':
-              parent = arguments[n8740 + 1];
+              parent = arguments[n2497 + 1];
               break;
           case 'fn-delete-condition':
-              fnDeleteCondition = arguments[n8740 + 1];
+              fnDeleteCondition = arguments[n2497 + 1];
           };
       };
       var model;
@@ -9260,8 +9260,8 @@ var clWeb2dGame_utils_debug_debugDrawer = (function() {
       };
       var entity = makeEcsEntity();
       var truePoint = (point instanceof (typeof point2d === 'string' ? eval(point2d) : point2d)) ? point : makePoint2d('x', point.x, 'y', point.y);
-      for (var tag = null, _js_idx8742 = 0; _js_idx8742 < tagList.length; _js_idx8742 += 1) {
-          tag = tagList[_js_idx8742];
+      for (var tag = null, _js_idx2499 = 0; _js_idx2499 < tagList.length; _js_idx2499 += 1) {
+          tag = tagList[_js_idx2499];
           addEntityTag(entity, tag);
       };
       addEcsComponentList(entity, truePoint, model, makeScript2d('func', function (entity) {
@@ -9287,23 +9287,23 @@ var clWeb2dGame_utils_debug_debugDrawer = (function() {
       var STANDARDDEBUGPOINTR = 4;
   };
   function drawDebugPoint() {
-      var _js8744 = arguments.length;
-      for (var n8743 = 0; n8743 < _js8744; n8743 += 2) {
-          switch (arguments[n8743]) {
+      var _js2501 = arguments.length;
+      for (var n2500 = 0; n2500 < _js2501; n2500 += 2) {
+          switch (arguments[n2500]) {
           case 'point':
-              point = arguments[n8743 + 1];
+              point = arguments[n2500 + 1];
               break;
           case 'tag-list':
-              tagList = arguments[n8743 + 1];
+              tagList = arguments[n2500 + 1];
               break;
           case 'parent':
-              parent = arguments[n8743 + 1];
+              parent = arguments[n2500 + 1];
               break;
           case 'r':
-              r = arguments[n8743 + 1];
+              r = arguments[n2500 + 1];
               break;
           case 'fn-delete-condition':
-              fnDeleteCondition = arguments[n8743 + 1];
+              fnDeleteCondition = arguments[n2500 + 1];
           };
       };
       var point;
@@ -9315,23 +9315,23 @@ var clWeb2dGame_utils_debug_debugDrawer = (function() {
       return drawDebugModel('model', makeModel2d('model', makeWiredRegularPolygon('n', 60, 'r', r, 'color', STANDARDDEBUGCOLOR), 'depth', STANDARDDEBUGDEPTH), 'point', point, 'tag-list', tagList, 'parent', parent, 'fn-delete-condition', fnDeleteCondition);
   };
   function drawDebugPointByTime() {
-      var _js8746 = arguments.length;
-      for (var n8745 = 0; n8745 < _js8746; n8745 += 2) {
-          switch (arguments[n8745]) {
+      var _js2503 = arguments.length;
+      for (var n2502 = 0; n2502 < _js2503; n2502 += 2) {
+          switch (arguments[n2502]) {
           case 'point':
-              point = arguments[n8745 + 1];
+              point = arguments[n2502 + 1];
               break;
           case 'tag-list':
-              tagList = arguments[n8745 + 1];
+              tagList = arguments[n2502 + 1];
               break;
           case 'parent':
-              parent = arguments[n8745 + 1];
+              parent = arguments[n2502 + 1];
               break;
           case 'r':
-              r = arguments[n8745 + 1];
+              r = arguments[n2502 + 1];
               break;
           case 'time':
-              time = arguments[n8745 + 1];
+              time = arguments[n2502 + 1];
           };
       };
       var point;
@@ -9343,23 +9343,23 @@ var clWeb2dGame_utils_debug_debugDrawer = (function() {
       return drawDebugPoint('point', point, 'tag-list', tagList, 'parent', parent, 'r', r, 'fn-delete-condition', makeFnTimerCondition(time));
   };
   function drawDebugLine() {
-      var _js8748 = arguments.length;
-      for (var n8747 = 0; n8747 < _js8748; n8747 += 2) {
-          switch (arguments[n8747]) {
+      var _js2505 = arguments.length;
+      for (var n2504 = 0; n2504 < _js2505; n2504 += 2) {
+          switch (arguments[n2504]) {
           case 'point1':
-              point1 = arguments[n8747 + 1];
+              point1 = arguments[n2504 + 1];
               break;
           case 'point2':
-              point2 = arguments[n8747 + 1];
+              point2 = arguments[n2504 + 1];
               break;
           case 'tag-list':
-              tagList = arguments[n8747 + 1];
+              tagList = arguments[n2504 + 1];
               break;
           case 'parent':
-              parent = arguments[n8747 + 1];
+              parent = arguments[n2504 + 1];
               break;
           case 'fn-delete-condition':
-              fnDeleteCondition = arguments[n8747 + 1];
+              fnDeleteCondition = arguments[n2504 + 1];
           };
       };
       var point1;
@@ -9371,23 +9371,23 @@ var clWeb2dGame_utils_debug_debugDrawer = (function() {
       return drawDebugModel('model', makeModel2d('model', makeLine('pos-a', [point1.x, point1.y], 'pos-b', [point2.x, point2.y], 'color', STANDARDDEBUGCOLOR), 'depth', STANDARDDEBUGDEPTH), 'point', makePoint2d(), 'tag-list', tagList, 'parent', parent, 'fn-delete-condition', fnDeleteCondition);
   };
   function drawDebugLineByTime() {
-      var _js8750 = arguments.length;
-      for (var n8749 = 0; n8749 < _js8750; n8749 += 2) {
-          switch (arguments[n8749]) {
+      var _js2507 = arguments.length;
+      for (var n2506 = 0; n2506 < _js2507; n2506 += 2) {
+          switch (arguments[n2506]) {
           case 'point1':
-              point1 = arguments[n8749 + 1];
+              point1 = arguments[n2506 + 1];
               break;
           case 'point2':
-              point2 = arguments[n8749 + 1];
+              point2 = arguments[n2506 + 1];
               break;
           case 'tag-list':
-              tagList = arguments[n8749 + 1];
+              tagList = arguments[n2506 + 1];
               break;
           case 'parent':
-              parent = arguments[n8749 + 1];
+              parent = arguments[n2506 + 1];
               break;
           case 'time':
-              time = arguments[n8749 + 1];
+              time = arguments[n2506 + 1];
           };
       };
       var point1;
@@ -9679,16 +9679,16 @@ var mogewebzou_game_state_globalInit = (function() {
   var getDefaultEcsEntityParent = clPsEcs_ecs.getDefaultEcsEntityParent;
   /* --- define objects --- */
   function gameGlobalInitState() {
-      this.startProcess = function (state2126) {
+      this.startProcess = function (state1184) {
           loadFont('js/');
           loadTexture('path', '/images/test.png', 'name', 'test');
           loadTexture('path', '/images/test2.png', 'name', 'test2', 'x', 0 / 3, 'width', 1 / 3);
-          loadTexture('path', '/images/obj32.png', 'name', 'dokan-top-l', 'x', 0 / 5, 'y', 0 / 3, 'width', 1 / 5, 'height', 1 / 3);
-          loadTexture('path', '/images/obj32.png', 'name', 'dokan-top-r', 'x', 1 / 5, 'y', 0 / 3, 'width', 1 / 5, 'height', 1 / 3);
+          loadTexture('path', '/images/obj32.png', 'name', 'dokan-top-l', 'x', 0 / 5, 'y', 2 / 3, 'width', 1 / 5, 'height', 1 / 3);
+          loadTexture('path', '/images/obj32.png', 'name', 'dokan-top-r', 'x', 1 / 5, 'y', 2 / 3, 'width', 1 / 5, 'height', 1 / 3);
           loadTexture('path', '/images/obj32.png', 'name', 'dokan-mid-l', 'x', 0 / 5, 'y', 1 / 3, 'width', 1 / 5, 'height', 1 / 3);
           loadTexture('path', '/images/obj32.png', 'name', 'dokan-mid-r', 'x', 1 / 5, 'y', 1 / 3, 'width', 1 / 5, 'height', 1 / 3);
-          loadTexture('path', '/images/obj32.png', 'name', 'dokan-bot-l', 'x', 0 / 5, 'y', 2 / 3, 'width', 1 / 5, 'height', 1 / 3);
-          loadTexture('path', '/images/obj32.png', 'name', 'dokan-bot-r', 'x', 1 / 5, 'y', 2 / 3, 'width', 1 / 5, 'height', 1 / 3);
+          loadTexture('path', '/images/obj32.png', 'name', 'dokan-bot-l', 'x', 0 / 5, 'y', 0 / 3, 'width', 1 / 5, 'height', 1 / 3);
+          loadTexture('path', '/images/obj32.png', 'name', 'dokan-bot-r', 'x', 1 / 5, 'y', 0 / 3, 'width', 1 / 5, 'height', 1 / 3);
           loadTexture('path', '/images/obj32.png', 'name', 'flower', 'x', 2 / 5, 'y', 2 / 3, 'width', 1 / 5, 'height', 1 / 3);
           loadTexture('path', '/images/obj32.png', 'name', 'hatena', 'x', 3 / 5, 'y', 2 / 3, 'width', 1 / 5, 'height', 1 / 3);
           loadTexture('path', '/images/obj32.png', 'name', 'soft-blk', 'x', 4 / 5, 'y', 2 / 3, 'width', 1 / 5, 'height', 1 / 3);
@@ -9702,40 +9702,40 @@ var mogewebzou_game_state_globalInit = (function() {
           __PS_MV_REG = [];
           return true;
       };
-      this.process = function (state2127) {
+      this.process = function (state1185) {
           addToEventLog('global');
           __PS_MV_REG = [];
           return makeState('menu');
       };
-      this.endProcess = function (state2128) {
+      this.endProcess = function (state1186) {
           return true;
       };
       return this;
   };
   function makeGameGlobalInitState() {
-      var _js8752 = arguments.length;
-      for (var n8751 = 0; n8751 < _js8752; n8751 += 2) {
-          switch (arguments[n8751]) {
+      var _js2509 = arguments.length;
+      for (var n2508 = 0; n2508 < _js2509; n2508 += 2) {
+          switch (arguments[n2508]) {
           case 'start-process':
-              startProcess = arguments[n8751 + 1];
+              startProcess = arguments[n2508 + 1];
               break;
           case 'process':
-              process = arguments[n8751 + 1];
+              process = arguments[n2508 + 1];
               break;
           case 'end-process':
-              endProcess = arguments[n8751 + 1];
+              endProcess = arguments[n2508 + 1];
           };
       };
-      var startProcess = 'undefined' === typeof startProcess ? function (state2129) {
+      var startProcess = 'undefined' === typeof startProcess ? function (state1187) {
           loadFont('js/');
           loadTexture('path', '/images/test.png', 'name', 'test');
           loadTexture('path', '/images/test2.png', 'name', 'test2', 'x', 0 / 3, 'width', 1 / 3);
-          loadTexture('path', '/images/obj32.png', 'name', 'dokan-top-l', 'x', 0 / 5, 'y', 0 / 3, 'width', 1 / 5, 'height', 1 / 3);
-          loadTexture('path', '/images/obj32.png', 'name', 'dokan-top-r', 'x', 1 / 5, 'y', 0 / 3, 'width', 1 / 5, 'height', 1 / 3);
+          loadTexture('path', '/images/obj32.png', 'name', 'dokan-top-l', 'x', 0 / 5, 'y', 2 / 3, 'width', 1 / 5, 'height', 1 / 3);
+          loadTexture('path', '/images/obj32.png', 'name', 'dokan-top-r', 'x', 1 / 5, 'y', 2 / 3, 'width', 1 / 5, 'height', 1 / 3);
           loadTexture('path', '/images/obj32.png', 'name', 'dokan-mid-l', 'x', 0 / 5, 'y', 1 / 3, 'width', 1 / 5, 'height', 1 / 3);
           loadTexture('path', '/images/obj32.png', 'name', 'dokan-mid-r', 'x', 1 / 5, 'y', 1 / 3, 'width', 1 / 5, 'height', 1 / 3);
-          loadTexture('path', '/images/obj32.png', 'name', 'dokan-bot-l', 'x', 0 / 5, 'y', 2 / 3, 'width', 1 / 5, 'height', 1 / 3);
-          loadTexture('path', '/images/obj32.png', 'name', 'dokan-bot-r', 'x', 1 / 5, 'y', 2 / 3, 'width', 1 / 5, 'height', 1 / 3);
+          loadTexture('path', '/images/obj32.png', 'name', 'dokan-bot-l', 'x', 0 / 5, 'y', 0 / 3, 'width', 1 / 5, 'height', 1 / 3);
+          loadTexture('path', '/images/obj32.png', 'name', 'dokan-bot-r', 'x', 1 / 5, 'y', 0 / 3, 'width', 1 / 5, 'height', 1 / 3);
           loadTexture('path', '/images/obj32.png', 'name', 'flower', 'x', 2 / 5, 'y', 2 / 3, 'width', 1 / 5, 'height', 1 / 3);
           loadTexture('path', '/images/obj32.png', 'name', 'hatena', 'x', 3 / 5, 'y', 2 / 3, 'width', 1 / 5, 'height', 1 / 3);
           loadTexture('path', '/images/obj32.png', 'name', 'soft-blk', 'x', 4 / 5, 'y', 2 / 3, 'width', 1 / 5, 'height', 1 / 3);
@@ -9749,12 +9749,12 @@ var mogewebzou_game_state_globalInit = (function() {
           __PS_MV_REG = [];
           return true;
       } : startProcess;
-      var process = 'undefined' === typeof process ? function (state2130) {
+      var process = 'undefined' === typeof process ? function (state1188) {
           addToEventLog('global');
           __PS_MV_REG = [];
           return makeState('menu');
       } : process;
-      var endProcess = 'undefined' === typeof endProcess ? function (state2131) {
+      var endProcess = 'undefined' === typeof endProcess ? function (state1189) {
           return true;
       } : endProcess;
       var result = new gameGlobalInitState();
@@ -10047,10 +10047,10 @@ var mogewebzou_game_state_gacha = (function() {
   var getDefaultEcsEntityParent = clPsEcs_ecs.getDefaultEcsEntityParent;
   /* --- define objects --- */
   function gameGachaState() {
-      this.startProcess = function (state2132) {
-          var newParent2133 = parent;
+      this.startProcess = function (state1190) {
+          var newParent1191 = parent;
           try {
-              stackDefaultEcsEntityParent(newParent2133);
+              stackDefaultEcsEntityParent(newParent1191);
               var background = makeEcsEntity();
               addEcsComponentList(background, makePoint2d('x', 0, 'y', 0), makeModel2d('model', makeSolidRect('width', 300, 'height', 300, 'color', 15597568), 'depth', 1));
               addEcsEntity(background);
@@ -10060,10 +10060,10 @@ var mogewebzou_game_state_gacha = (function() {
               popDefaultEcsEntityParent();
           };
       };
-      this.process = function (state2134) {
+      this.process = function (state1192) {
           return null;
       };
-      this.endProcess = function (state2135) {
+      this.endProcess = function (state1193) {
           return true;
       };
       this.parent = makeEcsEntity();
@@ -10071,26 +10071,26 @@ var mogewebzou_game_state_gacha = (function() {
       return this;
   };
   function makeGameGachaState() {
-      var _js8754 = arguments.length;
-      for (var n8753 = 0; n8753 < _js8754; n8753 += 2) {
-          switch (arguments[n8753]) {
+      var _js2511 = arguments.length;
+      for (var n2510 = 0; n2510 < _js2511; n2510 += 2) {
+          switch (arguments[n2510]) {
           case 'start-process':
-              startProcess = arguments[n8753 + 1];
+              startProcess = arguments[n2510 + 1];
               break;
           case 'process':
-              process = arguments[n8753 + 1];
+              process = arguments[n2510 + 1];
               break;
           case 'end-process':
-              endProcess = arguments[n8753 + 1];
+              endProcess = arguments[n2510 + 1];
               break;
           case 'parent':
-              parent = arguments[n8753 + 1];
+              parent = arguments[n2510 + 1];
           };
       };
-      var startProcess = 'undefined' === typeof startProcess ? function (state2136) {
-          var newParent2137 = parent;
+      var startProcess = 'undefined' === typeof startProcess ? function (state1194) {
+          var newParent1195 = parent;
           try {
-              stackDefaultEcsEntityParent(newParent2137);
+              stackDefaultEcsEntityParent(newParent1195);
               var background = makeEcsEntity();
               addEcsComponentList(background, makePoint2d('x', 0, 'y', 0), makeModel2d('model', makeSolidRect('width', 300, 'height', 300, 'color', 15597568), 'depth', 1));
               addEcsEntity(background);
@@ -10100,10 +10100,10 @@ var mogewebzou_game_state_gacha = (function() {
               popDefaultEcsEntityParent();
           };
       } : startProcess;
-      var process = 'undefined' === typeof process ? function (state2138) {
+      var process = 'undefined' === typeof process ? function (state1196) {
           return null;
       } : process;
-      var endProcess = 'undefined' === typeof endProcess ? function (state2139) {
+      var endProcess = 'undefined' === typeof endProcess ? function (state1197) {
           return true;
       } : endProcess;
       var parent = 'undefined' === typeof parent ? makeEcsEntity() : parent;
@@ -10411,10 +10411,10 @@ var mogewebzou_game_state_menu = (function() {
       return keyDownNowP('a') || getLeftMouseState() === 'down-now' || getTotalTouchState() === 'down-now';
   };
   function gameMenuState() {
-      this.startProcess = function (state2140) {
-          var newParent2141 = state2140.parent;
+      this.startProcess = function (state1198) {
+          var newParent1199 = state1198.parent;
           try {
-              stackDefaultEcsEntityParent(newParent2141);
+              stackDefaultEcsEntityParent(newParent1199);
               var area = makeTextArea('font-size', 50, 'text-align', 'center');
               addTextToArea(area, 'text', 'Press Z key start HOGE', 'color', 16777215);
               addEcsComponentList(area, makePoint2d('x', 300, 'y', 300));
@@ -10425,17 +10425,17 @@ var mogewebzou_game_state_menu = (function() {
           __PS_MV_REG = [];
           return true;
       };
-      this.process = function (state2142) {
+      this.process = function (state1200) {
           if (startGameP()) {
               addToEventLog('menu');
               __PS_MV_REG = [];
               return makeState('main');
           };
       };
-      this.endProcess = function (state2143) {
+      this.endProcess = function (state1201) {
           registerNextFrameFunc(function () {
               __PS_MV_REG = [];
-              return deleteEcsEntity(state2143.parent);
+              return deleteEcsEntity(state1201.parent);
           });
           __PS_MV_REG = [];
           return true;
@@ -10445,26 +10445,26 @@ var mogewebzou_game_state_menu = (function() {
       return this;
   };
   function makeGameMenuState() {
-      var _js8756 = arguments.length;
-      for (var n8755 = 0; n8755 < _js8756; n8755 += 2) {
-          switch (arguments[n8755]) {
+      var _js2513 = arguments.length;
+      for (var n2512 = 0; n2512 < _js2513; n2512 += 2) {
+          switch (arguments[n2512]) {
           case 'start-process':
-              startProcess = arguments[n8755 + 1];
+              startProcess = arguments[n2512 + 1];
               break;
           case 'process':
-              process = arguments[n8755 + 1];
+              process = arguments[n2512 + 1];
               break;
           case 'end-process':
-              endProcess = arguments[n8755 + 1];
+              endProcess = arguments[n2512 + 1];
               break;
           case 'parent':
-              parent = arguments[n8755 + 1];
+              parent = arguments[n2512 + 1];
           };
       };
-      var startProcess = 'undefined' === typeof startProcess ? function (state2144) {
-          var newParent2145 = state2144.parent;
+      var startProcess = 'undefined' === typeof startProcess ? function (state1202) {
+          var newParent1203 = state1202.parent;
           try {
-              stackDefaultEcsEntityParent(newParent2145);
+              stackDefaultEcsEntityParent(newParent1203);
               var area = makeTextArea('font-size', 50, 'text-align', 'center');
               addTextToArea(area, 'text', 'Press Z key start HOGE', 'color', 16777215);
               addEcsComponentList(area, makePoint2d('x', 300, 'y', 300));
@@ -10475,17 +10475,17 @@ var mogewebzou_game_state_menu = (function() {
           __PS_MV_REG = [];
           return true;
       } : startProcess;
-      var process = 'undefined' === typeof process ? function (state2146) {
+      var process = 'undefined' === typeof process ? function (state1204) {
           if (startGameP()) {
               addToEventLog('menu');
               __PS_MV_REG = [];
               return makeState('main');
           };
       } : process;
-      var endProcess = 'undefined' === typeof endProcess ? function (state2147) {
+      var endProcess = 'undefined' === typeof endProcess ? function (state1205) {
           registerNextFrameFunc(function () {
               __PS_MV_REG = [];
-              return deleteEcsEntity(state2147.parent);
+              return deleteEcsEntity(state1205.parent);
           });
           __PS_MV_REG = [];
           return true;
@@ -10755,59 +10755,59 @@ var mogewebzou_game_parameter = (function() {
   };
   if ('undefined' === typeof PARAMS) {
       var PARAMS = (function () {
-          var result8757;
-          var result8758;
-          var result8759;
-          var result8760;
-          var result8761;
-          var result8762;
-          var result8763;
-          var result8764;
-          var result8765;
-          var result8766;
+          var result2514;
+          var result2515;
+          var result2516;
+          var result2517;
+          var result2518;
+          var result2519;
+          var result2520;
+          var result2521;
+          var result2522;
+          var result2523;
           var result = {  };
-          result['field'] = (result8757 = {  }, (result8757['x'] = 0, result8757['y'] = 0, result8757['width'] = fieldWidth, result8757['height'] = fieldHeight, result8757['depth'] = 0, result8757));
-          result['obj'] = (result8758 = {  }, (result8758['depth'] = 50, result8758));
-          result['ball'] = (result8759 = {  }, (result8759['r'] = function () {
+          result['field'] = (result2514 = {  }, (result2514['x'] = 0, result2514['y'] = 0, result2514['width'] = fieldWidth, result2514['height'] = fieldHeight, result2514['depth'] = 0, result2514));
+          result['obj'] = (result2515 = {  }, (result2515['depth'] = 50, result2515));
+          result['ball'] = (result2516 = {  }, (result2516['r'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(10, fieldWidth);
-          }, result8759['color'] = 16755370, result8759['depth'] = 10, result8759['speed'] = (result8760 = {  }, (result8760['base'] = (result8761 = {  }, (result8761['min'] = function () {
+          }, result2516['color'] = 16755370, result2516['depth'] = 10, result2516['speed'] = (result2517 = {  }, (result2517['base'] = (result2518 = {  }, (result2518['min'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(5, fieldHeight);
-          }, result8761['max'] = function () {
+          }, result2518['max'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(10, fieldHeight);
-          }, result8761)), result8760['accell-scale'] = (result8762 = {  }, (result8762['per-block'] = 0.008, result8762['max'] = 1.5, result8762)), result8760)), result8759['angle'] = (result8763 = {  }, (result8763['min'] = function () {
+          }, result2518)), result2517['accell-scale'] = (result2519 = {  }, (result2519['per-block'] = 0.008, result2519['max'] = 1.5, result2519)), result2517)), result2516['angle'] = (result2520 = {  }, (result2520['min'] = function () {
               return Math.PI / 7;
-          }, result8763['max-accele'] = function () {
+          }, result2520['max-accele'] = function () {
               return Math.PI / 8;
-          }, result8763)), result8759['dist-from-paddle'] = function () {
+          }, result2520)), result2516['dist-from-paddle'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(10, fieldHeight);
-          }, result8759));
-          result['paddle'] = (result8764 = {  }, (result8764['width'] = (result8765 = {  }, (result8765['min'] = function () {
+          }, result2516));
+          result['paddle'] = (result2521 = {  }, (result2521['width'] = (result2522 = {  }, (result2522['min'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(130, fieldWidth);
-          }, result8765['max'] = function () {
+          }, result2522['max'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(55, fieldWidth);
-          }, result8765)), result8764['height'] = function () {
+          }, result2522)), result2521['height'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(10, fieldHeight);
-          }, result8764['depth'] = 8, result8764['base-line-height'] = function () {
+          }, result2521['depth'] = 8, result2521['base-line-height'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(80, fieldHeight);
-          }, result8764['lane-space'] = function () {
+          }, result2521['lane-space'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(30, fieldHeight);
-          }, result8764['lane-count'] = 4, result8764));
-          result['gravity'] = (result8766 = {  }, (result8766['value'] = function () {
+          }, result2521['lane-count'] = 4, result2521));
+          result['gravity'] = (result2523 = {  }, (result2523['value'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(1, fieldHeight);
-          }, result8766['range'] = function () {
+          }, result2523['range'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(200, fieldHeight);
-          }, result8766));
+          }, result2523));
           return result;
       })();
   };
@@ -10818,618 +10818,6 @@ var mogewebzou_game_parameter = (function() {
       'fieldWidth': fieldWidth,
       'calcAbsoluteLength': calcAbsoluteLength,
       'PARAMS': PARAMS,
-    }
-  };
-})();
-
-var mogewebzou_game_field = (function() {
-  /* --- import symbols --- */
-  var setfColliderModelDepth = clWeb2dGame_physics_collisionSystem.setfColliderModelDepth;
-  var calcDistToLineSeg = clWeb2dGame_utils_calc.calcDistToLineSeg;
-  var transformfPoint = clWeb2dGame_utils_calc.transformfPoint;
-  var animation2d = clWeb2dGame_graphics_animation.animation2d;
-  var makeLine = clWeb2dGame_graphics_2dGeometry.makeLine;
-  var makeScriptSystem = clWeb2dGame_core_basicSystems.makeScriptSystem;
-  var startReversedAnimation = clWeb2dGame_graphics_animation.startReversedAnimation;
-  var getCameraOffsetY = clWeb2dGame_core_camera.getCameraOffsetY;
-  var makeSolidCircle = clWeb2dGame_graphics_2dGeometry.makeSolidCircle;
-  var keyUpP = clWeb2dGame_inputs_input.keyUpP;
-  var getTouchX = clWeb2dGame_inputs_input.getTouchX;
-  var boundingBox2d = clWeb2dGame_physics_collision.boundingBox2d;
-  var enableAnimation = clWeb2dGame_graphics_animation.enableAnimation;
-  var script2d = clWeb2dGame_core_basicComponents.script2d;
-  var getTextAreaSize = clWeb2dGame_graphics_textArea.getTextAreaSize;
-  var makeWiredCircle = clWeb2dGame_graphics_2dGeometry.makeWiredCircle;
-  var rect2dP = clWeb2dGame_core_basicComponents.rect2dP;
-  var changeGeometryUvs = clWeb2dGame_graphics_2dGeometry.changeGeometryUvs;
-  var animationSystem = clWeb2dGame_core_basicSystems.animationSystem;
-  var addToMonitoringLog = clWeb2dGame_utils_debug_logger.addToMonitoringLog;
-  var addToEventLog = clWeb2dGame_utils_debug_logger.addToEventLog;
-  var clonePoint2d = clWeb2dGame_core_basicComponents.clonePoint2d;
-  var multfVecScalar = clWeb2dGame_utils_calc.multfVecScalar;
-  var vector2d = clWeb2dGame_core_basicComponents.vector2d;
-  var keyDownP = clWeb2dGame_inputs_input.keyDownP;
-  var initDrawModelSystem = clWeb2dGame_graphics_drawModelSystem.initDrawModelSystem;
-  var makeSolidRegularPolygon = clWeb2dGame_graphics_2dGeometry.makeSolidRegularPolygon;
-  var initAnimationManager = clWeb2dGame_graphics_animationManager.initAnimationManager;
-  var getScreenHeight = clWeb2dGame_core_camera.getScreenHeight;
-  var makeSolidRect = clWeb2dGame_graphics_2dGeometry.makeSolidRect;
-  var makeState = clWeb2dGame_core_gameState.makeState;
-  var model2dP = clWeb2dGame_graphics_drawModelSystem.model2dP;
-  var initGui = clWeb2dGame_inputs_gui.initGui;
-  var makePoint2d = clWeb2dGame_core_basicComponents.makePoint2d;
-  var drawDebugLineByTime = clWeb2dGame_utils_debug_debugDrawer.drawDebugLineByTime;
-  var calcOuterProductZ = clWeb2dGame_utils_calc.calcOuterProductZ;
-  var textAreaComponent = clWeb2dGame_graphics_textArea.textAreaComponent;
-  var rotate2dP = clWeb2dGame_core_basicComponents.rotate2dP;
-  var initAnimation2d = clWeb2dGame_graphics_animation.initAnimation2d;
-  var texture2dP = clWeb2dGame_graphics_texture.texture2dP;
-  var makeUiComponent = clWeb2dGame_inputs_ui.makeUiComponent;
-  var divfVecScalar = clWeb2dGame_utils_calc.divfVecScalar;
-  var truncateVector2d = clWeb2dGame_utils_calc.truncateVector2d;
-  var vector2dAngle = clWeb2dGame_utils_calc.vector2dAngle;
-  var getLeftMouseState = clWeb2dGame_inputs_input.getLeftMouseState;
-  var runAnimationProcess = clWeb2dGame_graphics_animation.runAnimationProcess;
-  var getMouseUpCount = clWeb2dGame_inputs_input.getMouseUpCount;
-  var STANDARDDEBUGDEPTH = clWeb2dGame_utils_debug_debugDrawer.STANDARDDEBUGDEPTH;
-  var calcDist = clWeb2dGame_utils_calc.calcDist;
-  var makeSolidPolygon = clWeb2dGame_graphics_2dGeometry.makeSolidPolygon;
-  var addPanelButton = clWeb2dGame_inputs_gui.addPanelButton;
-  var startAnimation = clWeb2dGame_graphics_animation.startAnimation;
-  var reverseAnimation = clWeb2dGame_graphics_animation.reverseAnimation;
-  var truncatefVector2d = clWeb2dGame_utils_calc.truncatefVector2d;
-  var gameStateManager = clWeb2dGame_core_gameState.gameStateManager;
-  var STANDARDDEBUGPOINTR = clWeb2dGame_utils_debug_debugDrawer.STANDARDDEBUGPOINTR;
-  var makePhysicCircle = clWeb2dGame_physics_collision.makePhysicCircle;
-  var keyUpNowP = clWeb2dGame_inputs_input.keyUpNowP;
-  var unloadTexture = clWeb2dGame_graphics_texture.unloadTexture;
-  var reverseCurrentAnimation = clWeb2dGame_graphics_animationManager.reverseCurrentAnimation;
-  var getMouseDownCount = clWeb2dGame_inputs_input.getMouseDownCount;
-  var addPanelFolder = clWeb2dGame_inputs_gui.addPanelFolder;
-  var rotateToTargetAngle = clWeb2dGame_utils_calc.rotateToTargetAngle;
-  var stage = clWeb2dGame_utils_stageGenerator.stage;
-  var addTextToArea = clWeb2dGame_graphics_textArea.addTextToArea;
-  var makeBoundingBox2d = clWeb2dGame_physics_collision.makeBoundingBox2d;
-  var disableAnimation = clWeb2dGame_graphics_animation.disableAnimation;
-  var addMouseDownCallback = clWeb2dGame_inputs_input.addMouseDownCallback;
-  var addTouchEndCallback = clWeb2dGame_inputs_input.addTouchEndCallback;
-  var getRightMouseState = clWeb2dGame_inputs_input.getRightMouseState;
-  var updateModel2d = clWeb2dGame_graphics_drawModelSystem.updateModel2d;
-  var physic2d = clWeb2dGame_physics_collision.physic2d;
-  var updateBoundingBox = clWeb2dGame_physics_collision.updateBoundingBox;
-  var addPanelNumber = clWeb2dGame_inputs_gui.addPanelNumber;
-  var texture2d = clWeb2dGame_graphics_texture.texture2d;
-  var addMouseUpCallback = clWeb2dGame_inputs_input.addMouseUpCallback;
-  var getFontPromise = clWeb2dGame_graphics_font.getFontPromise;
-  var initEventLogArea = clWeb2dGame_utils_debug_logger.initEventLogArea;
-  var disableModel2d = clWeb2dGame_graphics_drawModelSystem.disableModel2d;
-  var setfVector2dAbs = clWeb2dGame_utils_calc.setfVector2dAbs;
-  var gameState = clWeb2dGame_core_gameState.gameState;
-  var physicPolygon = clWeb2dGame_physics_collision.physicPolygon;
-  var processStage = clWeb2dGame_utils_stageGenerator.processStage;
-  var getMouseX = clWeb2dGame_inputs_input.getMouseX;
-  var drawDebugLine = clWeb2dGame_utils_debug_debugDrawer.drawDebugLine;
-  var makeScript2d = clWeb2dGame_core_basicComponents.makeScript2d;
-  var calcInnerProduct = clWeb2dGame_utils_calc.calcInnerProduct;
-  var start2dGame = clWeb2dGame_core_initializer.start2dGame;
-  var makeTextAreaComponent = clWeb2dGame_graphics_textArea.makeTextAreaComponent;
-  var clearGuiPanel = clWeb2dGame_inputs_gui.clearGuiPanel;
-  var animationManager = clWeb2dGame_graphics_animationManager.animationManager;
-  var subVector2d = clWeb2dGame_utils_calc.subVector2d;
-  var getMouseState = clWeb2dGame_inputs_input.getMouseState;
-  var calcLocalPoint = clWeb2dGame_utils_calc.calcLocalPoint;
-  var keyDownNowP = clWeb2dGame_inputs_input.keyDownNowP;
-  var clearKvsAll = clWeb2dGame_utils_storage.clearKvsAll;
-  var incfRotateDiff = clWeb2dGame_utils_calc.incfRotateDiff;
-  var makeWiredRect = clWeb2dGame_graphics_2dGeometry.makeWiredRect;
-  var processGameState = clWeb2dGame_core_gameState.processGameState;
-  var lerpScalar = clWeb2dGame_utils_calc.lerpScalar;
-  var removeKvs = clWeb2dGame_utils_storage.removeKvs;
-  var setfColliderModelColor = clWeb2dGame_physics_collisionSystem.setfColliderModelColor;
-  var point2d = clWeb2dGame_core_basicComponents.point2d;
-  var vector2dP = clWeb2dGame_core_basicComponents.vector2dP;
-  var startKeyMonitoring = clWeb2dGame_inputs_input.startKeyMonitoring;
-  var makeCollisionSystem = clWeb2dGame_physics_collisionSystem.makeCollisionSystem;
-  var speed2d = clWeb2dGame_core_basicComponents.speed2d;
-  var initMonitoringLog = clWeb2dGame_utils_debug_logger.initMonitoringLog;
-  var getTotalTouchState = clWeb2dGame_inputs_input.getTotalTouchState;
-  var initGameState = clWeb2dGame_core_gameState.initGameState;
-  var rotate2d = clWeb2dGame_core_basicComponents.rotate2d;
-  var rect2d = clWeb2dGame_core_basicComponents.rect2d;
-  var getMouseWheelDeltaY = clWeb2dGame_inputs_input.getMouseWheelDeltaY;
-  var colTwoBoundingBoxP = clWeb2dGame_physics_collision.colTwoBoundingBoxP;
-  var drawDebugPointByTime = clWeb2dGame_utils_debug_debugDrawer.drawDebugPointByTime;
-  var vecScalar = clWeb2dGame_utils_calc.vecScalar;
-  var movefVectorToCircle = clWeb2dGame_utils_calc.movefVectorToCircle;
-  var makeLines = clWeb2dGame_graphics_2dGeometry.makeLines;
-  var getMeshHeight = clWeb2dGame_graphics_2dGeometry.getMeshHeight;
-  var STANDARDDEBUGCOLOR = clWeb2dGame_utils_debug_debugDrawer.STANDARDDEBUGCOLOR;
-  var getTexture2dWidth = clWeb2dGame_graphics_texture.getTexture2dWidth;
-  var addTouchMoveCallback = clWeb2dGame_inputs_input.addTouchMoveCallback;
-  var stopAnimation = clWeb2dGame_graphics_animation.stopAnimation;
-  var makePhysic2d = clWeb2dGame_physics_collision.makePhysic2d;
-  var clearMonitoringLog = clWeb2dGame_utils_debug_logger.clearMonitoringLog;
-  var initGameStateManager = clWeb2dGame_core_gameState.initGameStateManager;
-  var setKvsPrefix = clWeb2dGame_utils_storage.setKvsPrefix;
-  var addVector2d = clWeb2dGame_utils_calc.addVector2d;
-  var changeModelColor = clWeb2dGame_graphics_2dGeometry.changeModelColor;
-  var vector2dAbs = clWeb2dGame_utils_calc.vector2dAbs;
-  var drawDebugPoint = clWeb2dGame_utils_debug_debugDrawer.drawDebugPoint;
-  var incfVector2d = clWeb2dGame_utils_calc.incfVector2d;
-  var getTouchY = clWeb2dGame_inputs_input.getTouchY;
-  var getTexturePromise = clWeb2dGame_graphics_texture.getTexturePromise;
-  var judgeCollisionTargetTags = clWeb2dGame_physics_collision.judgeCollisionTargetTags;
-  var speed2dP = clWeb2dGame_core_basicComponents.speed2dP;
-  var setEntityParam = clWeb2dGame_core_basicComponents.setEntityParam;
-  var makeSimpleMoveSystem = clWeb2dGame_core_basicSystems.makeSimpleMoveSystem;
-  var makeModel2d = clWeb2dGame_graphics_drawModelSystem.makeModel2d;
-  var scriptSystem = clWeb2dGame_core_basicSystems.scriptSystem;
-  var interruptGameState = clWeb2dGame_core_gameState.interruptGameState;
-  var makeTextureModel = clWeb2dGame_graphics_2dGeometry.makeTextureModel;
-  var addPanelBool = clWeb2dGame_inputs_gui.addPanelBool;
-  var collidePhysicsP = clWeb2dGame_physics_collision.collidePhysicsP;
-  var addMouseMoveCallback = clWeb2dGame_inputs_input.addMouseMoveCallback;
-  var copyVector2dTo = clWeb2dGame_core_basicComponents.copyVector2dTo;
-  var getMouseY = clWeb2dGame_inputs_input.getMouseY;
-  var storeKvs = clWeb2dGame_utils_storage.storeKvs;
-  var makeAnimationSystem = clWeb2dGame_core_basicSystems.makeAnimationSystem;
-  var getTexture2dHeight = clWeb2dGame_graphics_texture.getTexture2dHeight;
-  var getTotalTouchY = clWeb2dGame_inputs_input.getTotalTouchY;
-  var calcDistP2 = clWeb2dGame_utils_calc.calcDistP2;
-  var dumpPerformanceCounter = clWeb2dGame_utils_debug_performance.dumpPerformanceCounter;
-  var MAXEVENTLOGCOUNT = clWeb2dGame_utils_debug_logger.MAXEVENTLOGCOUNT;
-  var rotatefPointBy = clWeb2dGame_utils_calc.rotatefPointBy;
-  var calcParentGlobalPoint = clWeb2dGame_utils_calc.calcParentGlobalPoint;
-  var model2d = clWeb2dGame_graphics_drawModelSystem.model2d;
-  var setfVector2dAngle = clWeb2dGame_utils_calc.setfVector2dAngle;
-  var initEntityParams = clWeb2dGame_core_basicComponents.initEntityParams;
-  var makeWiredPolygon = clWeb2dGame_graphics_2dGeometry.makeWiredPolygon;
-  var loadTexture = clWeb2dGame_graphics_texture.loadTexture;
-  var adjustToTarget = clWeb2dGame_utils_calc.adjustToTarget;
-  var cloneVector2d = clWeb2dGame_core_basicComponents.cloneVector2d;
-  var getScreenWidth = clWeb2dGame_core_camera.getScreenWidth;
-  var getEntityParam = clWeb2dGame_core_basicComponents.getEntityParam;
-  var collideEntitiesP = clWeb2dGame_physics_collision.collideEntitiesP;
-  var copyPoint2dTo = clWeb2dGame_core_basicComponents.copyPoint2dTo;
-  var decfVector2d = clWeb2dGame_utils_calc.decfVector2d;
-  var processInput = clWeb2dGame_inputs_input.processInput;
-  var transformfPointInverse = clWeb2dGame_utils_calc.transformfPointInverse;
-  var getMeshSize = clWeb2dGame_graphics_2dGeometry.getMeshSize;
-  var readKvs = clWeb2dGame_utils_storage.readKvs;
-  var initCamera = clWeb2dGame_core_camera.initCamera;
-  var calcDistToLine = clWeb2dGame_utils_calc.calcDistToLine;
-  var makeRect2d = clWeb2dGame_core_basicComponents.makeRect2d;
-  var point2dP = clWeb2dGame_core_basicComponents.point2dP;
-  var setConsoleLogLevel = clWeb2dGame_utils_debug_logger.setConsoleLogLevel;
-  var getPhysicalKeyName = clWeb2dGame_inputs_input.getPhysicalKeyName;
-  var addMouseWheelCallback = clWeb2dGame_inputs_input.addMouseWheelCallback;
-  var getCameraOffsetX = clWeb2dGame_core_camera.getCameraOffsetX;
-  var keyDownCount = clWeb2dGame_inputs_input.keyDownCount;
-  var makeSpeed2d = clWeb2dGame_core_basicComponents.makeSpeed2d;
-  var makeWiredRegularPolygon = clWeb2dGame_graphics_2dGeometry.makeWiredRegularPolygon;
-  var loadFont = clWeb2dGame_graphics_font.loadFont;
-  var getMeshWidth = clWeb2dGame_graphics_2dGeometry.getMeshWidth;
-  var findModel2dByLabel = clWeb2dGame_graphics_drawModelSystem.findModel2dByLabel;
-  var clearTextArea = clWeb2dGame_graphics_textArea.clearTextArea;
-  var initInput = clWeb2dGame_inputs_input.initInput;
-  var slashVecScalar = clWeb2dGame_utils_calc.slashVecScalar;
-  var resetAnimation = clWeb2dGame_graphics_animation.resetAnimation;
-  var lerpVector2d = clWeb2dGame_utils_calc.lerpVector2d;
-  var decfRotateDiff = clWeb2dGame_utils_calc.decfRotateDiff;
-  var initDefaultSystems = clWeb2dGame_core_initializer.initDefaultSystems;
-  var setfColliderModelEnable = clWeb2dGame_physics_collisionSystem.setfColliderModelEnable;
-  var makeTextureModelPromise = clWeb2dGame_graphics_2dGeometry.makeTextureModelPromise;
-  var registerAnimation = clWeb2dGame_graphics_animationManager.registerAnimation;
-  var initUiSystem = clWeb2dGame_inputs_ui.initUiSystem;
-  var addTouchStartCallback = clWeb2dGame_inputs_input.addTouchStartCallback;
-  var makeTextModelPromise = clWeb2dGame_graphics_2dGeometry.makeTextModelPromise;
-  var params = clWeb2dGame_core_basicComponents.params;
-  var physicCircle = clWeb2dGame_physics_collision.physicCircle;
-  var CONSOLELOGFUNCTION = clWeb2dGame_utils_debug_logger.CONSOLELOGFUNCTION;
-  var keyUpCount = clWeb2dGame_inputs_input.keyUpCount;
-  var enableModel2d = clWeb2dGame_graphics_drawModelSystem.enableModel2d;
-  var makeVector2d = clWeb2dGame_core_basicComponents.makeVector2d;
-  var makePhysicPolygon = clWeb2dGame_physics_collision.makePhysicPolygon;
-  var makeTextArea = clWeb2dGame_graphics_textArea.makeTextArea;
-  var diffAngle = clWeb2dGame_utils_calc.diffAngle;
-  var collisionSystem = clWeb2dGame_physics_collisionSystem.collisionSystem;
-  var uiComponent = clWeb2dGame_inputs_ui.uiComponent;
-  var makePhysicRect = clWeb2dGame_physics_collision.makePhysicRect;
-  var calcGlobalPoint = clWeb2dGame_utils_calc.calcGlobalPoint;
-  var makeRotate2d = clWeb2dGame_core_basicComponents.makeRotate2d;
-  var getTouchState = clWeb2dGame_inputs_input.getTouchState;
-  var getTotalTouchX = clWeb2dGame_inputs_input.getTotalTouchX;
-  var switchCurrentAnimation = clWeb2dGame_graphics_animationManager.switchCurrentAnimation;
-  var deleteDeleteComponentHook = clPsEcs_ecs.deleteDeleteComponentHook;
-  var makeEcsEntity = clPsEcs_ecs.makeEcsEntity;
-  var addEcsComponent = clPsEcs_ecs.addEcsComponent;
-  var ecsEntity = clPsEcs_ecs.ecsEntity;
-  var deleteEcsComponentType = clPsEcs_ecs.deleteEcsComponentType;
-  var framePromise = clPsEcs_framePromise.framePromise;
-  var deleteEntityTag = clPsEcs_ecs.deleteEntityTag;
-  var deleteEcsEntity = clPsEcs_ecs.deleteEcsEntity;
-  var cleanEcsEnv = clPsEcs_ecs.cleanEcsEnv;
-  var addDeleteComponentHook = clPsEcs_ecs.addDeleteComponentHook;
-  var ecsMain = clPsEcs_ecs.ecsMain;
-  var includesAllComponentTypes = clPsEcs_utils.includesAllComponentTypes;
-  var findAComponent = clPsEcs_ecs.findAComponent;
-  var registerNframesAfterFunc = clPsEcs_basicProcess.registerNframesAfterFunc;
-  var moveEcsEntity = clPsEcs_ecs.moveEcsEntity;
-  var ecsComponent = clPsEcs_ecs.ecsComponent;
-  var popDefaultEcsEntityParent = clPsEcs_ecs.popDefaultEcsEntityParent;
-  var framePromiseP = clPsEcs_framePromise.framePromiseP;
-  var getEcsComponent = clPsEcs_ecs.getEcsComponent;
-  var ecsSystem = clPsEcs_ecs.ecsSystem;
-  var addEntityTag = clPsEcs_ecs.addEntityTag;
-  var ecsEntityP = clPsEcs_ecs.ecsEntityP;
-  var registerEcsSystem = clPsEcs_ecs.registerEcsSystem;
-  var registerFuncWithPred = clPsEcs_basicProcess.registerFuncWithPred;
-  var addEcsEntityToBuffer = clPsEcs_ecs.addEcsEntityToBuffer;
-  var checkEntityTags = clPsEcs_ecs.checkEntityTags;
-  var initFramePromise = clPsEcs_framePromise.initFramePromise;
-  var framePromiseThen = clPsEcs_framePromise.framePromiseThen;
-  var addEcsEntity = clPsEcs_ecs.addEcsEntity;
-  var registerNextFrameFunc = clPsEcs_basicProcess.registerNextFrameFunc;
-  var findAEntityByTag = clPsEcs_ecs.findAEntityByTag;
-  var stackDefaultEcsEntityParent = clPsEcs_ecs.stackDefaultEcsEntityParent;
-  var addEcsComponentList = clPsEcs_ecs.addEcsComponentList;
-  var framePromiseAll = clPsEcs_framePromise.framePromiseAll;
-  var findTheEntity = clPsEcs_ecs.findTheEntity;
-  var findAEntity = clPsEcs_ecs.findAEntity;
-  var hasEntityTag = clPsEcs_ecs.hasEntityTag;
-  var deleteEcsComponent = clPsEcs_ecs.deleteEcsComponent;
-  var getDefaultEcsEntityParent = clPsEcs_ecs.getDefaultEcsEntityParent;
-  /* --- define objects --- */
-  if ('undefined' === typeof FIELD) {
-      var FIELD = null;
-  };
-  function getField() {
-      return FIELD;
-  };
-  function fieldWidth(field) {
-      __PS_MV_REG = [];
-      return getEntityParam(field, 'width');
-  };
-  function fieldHeight(field) {
-      __PS_MV_REG = [];
-      return getEntityParam(field, 'height');
-  };
-  function initField() {
-      var value;
-      var value8767;
-      var value8768;
-      var value8769;
-      var value8770;
-      var field = makeEcsEntity();
-      var width = (value = mogewebzou_game_parameter._internal.PARAMS['field']['width'], typeof value === 'function' ? value() : value);
-      var height = (value8767 = mogewebzou_game_parameter._internal.PARAMS['field']['height'], typeof value8767 === 'function' ? value8767() : value8767);
-      addEntityTag(field, 'field');
-      addEcsComponentList(field, makePoint2d('x', (value8768 = mogewebzou_game_parameter._internal.PARAMS['field']['x'], typeof value8768 === 'function' ? value8768() : value8768), 'y', (value8769 = mogewebzou_game_parameter._internal.PARAMS['field']['y'], typeof value8769 === 'function' ? value8769() : value8769)), makeModel2d('model', makeSolidRect('width', width, 'height', height), 'depth', (value8770 = mogewebzou_game_parameter._internal.PARAMS['field']['depth'], typeof value8770 === 'function' ? value8770() : value8770)), initEntityParams('width', width, 'height', height));
-      addEcsEntity(field);
-      __PS_MV_REG = [];
-      return FIELD = field;
-  };
-  /* --- extern symbols --- */
-  return {
-    'getField': getField,
-    'initField': initField,
-    '_internal': {
-      'FIELD': FIELD,
-      'fieldWidth': fieldWidth,
-      'fieldHeight': fieldHeight,
-    }
-  };
-})();
-
-var mogewebzou_game_controller = (function() {
-  /* --- import symbols --- */
-  var setfColliderModelDepth = clWeb2dGame_physics_collisionSystem.setfColliderModelDepth;
-  var calcDistToLineSeg = clWeb2dGame_utils_calc.calcDistToLineSeg;
-  var transformfPoint = clWeb2dGame_utils_calc.transformfPoint;
-  var animation2d = clWeb2dGame_graphics_animation.animation2d;
-  var makeLine = clWeb2dGame_graphics_2dGeometry.makeLine;
-  var makeScriptSystem = clWeb2dGame_core_basicSystems.makeScriptSystem;
-  var startReversedAnimation = clWeb2dGame_graphics_animation.startReversedAnimation;
-  var getCameraOffsetY = clWeb2dGame_core_camera.getCameraOffsetY;
-  var makeSolidCircle = clWeb2dGame_graphics_2dGeometry.makeSolidCircle;
-  var keyUpP = clWeb2dGame_inputs_input.keyUpP;
-  var getTouchX = clWeb2dGame_inputs_input.getTouchX;
-  var boundingBox2d = clWeb2dGame_physics_collision.boundingBox2d;
-  var enableAnimation = clWeb2dGame_graphics_animation.enableAnimation;
-  var script2d = clWeb2dGame_core_basicComponents.script2d;
-  var getTextAreaSize = clWeb2dGame_graphics_textArea.getTextAreaSize;
-  var makeWiredCircle = clWeb2dGame_graphics_2dGeometry.makeWiredCircle;
-  var rect2dP = clWeb2dGame_core_basicComponents.rect2dP;
-  var changeGeometryUvs = clWeb2dGame_graphics_2dGeometry.changeGeometryUvs;
-  var animationSystem = clWeb2dGame_core_basicSystems.animationSystem;
-  var addToMonitoringLog = clWeb2dGame_utils_debug_logger.addToMonitoringLog;
-  var addToEventLog = clWeb2dGame_utils_debug_logger.addToEventLog;
-  var clonePoint2d = clWeb2dGame_core_basicComponents.clonePoint2d;
-  var multfVecScalar = clWeb2dGame_utils_calc.multfVecScalar;
-  var vector2d = clWeb2dGame_core_basicComponents.vector2d;
-  var keyDownP = clWeb2dGame_inputs_input.keyDownP;
-  var initDrawModelSystem = clWeb2dGame_graphics_drawModelSystem.initDrawModelSystem;
-  var makeSolidRegularPolygon = clWeb2dGame_graphics_2dGeometry.makeSolidRegularPolygon;
-  var initAnimationManager = clWeb2dGame_graphics_animationManager.initAnimationManager;
-  var getScreenHeight = clWeb2dGame_core_camera.getScreenHeight;
-  var makeSolidRect = clWeb2dGame_graphics_2dGeometry.makeSolidRect;
-  var makeState = clWeb2dGame_core_gameState.makeState;
-  var model2dP = clWeb2dGame_graphics_drawModelSystem.model2dP;
-  var initGui = clWeb2dGame_inputs_gui.initGui;
-  var makePoint2d = clWeb2dGame_core_basicComponents.makePoint2d;
-  var drawDebugLineByTime = clWeb2dGame_utils_debug_debugDrawer.drawDebugLineByTime;
-  var calcOuterProductZ = clWeb2dGame_utils_calc.calcOuterProductZ;
-  var textAreaComponent = clWeb2dGame_graphics_textArea.textAreaComponent;
-  var rotate2dP = clWeb2dGame_core_basicComponents.rotate2dP;
-  var initAnimation2d = clWeb2dGame_graphics_animation.initAnimation2d;
-  var texture2dP = clWeb2dGame_graphics_texture.texture2dP;
-  var makeUiComponent = clWeb2dGame_inputs_ui.makeUiComponent;
-  var divfVecScalar = clWeb2dGame_utils_calc.divfVecScalar;
-  var truncateVector2d = clWeb2dGame_utils_calc.truncateVector2d;
-  var vector2dAngle = clWeb2dGame_utils_calc.vector2dAngle;
-  var getLeftMouseState = clWeb2dGame_inputs_input.getLeftMouseState;
-  var runAnimationProcess = clWeb2dGame_graphics_animation.runAnimationProcess;
-  var getMouseUpCount = clWeb2dGame_inputs_input.getMouseUpCount;
-  var STANDARDDEBUGDEPTH = clWeb2dGame_utils_debug_debugDrawer.STANDARDDEBUGDEPTH;
-  var calcDist = clWeb2dGame_utils_calc.calcDist;
-  var makeSolidPolygon = clWeb2dGame_graphics_2dGeometry.makeSolidPolygon;
-  var addPanelButton = clWeb2dGame_inputs_gui.addPanelButton;
-  var startAnimation = clWeb2dGame_graphics_animation.startAnimation;
-  var reverseAnimation = clWeb2dGame_graphics_animation.reverseAnimation;
-  var truncatefVector2d = clWeb2dGame_utils_calc.truncatefVector2d;
-  var gameStateManager = clWeb2dGame_core_gameState.gameStateManager;
-  var STANDARDDEBUGPOINTR = clWeb2dGame_utils_debug_debugDrawer.STANDARDDEBUGPOINTR;
-  var makePhysicCircle = clWeb2dGame_physics_collision.makePhysicCircle;
-  var keyUpNowP = clWeb2dGame_inputs_input.keyUpNowP;
-  var unloadTexture = clWeb2dGame_graphics_texture.unloadTexture;
-  var reverseCurrentAnimation = clWeb2dGame_graphics_animationManager.reverseCurrentAnimation;
-  var getMouseDownCount = clWeb2dGame_inputs_input.getMouseDownCount;
-  var addPanelFolder = clWeb2dGame_inputs_gui.addPanelFolder;
-  var rotateToTargetAngle = clWeb2dGame_utils_calc.rotateToTargetAngle;
-  var stage = clWeb2dGame_utils_stageGenerator.stage;
-  var addTextToArea = clWeb2dGame_graphics_textArea.addTextToArea;
-  var makeBoundingBox2d = clWeb2dGame_physics_collision.makeBoundingBox2d;
-  var disableAnimation = clWeb2dGame_graphics_animation.disableAnimation;
-  var addMouseDownCallback = clWeb2dGame_inputs_input.addMouseDownCallback;
-  var addTouchEndCallback = clWeb2dGame_inputs_input.addTouchEndCallback;
-  var getRightMouseState = clWeb2dGame_inputs_input.getRightMouseState;
-  var updateModel2d = clWeb2dGame_graphics_drawModelSystem.updateModel2d;
-  var physic2d = clWeb2dGame_physics_collision.physic2d;
-  var updateBoundingBox = clWeb2dGame_physics_collision.updateBoundingBox;
-  var addPanelNumber = clWeb2dGame_inputs_gui.addPanelNumber;
-  var texture2d = clWeb2dGame_graphics_texture.texture2d;
-  var addMouseUpCallback = clWeb2dGame_inputs_input.addMouseUpCallback;
-  var getFontPromise = clWeb2dGame_graphics_font.getFontPromise;
-  var initEventLogArea = clWeb2dGame_utils_debug_logger.initEventLogArea;
-  var disableModel2d = clWeb2dGame_graphics_drawModelSystem.disableModel2d;
-  var setfVector2dAbs = clWeb2dGame_utils_calc.setfVector2dAbs;
-  var gameState = clWeb2dGame_core_gameState.gameState;
-  var physicPolygon = clWeb2dGame_physics_collision.physicPolygon;
-  var processStage = clWeb2dGame_utils_stageGenerator.processStage;
-  var getMouseX = clWeb2dGame_inputs_input.getMouseX;
-  var drawDebugLine = clWeb2dGame_utils_debug_debugDrawer.drawDebugLine;
-  var makeScript2d = clWeb2dGame_core_basicComponents.makeScript2d;
-  var calcInnerProduct = clWeb2dGame_utils_calc.calcInnerProduct;
-  var start2dGame = clWeb2dGame_core_initializer.start2dGame;
-  var makeTextAreaComponent = clWeb2dGame_graphics_textArea.makeTextAreaComponent;
-  var clearGuiPanel = clWeb2dGame_inputs_gui.clearGuiPanel;
-  var animationManager = clWeb2dGame_graphics_animationManager.animationManager;
-  var subVector2d = clWeb2dGame_utils_calc.subVector2d;
-  var getMouseState = clWeb2dGame_inputs_input.getMouseState;
-  var calcLocalPoint = clWeb2dGame_utils_calc.calcLocalPoint;
-  var keyDownNowP = clWeb2dGame_inputs_input.keyDownNowP;
-  var clearKvsAll = clWeb2dGame_utils_storage.clearKvsAll;
-  var incfRotateDiff = clWeb2dGame_utils_calc.incfRotateDiff;
-  var makeWiredRect = clWeb2dGame_graphics_2dGeometry.makeWiredRect;
-  var processGameState = clWeb2dGame_core_gameState.processGameState;
-  var lerpScalar = clWeb2dGame_utils_calc.lerpScalar;
-  var removeKvs = clWeb2dGame_utils_storage.removeKvs;
-  var setfColliderModelColor = clWeb2dGame_physics_collisionSystem.setfColliderModelColor;
-  var point2d = clWeb2dGame_core_basicComponents.point2d;
-  var vector2dP = clWeb2dGame_core_basicComponents.vector2dP;
-  var startKeyMonitoring = clWeb2dGame_inputs_input.startKeyMonitoring;
-  var makeCollisionSystem = clWeb2dGame_physics_collisionSystem.makeCollisionSystem;
-  var speed2d = clWeb2dGame_core_basicComponents.speed2d;
-  var initMonitoringLog = clWeb2dGame_utils_debug_logger.initMonitoringLog;
-  var getTotalTouchState = clWeb2dGame_inputs_input.getTotalTouchState;
-  var initGameState = clWeb2dGame_core_gameState.initGameState;
-  var rotate2d = clWeb2dGame_core_basicComponents.rotate2d;
-  var rect2d = clWeb2dGame_core_basicComponents.rect2d;
-  var getMouseWheelDeltaY = clWeb2dGame_inputs_input.getMouseWheelDeltaY;
-  var colTwoBoundingBoxP = clWeb2dGame_physics_collision.colTwoBoundingBoxP;
-  var drawDebugPointByTime = clWeb2dGame_utils_debug_debugDrawer.drawDebugPointByTime;
-  var vecScalar = clWeb2dGame_utils_calc.vecScalar;
-  var movefVectorToCircle = clWeb2dGame_utils_calc.movefVectorToCircle;
-  var makeLines = clWeb2dGame_graphics_2dGeometry.makeLines;
-  var getMeshHeight = clWeb2dGame_graphics_2dGeometry.getMeshHeight;
-  var STANDARDDEBUGCOLOR = clWeb2dGame_utils_debug_debugDrawer.STANDARDDEBUGCOLOR;
-  var getTexture2dWidth = clWeb2dGame_graphics_texture.getTexture2dWidth;
-  var addTouchMoveCallback = clWeb2dGame_inputs_input.addTouchMoveCallback;
-  var stopAnimation = clWeb2dGame_graphics_animation.stopAnimation;
-  var makePhysic2d = clWeb2dGame_physics_collision.makePhysic2d;
-  var clearMonitoringLog = clWeb2dGame_utils_debug_logger.clearMonitoringLog;
-  var initGameStateManager = clWeb2dGame_core_gameState.initGameStateManager;
-  var setKvsPrefix = clWeb2dGame_utils_storage.setKvsPrefix;
-  var addVector2d = clWeb2dGame_utils_calc.addVector2d;
-  var changeModelColor = clWeb2dGame_graphics_2dGeometry.changeModelColor;
-  var vector2dAbs = clWeb2dGame_utils_calc.vector2dAbs;
-  var drawDebugPoint = clWeb2dGame_utils_debug_debugDrawer.drawDebugPoint;
-  var incfVector2d = clWeb2dGame_utils_calc.incfVector2d;
-  var getTouchY = clWeb2dGame_inputs_input.getTouchY;
-  var getTexturePromise = clWeb2dGame_graphics_texture.getTexturePromise;
-  var judgeCollisionTargetTags = clWeb2dGame_physics_collision.judgeCollisionTargetTags;
-  var speed2dP = clWeb2dGame_core_basicComponents.speed2dP;
-  var setEntityParam = clWeb2dGame_core_basicComponents.setEntityParam;
-  var makeSimpleMoveSystem = clWeb2dGame_core_basicSystems.makeSimpleMoveSystem;
-  var makeModel2d = clWeb2dGame_graphics_drawModelSystem.makeModel2d;
-  var scriptSystem = clWeb2dGame_core_basicSystems.scriptSystem;
-  var interruptGameState = clWeb2dGame_core_gameState.interruptGameState;
-  var makeTextureModel = clWeb2dGame_graphics_2dGeometry.makeTextureModel;
-  var addPanelBool = clWeb2dGame_inputs_gui.addPanelBool;
-  var collidePhysicsP = clWeb2dGame_physics_collision.collidePhysicsP;
-  var addMouseMoveCallback = clWeb2dGame_inputs_input.addMouseMoveCallback;
-  var copyVector2dTo = clWeb2dGame_core_basicComponents.copyVector2dTo;
-  var getMouseY = clWeb2dGame_inputs_input.getMouseY;
-  var storeKvs = clWeb2dGame_utils_storage.storeKvs;
-  var makeAnimationSystem = clWeb2dGame_core_basicSystems.makeAnimationSystem;
-  var getTexture2dHeight = clWeb2dGame_graphics_texture.getTexture2dHeight;
-  var getTotalTouchY = clWeb2dGame_inputs_input.getTotalTouchY;
-  var calcDistP2 = clWeb2dGame_utils_calc.calcDistP2;
-  var dumpPerformanceCounter = clWeb2dGame_utils_debug_performance.dumpPerformanceCounter;
-  var MAXEVENTLOGCOUNT = clWeb2dGame_utils_debug_logger.MAXEVENTLOGCOUNT;
-  var rotatefPointBy = clWeb2dGame_utils_calc.rotatefPointBy;
-  var calcParentGlobalPoint = clWeb2dGame_utils_calc.calcParentGlobalPoint;
-  var model2d = clWeb2dGame_graphics_drawModelSystem.model2d;
-  var setfVector2dAngle = clWeb2dGame_utils_calc.setfVector2dAngle;
-  var initEntityParams = clWeb2dGame_core_basicComponents.initEntityParams;
-  var makeWiredPolygon = clWeb2dGame_graphics_2dGeometry.makeWiredPolygon;
-  var loadTexture = clWeb2dGame_graphics_texture.loadTexture;
-  var adjustToTarget = clWeb2dGame_utils_calc.adjustToTarget;
-  var cloneVector2d = clWeb2dGame_core_basicComponents.cloneVector2d;
-  var getScreenWidth = clWeb2dGame_core_camera.getScreenWidth;
-  var getEntityParam = clWeb2dGame_core_basicComponents.getEntityParam;
-  var collideEntitiesP = clWeb2dGame_physics_collision.collideEntitiesP;
-  var copyPoint2dTo = clWeb2dGame_core_basicComponents.copyPoint2dTo;
-  var decfVector2d = clWeb2dGame_utils_calc.decfVector2d;
-  var processInput = clWeb2dGame_inputs_input.processInput;
-  var transformfPointInverse = clWeb2dGame_utils_calc.transformfPointInverse;
-  var getMeshSize = clWeb2dGame_graphics_2dGeometry.getMeshSize;
-  var readKvs = clWeb2dGame_utils_storage.readKvs;
-  var initCamera = clWeb2dGame_core_camera.initCamera;
-  var calcDistToLine = clWeb2dGame_utils_calc.calcDistToLine;
-  var makeRect2d = clWeb2dGame_core_basicComponents.makeRect2d;
-  var point2dP = clWeb2dGame_core_basicComponents.point2dP;
-  var setConsoleLogLevel = clWeb2dGame_utils_debug_logger.setConsoleLogLevel;
-  var getPhysicalKeyName = clWeb2dGame_inputs_input.getPhysicalKeyName;
-  var addMouseWheelCallback = clWeb2dGame_inputs_input.addMouseWheelCallback;
-  var getCameraOffsetX = clWeb2dGame_core_camera.getCameraOffsetX;
-  var keyDownCount = clWeb2dGame_inputs_input.keyDownCount;
-  var makeSpeed2d = clWeb2dGame_core_basicComponents.makeSpeed2d;
-  var makeWiredRegularPolygon = clWeb2dGame_graphics_2dGeometry.makeWiredRegularPolygon;
-  var loadFont = clWeb2dGame_graphics_font.loadFont;
-  var getMeshWidth = clWeb2dGame_graphics_2dGeometry.getMeshWidth;
-  var findModel2dByLabel = clWeb2dGame_graphics_drawModelSystem.findModel2dByLabel;
-  var clearTextArea = clWeb2dGame_graphics_textArea.clearTextArea;
-  var initInput = clWeb2dGame_inputs_input.initInput;
-  var slashVecScalar = clWeb2dGame_utils_calc.slashVecScalar;
-  var resetAnimation = clWeb2dGame_graphics_animation.resetAnimation;
-  var lerpVector2d = clWeb2dGame_utils_calc.lerpVector2d;
-  var decfRotateDiff = clWeb2dGame_utils_calc.decfRotateDiff;
-  var initDefaultSystems = clWeb2dGame_core_initializer.initDefaultSystems;
-  var setfColliderModelEnable = clWeb2dGame_physics_collisionSystem.setfColliderModelEnable;
-  var makeTextureModelPromise = clWeb2dGame_graphics_2dGeometry.makeTextureModelPromise;
-  var registerAnimation = clWeb2dGame_graphics_animationManager.registerAnimation;
-  var initUiSystem = clWeb2dGame_inputs_ui.initUiSystem;
-  var addTouchStartCallback = clWeb2dGame_inputs_input.addTouchStartCallback;
-  var makeTextModelPromise = clWeb2dGame_graphics_2dGeometry.makeTextModelPromise;
-  var params = clWeb2dGame_core_basicComponents.params;
-  var physicCircle = clWeb2dGame_physics_collision.physicCircle;
-  var CONSOLELOGFUNCTION = clWeb2dGame_utils_debug_logger.CONSOLELOGFUNCTION;
-  var keyUpCount = clWeb2dGame_inputs_input.keyUpCount;
-  var enableModel2d = clWeb2dGame_graphics_drawModelSystem.enableModel2d;
-  var makeVector2d = clWeb2dGame_core_basicComponents.makeVector2d;
-  var makePhysicPolygon = clWeb2dGame_physics_collision.makePhysicPolygon;
-  var makeTextArea = clWeb2dGame_graphics_textArea.makeTextArea;
-  var diffAngle = clWeb2dGame_utils_calc.diffAngle;
-  var collisionSystem = clWeb2dGame_physics_collisionSystem.collisionSystem;
-  var uiComponent = clWeb2dGame_inputs_ui.uiComponent;
-  var makePhysicRect = clWeb2dGame_physics_collision.makePhysicRect;
-  var calcGlobalPoint = clWeb2dGame_utils_calc.calcGlobalPoint;
-  var makeRotate2d = clWeb2dGame_core_basicComponents.makeRotate2d;
-  var getTouchState = clWeb2dGame_inputs_input.getTouchState;
-  var getTotalTouchX = clWeb2dGame_inputs_input.getTotalTouchX;
-  var switchCurrentAnimation = clWeb2dGame_graphics_animationManager.switchCurrentAnimation;
-  var deleteDeleteComponentHook = clPsEcs_ecs.deleteDeleteComponentHook;
-  var makeEcsEntity = clPsEcs_ecs.makeEcsEntity;
-  var addEcsComponent = clPsEcs_ecs.addEcsComponent;
-  var ecsEntity = clPsEcs_ecs.ecsEntity;
-  var deleteEcsComponentType = clPsEcs_ecs.deleteEcsComponentType;
-  var framePromise = clPsEcs_framePromise.framePromise;
-  var deleteEntityTag = clPsEcs_ecs.deleteEntityTag;
-  var deleteEcsEntity = clPsEcs_ecs.deleteEcsEntity;
-  var cleanEcsEnv = clPsEcs_ecs.cleanEcsEnv;
-  var addDeleteComponentHook = clPsEcs_ecs.addDeleteComponentHook;
-  var ecsMain = clPsEcs_ecs.ecsMain;
-  var includesAllComponentTypes = clPsEcs_utils.includesAllComponentTypes;
-  var findAComponent = clPsEcs_ecs.findAComponent;
-  var registerNframesAfterFunc = clPsEcs_basicProcess.registerNframesAfterFunc;
-  var moveEcsEntity = clPsEcs_ecs.moveEcsEntity;
-  var ecsComponent = clPsEcs_ecs.ecsComponent;
-  var popDefaultEcsEntityParent = clPsEcs_ecs.popDefaultEcsEntityParent;
-  var framePromiseP = clPsEcs_framePromise.framePromiseP;
-  var getEcsComponent = clPsEcs_ecs.getEcsComponent;
-  var ecsSystem = clPsEcs_ecs.ecsSystem;
-  var addEntityTag = clPsEcs_ecs.addEntityTag;
-  var ecsEntityP = clPsEcs_ecs.ecsEntityP;
-  var registerEcsSystem = clPsEcs_ecs.registerEcsSystem;
-  var registerFuncWithPred = clPsEcs_basicProcess.registerFuncWithPred;
-  var addEcsEntityToBuffer = clPsEcs_ecs.addEcsEntityToBuffer;
-  var checkEntityTags = clPsEcs_ecs.checkEntityTags;
-  var initFramePromise = clPsEcs_framePromise.initFramePromise;
-  var framePromiseThen = clPsEcs_framePromise.framePromiseThen;
-  var addEcsEntity = clPsEcs_ecs.addEcsEntity;
-  var registerNextFrameFunc = clPsEcs_basicProcess.registerNextFrameFunc;
-  var findAEntityByTag = clPsEcs_ecs.findAEntityByTag;
-  var stackDefaultEcsEntityParent = clPsEcs_ecs.stackDefaultEcsEntityParent;
-  var addEcsComponentList = clPsEcs_ecs.addEcsComponentList;
-  var framePromiseAll = clPsEcs_framePromise.framePromiseAll;
-  var findTheEntity = clPsEcs_ecs.findTheEntity;
-  var findAEntity = clPsEcs_ecs.findAEntity;
-  var hasEntityTag = clPsEcs_ecs.hasEntityTag;
-  var deleteEcsComponent = clPsEcs_ecs.deleteEcsComponent;
-  var getDefaultEcsEntityParent = clPsEcs_ecs.getDefaultEcsEntityParent;
-  /* --- define objects --- */
-  function processController(entity) {
-      __PS_MV_REG = [];
-      return controlByKeyboard(entity);
-  };
-  function initTest() {
-      var rect = makeEcsEntity();
-      addEcsComponentList(rect, makePoint2d('x', 100, 'y', 100), makeScript2d('func', function (entity) {
-          __PS_MV_REG = [];
-          return processController(entity);
-      }), makeModel2d('model', makeWiredRect('width', 32, 'height', 32, 'color', 65280), 'depth', 10));
-      __PS_MV_REG = [];
-      return framePromiseThen(makeTextureModelPromise('width', 32, 'height', 32, 'texture-name', 'test2'), function (model) {
-          addEcsComponentList(rect, makeModel2d('model', model, 'depth', 50));
-          __PS_MV_REG = [];
-          return addEcsEntity(rect);
-      });
-  };
-  function initController() {
-      __PS_MV_REG = [];
-      return framePromiseThen(makeTextureModelPromise('width', 32, 'height', 32, 'texture-name', 'test'), function (model) {
-          var logo = makeEcsEntity();
-          __PS_MV_REG = [];
-          return addEcsComponentList(logo, makePoint2d('x', 100, 'y', 100), makeModel2d('model', model), makeScript2d('func', function (entity) {
-              __PS_MV_REG = [];
-              return processController(entity);
-          }), addEcsEntity(logo));
-      });
-  };
-  function controlByKeyboard(entity) {
-      var point2d8771 = (found = getEcsComponent(point2d, entity), found ? found : (function () {
-          throw 'POINT-2D is not included in the entity';
-      })());
-      if (keyDownP('left')) {
-          point2d8771.x -= 2;
-      };
-      if (keyDownP('right')) {
-          point2d8771.x += 2;
-      };
-      if (keyDownP('up')) {
-          point2d8771.y += 2;
-      };
-      __PS_MV_REG = [];
-      return keyDownP('down') ? (point2d8771.y -= 2) : null;
-  };
-  /* --- extern symbols --- */
-  return {
-    'initTest': initTest,
-    'initController': initController,
-    '_internal': {
-      'processController': processController,
-      'controlByKeyboard': controlByKeyboard,
     }
   };
 })();
@@ -11697,13 +11085,13 @@ var mogewebzou_game_stage_stage = (function() {
   };
   if ('undefined' === typeof TESTSTAGE) {
       var TESTSTAGE = (function () {
-          var arr8772 = new Array([10, 10]);
-          var init8773 = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]];
-          for (var i8775 = 0; i8775 < Math.min(arr8772.length, init8773.length); i8775 += 1) {
-              arr8772[i8775] = init8773[i8775];
+          var arr2524 = new Array([10, 10]);
+          var init2525 = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]];
+          for (var i2527 = 0; i2527 < Math.min(arr2524.length, init2525.length); i2527 += 1) {
+              arr2524[i2527] = init2525[i2527];
           };
           __PS_MV_REG = [];
-          return arr8772;
+          return arr2524;
       })();
   };
   /* --- extern symbols --- */
@@ -11715,7 +11103,7 @@ var mogewebzou_game_stage_stage = (function() {
   };
 })();
 
-var mogewebzou_game_ground = (function() {
+var mogewebzou_game_field = (function() {
   /* --- import symbols --- */
   var setfColliderModelDepth = clWeb2dGame_physics_collisionSystem.setfColliderModelDepth;
   var calcDistToLineSeg = clWeb2dGame_utils_calc.calcDistToLineSeg;
@@ -11972,34 +11360,21 @@ var mogewebzou_game_ground = (function() {
   var hasEntityTag = clPsEcs_ecs.hasEntityTag;
   var deleteEcsComponent = clPsEcs_ecs.deleteEcsComponent;
   var getDefaultEcsEntityParent = clPsEcs_ecs.getDefaultEcsEntityParent;
-  var TESTSTAGE = mogewebzou_game_stage_stage.TESTSTAGE;
   var STAGE11 = mogewebzou_game_stage_stage.STAGE11;
   /* --- define objects --- */
-  function makeBlockUsingInfo(x, y) {
-      var width = 32;
-      var height = 32;
-      var result = makeRectBlock(width * x, height * y, width, height);
-      framePromiseThen(makeTextureModelPromise('width', width, 'height', height, 'texture-name', 's-block'), function (model) {
-          __PS_MV_REG = [];
-          return addEcsComponentList(result, makeModel2d('model', model, 'depth', 30, 'offset', makePoint2d('x', width / -2, 'y', height / -2)));
-      });
-      __PS_MV_REG = [];
-      return result;
+  if ('undefined' === typeof FIELD) {
+      var FIELD = null;
   };
-  function makeRectBlock(x, y, width, height) {
-      var blk = makeEcsEntity();
-      var hWidth = width / 2;
-      var hHeight = height / 2;
-      addEntityTag(blk, 'block');
-      addEcsComponentList(blk, makePoint2d('x', x + hWidth, 'y', y + hHeight), makePhysicPolygon('target-tags', ['ball', 'mouse'], 'pnt-list', [makePoint2d('x', -1 * hWidth, 'y', -1 * hHeight), makePoint2d('x', hWidth, 'y', -1 * hHeight), makePoint2d('x', hWidth, 'y', hHeight), makePoint2d('x', -1 * hWidth, 'y', hHeight)], 'on-collision', function (mine, target) {
-          __PS_MV_REG = [];
-          return hasEntityTag(target, 'ball') ? registerNextFrameFunc(function () {
-              __PS_MV_REG = [];
-              return deleteEcsEntity(mine);
-          }) : null;
-      }), initEntityParams('width', width, 'height', height));
+  function getField() {
+      return FIELD;
+  };
+  function fieldWidth(field) {
       __PS_MV_REG = [];
-      return blk;
+      return getEntityParam(field, 'width');
+  };
+  function fieldHeight(field) {
+      __PS_MV_REG = [];
+      return getEntityParam(field, 'height');
   };
   function makeObjUsingInfo(x, y, name) {
       var width = 32;
@@ -12012,73 +11387,480 @@ var mogewebzou_game_ground = (function() {
       __PS_MV_REG = [];
       return result;
   };
-  function initGround() {
-      for (var i = 0; i < 9; i += 1) {
-          framePromiseThen(makeTextureModelPromise('width', 32, 'height', 32, 'texture-name', 's-block'), function (model) {
-              var obj = makeEcsEntity();
-              addEcsComponentList(obj, makePoint2d('x', i * 32, 'y', 2 * 32), makeModel2d('model', model, 'depth', 5));
-              __PS_MV_REG = [];
-              return addEcsEntity(obj);
-          });
+  function getObjType(obj) {
+      switch (obj) {
+      case 1:
+          return 'yuka-blk';
+      case 2:
+          return 'soft-blk';
+      case 'a':
+          return 'soft-blk';
+      case 'b':
+          return 'soft-blk';
+      case 'p':
+          return 'soft-blk';
+      case 4:
+      case 5:
+      case 6:
+      case 7:
+      case 8:
+      case 9:
+          return 'hatena';
+      case 'x':
+          return 'dokan-top-l';
+      case 'w':
+          return 'dokan-mid-l';
+      case 'v':
+          return 'dokan-bot-l';
+      case 'u':
+          return 'dokan-top-r';
+      case 'r':
+          return 'dokan-bot-r';
+      case 's':
+          return 'dokan-mid-r';
+      default:
+          return 'yuka-blk';
       };
   };
   function generateMogeStage(field) {
+      var value;
+      var width = (value = mogewebzou_game_parameter._internal.PARAMS['field']['width'], typeof value === 'function' ? value() : value);
       var ymax = STAGE11.length;
-      var xmax = STAGE11[0].length;
+      var xmax = Math.floor(width / 32) + 1;
+      setEntityParam(field, 'objxmax', xmax);
       for (var y = 0; y < ymax; y += 1) {
           for (var x = 0; x < xmax; x += 1) {
-              (function () {
-                  var obj = STAGE11[y][x];
-                  if (obj !== 0) {
-                      __PS_MV_REG = [];
-                      return addEcsEntity(makeObjUsingInfo(x, ymax - 1 - y, (function () {
-                          switch (obj) {
-                          case 1:
-                              return 'yuka-blk';
-                          case 2:
-                              return 'soft-blk';
-                          case 'a':
-                              return 'soft-blk';
-                          case 'b':
-                              return 'soft-blk';
-                          case 'p':
-                              return 'soft-blk';
-                          case 4:
-                          case 5:
-                          case 6:
-                          case 7:
-                          case 8:
-                          case 9:
-                              return 'hatena';
-                          case 'x':
-                              return 'dokan-top-l';
-                          case 'w':
-                              return 'dokan-mid-l';
-                          case 'v':
-                              return 'dokan-bot-l';
-                          case 'u':
-                              return 'dokan-top-r';
-                          case 'r':
-                              return 'dokan-mid-r';
-                          case 's':
-                              return 'dokan-bot-r';
-                          default:
-                              return 'yuka-blk';
-                          };
-                      })()), field);
-                  };
-              })();
+              var obj = STAGE11[y][x];
+              if (obj !== 0) {
+                  addEcsEntity(makeObjUsingInfo(x, ymax - 1 - y, getObjType(obj)), field);
+              };
+          };
+      };
+  };
+  function addObj(xmax, field) {
+      var ymax = STAGE11.length;
+      for (var y = 0; y < ymax; y += 1) {
+          var obj = STAGE11[y][xmax];
+          if (obj !== 0) {
+              addEcsEntity(makeObjUsingInfo(xmax, ymax - 1 - y, getObjType(obj)), field);
+          };
+      };
+  };
+  function initField() {
+      var value;
+      var value2528;
+      var value2529;
+      var value2530;
+      var value2531;
+      var field = makeEcsEntity();
+      var width = (value = mogewebzou_game_parameter._internal.PARAMS['field']['width'], typeof value === 'function' ? value() : value);
+      var height = (value2528 = mogewebzou_game_parameter._internal.PARAMS['field']['height'], typeof value2528 === 'function' ? value2528() : value2528);
+      addEntityTag(field, 'field');
+      addEcsComponentList(field, makePoint2d('x', (value2529 = mogewebzou_game_parameter._internal.PARAMS['field']['x'], typeof value2529 === 'function' ? value2529() : value2529), 'y', (value2530 = mogewebzou_game_parameter._internal.PARAMS['field']['y'], typeof value2530 === 'function' ? value2530() : value2530)), makeModel2d('model', makeSolidRect('width', width, 'height', height), 'depth', (value2531 = mogewebzou_game_parameter._internal.PARAMS['field']['depth'], typeof value2531 === 'function' ? value2531() : value2531)), makeScript2d('func', function (entity) {
+          __PS_MV_REG = [];
+          return updateField(entity);
+      }), initEntityParams('width', width, 'height', height, 'objxmax', 0, 'objxmin', 0));
+      addEcsEntity(field);
+      __PS_MV_REG = [];
+      return FIELD = field;
+  };
+  function makeRectBlock(x, y, width, height) {
+      var blk = makeEcsEntity();
+      var hWidth = width / 2;
+      var hHeight = height / 2;
+      var point = makePoint2d('x', x + hWidth, 'y', y + hHeight);
+      addEntityTag(blk, 'block');
+      addEcsComponentList(blk, point, makeScript2d('func', function (entity) {
+          var field = getField();
+          var point2d2532 = (found = getEcsComponent(point2d, field), found ? found : (function () {
+              throw 'POINT-2D is not included in the entity';
+          })());
+          __PS_MV_REG = [];
+          return -point2d2532.x - 100 > point.x ? registerNextFrameFunc(function () {
+              __PS_MV_REG = [];
+              return deleteEcsEntity(entity);
+          }) : null;
+      }), makePhysicPolygon('target-tags', ['ball', 'mouse'], 'pnt-list', [makePoint2d('x', -1 * hWidth, 'y', -1 * hHeight), makePoint2d('x', hWidth, 'y', -1 * hHeight), makePoint2d('x', hWidth, 'y', hHeight), makePoint2d('x', -1 * hWidth, 'y', hHeight)], 'on-collision', function (mine, target) {
+          __PS_MV_REG = [];
+          return hasEntityTag(target, 'ball') ? registerNextFrameFunc(function () {
+              __PS_MV_REG = [];
+              return deleteEcsEntity(mine);
+          }) : null;
+      }), initEntityParams('width', width, 'height', height));
+      __PS_MV_REG = [];
+      return blk;
+  };
+  function updateField(field) {
+      var moge = findAEntityByTag('moge');
+      var point = getEcsComponent(point2d, moge);
+      var fieldW = (value = mogewebzou_game_parameter._internal.PARAMS['field']['width'], typeof value === 'function' ? value() : value);
+      if (keyDownP('right')) {
+          if (point.x >= (value2533 = mogewebzou_game_parameter._internal.PARAMS['field']['width'], typeof value2533 === 'function' ? value2533() : value2533) / 2) {
+              var point2d2534 = (found = getEcsComponent(point2d, field), found ? found : (function () {
+                  throw 'POINT-2D is not included in the entity';
+              })());
+              point2d2534.x -= 2;
+              var newObjXmax = Math.floor((fieldW + -point2d2534.x) / 32);
+              var oldObjXmax = getEntityParam(field, 'objxmax');
+              var newObjXmin = Math.floor(-point2d2534.x / 32);
+              var oldObjXmin = getEntityParam(field, 'objxmin');
+              if (newObjXmin > oldObjXmin) {
+                  setEntityParam(field, 'objxmin', newObjXmin);
+              };
+              if (newObjXmax > oldObjXmax) {
+                  setEntityParam(field, 'objxmax', newObjXmax);
+                  addObj(newObjXmax, field);
+              };
+          };
+      };
+      if (keyDownP('left')) {
+          var point2d2535 = (found2536 = getEcsComponent(point2d, field), found2536 ? found2536 : (function () {
+              throw 'POINT-2D is not included in the entity';
+          })());
+          if (point2d2535.x < 0) {
+              point2d2535.x += 2;
+              var newObjXmin2537 = Math.floor(-point2d2535.x / 32);
+              var oldObjXmin2538 = getEntityParam(field, 'objxmin');
+              if (newObjXmin2537 < oldObjXmin2538) {
+                  setEntityParam(field, 'objxmin', newObjXmin2537);
+                  __PS_MV_REG = [];
+                  return addObj(newObjXmin2537, field);
+              };
           };
       };
   };
   /* --- extern symbols --- */
   return {
-    'initGround': initGround,
+    'getField': getField,
     'generateMogeStage': generateMogeStage,
+    'initField': initField,
     '_internal': {
-      'makeBlockUsingInfo': makeBlockUsingInfo,
-      'makeRectBlock': makeRectBlock,
+      'FIELD': FIELD,
+      'fieldWidth': fieldWidth,
+      'fieldHeight': fieldHeight,
       'makeObjUsingInfo': makeObjUsingInfo,
+      'getObjType': getObjType,
+      'addObj': addObj,
+      'makeRectBlock': makeRectBlock,
+      'updateField': updateField,
+    }
+  };
+})();
+
+var mogewebzou_game_controller = (function() {
+  /* --- import symbols --- */
+  var setfColliderModelDepth = clWeb2dGame_physics_collisionSystem.setfColliderModelDepth;
+  var calcDistToLineSeg = clWeb2dGame_utils_calc.calcDistToLineSeg;
+  var transformfPoint = clWeb2dGame_utils_calc.transformfPoint;
+  var animation2d = clWeb2dGame_graphics_animation.animation2d;
+  var makeLine = clWeb2dGame_graphics_2dGeometry.makeLine;
+  var makeScriptSystem = clWeb2dGame_core_basicSystems.makeScriptSystem;
+  var startReversedAnimation = clWeb2dGame_graphics_animation.startReversedAnimation;
+  var getCameraOffsetY = clWeb2dGame_core_camera.getCameraOffsetY;
+  var makeSolidCircle = clWeb2dGame_graphics_2dGeometry.makeSolidCircle;
+  var keyUpP = clWeb2dGame_inputs_input.keyUpP;
+  var getTouchX = clWeb2dGame_inputs_input.getTouchX;
+  var boundingBox2d = clWeb2dGame_physics_collision.boundingBox2d;
+  var enableAnimation = clWeb2dGame_graphics_animation.enableAnimation;
+  var script2d = clWeb2dGame_core_basicComponents.script2d;
+  var getTextAreaSize = clWeb2dGame_graphics_textArea.getTextAreaSize;
+  var makeWiredCircle = clWeb2dGame_graphics_2dGeometry.makeWiredCircle;
+  var rect2dP = clWeb2dGame_core_basicComponents.rect2dP;
+  var changeGeometryUvs = clWeb2dGame_graphics_2dGeometry.changeGeometryUvs;
+  var animationSystem = clWeb2dGame_core_basicSystems.animationSystem;
+  var addToMonitoringLog = clWeb2dGame_utils_debug_logger.addToMonitoringLog;
+  var addToEventLog = clWeb2dGame_utils_debug_logger.addToEventLog;
+  var clonePoint2d = clWeb2dGame_core_basicComponents.clonePoint2d;
+  var multfVecScalar = clWeb2dGame_utils_calc.multfVecScalar;
+  var vector2d = clWeb2dGame_core_basicComponents.vector2d;
+  var keyDownP = clWeb2dGame_inputs_input.keyDownP;
+  var initDrawModelSystem = clWeb2dGame_graphics_drawModelSystem.initDrawModelSystem;
+  var makeSolidRegularPolygon = clWeb2dGame_graphics_2dGeometry.makeSolidRegularPolygon;
+  var initAnimationManager = clWeb2dGame_graphics_animationManager.initAnimationManager;
+  var getScreenHeight = clWeb2dGame_core_camera.getScreenHeight;
+  var makeSolidRect = clWeb2dGame_graphics_2dGeometry.makeSolidRect;
+  var makeState = clWeb2dGame_core_gameState.makeState;
+  var model2dP = clWeb2dGame_graphics_drawModelSystem.model2dP;
+  var initGui = clWeb2dGame_inputs_gui.initGui;
+  var makePoint2d = clWeb2dGame_core_basicComponents.makePoint2d;
+  var drawDebugLineByTime = clWeb2dGame_utils_debug_debugDrawer.drawDebugLineByTime;
+  var calcOuterProductZ = clWeb2dGame_utils_calc.calcOuterProductZ;
+  var textAreaComponent = clWeb2dGame_graphics_textArea.textAreaComponent;
+  var rotate2dP = clWeb2dGame_core_basicComponents.rotate2dP;
+  var initAnimation2d = clWeb2dGame_graphics_animation.initAnimation2d;
+  var texture2dP = clWeb2dGame_graphics_texture.texture2dP;
+  var makeUiComponent = clWeb2dGame_inputs_ui.makeUiComponent;
+  var divfVecScalar = clWeb2dGame_utils_calc.divfVecScalar;
+  var truncateVector2d = clWeb2dGame_utils_calc.truncateVector2d;
+  var vector2dAngle = clWeb2dGame_utils_calc.vector2dAngle;
+  var getLeftMouseState = clWeb2dGame_inputs_input.getLeftMouseState;
+  var runAnimationProcess = clWeb2dGame_graphics_animation.runAnimationProcess;
+  var getMouseUpCount = clWeb2dGame_inputs_input.getMouseUpCount;
+  var STANDARDDEBUGDEPTH = clWeb2dGame_utils_debug_debugDrawer.STANDARDDEBUGDEPTH;
+  var calcDist = clWeb2dGame_utils_calc.calcDist;
+  var makeSolidPolygon = clWeb2dGame_graphics_2dGeometry.makeSolidPolygon;
+  var addPanelButton = clWeb2dGame_inputs_gui.addPanelButton;
+  var startAnimation = clWeb2dGame_graphics_animation.startAnimation;
+  var reverseAnimation = clWeb2dGame_graphics_animation.reverseAnimation;
+  var truncatefVector2d = clWeb2dGame_utils_calc.truncatefVector2d;
+  var gameStateManager = clWeb2dGame_core_gameState.gameStateManager;
+  var STANDARDDEBUGPOINTR = clWeb2dGame_utils_debug_debugDrawer.STANDARDDEBUGPOINTR;
+  var makePhysicCircle = clWeb2dGame_physics_collision.makePhysicCircle;
+  var keyUpNowP = clWeb2dGame_inputs_input.keyUpNowP;
+  var unloadTexture = clWeb2dGame_graphics_texture.unloadTexture;
+  var reverseCurrentAnimation = clWeb2dGame_graphics_animationManager.reverseCurrentAnimation;
+  var getMouseDownCount = clWeb2dGame_inputs_input.getMouseDownCount;
+  var addPanelFolder = clWeb2dGame_inputs_gui.addPanelFolder;
+  var rotateToTargetAngle = clWeb2dGame_utils_calc.rotateToTargetAngle;
+  var stage = clWeb2dGame_utils_stageGenerator.stage;
+  var addTextToArea = clWeb2dGame_graphics_textArea.addTextToArea;
+  var makeBoundingBox2d = clWeb2dGame_physics_collision.makeBoundingBox2d;
+  var disableAnimation = clWeb2dGame_graphics_animation.disableAnimation;
+  var addMouseDownCallback = clWeb2dGame_inputs_input.addMouseDownCallback;
+  var addTouchEndCallback = clWeb2dGame_inputs_input.addTouchEndCallback;
+  var getRightMouseState = clWeb2dGame_inputs_input.getRightMouseState;
+  var updateModel2d = clWeb2dGame_graphics_drawModelSystem.updateModel2d;
+  var physic2d = clWeb2dGame_physics_collision.physic2d;
+  var updateBoundingBox = clWeb2dGame_physics_collision.updateBoundingBox;
+  var addPanelNumber = clWeb2dGame_inputs_gui.addPanelNumber;
+  var texture2d = clWeb2dGame_graphics_texture.texture2d;
+  var addMouseUpCallback = clWeb2dGame_inputs_input.addMouseUpCallback;
+  var getFontPromise = clWeb2dGame_graphics_font.getFontPromise;
+  var initEventLogArea = clWeb2dGame_utils_debug_logger.initEventLogArea;
+  var disableModel2d = clWeb2dGame_graphics_drawModelSystem.disableModel2d;
+  var setfVector2dAbs = clWeb2dGame_utils_calc.setfVector2dAbs;
+  var gameState = clWeb2dGame_core_gameState.gameState;
+  var physicPolygon = clWeb2dGame_physics_collision.physicPolygon;
+  var processStage = clWeb2dGame_utils_stageGenerator.processStage;
+  var getMouseX = clWeb2dGame_inputs_input.getMouseX;
+  var drawDebugLine = clWeb2dGame_utils_debug_debugDrawer.drawDebugLine;
+  var makeScript2d = clWeb2dGame_core_basicComponents.makeScript2d;
+  var calcInnerProduct = clWeb2dGame_utils_calc.calcInnerProduct;
+  var start2dGame = clWeb2dGame_core_initializer.start2dGame;
+  var makeTextAreaComponent = clWeb2dGame_graphics_textArea.makeTextAreaComponent;
+  var clearGuiPanel = clWeb2dGame_inputs_gui.clearGuiPanel;
+  var animationManager = clWeb2dGame_graphics_animationManager.animationManager;
+  var subVector2d = clWeb2dGame_utils_calc.subVector2d;
+  var getMouseState = clWeb2dGame_inputs_input.getMouseState;
+  var calcLocalPoint = clWeb2dGame_utils_calc.calcLocalPoint;
+  var keyDownNowP = clWeb2dGame_inputs_input.keyDownNowP;
+  var clearKvsAll = clWeb2dGame_utils_storage.clearKvsAll;
+  var incfRotateDiff = clWeb2dGame_utils_calc.incfRotateDiff;
+  var makeWiredRect = clWeb2dGame_graphics_2dGeometry.makeWiredRect;
+  var processGameState = clWeb2dGame_core_gameState.processGameState;
+  var lerpScalar = clWeb2dGame_utils_calc.lerpScalar;
+  var removeKvs = clWeb2dGame_utils_storage.removeKvs;
+  var setfColliderModelColor = clWeb2dGame_physics_collisionSystem.setfColliderModelColor;
+  var point2d = clWeb2dGame_core_basicComponents.point2d;
+  var vector2dP = clWeb2dGame_core_basicComponents.vector2dP;
+  var startKeyMonitoring = clWeb2dGame_inputs_input.startKeyMonitoring;
+  var makeCollisionSystem = clWeb2dGame_physics_collisionSystem.makeCollisionSystem;
+  var speed2d = clWeb2dGame_core_basicComponents.speed2d;
+  var initMonitoringLog = clWeb2dGame_utils_debug_logger.initMonitoringLog;
+  var getTotalTouchState = clWeb2dGame_inputs_input.getTotalTouchState;
+  var initGameState = clWeb2dGame_core_gameState.initGameState;
+  var rotate2d = clWeb2dGame_core_basicComponents.rotate2d;
+  var rect2d = clWeb2dGame_core_basicComponents.rect2d;
+  var getMouseWheelDeltaY = clWeb2dGame_inputs_input.getMouseWheelDeltaY;
+  var colTwoBoundingBoxP = clWeb2dGame_physics_collision.colTwoBoundingBoxP;
+  var drawDebugPointByTime = clWeb2dGame_utils_debug_debugDrawer.drawDebugPointByTime;
+  var vecScalar = clWeb2dGame_utils_calc.vecScalar;
+  var movefVectorToCircle = clWeb2dGame_utils_calc.movefVectorToCircle;
+  var makeLines = clWeb2dGame_graphics_2dGeometry.makeLines;
+  var getMeshHeight = clWeb2dGame_graphics_2dGeometry.getMeshHeight;
+  var STANDARDDEBUGCOLOR = clWeb2dGame_utils_debug_debugDrawer.STANDARDDEBUGCOLOR;
+  var getTexture2dWidth = clWeb2dGame_graphics_texture.getTexture2dWidth;
+  var addTouchMoveCallback = clWeb2dGame_inputs_input.addTouchMoveCallback;
+  var stopAnimation = clWeb2dGame_graphics_animation.stopAnimation;
+  var makePhysic2d = clWeb2dGame_physics_collision.makePhysic2d;
+  var clearMonitoringLog = clWeb2dGame_utils_debug_logger.clearMonitoringLog;
+  var initGameStateManager = clWeb2dGame_core_gameState.initGameStateManager;
+  var setKvsPrefix = clWeb2dGame_utils_storage.setKvsPrefix;
+  var addVector2d = clWeb2dGame_utils_calc.addVector2d;
+  var changeModelColor = clWeb2dGame_graphics_2dGeometry.changeModelColor;
+  var vector2dAbs = clWeb2dGame_utils_calc.vector2dAbs;
+  var drawDebugPoint = clWeb2dGame_utils_debug_debugDrawer.drawDebugPoint;
+  var incfVector2d = clWeb2dGame_utils_calc.incfVector2d;
+  var getTouchY = clWeb2dGame_inputs_input.getTouchY;
+  var getTexturePromise = clWeb2dGame_graphics_texture.getTexturePromise;
+  var judgeCollisionTargetTags = clWeb2dGame_physics_collision.judgeCollisionTargetTags;
+  var speed2dP = clWeb2dGame_core_basicComponents.speed2dP;
+  var setEntityParam = clWeb2dGame_core_basicComponents.setEntityParam;
+  var makeSimpleMoveSystem = clWeb2dGame_core_basicSystems.makeSimpleMoveSystem;
+  var makeModel2d = clWeb2dGame_graphics_drawModelSystem.makeModel2d;
+  var scriptSystem = clWeb2dGame_core_basicSystems.scriptSystem;
+  var interruptGameState = clWeb2dGame_core_gameState.interruptGameState;
+  var makeTextureModel = clWeb2dGame_graphics_2dGeometry.makeTextureModel;
+  var addPanelBool = clWeb2dGame_inputs_gui.addPanelBool;
+  var collidePhysicsP = clWeb2dGame_physics_collision.collidePhysicsP;
+  var addMouseMoveCallback = clWeb2dGame_inputs_input.addMouseMoveCallback;
+  var copyVector2dTo = clWeb2dGame_core_basicComponents.copyVector2dTo;
+  var getMouseY = clWeb2dGame_inputs_input.getMouseY;
+  var storeKvs = clWeb2dGame_utils_storage.storeKvs;
+  var makeAnimationSystem = clWeb2dGame_core_basicSystems.makeAnimationSystem;
+  var getTexture2dHeight = clWeb2dGame_graphics_texture.getTexture2dHeight;
+  var getTotalTouchY = clWeb2dGame_inputs_input.getTotalTouchY;
+  var calcDistP2 = clWeb2dGame_utils_calc.calcDistP2;
+  var dumpPerformanceCounter = clWeb2dGame_utils_debug_performance.dumpPerformanceCounter;
+  var MAXEVENTLOGCOUNT = clWeb2dGame_utils_debug_logger.MAXEVENTLOGCOUNT;
+  var rotatefPointBy = clWeb2dGame_utils_calc.rotatefPointBy;
+  var calcParentGlobalPoint = clWeb2dGame_utils_calc.calcParentGlobalPoint;
+  var model2d = clWeb2dGame_graphics_drawModelSystem.model2d;
+  var setfVector2dAngle = clWeb2dGame_utils_calc.setfVector2dAngle;
+  var initEntityParams = clWeb2dGame_core_basicComponents.initEntityParams;
+  var makeWiredPolygon = clWeb2dGame_graphics_2dGeometry.makeWiredPolygon;
+  var loadTexture = clWeb2dGame_graphics_texture.loadTexture;
+  var adjustToTarget = clWeb2dGame_utils_calc.adjustToTarget;
+  var cloneVector2d = clWeb2dGame_core_basicComponents.cloneVector2d;
+  var getScreenWidth = clWeb2dGame_core_camera.getScreenWidth;
+  var getEntityParam = clWeb2dGame_core_basicComponents.getEntityParam;
+  var collideEntitiesP = clWeb2dGame_physics_collision.collideEntitiesP;
+  var copyPoint2dTo = clWeb2dGame_core_basicComponents.copyPoint2dTo;
+  var decfVector2d = clWeb2dGame_utils_calc.decfVector2d;
+  var processInput = clWeb2dGame_inputs_input.processInput;
+  var transformfPointInverse = clWeb2dGame_utils_calc.transformfPointInverse;
+  var getMeshSize = clWeb2dGame_graphics_2dGeometry.getMeshSize;
+  var readKvs = clWeb2dGame_utils_storage.readKvs;
+  var initCamera = clWeb2dGame_core_camera.initCamera;
+  var calcDistToLine = clWeb2dGame_utils_calc.calcDistToLine;
+  var makeRect2d = clWeb2dGame_core_basicComponents.makeRect2d;
+  var point2dP = clWeb2dGame_core_basicComponents.point2dP;
+  var setConsoleLogLevel = clWeb2dGame_utils_debug_logger.setConsoleLogLevel;
+  var getPhysicalKeyName = clWeb2dGame_inputs_input.getPhysicalKeyName;
+  var addMouseWheelCallback = clWeb2dGame_inputs_input.addMouseWheelCallback;
+  var getCameraOffsetX = clWeb2dGame_core_camera.getCameraOffsetX;
+  var keyDownCount = clWeb2dGame_inputs_input.keyDownCount;
+  var makeSpeed2d = clWeb2dGame_core_basicComponents.makeSpeed2d;
+  var makeWiredRegularPolygon = clWeb2dGame_graphics_2dGeometry.makeWiredRegularPolygon;
+  var loadFont = clWeb2dGame_graphics_font.loadFont;
+  var getMeshWidth = clWeb2dGame_graphics_2dGeometry.getMeshWidth;
+  var findModel2dByLabel = clWeb2dGame_graphics_drawModelSystem.findModel2dByLabel;
+  var clearTextArea = clWeb2dGame_graphics_textArea.clearTextArea;
+  var initInput = clWeb2dGame_inputs_input.initInput;
+  var slashVecScalar = clWeb2dGame_utils_calc.slashVecScalar;
+  var resetAnimation = clWeb2dGame_graphics_animation.resetAnimation;
+  var lerpVector2d = clWeb2dGame_utils_calc.lerpVector2d;
+  var decfRotateDiff = clWeb2dGame_utils_calc.decfRotateDiff;
+  var initDefaultSystems = clWeb2dGame_core_initializer.initDefaultSystems;
+  var setfColliderModelEnable = clWeb2dGame_physics_collisionSystem.setfColliderModelEnable;
+  var makeTextureModelPromise = clWeb2dGame_graphics_2dGeometry.makeTextureModelPromise;
+  var registerAnimation = clWeb2dGame_graphics_animationManager.registerAnimation;
+  var initUiSystem = clWeb2dGame_inputs_ui.initUiSystem;
+  var addTouchStartCallback = clWeb2dGame_inputs_input.addTouchStartCallback;
+  var makeTextModelPromise = clWeb2dGame_graphics_2dGeometry.makeTextModelPromise;
+  var params = clWeb2dGame_core_basicComponents.params;
+  var physicCircle = clWeb2dGame_physics_collision.physicCircle;
+  var CONSOLELOGFUNCTION = clWeb2dGame_utils_debug_logger.CONSOLELOGFUNCTION;
+  var keyUpCount = clWeb2dGame_inputs_input.keyUpCount;
+  var enableModel2d = clWeb2dGame_graphics_drawModelSystem.enableModel2d;
+  var makeVector2d = clWeb2dGame_core_basicComponents.makeVector2d;
+  var makePhysicPolygon = clWeb2dGame_physics_collision.makePhysicPolygon;
+  var makeTextArea = clWeb2dGame_graphics_textArea.makeTextArea;
+  var diffAngle = clWeb2dGame_utils_calc.diffAngle;
+  var collisionSystem = clWeb2dGame_physics_collisionSystem.collisionSystem;
+  var uiComponent = clWeb2dGame_inputs_ui.uiComponent;
+  var makePhysicRect = clWeb2dGame_physics_collision.makePhysicRect;
+  var calcGlobalPoint = clWeb2dGame_utils_calc.calcGlobalPoint;
+  var makeRotate2d = clWeb2dGame_core_basicComponents.makeRotate2d;
+  var getTouchState = clWeb2dGame_inputs_input.getTouchState;
+  var getTotalTouchX = clWeb2dGame_inputs_input.getTotalTouchX;
+  var switchCurrentAnimation = clWeb2dGame_graphics_animationManager.switchCurrentAnimation;
+  var deleteDeleteComponentHook = clPsEcs_ecs.deleteDeleteComponentHook;
+  var makeEcsEntity = clPsEcs_ecs.makeEcsEntity;
+  var addEcsComponent = clPsEcs_ecs.addEcsComponent;
+  var ecsEntity = clPsEcs_ecs.ecsEntity;
+  var deleteEcsComponentType = clPsEcs_ecs.deleteEcsComponentType;
+  var framePromise = clPsEcs_framePromise.framePromise;
+  var deleteEntityTag = clPsEcs_ecs.deleteEntityTag;
+  var deleteEcsEntity = clPsEcs_ecs.deleteEcsEntity;
+  var cleanEcsEnv = clPsEcs_ecs.cleanEcsEnv;
+  var addDeleteComponentHook = clPsEcs_ecs.addDeleteComponentHook;
+  var ecsMain = clPsEcs_ecs.ecsMain;
+  var includesAllComponentTypes = clPsEcs_utils.includesAllComponentTypes;
+  var findAComponent = clPsEcs_ecs.findAComponent;
+  var registerNframesAfterFunc = clPsEcs_basicProcess.registerNframesAfterFunc;
+  var moveEcsEntity = clPsEcs_ecs.moveEcsEntity;
+  var ecsComponent = clPsEcs_ecs.ecsComponent;
+  var popDefaultEcsEntityParent = clPsEcs_ecs.popDefaultEcsEntityParent;
+  var framePromiseP = clPsEcs_framePromise.framePromiseP;
+  var getEcsComponent = clPsEcs_ecs.getEcsComponent;
+  var ecsSystem = clPsEcs_ecs.ecsSystem;
+  var addEntityTag = clPsEcs_ecs.addEntityTag;
+  var ecsEntityP = clPsEcs_ecs.ecsEntityP;
+  var registerEcsSystem = clPsEcs_ecs.registerEcsSystem;
+  var registerFuncWithPred = clPsEcs_basicProcess.registerFuncWithPred;
+  var addEcsEntityToBuffer = clPsEcs_ecs.addEcsEntityToBuffer;
+  var checkEntityTags = clPsEcs_ecs.checkEntityTags;
+  var initFramePromise = clPsEcs_framePromise.initFramePromise;
+  var framePromiseThen = clPsEcs_framePromise.framePromiseThen;
+  var addEcsEntity = clPsEcs_ecs.addEcsEntity;
+  var registerNextFrameFunc = clPsEcs_basicProcess.registerNextFrameFunc;
+  var findAEntityByTag = clPsEcs_ecs.findAEntityByTag;
+  var stackDefaultEcsEntityParent = clPsEcs_ecs.stackDefaultEcsEntityParent;
+  var addEcsComponentList = clPsEcs_ecs.addEcsComponentList;
+  var framePromiseAll = clPsEcs_framePromise.framePromiseAll;
+  var findTheEntity = clPsEcs_ecs.findTheEntity;
+  var findAEntity = clPsEcs_ecs.findAEntity;
+  var hasEntityTag = clPsEcs_ecs.hasEntityTag;
+  var deleteEcsComponent = clPsEcs_ecs.deleteEcsComponent;
+  var getDefaultEcsEntityParent = clPsEcs_ecs.getDefaultEcsEntityParent;
+  var getField = mogewebzou_game_field.getField;
+  /* --- define objects --- */
+  function controlByKeyboard(entity) {
+      var value;
+      var field = findAEntityByTag('field');
+      var point = getEcsComponent(point2d, field);
+      var point2d2539 = (found = getEcsComponent(point2d, entity), found ? found : (function () {
+          throw 'POINT-2D is not included in the entity';
+      })());
+      if (keyDownP('left') && point.x >= 0) {
+          point2d2539.x -= 2;
+      };
+      if (keyDownP('right') && (value = mogewebzou_game_parameter._internal.PARAMS['field']['width'], typeof value === 'function' ? value() : value) / 2 > point2d2539.x) {
+          point2d2539.x += 2;
+      };
+      if (keyDownP('up')) {
+          point2d2539.y += 2;
+      };
+      __PS_MV_REG = [];
+      return keyDownP('down') ? (point2d2539.y -= 2) : null;
+  };
+  function processController(entity) {
+      __PS_MV_REG = [];
+      return controlByKeyboard(entity);
+  };
+  function initTest() {
+      var rect = makeEcsEntity();
+      addEntityTag(rect, 'moge');
+      addEcsComponentList(rect, makePoint2d('x', 100, 'y', 100), makeScript2d('func', function (entity) {
+          __PS_MV_REG = [];
+          return processController(entity);
+      }), makeModel2d('model', makeWiredRect('width', 32, 'height', 32, 'color', 65280), 'depth', 10));
+      __PS_MV_REG = [];
+      return framePromiseThen(makeTextureModelPromise('width', 32, 'height', 32, 'texture-name', 'test2'), function (model) {
+          addEcsComponentList(rect, makeModel2d('model', model, 'depth', 50));
+          __PS_MV_REG = [];
+          return addEcsEntity(rect);
+      });
+  };
+  function initController() {
+      __PS_MV_REG = [];
+      return framePromiseThen(makeTextureModelPromise('width', 32, 'height', 32, 'texture-name', 'test'), function (model) {
+          var logo = makeEcsEntity();
+          __PS_MV_REG = [];
+          return addEcsComponentList(logo, makePoint2d('x', 100, 'y', 100), makeModel2d('model', model), makeScript2d('func', function (entity) {
+              __PS_MV_REG = [];
+              return processController(entity);
+          }), addEcsEntity(logo));
+      });
+  };
+  /* --- extern symbols --- */
+  return {
+    'initTest': initTest,
+    'initController': initController,
+    '_internal': {
+      'controlByKeyboard': controlByKeyboard,
+      'processController': processController,
     }
   };
 })();
@@ -12345,9 +12127,8 @@ var mogewebzou_game_state_main = (function() {
   var initController = mogewebzou_game_controller.initController;
   var initField = mogewebzou_game_field.initField;
   var getField = mogewebzou_game_field.getField;
-  var initGround = mogewebzou_game_ground.initGround;
   var addImage = mogewebzou_game_state_menu.addImage;
-  var generateMogeStage = mogewebzou_game_ground.generateMogeStage;
+  var generateMogeStage = mogewebzou_game_field.generateMogeStage;
   /* --- define objects --- */
   function addGachaBtn(parent) {
       var fontSize = 25;
@@ -12371,13 +12152,13 @@ var mogewebzou_game_state_main = (function() {
           }, process())), keyIndex != null ? areaSize[keyIndex + 1] : null) / 2;
           var height = ((areaSize.length % 2 !== 0 ? (function () {
               throw 'Message: ' + 'Invalid plist: ~A' + '; Args: ' + areaSize;
-          })() : null, keyIndex8776 = (process = function () {
+          })() : null, keyIndex2540 = (process = function () {
               for (var i = 0; i < areaSize.length / 2; i += 1) {
                   if (areaSize[i * 2] === 'height') {
                       return i * 2;
                   };
               };
-          }, process())), keyIndex8776 != null ? areaSize[keyIndex8776 + 1] : null);
+          }, process())), keyIndex2540 != null ? areaSize[keyIndex2540 + 1] : null);
           var hoverModel = makeModel2d('model', makeWiredRect('width', 2 * hWidth, 'height', height, 'color', 16746496), 'offset', makePoint2d('x', -1 * hWidth, 'y', -1 * height - margin), 'depth', 100);
           addEcsComponentList(area, initEntityParams('next-state', null), makeUiComponent('on-click-up', function () {
               addToEventLog('popo');
@@ -12407,14 +12188,17 @@ var mogewebzou_game_state_main = (function() {
       };
   };
   function gameMainState() {
-      this.startProcess = function (state2148) {
+      this.startProcess = function (state1206) {
           addToEventLog('hoge');
-          var newParent2149 = state2148.parent;
+          var newParent1207 = state1206.parent;
           try {
-              stackDefaultEcsEntityParent(newParent2149);
+              stackDefaultEcsEntityParent(newParent1207);
               initField();
+              addToEventLog('ini');
               var field = getField();
+              addToEventLog('gene1');
               generateMogeStage(field);
+              addToEventLog('gene');
               initTest();
           } finally {
               popDefaultEcsEntityParent();
@@ -12422,14 +12206,14 @@ var mogewebzou_game_state_main = (function() {
           __PS_MV_REG = [];
           return true;
       };
-      this.process = function (state2150) {
+      this.process = function (state1208) {
           __PS_MV_REG = [];
           return keyUpNowP('escape') ? makeState('menu') : null;
       };
-      this.endProcess = function (state2151) {
+      this.endProcess = function (state1209) {
           registerNextFrameFunc(function () {
               __PS_MV_REG = [];
-              return deleteEcsEntity(state2151.parent);
+              return deleteEcsEntity(state1209.parent);
           });
           __PS_MV_REG = [];
           return true;
@@ -12439,30 +12223,33 @@ var mogewebzou_game_state_main = (function() {
       return this;
   };
   function makeGameMainState() {
-      var _js8778 = arguments.length;
-      for (var n8777 = 0; n8777 < _js8778; n8777 += 2) {
-          switch (arguments[n8777]) {
+      var _js2542 = arguments.length;
+      for (var n2541 = 0; n2541 < _js2542; n2541 += 2) {
+          switch (arguments[n2541]) {
           case 'start-process':
-              startProcess = arguments[n8777 + 1];
+              startProcess = arguments[n2541 + 1];
               break;
           case 'process':
-              process = arguments[n8777 + 1];
+              process = arguments[n2541 + 1];
               break;
           case 'end-process':
-              endProcess = arguments[n8777 + 1];
+              endProcess = arguments[n2541 + 1];
               break;
           case 'parent':
-              parent = arguments[n8777 + 1];
+              parent = arguments[n2541 + 1];
           };
       };
-      var startProcess = 'undefined' === typeof startProcess ? function (state2152) {
+      var startProcess = 'undefined' === typeof startProcess ? function (state1210) {
           addToEventLog('hoge');
-          var newParent2153 = state2152.parent;
+          var newParent1211 = state1210.parent;
           try {
-              stackDefaultEcsEntityParent(newParent2153);
+              stackDefaultEcsEntityParent(newParent1211);
               initField();
+              addToEventLog('ini');
               var field = getField();
+              addToEventLog('gene1');
               generateMogeStage(field);
+              addToEventLog('gene');
               initTest();
           } finally {
               popDefaultEcsEntityParent();
@@ -12470,14 +12257,14 @@ var mogewebzou_game_state_main = (function() {
           __PS_MV_REG = [];
           return true;
       } : startProcess;
-      var process = 'undefined' === typeof process ? function (state2154) {
+      var process = 'undefined' === typeof process ? function (state1212) {
           __PS_MV_REG = [];
           return keyUpNowP('escape') ? makeState('menu') : null;
       } : process;
-      var endProcess = 'undefined' === typeof endProcess ? function (state2155) {
+      var endProcess = 'undefined' === typeof endProcess ? function (state1213) {
           registerNextFrameFunc(function () {
               __PS_MV_REG = [];
-              return deleteEcsEntity(state2155.parent);
+              return deleteEcsEntity(state1213.parent);
           });
           __PS_MV_REG = [];
           return true;

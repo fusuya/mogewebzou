@@ -8,14 +8,14 @@ var psExperiment_defines_defmethod = (function() {
       return this;
   };
   function makeDispatchItem() {
-      var _js2119 = arguments.length;
-      for (var n2118 = 0; n2118 < _js2119; n2118 += 2) {
-          switch (arguments[n2118]) {
+      var _js14083 = arguments.length;
+      for (var n14082 = 0; n14082 < _js14083; n14082 += 2) {
+          switch (arguments[n14082]) {
           case 'type-list':
-              typeList = arguments[n2118 + 1];
+              typeList = arguments[n14082 + 1];
               break;
           case 'func':
-              func = arguments[n2118 + 1];
+              func = arguments[n14082 + 1];
           };
       };
       var typeList;
@@ -40,21 +40,21 @@ var psExperiment_defines_defmethod = (function() {
       if (testInstanceList.length !== targetTypeList.length) {
           throw 'Message: ' + 'Failed assertion: ~A' + '; Args: ' + (testInstanceList.length === targetTypeList.length);
       };
-      var _js2121 = testInstanceList.length;
-      var _js2123 = targetTypeList.length;
-      var FIRST2124 = true;
-      for (var _js2120 = 0; _js2120 < _js2121; _js2120 += 1) {
-          var testInstance = testInstanceList[_js2120];
-          var _js2122 = FIRST2124 ? 0 : _js2122 + 1;
-          if (_js2122 >= _js2123) {
+      var _js14085 = testInstanceList.length;
+      var _js14087 = targetTypeList.length;
+      var FIRST14088 = true;
+      for (var _js14084 = 0; _js14084 < _js14085; _js14084 += 1) {
+          var testInstance = testInstanceList[_js14084];
+          var _js14086 = FIRST14088 ? 0 : _js14086 + 1;
+          if (_js14086 >= _js14087) {
               break;
           };
-          var targetType = targetTypeList[_js2122];
+          var targetType = targetTypeList[_js14086];
           if (!instanceDispatchP(testInstance, targetType)) {
               __PS_MV_REG = [];
               return null;
           };
-          FIRST2124 = null;
+          FIRST14088 = null;
       };
       __PS_MV_REG = [];
       return true;
@@ -68,21 +68,21 @@ var psExperiment_defines_defmethod = (function() {
       if (testTypeList.length !== targetTypeList.length) {
           throw 'Message: ' + 'Failed assertion: ~A' + '; Args: ' + (testTypeList.length === targetTypeList.length);
       };
-      var _js2126 = testTypeList.length;
-      var _js2128 = targetTypeList.length;
-      var FIRST2129 = true;
-      for (var _js2125 = 0; _js2125 < _js2126; _js2125 += 1) {
-          var testType = testTypeList[_js2125];
-          var _js2127 = FIRST2129 ? 0 : _js2127 + 1;
-          if (_js2127 >= _js2128) {
+      var _js14090 = testTypeList.length;
+      var _js14092 = targetTypeList.length;
+      var FIRST14093 = true;
+      for (var _js14089 = 0; _js14089 < _js14090; _js14089 += 1) {
+          var testType = testTypeList[_js14089];
+          var _js14091 = FIRST14093 ? 0 : _js14091 + 1;
+          if (_js14091 >= _js14092) {
               break;
           };
-          var targetType = targetTypeList[_js2127];
+          var targetType = targetTypeList[_js14091];
           if (!typeDispatchP(testType, targetType)) {
               __PS_MV_REG = [];
               return null;
           };
-          FIRST2129 = null;
+          FIRST14093 = null;
       };
       __PS_MV_REG = [];
       return true;
@@ -117,14 +117,14 @@ var psExperiment_defines_defmethod = (function() {
       });
   };
   function findDispatchFuncIndex(functionName, instanceList) {
-      var _js2131 = arguments.length;
-      for (var n2130 = 2; n2130 < _js2131; n2130 += 2) {
-          switch (arguments[n2130]) {
+      var _js14095 = arguments.length;
+      for (var n14094 = 2; n14094 < _js14095; n14094 += 2) {
+          switch (arguments[n14094]) {
           case 'from':
-              from = arguments[n2130 + 1];
+              from = arguments[n14094 + 1];
               break;
           case 'if-does-not-exist':
-              ifDoesNotExist = arguments[n2130 + 1];
+              ifDoesNotExist = arguments[n14094 + 1];
           };
       };
       var from = 'undefined' === typeof from ? 0 : from;
@@ -133,8 +133,8 @@ var psExperiment_defines_defmethod = (function() {
       if (!dispatchItemList) {
           throw 'Message: ' + 'There is no generic function \"~A\"' + '; Args: ' + functionName;
       };
-      var _js2132 = dispatchItemList.length;
-      for (var i = from; i < _js2132; i += 1) {
+      var _js14096 = dispatchItemList.length;
+      for (var i = from; i < _js14096; i += 1) {
           var item = dispatchItemList[i];
           if (instanceListDispatchP(instanceList, item.typeList)) {
               __PS_MV_REG = [];
@@ -265,14 +265,14 @@ var clWeb2dGame_utils_stageGenerator = (function() {
       return this;
   };
   function makeElement() {
-      var _js2134 = arguments.length;
-      for (var n2133 = 0; n2133 < _js2134; n2133 += 2) {
-          switch (arguments[n2133]) {
+      var _js14098 = arguments.length;
+      for (var n14097 = 0; n14097 < _js14098; n14097 += 2) {
+          switch (arguments[n14097]) {
           case 'time':
-              time = arguments[n2133 + 1];
+              time = arguments[n14097 + 1];
               break;
           case 'func':
-              func = arguments[n2133 + 1];
+              func = arguments[n14097 + 1];
           };
       };
       var time = 'undefined' === typeof time ? 0 : time;
@@ -294,14 +294,14 @@ var clWeb2dGame_utils_stageGenerator = (function() {
       return this;
   };
   function makeInterpreter() {
-      var _js2136 = arguments.length;
-      for (var n2135 = 0; n2135 < _js2136; n2135 += 2) {
-          switch (arguments[n2135]) {
+      var _js14100 = arguments.length;
+      for (var n14099 = 0; n14099 < _js14100; n14099 += 2) {
+          switch (arguments[n14099]) {
           case 'func':
-              func = arguments[n2135 + 1];
+              func = arguments[n14099 + 1];
               break;
           case 'include-list':
-              includeList = arguments[n2135 + 1];
+              includeList = arguments[n14099 + 1];
           };
       };
       var func;
@@ -321,14 +321,14 @@ var clWeb2dGame_utils_stageGenerator = (function() {
       return this;
   };
   function makeStage() {
-      var _js2138 = arguments.length;
-      for (var n2137 = 0; n2137 < _js2138; n2137 += 2) {
-          switch (arguments[n2137]) {
+      var _js14102 = arguments.length;
+      for (var n14101 = 0; n14101 < _js14102; n14101 += 2) {
+          switch (arguments[n14101]) {
           case 'current-time':
-              currentTime = arguments[n2137 + 1];
+              currentTime = arguments[n14101 + 1];
               break;
           case 'element-list':
-              elementList = arguments[n2137 + 1];
+              elementList = arguments[n14101 + 1];
           };
       };
       var currentTime = 'undefined' === typeof currentTime ? 0 : currentTime;
@@ -364,18 +364,18 @@ var clWeb2dGame_utils_stageGenerator = (function() {
       return ++stage.currentTime;
   };
   function addElementToStage(stage, time, func) {
-      var gSequence2139;
-      var gKey2140;
+      var gSequence14103;
+      var gKey14104;
       stage.elementList.unshift(makeElement('time', time, 'func', func));
       stage.elementList;
       __PS_MV_REG = [];
-      return stage.elementList = (gSequence2139 = stage.elementList, gKey2140 = null, (gSequence2139.sort(function (a, b) {
+      return stage.elementList = (gSequence14103 = stage.elementList, gKey14104 = null, (gSequence14103.sort(function (a, b) {
           var keyA = a;
           var keyB = b;
           return (function (a, b) {
               return a.time < b.time;
           })(keyA, keyB) ? -1 : 1;
-      }), gSequence2139));
+      }), gSequence14103));
   };
   if ('undefined' === typeof STAGEELEMENTINTERPRETERTABLE) {
       var STAGEELEMENTINTERPRETERTABLE = {  };
@@ -401,14 +401,14 @@ var clWeb2dGame_utils_stageGenerator = (function() {
   };
   registerStageElementInterpreter('general', function (stage0, args1, immediateP2) {
       return (function () {
-          var _js2142 = arguments.length;
-          for (var n2141 = 0; n2141 < _js2142; n2141 += 2) {
-              switch (arguments[n2141]) {
+          var _js14106 = arguments.length;
+          for (var n14105 = 0; n14105 < _js14106; n14105 += 2) {
+              switch (arguments[n14105]) {
               case 'time':
-                  time = arguments[n2141 + 1];
+                  time = arguments[n14105 + 1];
                   break;
               case 'func':
-                  func = arguments[n2141 + 1];
+                  func = arguments[n14105 + 1];
               };
           };
           var time;
@@ -460,8 +460,8 @@ var clPsEcs_utils = (function() {
       if (!((object instanceof (typeof type === 'string' ? eval(type) : type)))) {
           throw '\'TYPE-ERROR: (EXPECTED-TYPE TYPE DATUM OBJECT)';
       };
-      for (var callback = null, _js_idx2143 = 0; _js_idx2143 < hooks.length; _js_idx2143 += 1) {
-          callback = hooks[_js_idx2143];
+      for (var callback = null, _js_idx14107 = 0; _js_idx14107 < hooks.length; _js_idx14107 += 1) {
+          callback = hooks[_js_idx14107];
           callback(object, isAdded);
       };
   };
@@ -486,20 +486,20 @@ var clPsEcs_basicProcess = (function() {
       return this;
   };
   function makeFuncWithPred() {
-      var _js2145 = arguments.length;
-      for (var n2144 = 0; n2144 < _js2145; n2144 += 2) {
-          switch (arguments[n2144]) {
+      var _js14109 = arguments.length;
+      for (var n14108 = 0; n14108 < _js14109; n14108 += 2) {
+          switch (arguments[n14108]) {
           case 'func':
-              func = arguments[n2144 + 1];
+              func = arguments[n14108 + 1];
               break;
           case 'pred':
-              pred = arguments[n2144 + 1];
+              pred = arguments[n14108 + 1];
               break;
           case 'rest-timeout-frame':
-              restTimeoutFrame = arguments[n2144 + 1];
+              restTimeoutFrame = arguments[n14108 + 1];
               break;
           case 'name':
-              name = arguments[n2144 + 1];
+              name = arguments[n14108 + 1];
           };
       };
       var func;
@@ -521,11 +521,11 @@ var clPsEcs_basicProcess = (function() {
       var FUNCWITHPREDLIST = [];
   };
   function executeAllRegisteredFuncsWithPred() {
-      var copy2148;
-      var copy2151;
+      var copy14112;
+      var copy14115;
       var executedList = [];
-      for (var funcWithPred = null, _js_arrvar2147 = (copy2148 = FUNCWITHPREDLIST.concat(), copy2148.reverse()), _js_idx2146 = 0; _js_idx2146 < _js_arrvar2147.length; _js_idx2146 += 1) {
-          funcWithPred = _js_arrvar2147[_js_idx2146];
+      for (var funcWithPred = null, _js_arrvar14111 = (copy14112 = FUNCWITHPREDLIST.concat(), copy14112.reverse()), _js_idx14110 = 0; _js_idx14110 < _js_arrvar14111.length; _js_idx14110 += 1) {
+          funcWithPred = _js_arrvar14111[_js_idx14110];
           if (funcWithPred.pred()) {
               funcWithPred.func();
               executedList.unshift(funcWithPred);
@@ -539,11 +539,11 @@ var clPsEcs_basicProcess = (function() {
               };
           };
       };
-      for (var executed = null, _js_idx2149 = 0; _js_idx2149 < executedList.length; _js_idx2149 += 1) {
-          executed = executedList[_js_idx2149];
-          FUNCWITHPREDLIST = (copy2151 = FUNCWITHPREDLIST, copy2151.filter(function (x) {
-              return !(function (target2150) {
-                  return executed === target2150;
+      for (var executed = null, _js_idx14113 = 0; _js_idx14113 < executedList.length; _js_idx14113 += 1) {
+          executed = executedList[_js_idx14113];
+          FUNCWITHPREDLIST = (copy14115 = FUNCWITHPREDLIST, copy14115.filter(function (x) {
+              return !(function (target14114) {
+                  return executed === target14114;
               })(x);
           }));
       };
@@ -553,14 +553,14 @@ var clPsEcs_basicProcess = (function() {
    * The name is not used in the process but it is useful for debug.
    */
   function registerFuncWithPred(func, pred) {
-      var _js2151 = arguments.length;
-      for (var n2150 = 2; n2150 < _js2151; n2150 += 2) {
-          switch (arguments[n2150]) {
+      var _js14115 = arguments.length;
+      for (var n14114 = 2; n14114 < _js14115; n14114 += 2) {
+          switch (arguments[n14114]) {
           case 'timeout-frame':
-              timeoutFrame = arguments[n2150 + 1];
+              timeoutFrame = arguments[n14114 + 1];
               break;
           case 'name':
-              name = arguments[n2150 + 1];
+              name = arguments[n14114 + 1];
           };
       };
       var timeoutFrame = 'undefined' === typeof timeoutFrame ? -1 : timeoutFrame;
@@ -627,14 +627,14 @@ var clPsEcs_framePromise = (function() {
       return this;
   };
   function makeFramePromise() {
-      var _js2153 = arguments.length;
-      for (var n2152 = 0; n2152 < _js2153; n2152 += 2) {
-          switch (arguments[n2152]) {
+      var _js14117 = arguments.length;
+      for (var n14116 = 0; n14116 < _js14117; n14116 += 2) {
+          switch (arguments[n14116]) {
           case 'result':
-              result = arguments[n2152 + 1];
+              result = arguments[n14116 + 1];
               break;
           case 'resolved-p':
-              resolvedP = arguments[n2152 + 1];
+              resolvedP = arguments[n14116 + 1];
           };
       };
       var result;
@@ -664,11 +664,11 @@ var clPsEcs_framePromise = (function() {
   };
   /** Register the callback as a following promise of the promise. The callback is invoked after the promise is resolved. Then, it accepts a return value of the promise. */
   function framePromiseThen(promise, callback) {
-      var _js2155 = arguments.length;
-      for (var n2154 = 2; n2154 < _js2155; n2154 += 2) {
-          switch (arguments[n2154]) {
+      var _js14119 = arguments.length;
+      for (var n14118 = 2; n14118 < _js14119; n14118 += 2) {
+          switch (arguments[n14118]) {
           case 'timeout-frame':
-              timeoutFrame = arguments[n2154 + 1];
+              timeoutFrame = arguments[n14118 + 1];
           };
       };
       var timeoutFrame = 'undefined' === typeof timeoutFrame ? -1 : timeoutFrame;
@@ -684,11 +684,11 @@ var clPsEcs_framePromise = (function() {
   };
   /** Register the callback as a following promise of the promise list. The callback is invoked after all of the promise are resolved. Then, it accepts a return value list of the promises. */
   function framePromiseAll(promiseList, callback) {
-      var _js2157 = arguments.length;
-      for (var n2156 = 2; n2156 < _js2157; n2156 += 2) {
-          switch (arguments[n2156]) {
+      var _js14121 = arguments.length;
+      for (var n14120 = 2; n14120 < _js14121; n14120 += 2) {
+          switch (arguments[n14120]) {
           case 'timeout-frame':
-              timeoutFrame = arguments[n2156 + 1];
+              timeoutFrame = arguments[n14120 + 1];
           };
       };
       var timeoutFrame = 'undefined' === typeof timeoutFrame ? -1 : timeoutFrame;
@@ -732,17 +732,17 @@ var clPsEcs_flatTree = (function() {
       return this;
   };
   function makeFlatTreeNode() {
-      var _js2159 = arguments.length;
-      for (var n2158 = 0; n2158 < _js2159; n2158 += 2) {
-          switch (arguments[n2158]) {
+      var _js14123 = arguments.length;
+      for (var n14122 = 0; n14122 < _js14123; n14122 += 2) {
+          switch (arguments[n14122]) {
           case 'parent':
-              parent = arguments[n2158 + 1];
+              parent = arguments[n14122 + 1];
               break;
           case 'children':
-              children = arguments[n2158 + 1];
+              children = arguments[n14122 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n2158 + 1];
+              registerp = arguments[n14122 + 1];
           };
       };
       var parent;
@@ -787,8 +787,8 @@ var clPsEcs_flatTree = (function() {
               lst.unshift(oneNode);
               lst;
               oneNode.registerp = true;
-              for (var child = null, _js_arrvar2161 = oneNode.children, _js_idx2160 = 0; _js_idx2160 < _js_arrvar2161.length; _js_idx2160 += 1) {
-                  child = _js_arrvar2161[_js_idx2160];
+              for (var child = null, _js_arrvar14125 = oneNode.children, _js_idx14124 = 0; _js_idx14124 < _js_arrvar14125.length; _js_idx14124 += 1) {
+                  child = _js_arrvar14125[_js_idx14124];
                   rec(child);
               };
           };
@@ -805,7 +805,7 @@ var clPsEcs_flatTree = (function() {
    * Because this function destruct the place-lst, caller should overwrite place-lst by new returned list.
    */
   function deleteFlatTreeNode(node, placeLst, callback) {
-      var copy2163;
+      var copy14127;
       if (callback === undefined) {
           callback = execNothing;
       };
@@ -816,25 +816,25 @@ var clPsEcs_flatTree = (function() {
           throw 'Can\'t delete a not-registered flat-node';
       };
       if (node.parent) {
-          node.parent.children = (copy2163 = node.parent.children, copy2163.filter(function (x) {
-              return !(function (target2162) {
-                  return node === target2162;
+          node.parent.children = (copy14127 = node.parent.children, copy14127.filter(function (x) {
+              return !(function (target14126) {
+                  return node === target14126;
               })(x);
           }));
           node.parent = null;
       };
       var rec = function (oneNode, lst) {
-          var copy2165;
+          var copy14129;
           if (oneNode.registerp) {
-              var removedLst = (copy2165 = lst, copy2165.filter(function (x) {
-                  return !(function (target2164) {
-                      return oneNode === target2164;
+              var removedLst = (copy14129 = lst, copy14129.filter(function (x) {
+                  return !(function (target14128) {
+                      return oneNode === target14128;
                   })(x);
               }));
               callback(oneNode);
               oneNode.registerp = null;
-              for (var child = null, _js_arrvar2167 = oneNode.children, _js_idx2166 = 0; _js_idx2166 < _js_arrvar2167.length; _js_idx2166 += 1) {
-                  child = _js_arrvar2167[_js_idx2166];
+              for (var child = null, _js_arrvar14131 = oneNode.children, _js_idx14130 = 0; _js_idx14130 < _js_arrvar14131.length; _js_idx14130 += 1) {
+                  child = _js_arrvar14131[_js_idx14130];
                   removedLst = rec(child, removedLst);
               };
               __PS_MV_REG = [];
@@ -857,15 +857,15 @@ var clPsEcs_flatTree = (function() {
           callback = execNothing;
       };
       var deleteLst = [];
-      for (var node = null, _js_idx2168 = 0; _js_idx2168 < placeLst.length; _js_idx2168 += 1) {
-          node = placeLst[_js_idx2168];
+      for (var node = null, _js_idx14132 = 0; _js_idx14132 < placeLst.length; _js_idx14132 += 1) {
+          node = placeLst[_js_idx14132];
           if (predicate(node)) {
               deleteLst.unshift(node);
               deleteLst;
           };
       };
-      for (var node = null, _js_idx2169 = 0; _js_idx2169 < deleteLst.length; _js_idx2169 += 1) {
-          node = deleteLst[_js_idx2169];
+      for (var node = null, _js_idx14133 = 0; _js_idx14133 < deleteLst.length; _js_idx14133 += 1) {
+          node = deleteLst[_js_idx14133];
           if (node.registerp) {
               placeLst = deleteFlatTreeNode(node, placeLst, callback);
           };
@@ -875,7 +875,7 @@ var clPsEcs_flatTree = (function() {
   };
   /** Move a flat-tree node under a new-parent. */
   function moveFlatTreeNode(node, newParent) {
-      var copy2173;
+      var copy14137;
       if (!((node instanceof (typeof flatTreeNode === 'string' ? eval(flatTreeNode) : flatTreeNode)))) {
           throw '\'TYPE-ERROR: (The place is \'NODE\'. The expected type is \'FLAT-TREE-NODE\')';
       };
@@ -892,9 +892,9 @@ var clPsEcs_flatTree = (function() {
       };
       if (oldParent) {
           __PS_MV_REG = [];
-          return oldParent.children = (copy2173 = oldParent.children, copy2173.filter(function (x) {
-              return !(function (target2172) {
-                  return node === target2172;
+          return oldParent.children = (copy14137 = oldParent.children, copy14137.filter(function (x) {
+              return !(function (target14136) {
+                  return node === target14136;
               })(x);
           }));
       };
@@ -938,17 +938,17 @@ var clPsEcs_ecs = (function() {
       return this;
   };
   function makeEcsComponent() {
-      var _js2175 = arguments.length;
-      for (var n2174 = 0; n2174 < _js2175; n2174 += 2) {
-          switch (arguments[n2174]) {
+      var _js14139 = arguments.length;
+      for (var n14138 = 0; n14138 < _js14139; n14138 += 2) {
+          switch (arguments[n14138]) {
           case 'parent':
-              parent = arguments[n2174 + 1];
+              parent = arguments[n14138 + 1];
               break;
           case 'children':
-              children = arguments[n2174 + 1];
+              children = arguments[n14138 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n2174 + 1];
+              registerp = arguments[n14138 + 1];
           };
       };
       var parent;
@@ -983,24 +983,24 @@ var clPsEcs_ecs = (function() {
           if (!((topComponent instanceof (typeof flatTreeNode === 'string' ? eval(flatTreeNode) : flatTreeNode)))) {
               throw '\'TYPE-ERROR: (The place is \'TOP-COMPONENT\'. The expected type is \'FLAT-TREE-NODE\')';
           };
-          var rec1158 = function (comp) {
+          var rec2717 = function (comp) {
               if (predicate(comp)) {
                   __PS_MV_REG = [];
                   throw { '__ps_block_tag' : 'findAComponent', '__ps_value' : comp };
               };
-              for (var child = null, _js_arrvar2177 = comp.children, _js_idx2176 = 0; _js_idx2176 < _js_arrvar2177.length; _js_idx2176 += 1) {
-                  child = _js_arrvar2177[_js_idx2176];
-                  rec1158(child);
+              for (var child = null, _js_arrvar14141 = comp.children, _js_idx14140 = 0; _js_idx14140 < _js_arrvar14141.length; _js_idx14140 += 1) {
+                  child = _js_arrvar14141[_js_idx14140];
+                  rec2717(child);
               };
           };
-          rec1158(topComponent);
+          rec2717(topComponent);
           __PS_MV_REG = [];
           return null;
-      } catch (_ps_err2178) {
-          if (_ps_err2178 && 'findAComponent' === _ps_err2178['__ps_block_tag']) {
-              return _ps_err2178['__ps_value'];
+      } catch (_ps_err14142) {
+          if (_ps_err14142 && 'findAComponent' === _ps_err14142['__ps_block_tag']) {
+              return _ps_err14142['__ps_value'];
           } else {
-              throw _ps_err2178;
+              throw _ps_err14142;
           };
       };
   };
@@ -1017,26 +1017,26 @@ var clPsEcs_ecs = (function() {
       return this;
   };
   function makeEcsEntity() {
-      var _js2180 = arguments.length;
-      for (var n2179 = 0; n2179 < _js2180; n2179 += 2) {
-          switch (arguments[n2179]) {
+      var _js14144 = arguments.length;
+      for (var n14143 = 0; n14143 < _js14144; n14143 += 2) {
+          switch (arguments[n14143]) {
           case 'parent':
-              parent = arguments[n2179 + 1];
+              parent = arguments[n14143 + 1];
               break;
           case 'children':
-              children = arguments[n2179 + 1];
+              children = arguments[n14143 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n2179 + 1];
+              registerp = arguments[n14143 + 1];
               break;
           case 'id':
-              id = arguments[n2179 + 1];
+              id = arguments[n14143 + 1];
               break;
           case 'tags':
-              tags = arguments[n2179 + 1];
+              tags = arguments[n14143 + 1];
               break;
           case 'components':
-              components = arguments[n2179 + 1];
+              components = arguments[n14143 + 1];
           };
       };
       var parent;
@@ -1075,8 +1075,8 @@ var clPsEcs_ecs = (function() {
       return ENTITYLIST;
   };
   function cleanEcsEntities() {
-      for (var entity = null, _js_arrvar2182 = getEntityList(), _js_idx2181 = 0; _js_idx2181 < _js_arrvar2182.length; _js_idx2181 += 1) {
-          entity = _js_arrvar2182[_js_idx2181];
+      for (var entity = null, _js_arrvar14146 = getEntityList(), _js_idx14145 = 0; _js_idx14145 < _js_arrvar14146.length; _js_idx14145 += 1) {
+          entity = _js_arrvar14146[_js_idx14145];
           entity.registerp = null;
       };
       __PS_MV_REG = [];
@@ -1084,20 +1084,20 @@ var clPsEcs_ecs = (function() {
   };
   /** Get a component from entity by component-type */
   function getEcsComponent(componentType, entity) {
-      for (var x2183 = null, _js_arrvar2185 = entity.components, _js_idx2184 = 0; _js_idx2184 < _js_arrvar2185.length; _js_idx2184 += 1) {
-          x2183 = _js_arrvar2185[_js_idx2184];
+      for (var x14147 = null, _js_arrvar14149 = entity.components, _js_idx14148 = 0; _js_idx14148 < _js_arrvar14149.length; _js_idx14148 += 1) {
+          x14147 = _js_arrvar14149[_js_idx14148];
           if ((function (component) {
               __PS_MV_REG = [];
               return (component instanceof (typeof componentType === 'string' ? eval(componentType) : componentType));
-          })(x2183)) {
-              return x2183;
+          })(x14147)) {
+              return x14147;
           };
       };
   };
   /** Find a registered entity by predicate */
   function findAEntity(predicate) {
-      for (var entity = null, _js_arrvar2187 = getEntityList(), _js_idx2186 = 0; _js_idx2186 < _js_arrvar2187.length; _js_idx2186 += 1) {
-          entity = _js_arrvar2187[_js_idx2186];
+      for (var entity = null, _js_arrvar14151 = getEntityList(), _js_idx14150 = 0; _js_idx14150 < _js_arrvar14151.length; _js_idx14150 += 1) {
+          entity = _js_arrvar14151[_js_idx14150];
           if (predicate(entity)) {
               __PS_MV_REG = [];
               return entity;
@@ -1120,8 +1120,8 @@ var clPsEcs_ecs = (function() {
       if (!((entity instanceof (typeof ecsEntity === 'string' ? eval(ecsEntity) : ecsEntity)))) {
           throw '\'TYPE-ERROR: (The place is \'ENTITY\'. The expected type is \'ECS-ENTITY\')';
       };
-      for (var tag = null, _js_idx2188 = 0; _js_idx2188 < tags.length; _js_idx2188 += 1) {
-          tag = tags[_js_idx2188];
+      for (var tag = null, _js_idx14152 = 0; _js_idx14152 < tags.length; _js_idx14152 += 1) {
+          tag = tags[_js_idx14152];
           checkTagType(tag);
           entity.tags[tag] = true;
       };
@@ -1146,8 +1146,8 @@ var clPsEcs_ecs = (function() {
   };
   function checkEntityTags(entity) {
       var tags = Array.prototype.slice.call(arguments, 1);
-      for (var tag = null, _js_idx2189 = 0; _js_idx2189 < tags.length; _js_idx2189 += 1) {
-          tag = tags[_js_idx2189];
+      for (var tag = null, _js_idx14153 = 0; _js_idx14153 < tags.length; _js_idx14153 += 1) {
+          tag = tags[_js_idx14153];
           if (!hasEntityTag(entity, tag)) {
               throw 'Message: ' + 'The entity has not a tag \'~A\'.' + '; Args: ' + tag;
           };
@@ -1191,29 +1191,29 @@ var clPsEcs_ecs = (function() {
       return this;
   };
   function makeEcsSystem() {
-      var _js2191 = arguments.length;
-      for (var n2190 = 0; n2190 < _js2191; n2190 += 2) {
-          switch (arguments[n2190]) {
+      var _js14155 = arguments.length;
+      for (var n14154 = 0; n14154 < _js14155; n14154 += 2) {
+          switch (arguments[n14154]) {
           case 'enable':
-              enable = arguments[n2190 + 1];
+              enable = arguments[n14154 + 1];
               break;
           case 'target-entities':
-              targetEntities = arguments[n2190 + 1];
+              targetEntities = arguments[n14154 + 1];
               break;
           case 'target-component-types':
-              targetComponentTypes = arguments[n2190 + 1];
+              targetComponentTypes = arguments[n14154 + 1];
               break;
           case 'process':
-              process = arguments[n2190 + 1];
+              process = arguments[n14154 + 1];
               break;
           case 'process-all':
-              processAll = arguments[n2190 + 1];
+              processAll = arguments[n14154 + 1];
               break;
           case 'add-entity-hook':
-              addEntityHook = arguments[n2190 + 1];
+              addEntityHook = arguments[n14154 + 1];
               break;
           case 'delete-entity-hook':
-              deleteEntityHook = arguments[n2190 + 1];
+              deleteEntityHook = arguments[n14154 + 1];
           };
       };
       var enable = 'undefined' === typeof enable ? true : enable;
@@ -1247,25 +1247,25 @@ var clPsEcs_ecs = (function() {
   };
   function ecsMain() {
       executeEcsBasicProcess();
-      for (var pair1159 = null, _js_arrvar2193 = getEcsSystemList(), _js_idx2192 = 0; _js_idx2192 < _js_arrvar2193.length; _js_idx2192 += 1) {
-          pair1159 = _js_arrvar2193[_js_idx2192];
-          var system = pair1159[1];
+      for (var pair2718 = null, _js_arrvar14157 = getEcsSystemList(), _js_idx14156 = 0; _js_idx14156 < _js_arrvar14157.length; _js_idx14156 += 1) {
+          pair2718 = _js_arrvar14157[_js_idx14156];
+          var system = pair2718[1];
           if (system.enable) {
               system.processAll(system);
-              for (var entity = null, _js_arrvar2195 = system.targetEntities, _js_idx2194 = 0; _js_idx2194 < _js_arrvar2195.length; _js_idx2194 += 1) {
-                  entity = _js_arrvar2195[_js_idx2194];
+              for (var entity = null, _js_arrvar14159 = system.targetEntities, _js_idx14158 = 0; _js_idx14158 < _js_arrvar14159.length; _js_idx14158 += 1) {
+                  entity = _js_arrvar14159[_js_idx14158];
                   system.process(entity);
               };
           };
       };
   };
   function isRegisteredEntity(entity, system) {
-      for (var x2195 = null, _js_arrvar2197 = system.targetEntities, _js_idx2196 = 0; _js_idx2196 < _js_arrvar2197.length; _js_idx2196 += 1) {
-          x2195 = _js_arrvar2197[_js_idx2196];
-          if ((function (target2194) {
-              return entity === target2194;
-          })(x2195)) {
-              return x2195;
+      for (var x14159 = null, _js_arrvar14161 = system.targetEntities, _js_idx14160 = 0; _js_idx14160 < _js_arrvar14161.length; _js_idx14160 += 1) {
+          x14159 = _js_arrvar14161[_js_idx14160];
+          if ((function (target14158) {
+              return entity === target14158;
+          })(x14159)) {
+              return x14159;
           };
       };
   };
@@ -1284,12 +1284,12 @@ var clPsEcs_ecs = (function() {
       if (isTargetEntity(entity, system)) {
           system.addEntityHook(entity);
           if (!(function () {
-              for (var x2198 = null, _js_arrvar2200 = system.targetEntities, _js_idx2199 = 0; _js_idx2199 < _js_arrvar2200.length; _js_idx2199 += 1) {
-                  x2198 = _js_arrvar2200[_js_idx2199];
+              for (var x14162 = null, _js_arrvar14164 = system.targetEntities, _js_idx14163 = 0; _js_idx14163 < _js_arrvar14164.length; _js_idx14163 += 1) {
+                  x14162 = _js_arrvar14164[_js_idx14163];
                   if ((function (elem) {
                       return entity === elem;
-                  })(x2198)) {
-                      return x2198;
+                  })(x14162)) {
+                      return x14162;
                   };
               };
           })()) {
@@ -1301,35 +1301,35 @@ var clPsEcs_ecs = (function() {
       };
   };
   function pushEntityToAllTargetSystem(entity) {
-      for (var pair1160 = null, _js_arrvar2202 = getEcsSystemList(), _js_idx2201 = 0; _js_idx2201 < _js_arrvar2202.length; _js_idx2201 += 1) {
-          pair1160 = _js_arrvar2202[_js_idx2201];
-          var system = pair1160[1];
+      for (var pair2719 = null, _js_arrvar14166 = getEcsSystemList(), _js_idx14165 = 0; _js_idx14165 < _js_arrvar14166.length; _js_idx14165 += 1) {
+          pair2719 = _js_arrvar14166[_js_idx14165];
+          var system = pair2719[1];
           pushEntityToSystemIfNeeded(entity, system);
       };
   };
   function deleteEntityFromSystemIfRegistered(entity, system) {
-      var copy2204;
+      var copy14168;
       if (isRegisteredEntity(entity, system)) {
           system.deleteEntityHook(entity);
           __PS_MV_REG = [];
-          return system.targetEntities = (copy2204 = system.targetEntities, copy2204.filter(function (x) {
-              return !(function (target2203) {
-                  return entity === target2203;
+          return system.targetEntities = (copy14168 = system.targetEntities, copy14168.filter(function (x) {
+              return !(function (target14167) {
+                  return entity === target14167;
               })(x);
           }));
       };
   };
   function deleteEntityFromAllSystems(entity) {
-      for (var pair1161 = null, _js_arrvar2206 = getEcsSystemList(), _js_idx2205 = 0; _js_idx2205 < _js_arrvar2206.length; _js_idx2205 += 1) {
-          pair1161 = _js_arrvar2206[_js_idx2205];
-          var system = pair1161[1];
+      for (var pair2720 = null, _js_arrvar14170 = getEcsSystemList(), _js_idx14169 = 0; _js_idx14169 < _js_arrvar14170.length; _js_idx14169 += 1) {
+          pair2720 = _js_arrvar14170[_js_idx14169];
+          var system = pair2720[1];
           deleteEntityFromSystemIfRegistered(entity, system);
       };
   };
   function deleteEntityFromNoLongerBelongSystems(entity) {
-      for (var pair1162 = null, _js_arrvar2208 = getEcsSystemList(), _js_idx2207 = 0; _js_idx2207 < _js_arrvar2208.length; _js_idx2207 += 1) {
-          pair1162 = _js_arrvar2208[_js_idx2207];
-          var system = pair1162[1];
+      for (var pair2721 = null, _js_arrvar14172 = getEcsSystemList(), _js_idx14171 = 0; _js_idx14171 < _js_arrvar14172.length; _js_idx14171 += 1) {
+          pair2721 = _js_arrvar14172[_js_idx14171];
+          var system = pair2721[1];
           if (!isTargetEntity(entity, system)) {
               deleteEntityFromSystemIfRegistered(entity, system);
           };
@@ -1375,14 +1375,14 @@ var clPsEcs_ecs = (function() {
       if (!((entity instanceof (typeof flatTreeNode === 'string' ? eval(flatTreeNode) : flatTreeNode)))) {
           throw '\'TYPE-ERROR: (The place is \'ENTITY\'. The expected type is \'FLAT-TREE-NODE\')';
       };
-      var rec1163 = function (target) {
+      var rec2722 = function (target) {
           pushEntityToAllTargetSystem(target);
-          for (var child = null, _js_arrvar2210 = target.children, _js_idx2209 = 0; _js_idx2209 < _js_arrvar2210.length; _js_idx2209 += 1) {
-              child = _js_arrvar2210[_js_idx2209];
-              rec1163(child);
+          for (var child = null, _js_arrvar14174 = target.children, _js_idx14173 = 0; _js_idx14173 < _js_arrvar14174.length; _js_idx14173 += 1) {
+              child = _js_arrvar14174[_js_idx14173];
+              rec2722(child);
           };
       };
-      rec1163(entity);
+      rec2722(entity);
       __PS_MV_REG = [];
       return entity;
   };
@@ -1406,15 +1406,15 @@ var clPsEcs_ecs = (function() {
       if (!((entity instanceof (typeof flatTreeNode === 'string' ? eval(flatTreeNode) : flatTreeNode)))) {
           throw '\'TYPE-ERROR: (The place is \'ENTITY\'. The expected type is \'FLAT-TREE-NODE\')';
       };
-      var rec1164 = function (target) {
+      var rec2723 = function (target) {
           deleteEntityFromAllSystems(target);
-          for (var child = null, _js_arrvar2212 = target.children, _js_idx2211 = 0; _js_idx2211 < _js_arrvar2212.length; _js_idx2211 += 1) {
-              child = _js_arrvar2212[_js_idx2211];
-              rec1164(child);
+          for (var child = null, _js_arrvar14176 = target.children, _js_idx14175 = 0; _js_idx14175 < _js_arrvar14176.length; _js_idx14175 += 1) {
+              child = _js_arrvar14176[_js_idx14175];
+              rec2723(child);
           };
       };
       __PS_MV_REG = [];
-      return rec1164(entity);
+      return rec2723(entity);
   };
   /** Move an entity under a new-parent. */
   function moveEcsEntity(entity, newParent) {
@@ -1434,12 +1434,12 @@ var clPsEcs_ecs = (function() {
           throw '\'TYPE-ERROR: (The place is \'SYSTEM\'. The expected type is \'ECS-SYSTEM\')';
       };
       var found = (function () {
-          for (var x2213 = null, _js_idx2214 = 0; _js_idx2214 < ECSSYSTEMLIST.length; _js_idx2214 += 1) {
-              x2213 = ECSSYSTEMLIST[_js_idx2214];
+          for (var x14177 = null, _js_idx14178 = 0; _js_idx14178 < ECSSYSTEMLIST.length; _js_idx14178 += 1) {
+              x14177 = ECSSYSTEMLIST[_js_idx14178];
               if ((function (pair) {
                   return pair[0] === name;
-              })(x2213)) {
-                  return x2213;
+              })(x14177)) {
+                  return x14177;
               };
           };
       })();
@@ -1449,8 +1449,8 @@ var clPsEcs_ecs = (function() {
           ECSSYSTEMLIST = ECSSYSTEMLIST.concat([[name, system]]);
       };
       system.targetEntities = [];
-      for (var entity = null, _js_arrvar2216 = getEntityList(), _js_idx2215 = 0; _js_idx2215 < _js_arrvar2216.length; _js_idx2215 += 1) {
-          entity = _js_arrvar2216[_js_idx2215];
+      for (var entity = null, _js_arrvar14180 = getEntityList(), _js_idx14179 = 0; _js_idx14179 < _js_arrvar14180.length; _js_idx14179 += 1) {
+          entity = _js_arrvar14180[_js_idx14179];
           pushEntityToSystemIfNeeded(entity, system);
       };
       __PS_MV_REG = [];
@@ -1458,12 +1458,12 @@ var clPsEcs_ecs = (function() {
   };
   function checkComponentUniqueness(component, entity) {
       if ((function () {
-          for (var x2222 = null, _js_arrvar2224 = entity.components, _js_idx2223 = 0; _js_idx2223 < _js_arrvar2224.length; _js_idx2223 += 1) {
-              x2222 = _js_arrvar2224[_js_idx2223];
-              if ((function (target2221) {
-                  return component === target2221;
-              })(x2222)) {
-                  return x2222;
+          for (var x14186 = null, _js_arrvar14188 = entity.components, _js_idx14187 = 0; _js_idx14187 < _js_arrvar14188.length; _js_idx14187 += 1) {
+              x14186 = _js_arrvar14188[_js_idx14187];
+              if ((function (target14185) {
+                  return component === target14185;
+              })(x14186)) {
+                  return x14186;
               };
           };
       })()) {
@@ -1480,8 +1480,8 @@ var clPsEcs_ecs = (function() {
               throw '\'TYPE-ERROR: (The place is \'PARENT-COMPONENT\'. The expected type is \'ECS-COMPONENT\')';
           };
       };
-      for (var component = null, _js_idx2225 = 0; _js_idx2225 < componentList.length; _js_idx2225 += 1) {
-          component = componentList[_js_idx2225];
+      for (var component = null, _js_idx14189 = 0; _js_idx14189 < componentList.length; _js_idx14189 += 1) {
+          component = componentList[_js_idx14189];
           if (!((component instanceof (typeof ecsComponent === 'string' ? eval(ecsComponent) : ecsComponent)))) {
               throw '\'TYPE-ERROR: (The place is \'COMPONENT\'. The expected type is \'ECS-COMPONENT\')';
           };
@@ -1507,12 +1507,12 @@ var clPsEcs_ecs = (function() {
   };
   function addDeleteComponentHook(callback) {
       if (!(function () {
-          for (var x2226 = null, _js_idx2227 = 0; _js_idx2227 < DELETECOMPONENTHOOKS.length; _js_idx2227 += 1) {
-              x2226 = DELETECOMPONENTHOOKS[_js_idx2227];
+          for (var x14190 = null, _js_idx14191 = 0; _js_idx14191 < DELETECOMPONENTHOOKS.length; _js_idx14191 += 1) {
+              x14190 = DELETECOMPONENTHOOKS[_js_idx14191];
               if ((function (elem) {
                   return callback === elem;
-              })(x2226)) {
-                  return x2226;
+              })(x14190)) {
+                  return x14190;
               };
           };
       })()) {
@@ -1523,11 +1523,11 @@ var clPsEcs_ecs = (function() {
       return DELETECOMPONENTHOOKS;
   };
   function deleteDeleteComponentHook(callback) {
-      var copy2229;
+      var copy14193;
       var preLength = DELETECOMPONENTHOOKS.length;
-      DELETECOMPONENTHOOKS = (copy2229 = DELETECOMPONENTHOOKS, copy2229.filter(function (x) {
-          return !(function (target2228) {
-              return callback === target2228;
+      DELETECOMPONENTHOOKS = (copy14193 = DELETECOMPONENTHOOKS, copy14193.filter(function (x) {
+          return !(function (target14192) {
+              return callback === target14192;
           })(x);
       }));
       if (preLength === DELETECOMPONENTHOOKS.length) {
@@ -1540,8 +1540,8 @@ var clPsEcs_ecs = (function() {
       };
       var preLength = entity.components.length;
       entity.components = deleteFlatTreeNodeIf(predicate, entity.components, function (component) {
-          for (var hook = null, _js_idx2230 = 0; _js_idx2230 < DELETECOMPONENTHOOKS.length; _js_idx2230 += 1) {
-              hook = DELETECOMPONENTHOOKS[_js_idx2230];
+          for (var hook = null, _js_idx14194 = 0; _js_idx14194 < DELETECOMPONENTHOOKS.length; _js_idx14194 += 1) {
+              hook = DELETECOMPONENTHOOKS[_js_idx14194];
               hook(component);
           };
       });
@@ -1643,17 +1643,17 @@ var clWeb2dGame_core_gameState = (function() {
       return this;
   };
   function makeGameState() {
-      var _js2232 = arguments.length;
-      for (var n2231 = 0; n2231 < _js2232; n2231 += 2) {
-          switch (arguments[n2231]) {
+      var _js14196 = arguments.length;
+      for (var n14195 = 0; n14195 < _js14196; n14195 += 2) {
+          switch (arguments[n14195]) {
           case 'start-process':
-              startProcess = arguments[n2231 + 1];
+              startProcess = arguments[n14195 + 1];
               break;
           case 'process':
-              process = arguments[n2231 + 1];
+              process = arguments[n14195 + 1];
               break;
           case 'end-process':
-              endProcess = arguments[n2231 + 1];
+              endProcess = arguments[n14195 + 1];
           };
       };
       var startProcess = 'undefined' === typeof startProcess ? function (_this) {
@@ -1683,17 +1683,17 @@ var clWeb2dGame_core_gameState = (function() {
       return this;
   };
   function makeGameStateManager() {
-      var _js2234 = arguments.length;
-      for (var n2233 = 0; n2233 < _js2234; n2233 += 2) {
-          switch (arguments[n2233]) {
+      var _js14198 = arguments.length;
+      for (var n14197 = 0; n14197 < _js14198; n14197 += 2) {
+          switch (arguments[n14197]) {
           case 'current-state':
-              currentState = arguments[n2233 + 1];
+              currentState = arguments[n14197 + 1];
               break;
           case 'next-state':
-              nextState = arguments[n2233 + 1];
+              nextState = arguments[n14197 + 1];
               break;
           case 'sub-state':
-              subState = arguments[n2233 + 1];
+              subState = arguments[n14197 + 1];
           };
       };
       var currentState = 'undefined' === typeof currentState ? makeEmptyGameState() : currentState;
@@ -1973,17 +1973,17 @@ var clWeb2dGame_utils_debug_performance = (function() {
       return this;
   };
   function makePerformanceTimerManager() {
-      var _js2236 = arguments.length;
-      for (var n2235 = 0; n2235 < _js2236; n2235 += 2) {
-          switch (arguments[n2235]) {
+      var _js14200 = arguments.length;
+      for (var n14199 = 0; n14199 < _js14200; n14199 += 2) {
+          switch (arguments[n14199]) {
           case 'tree':
-              tree = arguments[n2235 + 1];
+              tree = arguments[n14199 + 1];
               break;
           case 'current-node':
-              currentNode = arguments[n2235 + 1];
+              currentNode = arguments[n14199 + 1];
               break;
           case 'target-fps':
-              targetFps = arguments[n2235 + 1];
+              targetFps = arguments[n14199 + 1];
           };
       };
       var tree;
@@ -2008,20 +2008,20 @@ var clWeb2dGame_utils_debug_performance = (function() {
       return this;
   };
   function makePerformanceTimerElement() {
-      var _js2238 = arguments.length;
-      for (var n2237 = 0; n2237 < _js2238; n2237 += 2) {
-          switch (arguments[n2237]) {
+      var _js14202 = arguments.length;
+      for (var n14201 = 0; n14201 < _js14202; n14201 += 2) {
+          switch (arguments[n14201]) {
           case 'name':
-              name = arguments[n2237 + 1];
+              name = arguments[n14201 + 1];
               break;
           case 'results':
-              results = arguments[n2237 + 1];
+              results = arguments[n14201 + 1];
               break;
           case 'count':
-              count = arguments[n2237 + 1];
+              count = arguments[n14201 + 1];
               break;
           case 'color':
-              color = arguments[n2237 + 1];
+              color = arguments[n14201 + 1];
           };
       };
       var name = 'undefined' === typeof name ? '' : name;
@@ -2045,14 +2045,14 @@ var clWeb2dGame_utils_debug_performance = (function() {
       return this;
   };
   function makePerformanceTimerNode() {
-      var _js2240 = arguments.length;
-      for (var n2239 = 0; n2239 < _js2240; n2239 += 2) {
-          switch (arguments[n2239]) {
+      var _js14204 = arguments.length;
+      for (var n14203 = 0; n14203 < _js14204; n14203 += 2) {
+          switch (arguments[n14203]) {
           case 'element':
-              element = arguments[n2239 + 1];
+              element = arguments[n14203 + 1];
               break;
           case 'children':
-              children = arguments[n2239 + 1];
+              children = arguments[n14203 + 1];
           };
       };
       var element;
@@ -2073,17 +2073,17 @@ var clWeb2dGame_utils_debug_performance = (function() {
       return this;
   };
   function makeRingBuffer() {
-      var _js2242 = arguments.length;
-      for (var n2241 = 0; n2241 < _js2242; n2241 += 2) {
-          switch (arguments[n2241]) {
+      var _js14206 = arguments.length;
+      for (var n14205 = 0; n14205 < _js14206; n14205 += 2) {
+          switch (arguments[n14205]) {
           case 'array':
-              array = arguments[n2241 + 1];
+              array = arguments[n14205 + 1];
               break;
           case 'count':
-              count = arguments[n2241 + 1];
+              count = arguments[n14205 + 1];
               break;
           case 'next':
-              next = arguments[n2241 + 1];
+              next = arguments[n14205 + 1];
           };
       };
       var array;
@@ -2113,11 +2113,11 @@ var clWeb2dGame_utils_debug_performance = (function() {
           var validLength = Math.min(buffer.count, buffer.array.length);
           __PS_MV_REG = [];
           return (function () {
-              var sum2243 = 0;
+              var sum14207 = 0;
               for (var i = 0; i < validLength; i += 1) {
-                  sum2243 += buffer.array[i];
+                  sum14207 += buffer.array[i];
               };
-              return sum2243;
+              return sum14207;
           })() / validLength;
       } else {
           __PS_MV_REG = [];
@@ -2135,12 +2135,12 @@ var clWeb2dGame_utils_debug_performance = (function() {
           throw '\'TYPE-ERROR: (The place is \'MANAGER\'. The expected type is \'PERFORMANCE-TIMER-MANAGER\')';
       };
       var foundNode = manager.currentNode != null ? (function () {
-          for (var x2244 = null, _js_arrvar2246 = manager.currentNode.children, _js_idx2245 = 0; _js_idx2245 < _js_arrvar2246.length; _js_idx2245 += 1) {
-              x2244 = _js_arrvar2246[_js_idx2245];
+          for (var x14208 = null, _js_arrvar14210 = manager.currentNode.children, _js_idx14209 = 0; _js_idx14209 < _js_arrvar14210.length; _js_idx14209 += 1) {
+              x14208 = _js_arrvar14210[_js_idx14209];
               if ((function (node) {
                   return node.element.name === name;
-              })(x2244)) {
-                  return x2244;
+              })(x14208)) {
+                  return x14208;
               };
           };
       })() : manager.tree;
@@ -2163,11 +2163,11 @@ var clWeb2dGame_utils_debug_performance = (function() {
       };
   };
   function dumpPerformanceCounter() {
-      var _js2248 = arguments.length;
-      for (var n2247 = 0; n2247 < _js2248; n2247 += 2) {
-          switch (arguments[n2247]) {
+      var _js14212 = arguments.length;
+      for (var n14211 = 0; n14211 < _js14212; n14211 += 2) {
+          switch (arguments[n14211]) {
           case 'timer':
-              timer = arguments[n2247 + 1];
+              timer = arguments[n14211 + 1];
           };
       };
       var timer = 'undefined' === typeof timer ? PERFORMANCETIMER : timer;
@@ -2181,14 +2181,14 @@ var clWeb2dGame_utils_debug_performance = (function() {
           return temp;
       };
       var rec = function (result, node) {
-          var element2249 = node.element;
-          var children2250 = node.children;
-          var timeMs = ringBufferAverage(element2249.results);
-          result = result + '(' + element2249.name + ':' + formatNumber(timeMs, 2, 2);
-          if (children2250.length) {
+          var element14213 = node.element;
+          var children14214 = node.children;
+          var timeMs = ringBufferAverage(element14213.results);
+          result = result + '(' + element14213.name + ':' + formatNumber(timeMs, 2, 2);
+          if (children14214.length) {
               result += ' ';
-              for (var child = null, _js_idx2251 = 0; _js_idx2251 < children2250.length; _js_idx2251 += 1) {
-                  child = children2250[_js_idx2251];
+              for (var child = null, _js_idx14215 = 0; _js_idx14215 < children14214.length; _js_idx14215 += 1) {
+                  child = children14214[_js_idx14215];
                   result = rec(result, child);
               };
           };
@@ -2292,11 +2292,11 @@ var clWeb2dGame_inputs_gui = (function() {
       return initGui();
   };
   function addPanelFolder(name) {
-      var _js2253 = arguments.length;
-      for (var n2252 = 1; n2252 < _js2253; n2252 += 2) {
-          switch (arguments[n2252]) {
+      var _js14217 = arguments.length;
+      for (var n14216 = 1; n14216 < _js14217; n14216 += 2) {
+          switch (arguments[n14216]) {
           case 'open-p':
-              openP = arguments[n2252 + 1];
+              openP = arguments[n14216 + 1];
           };
       };
       var openP = 'undefined' === typeof openP ? true : openP;
@@ -2308,14 +2308,14 @@ var clWeb2dGame_inputs_gui = (function() {
       return folder;
   };
   function addPanelBool(name, initValue) {
-      var _js2255 = arguments.length;
-      for (var n2254 = 2; n2254 < _js2255; n2254 += 2) {
-          switch (arguments[n2254]) {
+      var _js14219 = arguments.length;
+      for (var n14218 = 2; n14218 < _js14219; n14218 += 2) {
+          switch (arguments[n14218]) {
           case 'on-change':
-              onChange = arguments[n2254 + 1];
+              onChange = arguments[n14218 + 1];
               break;
           case 'folder':
-              folder = arguments[n2254 + 1];
+              folder = arguments[n14218 + 1];
           };
       };
       var onChange;
@@ -2325,23 +2325,23 @@ var clWeb2dGame_inputs_gui = (function() {
       return (folder ? folder : GUIPANEL).add(GUIPANELPARAMS, name).onChange(onChange);
   };
   function addPanelNumber(name, initValue) {
-      var _js2257 = arguments.length;
-      for (var n2256 = 2; n2256 < _js2257; n2256 += 2) {
-          switch (arguments[n2256]) {
+      var _js14221 = arguments.length;
+      for (var n14220 = 2; n14220 < _js14221; n14220 += 2) {
+          switch (arguments[n14220]) {
           case 'on-change':
-              onChange = arguments[n2256 + 1];
+              onChange = arguments[n14220 + 1];
               break;
           case 'folder':
-              folder = arguments[n2256 + 1];
+              folder = arguments[n14220 + 1];
               break;
           case 'min':
-              min = arguments[n2256 + 1];
+              min = arguments[n14220 + 1];
               break;
           case 'max':
-              max = arguments[n2256 + 1];
+              max = arguments[n14220 + 1];
               break;
           case 'step':
-              step = arguments[n2256 + 1];
+              step = arguments[n14220 + 1];
           };
       };
       var onChange;
@@ -2354,14 +2354,14 @@ var clWeb2dGame_inputs_gui = (function() {
       return (folder ? folder : GUIPANEL).add(GUIPANELPARAMS, name, min, max, step).onChange(onChange);
   };
   function addPanelButton(name) {
-      var _js2259 = arguments.length;
-      for (var n2258 = 1; n2258 < _js2259; n2258 += 2) {
-          switch (arguments[n2258]) {
+      var _js14223 = arguments.length;
+      for (var n14222 = 1; n14222 < _js14223; n14222 += 2) {
+          switch (arguments[n14222]) {
           case 'on-change':
-              onChange = arguments[n2258 + 1];
+              onChange = arguments[n14222 + 1];
               break;
           case 'folder':
-              folder = arguments[n2258 + 1];
+              folder = arguments[n14222 + 1];
           };
       };
       var onChange;
@@ -2441,14 +2441,14 @@ var clWeb2dGame_graphics_font = (function() {
    * After that you can get it by get-font-promise with the name and the weight
    */
   function loadFont(relativePath) {
-      var _js2261 = arguments.length;
-      for (var n2260 = 1; n2260 < _js2261; n2260 += 2) {
-          switch (arguments[n2260]) {
+      var _js14225 = arguments.length;
+      for (var n14224 = 1; n14224 < _js14225; n14224 += 2) {
+          switch (arguments[n14224]) {
           case 'name':
-              name = arguments[n2260 + 1];
+              name = arguments[n14224 + 1];
               break;
           case 'weight':
-              weight = arguments[n2260 + 1];
+              weight = arguments[n14224 + 1];
           };
       };
       var name = 'undefined' === typeof name ? 'helvetiker' : name;
@@ -2557,8 +2557,8 @@ var clWeb2dGame_utils_debug_logger = (function() {
               EVENTLOGTEXTLIST = EVENTLOGTEXTLIST.slice(0, MAXEVENTLOGCOUNT);
           };
           var log = '';
-          for (var oneLine = null, _js_idx2262 = 0; _js_idx2262 < EVENTLOGTEXTLIST.length; _js_idx2262 += 1) {
-              oneLine = EVENTLOGTEXTLIST[_js_idx2262];
+          for (var oneLine = null, _js_idx14226 = 0; _js_idx14226 < EVENTLOGTEXTLIST.length; _js_idx14226 += 1) {
+              oneLine = EVENTLOGTEXTLIST[_js_idx14226];
               log = log + oneLine + '<br>';
           };
           __PS_MV_REG = [];
@@ -2678,23 +2678,23 @@ var clWeb2dGame_core_basicComponents = (function() {
       return this;
   };
   function makeVector2d() {
-      var _js2264 = arguments.length;
-      for (var n2263 = 0; n2263 < _js2264; n2263 += 2) {
-          switch (arguments[n2263]) {
+      var _js14228 = arguments.length;
+      for (var n14227 = 0; n14227 < _js14228; n14227 += 2) {
+          switch (arguments[n14227]) {
           case 'parent':
-              parent = arguments[n2263 + 1];
+              parent = arguments[n14227 + 1];
               break;
           case 'children':
-              children = arguments[n2263 + 1];
+              children = arguments[n14227 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n2263 + 1];
+              registerp = arguments[n14227 + 1];
               break;
           case 'x':
-              x = arguments[n2263 + 1];
+              x = arguments[n14227 + 1];
               break;
           case 'y':
-              y = arguments[n2263 + 1];
+              y = arguments[n14227 + 1];
           };
       };
       var parent;
@@ -2734,26 +2734,26 @@ var clWeb2dGame_core_basicComponents = (function() {
       return this;
   };
   function makePoint2d() {
-      var _js2266 = arguments.length;
-      for (var n2265 = 0; n2265 < _js2266; n2265 += 2) {
-          switch (arguments[n2265]) {
+      var _js14230 = arguments.length;
+      for (var n14229 = 0; n14229 < _js14230; n14229 += 2) {
+          switch (arguments[n14229]) {
           case 'parent':
-              parent = arguments[n2265 + 1];
+              parent = arguments[n14229 + 1];
               break;
           case 'children':
-              children = arguments[n2265 + 1];
+              children = arguments[n14229 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n2265 + 1];
+              registerp = arguments[n14229 + 1];
               break;
           case 'x':
-              x = arguments[n2265 + 1];
+              x = arguments[n14229 + 1];
               break;
           case 'y':
-              y = arguments[n2265 + 1];
+              y = arguments[n14229 + 1];
               break;
           case 'angle':
-              angle = arguments[n2265 + 1];
+              angle = arguments[n14229 + 1];
           };
       };
       var parent;
@@ -2794,23 +2794,23 @@ var clWeb2dGame_core_basicComponents = (function() {
       return this;
   };
   function makeSpeed2d() {
-      var _js2268 = arguments.length;
-      for (var n2267 = 0; n2267 < _js2268; n2267 += 2) {
-          switch (arguments[n2267]) {
+      var _js14232 = arguments.length;
+      for (var n14231 = 0; n14231 < _js14232; n14231 += 2) {
+          switch (arguments[n14231]) {
           case 'parent':
-              parent = arguments[n2267 + 1];
+              parent = arguments[n14231 + 1];
               break;
           case 'children':
-              children = arguments[n2267 + 1];
+              children = arguments[n14231 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n2267 + 1];
+              registerp = arguments[n14231 + 1];
               break;
           case 'x':
-              x = arguments[n2267 + 1];
+              x = arguments[n14231 + 1];
               break;
           case 'y':
-              y = arguments[n2267 + 1];
+              y = arguments[n14231 + 1];
           };
       };
       var parent;
@@ -2851,29 +2851,29 @@ var clWeb2dGame_core_basicComponents = (function() {
       return this;
   };
   function makeRect2d() {
-      var _js2270 = arguments.length;
-      for (var n2269 = 0; n2269 < _js2270; n2269 += 2) {
-          switch (arguments[n2269]) {
+      var _js14234 = arguments.length;
+      for (var n14233 = 0; n14233 < _js14234; n14233 += 2) {
+          switch (arguments[n14233]) {
           case 'parent':
-              parent = arguments[n2269 + 1];
+              parent = arguments[n14233 + 1];
               break;
           case 'children':
-              children = arguments[n2269 + 1];
+              children = arguments[n14233 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n2269 + 1];
+              registerp = arguments[n14233 + 1];
               break;
           case 'x':
-              x = arguments[n2269 + 1];
+              x = arguments[n14233 + 1];
               break;
           case 'y':
-              y = arguments[n2269 + 1];
+              y = arguments[n14233 + 1];
               break;
           case 'width':
-              width = arguments[n2269 + 1];
+              width = arguments[n14233 + 1];
               break;
           case 'height':
-              height = arguments[n2269 + 1];
+              height = arguments[n14233 + 1];
           };
       };
       var parent;
@@ -2917,26 +2917,26 @@ var clWeb2dGame_core_basicComponents = (function() {
       return this;
   };
   function makeRotate2d() {
-      var _js2272 = arguments.length;
-      for (var n2271 = 0; n2271 < _js2272; n2271 += 2) {
-          switch (arguments[n2271]) {
+      var _js14236 = arguments.length;
+      for (var n14235 = 0; n14235 < _js14236; n14235 += 2) {
+          switch (arguments[n14235]) {
           case 'parent':
-              parent = arguments[n2271 + 1];
+              parent = arguments[n14235 + 1];
               break;
           case 'children':
-              children = arguments[n2271 + 1];
+              children = arguments[n14235 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n2271 + 1];
+              registerp = arguments[n14235 + 1];
               break;
           case 'speed':
-              speed = arguments[n2271 + 1];
+              speed = arguments[n14235 + 1];
               break;
           case 'angle':
-              angle = arguments[n2271 + 1];
+              angle = arguments[n14235 + 1];
               break;
           case 'radious':
-              radious = arguments[n2271 + 1];
+              radious = arguments[n14235 + 1];
           };
       };
       var parent;
@@ -2976,20 +2976,20 @@ var clWeb2dGame_core_basicComponents = (function() {
       return this;
   };
   function makeParams() {
-      var _js2274 = arguments.length;
-      for (var n2273 = 0; n2273 < _js2274; n2273 += 2) {
-          switch (arguments[n2273]) {
+      var _js14238 = arguments.length;
+      for (var n14237 = 0; n14237 < _js14238; n14237 += 2) {
+          switch (arguments[n14237]) {
           case 'parent':
-              parent = arguments[n2273 + 1];
+              parent = arguments[n14237 + 1];
               break;
           case 'children':
-              children = arguments[n2273 + 1];
+              children = arguments[n14237 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n2273 + 1];
+              registerp = arguments[n14237 + 1];
               break;
           case 'table':
-              table = arguments[n2273 + 1];
+              table = arguments[n14237 + 1];
           };
       };
       var parent;
@@ -3027,20 +3027,20 @@ var clWeb2dGame_core_basicComponents = (function() {
       return this;
   };
   function makeScript2d() {
-      var _js2276 = arguments.length;
-      for (var n2275 = 0; n2275 < _js2276; n2275 += 2) {
-          switch (arguments[n2275]) {
+      var _js14240 = arguments.length;
+      for (var n14239 = 0; n14239 < _js14240; n14239 += 2) {
+          switch (arguments[n14239]) {
           case 'parent':
-              parent = arguments[n2275 + 1];
+              parent = arguments[n14239 + 1];
               break;
           case 'children':
-              children = arguments[n2275 + 1];
+              children = arguments[n14239 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n2275 + 1];
+              registerp = arguments[n14239 + 1];
               break;
           case 'func':
-              func = arguments[n2275 + 1];
+              func = arguments[n14239 + 1];
           };
       };
       var parent;
@@ -3090,28 +3090,28 @@ var clWeb2dGame_core_basicComponents = (function() {
       return makePoint2d('x', point.x, 'y', point.y, 'angle', point.angle);
   };
   function getEntityParam(entity, key) {
-      var params2277 = (found = getEcsComponent(params, entity), found ? found : (function () {
+      var params14241 = (found = getEcsComponent(params, entity), found ? found : (function () {
           throw 'PARAMS is not included in the entity';
       })());
       __PS_MV_REG = [];
-      return params2277.table[key];
+      return params14241.table[key];
   };
   function setEntityParam(entity) {
       var keyValuePair = Array.prototype.slice.call(arguments, 1);
-      var params2278 = getEcsComponent(params, entity);
+      var params14242 = getEcsComponent(params, entity);
       var len = keyValuePair.length;
       if ((len % 2 + 2) % 2 !== 0) {
           throw 'Message: ' + 'Failed assertion: ~A' + '; Args: ' + ((len % 2 + 2) % 2 === 0);
       };
-      if (!params2278) {
-          params2278 = makeParams();
-          addEcsComponent(params2278, entity);
+      if (!params14242) {
+          params14242 = makeParams();
+          addEcsComponent(params14242, entity);
       };
-      var _js2279 = len / 2;
-      for (var i = 0; i < _js2279; i += 1) {
+      var _js14243 = len / 2;
+      for (var i = 0; i < _js14243; i += 1) {
           var key = keyValuePair[i * 2];
           var value = keyValuePair[i * 2 + 1];
-          params2278.table[key] = value;
+          params14242.table[key] = value;
       };
       __PS_MV_REG = [];
       return keyValuePair[len - 1];
@@ -3315,13 +3315,13 @@ var clWeb2dGame_inputs_input = (function() {
       return inputOffCount(KEYSTATUS[button]);
   };
   function processKeyboardInput() {
-      var hashTable2280 = BUTTONTOKEYBOARD;
-      for (var key = null, _js_arrvar2282 = Object.keys(hashTable2280), _js_idx2281 = 0; _js_idx2281 < _js_arrvar2282.length; _js_idx2281 += 1) {
-          key = _js_arrvar2282[_js_idx2281];
+      var hashTable14244 = BUTTONTOKEYBOARD;
+      for (var key = null, _js_arrvar14246 = Object.keys(hashTable14244), _js_idx14245 = 0; _js_idx14245 < _js_arrvar14246.length; _js_idx14245 += 1) {
+          key = _js_arrvar14246[_js_idx14245];
           (function (button, key) {
               __PS_MV_REG = [];
               return KEYSTATUS[button] = calcNextInputCount(KEYSTATUS[button], KEYBOARD.pressed(key));
-          })(key, hashTable2280[key]);
+          })(key, hashTable14244[key]);
       };
   };
   if ('undefined' === typeof _mouseX) {
@@ -3535,14 +3535,14 @@ var clWeb2dGame_inputs_input = (function() {
       return this;
   };
   function makeMouseEvent() {
-      var _js2284 = arguments.length;
-      for (var n2283 = 0; n2283 < _js2284; n2283 += 2) {
-          switch (arguments[n2283]) {
+      var _js14248 = arguments.length;
+      for (var n14247 = 0; n14247 < _js14248; n14247 += 2) {
+          switch (arguments[n14247]) {
           case 'x':
-              x = arguments[n2283 + 1];
+              x = arguments[n14247 + 1];
               break;
           case 'y':
-              y = arguments[n2283 + 1];
+              y = arguments[n14247 + 1];
           };
       };
       var x;
@@ -3598,20 +3598,20 @@ var clWeb2dGame_inputs_input = (function() {
       return this;
   };
   function makeTouchEventElement() {
-      var _js2286 = arguments.length;
-      for (var n2285 = 0; n2285 < _js2286; n2285 += 2) {
-          switch (arguments[n2285]) {
+      var _js14250 = arguments.length;
+      for (var n14249 = 0; n14249 < _js14250; n14249 += 2) {
+          switch (arguments[n14249]) {
           case 'x':
-              x = arguments[n2285 + 1];
+              x = arguments[n14249 + 1];
               break;
           case 'y':
-              y = arguments[n2285 + 1];
+              y = arguments[n14249 + 1];
               break;
           case 'id':
-              id = arguments[n2285 + 1];
+              id = arguments[n14249 + 1];
               break;
           case 'count':
-              count = arguments[n2285 + 1];
+              count = arguments[n14249 + 1];
           };
       };
       var x;
@@ -3634,11 +3634,11 @@ var clWeb2dGame_inputs_input = (function() {
       return this;
   };
   function makeTouchEvent() {
-      var _js2288 = arguments.length;
-      for (var n2287 = 0; n2287 < _js2288; n2287 += 2) {
-          switch (arguments[n2287]) {
+      var _js14252 = arguments.length;
+      for (var n14251 = 0; n14251 < _js14252; n14251 += 2) {
+          switch (arguments[n14251]) {
           case 'touches':
-              touches = arguments[n2287 + 1];
+              touches = arguments[n14251 + 1];
           };
       };
       var touches;
@@ -3661,16 +3661,16 @@ var clWeb2dGame_inputs_input = (function() {
       if (!elem) {
           return 'up';
       };
-      var count2289 = elem.count;
-      if (count2289 === 0) {
+      var count14253 = elem.count;
+      if (count14253 === 0) {
           return 'up';
-      } else if (count2289 === 1) {
+      } else if (count14253 === 1) {
           return 'down-now';
-      } else if (count2289 > 1) {
+      } else if (count14253 > 1) {
           return 'down';
-      } else if (count2289 === -1) {
+      } else if (count14253 === -1) {
           return 'down';
-      } else if (count2289 === -2) {
+      } else if (count14253 === -2) {
           return 'up-now';
       } else {
           return 'up';
@@ -3679,25 +3679,25 @@ var clWeb2dGame_inputs_input = (function() {
   function getTotalTouchState() {
       var count = 0;
       var result = null;
-      var hashTable2290 = getTouchStateHash();
-      for (var key = null, _js_arrvar2292 = Object.keys(hashTable2290), _js_idx2291 = 0; _js_idx2291 < _js_arrvar2292.length; _js_idx2291 += 1) {
-          key = _js_arrvar2292[_js_idx2291];
-          (function (id, hashValue1165) {
-              return hashValue1165.count !== 0 ? ++count : null;
-          })(key, hashTable2290[key]);
+      var hashTable14254 = getTouchStateHash();
+      for (var key = null, _js_arrvar14256 = Object.keys(hashTable14254), _js_idx14255 = 0; _js_idx14255 < _js_arrvar14256.length; _js_idx14255 += 1) {
+          key = _js_arrvar14256[_js_idx14255];
+          (function (id, hashValue2724) {
+              return hashValue2724.count !== 0 ? ++count : null;
+          })(key, hashTable14254[key]);
       };
       switch (count) {
       case 0:
           result = 'up';
           break;
       case 1:
-          var hashTable2293 = getTouchStateHash();
-          for (var key = null, _js_arrvar2295 = Object.keys(hashTable2293), _js_idx2294 = 0; _js_idx2294 < _js_arrvar2295.length; _js_idx2294 += 1) {
-              key = _js_arrvar2295[_js_idx2294];
-              (function (id, hashValue1166) {
+          var hashTable14257 = getTouchStateHash();
+          for (var key = null, _js_arrvar14259 = Object.keys(hashTable14257), _js_idx14258 = 0; _js_idx14258 < _js_arrvar14259.length; _js_idx14258 += 1) {
+              key = _js_arrvar14259[_js_idx14258];
+              (function (id, hashValue2725) {
                   __PS_MV_REG = [];
-                  return hashValue1166.count !== 0 ? (result = getTouchState(id)) : null;
-              })(key, hashTable2293[key]);
+                  return hashValue2725.count !== 0 ? (result = getTouchState(id)) : null;
+              })(key, hashTable14257[key]);
           };
           break;
       default:
@@ -3719,11 +3719,11 @@ var clWeb2dGame_inputs_input = (function() {
               __PS_MV_REG = [];
               return calcPriority(newState) > calcPriority(oldState);
           };
-          var hashTable2296 = getTouchStateHash();
-          for (var key = null, _js_arrvar2298 = Object.keys(hashTable2296), _js_idx2297 = 0; _js_idx2297 < _js_arrvar2298.length; _js_idx2297 += 1) {
-              key = _js_arrvar2298[_js_idx2297];
-              (function (id, hashValue1167) {
-                  if (hashValue1167.count !== 0) {
+          var hashTable14260 = getTouchStateHash();
+          for (var key = null, _js_arrvar14262 = Object.keys(hashTable14260), _js_idx14261 = 0; _js_idx14261 < _js_arrvar14262.length; _js_idx14261 += 1) {
+              key = _js_arrvar14262[_js_idx14261];
+              (function (id, hashValue2726) {
+                  if (hashValue2726.count !== 0) {
                       var state = getTouchState(id);
                       __PS_MV_REG = [];
                       return result == null || priorP(state, result) ? (result = state) : null;
@@ -3731,7 +3731,7 @@ var clWeb2dGame_inputs_input = (function() {
                       __PS_MV_REG = [];
                       return null;
                   };
-              })(key, hashTable2296[key]);
+              })(key, hashTable14260[key]);
           };
       };
       if (!result) {
@@ -3750,15 +3750,15 @@ var clWeb2dGame_inputs_input = (function() {
   function getTotalTouchAverage(fn, defaultValue) {
       var sum = 0;
       var count = 0;
-      var hashTable2299 = getTouchStateHash();
-      for (var key = null, _js_arrvar2301 = Object.keys(hashTable2299), _js_idx2300 = 0; _js_idx2300 < _js_arrvar2301.length; _js_idx2300 += 1) {
-          key = _js_arrvar2301[_js_idx2300];
-          (function (id, hashValue1168) {
-              if (hashValue1168.count !== 0) {
+      var hashTable14263 = getTouchStateHash();
+      for (var key = null, _js_arrvar14265 = Object.keys(hashTable14263), _js_idx14264 = 0; _js_idx14264 < _js_arrvar14265.length; _js_idx14264 += 1) {
+          key = _js_arrvar14265[_js_idx14264];
+          (function (id, hashValue2727) {
+              if (hashValue2727.count !== 0) {
                   sum += fn(id);
                   return ++count;
               };
-          })(key, hashTable2299[key]);
+          })(key, hashTable14263[key]);
       };
       __PS_MV_REG = [];
       return count > 0 ? sum / count : defaultValue;
@@ -3779,9 +3779,9 @@ var clWeb2dGame_inputs_input = (function() {
       return getTotalTouchAverage(getTouchY, 0);
   };
   function processTouchInput() {
-      var hashTable2302 = TOUCHSTATEHASH;
-      for (var key = null, _js_arrvar2304 = Object.keys(hashTable2302), _js_idx2303 = 0; _js_idx2303 < _js_arrvar2304.length; _js_idx2303 += 1) {
-          key = _js_arrvar2304[_js_idx2303];
+      var hashTable14266 = TOUCHSTATEHASH;
+      for (var key = null, _js_arrvar14268 = Object.keys(hashTable14266), _js_idx14267 = 0; _js_idx14267 < _js_arrvar14268.length; _js_idx14267 += 1) {
+          key = _js_arrvar14268[_js_idx14267];
           (function (id, state) {
               if (state.count >= 0) {
                   return ++state.count;
@@ -3796,7 +3796,7 @@ var clWeb2dGame_inputs_input = (function() {
                       });
                   };
               };
-          })(key, hashTable2302[key]);
+          })(key, hashTable14266[key]);
       };
   };
   function setXyOfTouchEventElement(elem, rawTouchEvent) {
@@ -3815,20 +3815,20 @@ var clWeb2dGame_inputs_input = (function() {
   };
   function initTouchEvent(e) {
       var result = makeTouchEvent('touches', new Array(e.touches.length));
-      var touches2305 = result.touches;
+      var touches14269 = result.touches;
       for (var i = 0; i < e.changedTouches.length; i += 1) {
           var touch = e.changedTouches[i];
           var elem = makeTouchEventElement('id', touch.identifier);
           setXyOfTouchEventElement(elem, touch);
-          touches2305[i] = elem;
+          touches14269[i] = elem;
       };
       __PS_MV_REG = [];
       return result;
   };
   function onTouchStart(e) {
       var event = initTouchEvent(e);
-      for (var eventElem = null, _js_arrvar2307 = event.touches, _js_idx2306 = 0; _js_idx2306 < _js_arrvar2307.length; _js_idx2306 += 1) {
-          eventElem = _js_arrvar2307[_js_idx2306];
+      for (var eventElem = null, _js_arrvar14271 = event.touches, _js_idx14270 = 0; _js_idx14270 < _js_arrvar14271.length; _js_idx14270 += 1) {
+          eventElem = _js_arrvar14271[_js_idx14270];
           TOUCHSTATEHASH[eventElem.id] = eventElem;
       };
       __PS_MV_REG = [];
@@ -3837,8 +3837,8 @@ var clWeb2dGame_inputs_input = (function() {
   function onTouchEnd(e) {
       if (e.touches.length === 0) {
       };
-      for (var touch = null, _js_arrvar2309 = e.changedTouches, _js_idx2308 = 0; _js_idx2308 < _js_arrvar2309.length; _js_idx2308 += 1) {
-          touch = _js_arrvar2309[_js_idx2308];
+      for (var touch = null, _js_arrvar14273 = e.changedTouches, _js_idx14272 = 0; _js_idx14272 < _js_arrvar14273.length; _js_idx14272 += 1) {
+          touch = _js_arrvar14273[_js_idx14272];
           var eventElem = TOUCHSTATEHASH[touch.identifier];
           if (!eventElem) {
               throw 'Message: ' + 'Failed assertion: ~A' + '; Args: ' + eventElem;
@@ -3849,8 +3849,8 @@ var clWeb2dGame_inputs_input = (function() {
       return callTouchEndCallbacks(initTouchEvent(e));
   };
   function onTouchMoveEvent(e) {
-      for (var touch = null, _js_arrvar2311 = e.changedTouches, _js_idx2310 = 0; _js_idx2310 < _js_arrvar2311.length; _js_idx2310 += 1) {
-          touch = _js_arrvar2311[_js_idx2310];
+      for (var touch = null, _js_arrvar14275 = e.changedTouches, _js_idx14274 = 0; _js_idx14274 < _js_arrvar14275.length; _js_idx14274 += 1) {
+          touch = _js_arrvar14275[_js_idx14274];
           var eventElem = TOUCHSTATEHASH[touch.identifier];
           if (!eventElem) {
               throw 'Message: ' + 'Failed assertion: ~A' + '; Args: ' + eventElem;
@@ -3990,20 +3990,20 @@ var clWeb2dGame_utils_basicGenerator = (function() {
   /* --- define objects --- */
   clWeb2dGame_utils_stageGenerator._internal.registerStageElementInterpreter('point', function (stage0, args1, immediateP2) {
       return (function () {
-          var _js2313 = arguments.length;
-          for (var n2312 = 0; n2312 < _js2313; n2312 += 2) {
-              switch (arguments[n2312]) {
+          var _js14277 = arguments.length;
+          for (var n14276 = 0; n14276 < _js14277; n14276 += 2) {
+              switch (arguments[n14276]) {
               case 'time':
-                  time = arguments[n2312 + 1];
+                  time = arguments[n14276 + 1];
                   break;
               case 'x':
-                  x = arguments[n2312 + 1];
+                  x = arguments[n14276 + 1];
                   break;
               case 'y':
-                  y = arguments[n2312 + 1];
+                  y = arguments[n14276 + 1];
                   break;
               case 'angle':
-                  angle = arguments[n2312 + 1];
+                  angle = arguments[n14276 + 1];
               };
           };
           var time;
@@ -4019,17 +4019,17 @@ var clWeb2dGame_utils_basicGenerator = (function() {
   }, []);
   clWeb2dGame_utils_stageGenerator._internal.registerStageElementInterpreter('speed', function (stage0, args1, immediateP2) {
       return (function () {
-          var _js2315 = arguments.length;
-          for (var n2314 = 0; n2314 < _js2315; n2314 += 2) {
-              switch (arguments[n2314]) {
+          var _js14279 = arguments.length;
+          for (var n14278 = 0; n14278 < _js14279; n14278 += 2) {
+              switch (arguments[n14278]) {
               case 'time':
-                  time = arguments[n2314 + 1];
+                  time = arguments[n14278 + 1];
                   break;
               case 'x':
-                  x = arguments[n2314 + 1];
+                  x = arguments[n14278 + 1];
                   break;
               case 'y':
-                  y = arguments[n2314 + 1];
+                  y = arguments[n14278 + 1];
               };
           };
           var time;
@@ -4132,17 +4132,17 @@ var clWeb2dGame_graphics_texture = (function() {
       return this;
   };
   function makeTexture2d() {
-      var _js2317 = arguments.length;
-      for (var n2316 = 0; n2316 < _js2317; n2316 += 2) {
-          switch (arguments[n2316]) {
+      var _js14281 = arguments.length;
+      for (var n14280 = 0; n14280 < _js14281; n14280 += 2) {
+          switch (arguments[n14280]) {
           case 'path-list':
-              pathList = arguments[n2316 + 1];
+              pathList = arguments[n14280 + 1];
               break;
           case 'material':
-              material = arguments[n2316 + 1];
+              material = arguments[n14280 + 1];
               break;
           case 'rect-uv':
-              rectUv = arguments[n2316 + 1];
+              rectUv = arguments[n14280 + 1];
           };
       };
       var pathList = 'undefined' === typeof pathList ? [] : pathList;
@@ -4164,14 +4164,14 @@ var clWeb2dGame_graphics_texture = (function() {
       return this;
   };
   function makeRawImageBitmap() {
-      var _js2319 = arguments.length;
-      for (var n2318 = 0; n2318 < _js2319; n2318 += 2) {
-          switch (arguments[n2318]) {
+      var _js14283 = arguments.length;
+      for (var n14282 = 0; n14282 < _js14283; n14282 += 2) {
+          switch (arguments[n14282]) {
           case 'promise':
-              promise = arguments[n2318 + 1];
+              promise = arguments[n14282 + 1];
               break;
           case 'ref-count':
-              refCount = arguments[n2318 + 1];
+              refCount = arguments[n14282 + 1];
           };
       };
       var promise;
@@ -4206,14 +4206,14 @@ var clWeb2dGame_graphics_texture = (function() {
       return TEXTUREPROMISETABLE[name];
   };
   function getLoadTexturePromise() {
-      var _js2321 = arguments.length;
-      for (var n2320 = 0; n2320 < _js2321; n2320 += 2) {
-          switch (arguments[n2320]) {
+      var _js14285 = arguments.length;
+      for (var n14284 = 0; n14284 < _js14285; n14284 += 2) {
+          switch (arguments[n14284]) {
           case 'path':
-              path = arguments[n2320 + 1];
+              path = arguments[n14284 + 1];
               break;
           case 'loader':
-              loader = arguments[n2320 + 1];
+              loader = arguments[n14284 + 1];
           };
       };
       var path;
@@ -4258,29 +4258,29 @@ var clWeb2dGame_graphics_texture = (function() {
   };
   /** Asynchronously Load texture by path and register it by name */
   function loadTexture() {
-      var _js2323 = arguments.length;
-      for (var n2322 = 0; n2322 < _js2323; n2322 += 2) {
-          switch (arguments[n2322]) {
+      var _js14287 = arguments.length;
+      for (var n14286 = 0; n14286 < _js14287; n14286 += 2) {
+          switch (arguments[n14286]) {
           case 'path':
-              path = arguments[n2322 + 1];
+              path = arguments[n14286 + 1];
               break;
           case 'name':
-              name = arguments[n2322 + 1];
+              name = arguments[n14286 + 1];
               break;
           case 'alpha-path':
-              alphaPath = arguments[n2322 + 1];
+              alphaPath = arguments[n14286 + 1];
               break;
           case 'x':
-              x = arguments[n2322 + 1];
+              x = arguments[n14286 + 1];
               break;
           case 'y':
-              y = arguments[n2322 + 1];
+              y = arguments[n14286 + 1];
               break;
           case 'width':
-              width = arguments[n2322 + 1];
+              width = arguments[n14286 + 1];
               break;
           case 'height':
-              height = arguments[n2322 + 1];
+              height = arguments[n14286 + 1];
           };
       };
       var path;
@@ -4314,14 +4314,14 @@ var clWeb2dGame_graphics_texture = (function() {
       };
       __PS_MV_REG = [];
       return framePromiseThen(texPromise, function (tex) {
-          var copy2327;
-          TEXTUREPROMISETABLE = (copy2327 = TEXTUREPROMISETABLE, copy2327.filter(function (x) {
-              return !(function (target2326) {
-                  return texPromise === target2326;
+          var copy14291;
+          TEXTUREPROMISETABLE = (copy14291 = TEXTUREPROMISETABLE, copy14291.filter(function (x) {
+              return !(function (target14290) {
+                  return texPromise === target14290;
               })(x);
           }));
-          for (var path = null, _js_arrvar2325 = tex.pathList, _js_idx2324 = 0; _js_idx2324 < _js_arrvar2325.length; _js_idx2324 += 1) {
-              path = _js_arrvar2325[_js_idx2324];
+          for (var path = null, _js_arrvar14289 = tex.pathList, _js_idx14288 = 0; _js_idx14288 < _js_arrvar14289.length; _js_idx14288 += 1) {
+              path = _js_arrvar14289[_js_idx14288];
               var raw = findRawImageBitmap(path);
               if (!raw) {
                   throw 'Message: ' + 'The path \"~A\" is not loaded.' + '; Args: ' + path;
@@ -4453,14 +4453,14 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
   var getDefaultEcsEntityParent = clPsEcs_ecs.getDefaultEcsEntityParent;
   /* --- define objects --- */
   function pushVerticesTo(geometry, rawVertexLst) {
-      for (var vertexAsLst = null, _js_idx2328 = 0; _js_idx2328 < rawVertexLst.length; _js_idx2328 += 1) {
-          vertexAsLst = rawVertexLst[_js_idx2328];
+      for (var vertexAsLst = null, _js_idx14292 = 0; _js_idx14292 < rawVertexLst.length; _js_idx14292 += 1) {
+          vertexAsLst = rawVertexLst[_js_idx14292];
           geometry.vertices.push(new THREE.Vector3(vertexAsLst[0], vertexAsLst[1], 0));
       };
   };
   function pushFacesTo(geometry, rawFaceLst) {
-      for (var faceAsLst = null, _js_idx2329 = 0; _js_idx2329 < rawFaceLst.length; _js_idx2329 += 1) {
-          faceAsLst = rawFaceLst[_js_idx2329];
+      for (var faceAsLst = null, _js_idx14293 = 0; _js_idx14293 < rawFaceLst.length; _js_idx14293 += 1) {
+          faceAsLst = rawFaceLst[_js_idx14293];
           geometry.faces.push(new THREE.Face3(faceAsLst[0], faceAsLst[1], faceAsLst[2]));
       };
   };
@@ -4488,17 +4488,17 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       return ['width', getMeshWidth(mesh), 'height', getMeshHeight(mesh)];
   };
   function makeLine() {
-      var _js2331 = arguments.length;
-      for (var n2330 = 0; n2330 < _js2331; n2330 += 2) {
-          switch (arguments[n2330]) {
+      var _js14295 = arguments.length;
+      for (var n14294 = 0; n14294 < _js14295; n14294 += 2) {
+          switch (arguments[n14294]) {
           case 'pos-a':
-              posA = arguments[n2330 + 1];
+              posA = arguments[n14294 + 1];
               break;
           case 'pos-b':
-              posB = arguments[n2330 + 1];
+              posB = arguments[n14294 + 1];
               break;
           case 'color':
-              color = arguments[n2330 + 1];
+              color = arguments[n14294 + 1];
           };
       };
       var posA;
@@ -4515,14 +4515,14 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       return makeLineModel(geometry1, color);
   };
   function makeLines() {
-      var _js2333 = arguments.length;
-      for (var n2332 = 0; n2332 < _js2333; n2332 += 2) {
-          switch (arguments[n2332]) {
+      var _js14297 = arguments.length;
+      for (var n14296 = 0; n14296 < _js14297; n14296 += 2) {
+          switch (arguments[n14296]) {
           case 'pnt-list':
-              pntList = arguments[n2332 + 1];
+              pntList = arguments[n14296 + 1];
               break;
           case 'color':
-              color = arguments[n2332 + 1];
+              color = arguments[n14296 + 1];
           };
       };
       var pntList;
@@ -4533,25 +4533,25 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
           __PS_MV_REG = [];
           return pushVerticesTo(geometry2, rest);
       };
-      for (var pnt = null, _js_idx2334 = 0; _js_idx2334 < pntList.length; _js_idx2334 += 1) {
-          pnt = pntList[_js_idx2334];
+      for (var pnt = null, _js_idx14298 = 0; _js_idx14298 < pntList.length; _js_idx14298 += 1) {
+          pnt = pntList[_js_idx14298];
           pushVertices([pnt[0], pnt[1]]);
       };
       __PS_MV_REG = [];
       return makeLineModel(geometry2, color);
   };
   function makeSolidRect() {
-      var _js2336 = arguments.length;
-      for (var n2335 = 0; n2335 < _js2336; n2335 += 2) {
-          switch (arguments[n2335]) {
+      var _js14300 = arguments.length;
+      for (var n14299 = 0; n14299 < _js14300; n14299 += 2) {
+          switch (arguments[n14299]) {
           case 'width':
-              width = arguments[n2335 + 1];
+              width = arguments[n14299 + 1];
               break;
           case 'height':
-              height = arguments[n2335 + 1];
+              height = arguments[n14299 + 1];
               break;
           case 'color':
-              color = arguments[n2335 + 1];
+              color = arguments[n14299 + 1];
           };
       };
       var width;
@@ -4574,17 +4574,17 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       return makeSolidModel(geometry3, color);
   };
   function makeWiredRect() {
-      var _js2338 = arguments.length;
-      for (var n2337 = 0; n2337 < _js2338; n2337 += 2) {
-          switch (arguments[n2337]) {
+      var _js14302 = arguments.length;
+      for (var n14301 = 0; n14301 < _js14302; n14301 += 2) {
+          switch (arguments[n14301]) {
           case 'width':
-              width = arguments[n2337 + 1];
+              width = arguments[n14301 + 1];
               break;
           case 'height':
-              height = arguments[n2337 + 1];
+              height = arguments[n14301 + 1];
               break;
           case 'color':
-              color = arguments[n2337 + 1];
+              color = arguments[n14301 + 1];
           };
       };
       var width;
@@ -4612,17 +4612,17 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       if (!((texture instanceof (typeof texture2d === 'string' ? eval(texture2d) : texture2d)))) {
           throw '\'TYPE-ERROR: (The place is \'TEXTURE\'. The expected type is \'TEXTURE-2D\')';
       };
-      var object2339 = texture.rectUv;
+      var object14303 = texture.rectUv;
       var uvs = geometry.faceVertexUvs[0];
       var countOuter = 0;
-      for (var uv = null, _js_arrvar2341 = makeRectUvs(object2339.x + object2339.width * x, object2339.y + object2339.height * y, object2339.width * width, object2339.height * height), _js_idx2340 = 0; _js_idx2340 < _js_arrvar2341.length; _js_idx2340 += 1) {
-          uv = _js_arrvar2341[_js_idx2340];
+      for (var uv = null, _js_arrvar14305 = makeRectUvs(object14303.x + object14303.width * x, object14303.y + object14303.height * y, object14303.width * width, object14303.height * height), _js_idx14304 = 0; _js_idx14304 < _js_arrvar14305.length; _js_idx14304 += 1) {
+          uv = _js_arrvar14305[_js_idx14304];
           if (countOuter >= uvs.length) {
               uvs.push(uv);
           } else {
               var countInner = 0;
-              for (var vector = null, _js_idx2342 = 0; _js_idx2342 < uv.length; _js_idx2342 += 1) {
-                  vector = uv[_js_idx2342];
+              for (var vector = null, _js_idx14306 = 0; _js_idx14306 < uv.length; _js_idx14306 += 1) {
+                  vector = uv[_js_idx14306];
                   uvs[countOuter][countInner].x = vector.x;
                   uvs[countOuter][countInner].y = vector.y;
                   ++countInner;
@@ -4663,20 +4663,20 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       return [textureWidth * widthScale, textureHeight * heightScale];
   };
   function makeTextureModel() {
-      var _js2343 = arguments.length;
-      for (var n2342 = 0; n2342 < _js2343; n2342 += 2) {
-          switch (arguments[n2342]) {
+      var _js14307 = arguments.length;
+      for (var n14306 = 0; n14306 < _js14307; n14306 += 2) {
+          switch (arguments[n14306]) {
           case 'width':
-              width = arguments[n2342 + 1];
+              width = arguments[n14306 + 1];
               break;
           case 'height':
-              height = arguments[n2342 + 1];
+              height = arguments[n14306 + 1];
               break;
           case 'size-type':
-              sizeType = arguments[n2342 + 1];
+              sizeType = arguments[n14306 + 1];
               break;
           case 'texture':
-              texture = arguments[n2342 + 1];
+              texture = arguments[n14306 + 1];
           };
       };
       var width;
@@ -4707,20 +4707,20 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
    *  (This is equals to (:width 1 :height 1 :size-type :relative).
    */
   function makeTextureModelPromise() {
-      var _js2345 = arguments.length;
-      for (var n2344 = 0; n2344 < _js2345; n2344 += 2) {
-          switch (arguments[n2344]) {
+      var _js14309 = arguments.length;
+      for (var n14308 = 0; n14308 < _js14309; n14308 += 2) {
+          switch (arguments[n14308]) {
           case 'width':
-              width = arguments[n2344 + 1];
+              width = arguments[n14308 + 1];
               break;
           case 'height':
-              height = arguments[n2344 + 1];
+              height = arguments[n14308 + 1];
               break;
           case 'size-type':
-              sizeType = arguments[n2344 + 1];
+              sizeType = arguments[n14308 + 1];
               break;
           case 'texture-name':
-              textureName = arguments[n2344 + 1];
+              textureName = arguments[n14308 + 1];
           };
       };
       var width;
@@ -4734,20 +4734,20 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       });
   };
   function makeSolidRegularPolygon() {
-      var _js2347 = arguments.length;
-      for (var n2346 = 0; n2346 < _js2347; n2346 += 2) {
-          switch (arguments[n2346]) {
+      var _js14311 = arguments.length;
+      for (var n14310 = 0; n14310 < _js14311; n14310 += 2) {
+          switch (arguments[n14310]) {
           case 'r':
-              r = arguments[n2346 + 1];
+              r = arguments[n14310 + 1];
               break;
           case 'n':
-              n = arguments[n2346 + 1];
+              n = arguments[n14310 + 1];
               break;
           case 'start-angle':
-              startAngle = arguments[n2346 + 1];
+              startAngle = arguments[n14310 + 1];
               break;
           case 'color':
-              color = arguments[n2346 + 1];
+              color = arguments[n14310 + 1];
           };
       };
       var r;
@@ -4777,20 +4777,20 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       return makeSolidModel(geometry5, color);
   };
   function makeWiredRegularPolygon() {
-      var _js2349 = arguments.length;
-      for (var n2348 = 0; n2348 < _js2349; n2348 += 2) {
-          switch (arguments[n2348]) {
+      var _js14313 = arguments.length;
+      for (var n14312 = 0; n14312 < _js14313; n14312 += 2) {
+          switch (arguments[n14312]) {
           case 'r':
-              r = arguments[n2348 + 1];
+              r = arguments[n14312 + 1];
               break;
           case 'n':
-              n = arguments[n2348 + 1];
+              n = arguments[n14312 + 1];
               break;
           case 'start-angle':
-              startAngle = arguments[n2348 + 1];
+              startAngle = arguments[n14312 + 1];
               break;
           case 'color':
-              color = arguments[n2348 + 1];
+              color = arguments[n14312 + 1];
           };
       };
       var r;
@@ -4811,14 +4811,14 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       return makeLineModel(geometry6, color);
   };
   function makeSolidCircle() {
-      var _js2351 = arguments.length;
-      for (var n2350 = 0; n2350 < _js2351; n2350 += 2) {
-          switch (arguments[n2350]) {
+      var _js14315 = arguments.length;
+      for (var n14314 = 0; n14314 < _js14315; n14314 += 2) {
+          switch (arguments[n14314]) {
           case 'r':
-              r = arguments[n2350 + 1];
+              r = arguments[n14314 + 1];
               break;
           case 'color':
-              color = arguments[n2350 + 1];
+              color = arguments[n14314 + 1];
           };
       };
       var r;
@@ -4827,14 +4827,14 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       return makeSolidRegularPolygon('r', r, 'n', 60, 'color', color);
   };
   function makeWiredCircle() {
-      var _js2353 = arguments.length;
-      for (var n2352 = 0; n2352 < _js2353; n2352 += 2) {
-          switch (arguments[n2352]) {
+      var _js14317 = arguments.length;
+      for (var n14316 = 0; n14316 < _js14317; n14316 += 2) {
+          switch (arguments[n14316]) {
           case 'r':
-              r = arguments[n2352 + 1];
+              r = arguments[n14316 + 1];
               break;
           case 'color':
-              color = arguments[n2352 + 1];
+              color = arguments[n14316 + 1];
           };
       };
       var r;
@@ -4843,14 +4843,14 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       return makeWiredRegularPolygon('r', r, 'n', 60, 'color', color);
   };
   function makeWiredPolygon() {
-      var _js2355 = arguments.length;
-      for (var n2354 = 0; n2354 < _js2355; n2354 += 2) {
-          switch (arguments[n2354]) {
+      var _js14319 = arguments.length;
+      for (var n14318 = 0; n14318 < _js14319; n14318 += 2) {
+          switch (arguments[n14318]) {
           case 'pnt-list':
-              pntList = arguments[n2354 + 1];
+              pntList = arguments[n14318 + 1];
               break;
           case 'color':
-              color = arguments[n2354 + 1];
+              color = arguments[n14318 + 1];
           };
       };
       var pntList;
@@ -4861,8 +4861,8 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
           __PS_MV_REG = [];
           return pushVerticesTo(geometry7, rest);
       };
-      for (var pnt = null, _js_idx2356 = 0; _js_idx2356 < pntList.length; _js_idx2356 += 1) {
-          pnt = pntList[_js_idx2356];
+      for (var pnt = null, _js_idx14320 = 0; _js_idx14320 < pntList.length; _js_idx14320 += 1) {
+          pnt = pntList[_js_idx14320];
           pushVertices(pnt);
       };
       pushVertices(pntList[0]);
@@ -4870,14 +4870,14 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       return makeLineModel(geometry7, color);
   };
   function makeSolidPolygon() {
-      var _js2358 = arguments.length;
-      for (var n2357 = 0; n2357 < _js2358; n2357 += 2) {
-          switch (arguments[n2357]) {
+      var _js14322 = arguments.length;
+      for (var n14321 = 0; n14321 < _js14322; n14321 += 2) {
+          switch (arguments[n14321]) {
           case 'pnt-list':
-              pntList = arguments[n2357 + 1];
+              pntList = arguments[n14321 + 1];
               break;
           case 'color':
-              color = arguments[n2357 + 1];
+              color = arguments[n14321 + 1];
           };
       };
       var pntList;
@@ -4893,8 +4893,8 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
           __PS_MV_REG = [];
           return pushFacesTo(geometry8, rest);
       };
-      for (var pnt = null, _js_idx2359 = 0; _js_idx2359 < pntList.length; _js_idx2359 += 1) {
-          pnt = pntList[_js_idx2359];
+      for (var pnt = null, _js_idx14323 = 0; _js_idx14323 < pntList.length; _js_idx14323 += 1) {
+          pnt = pntList[_js_idx14323];
           pushVertices(pnt);
       };
       var len = pntList.length;
@@ -4911,20 +4911,20 @@ var clWeb2dGame_graphics_2dGeometry = (function() {
       return model2d;
   };
   function makeTextModelPromise(text) {
-      var _js2361 = arguments.length;
-      for (var n2360 = 1; n2360 < _js2361; n2360 += 2) {
-          switch (arguments[n2360]) {
+      var _js14325 = arguments.length;
+      for (var n14324 = 1; n14324 < _js14325; n14324 += 2) {
+          switch (arguments[n14324]) {
           case 'size':
-              size = arguments[n2360 + 1];
+              size = arguments[n14324 + 1];
               break;
           case 'color':
-              color = arguments[n2360 + 1];
+              color = arguments[n14324 + 1];
               break;
           case 'curve-segments':
-              curveSegments = arguments[n2360 + 1];
+              curveSegments = arguments[n14324 + 1];
               break;
           case 'font-name':
-              fontName = arguments[n2360 + 1];
+              fontName = arguments[n14324 + 1];
           };
       };
       var size;
@@ -5091,8 +5091,8 @@ var clWeb2dGame_utils_calc = (function() {
           return makeVector2d();
       } else {
           var result = cloneVector2d(vectors[0]);
-          for (var vec = null, _js_arrvar2363 = vectors.slice(1), _js_idx2362 = 0; _js_idx2362 < _js_arrvar2363.length; _js_idx2362 += 1) {
-              vec = _js_arrvar2363[_js_idx2362];
+          for (var vec = null, _js_arrvar14327 = vectors.slice(1), _js_idx14326 = 0; _js_idx14326 < _js_arrvar14327.length; _js_idx14326 += 1) {
+              vec = _js_arrvar14327[_js_idx14326];
               incfVector2d(result, vec);
           };
           __PS_MV_REG = [];
@@ -5112,8 +5112,8 @@ var clWeb2dGame_utils_calc = (function() {
           return makeVector2d();
       } else {
           var result = cloneVector2d(vectors[0]);
-          for (var vec = null, _js_arrvar2365 = vectors.slice(1), _js_idx2364 = 0; _js_idx2364 < _js_arrvar2365.length; _js_idx2364 += 1) {
-              vec = _js_arrvar2365[_js_idx2364];
+          for (var vec = null, _js_arrvar14329 = vectors.slice(1), _js_idx14328 = 0; _js_idx14328 < _js_arrvar14329.length; _js_idx14328 += 1) {
+              vec = _js_arrvar14329[_js_idx14328];
               decfVector2d(result, vec);
           };
           __PS_MV_REG = [];
@@ -5151,11 +5151,11 @@ var clWeb2dGame_utils_calc = (function() {
   };
   /** Rotate point-2d using rotate-2d structure. */
   function rotatefPointBy(point2d, rotate2d) {
-      var speed2366 = rotate2d.speed;
-      incfRotateDiff(point2d, rotate2d.radious, rotate2d.angle, speed2366);
-      point2d.angle += speed2366;
+      var speed14330 = rotate2d.speed;
+      incfRotateDiff(point2d, rotate2d.radious, rotate2d.angle, speed14330);
+      point2d.angle += speed14330;
       __PS_MV_REG = [];
-      return rotate2d.angle += speed2366;
+      return rotate2d.angle += speed14330;
   };
   /**
    * Move the vector to a point of cirle parameterized by
@@ -5542,20 +5542,20 @@ var clWeb2dGame_physics_collision = (function() {
       return this;
   };
   function makeBoundingBox2d() {
-      var _js2368 = arguments.length;
-      for (var n2367 = 0; n2367 < _js2368; n2367 += 2) {
-          switch (arguments[n2367]) {
+      var _js14332 = arguments.length;
+      for (var n14331 = 0; n14331 < _js14332; n14331 += 2) {
+          switch (arguments[n14331]) {
           case 'left':
-              left = arguments[n2367 + 1];
+              left = arguments[n14331 + 1];
               break;
           case 'right':
-              right = arguments[n2367 + 1];
+              right = arguments[n14331 + 1];
               break;
           case 'bottom':
-              bottom = arguments[n2367 + 1];
+              bottom = arguments[n14331 + 1];
               break;
           case 'top':
-              top = arguments[n2367 + 1];
+              top = arguments[n14331 + 1];
           };
       };
       var left = 'undefined' === typeof left ? -100000 : left;
@@ -5588,32 +5588,32 @@ var clWeb2dGame_physics_collision = (function() {
       return this;
   };
   function makePhysic2d() {
-      var _js2370 = arguments.length;
-      for (var n2369 = 0; n2369 < _js2370; n2369 += 2) {
-          switch (arguments[n2369]) {
+      var _js14334 = arguments.length;
+      for (var n14333 = 0; n14333 < _js14334; n14333 += 2) {
+          switch (arguments[n14333]) {
           case 'parent':
-              parent = arguments[n2369 + 1];
+              parent = arguments[n14333 + 1];
               break;
           case 'children':
-              children = arguments[n2369 + 1];
+              children = arguments[n14333 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n2369 + 1];
+              registerp = arguments[n14333 + 1];
               break;
           case 'kind':
-              kind = arguments[n2369 + 1];
+              kind = arguments[n14333 + 1];
               break;
           case 'offset':
-              offset = arguments[n2369 + 1];
+              offset = arguments[n14333 + 1];
               break;
           case 'target-tags':
-              targetTags = arguments[n2369 + 1];
+              targetTags = arguments[n14333 + 1];
               break;
           case 'bounding-box':
-              boundingBox = arguments[n2369 + 1];
+              boundingBox = arguments[n14333 + 1];
               break;
           case 'on-collision':
-              onCollision = arguments[n2369 + 1];
+              onCollision = arguments[n14333 + 1];
           };
       };
       var parent;
@@ -5667,35 +5667,35 @@ var clWeb2dGame_physics_collision = (function() {
       return this;
   };
   function makePhysicCircle() {
-      var _js2372 = arguments.length;
-      for (var n2371 = 0; n2371 < _js2372; n2371 += 2) {
-          switch (arguments[n2371]) {
+      var _js14336 = arguments.length;
+      for (var n14335 = 0; n14335 < _js14336; n14335 += 2) {
+          switch (arguments[n14335]) {
           case 'parent':
-              parent = arguments[n2371 + 1];
+              parent = arguments[n14335 + 1];
               break;
           case 'children':
-              children = arguments[n2371 + 1];
+              children = arguments[n14335 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n2371 + 1];
+              registerp = arguments[n14335 + 1];
               break;
           case 'kind':
-              kind = arguments[n2371 + 1];
+              kind = arguments[n14335 + 1];
               break;
           case 'offset':
-              offset = arguments[n2371 + 1];
+              offset = arguments[n14335 + 1];
               break;
           case 'target-tags':
-              targetTags = arguments[n2371 + 1];
+              targetTags = arguments[n14335 + 1];
               break;
           case 'bounding-box':
-              boundingBox = arguments[n2371 + 1];
+              boundingBox = arguments[n14335 + 1];
               break;
           case 'on-collision':
-              onCollision = arguments[n2371 + 1];
+              onCollision = arguments[n14335 + 1];
               break;
           case 'r':
-              r = arguments[n2371 + 1];
+              r = arguments[n14335 + 1];
           };
       };
       var parent;
@@ -5751,35 +5751,35 @@ var clWeb2dGame_physics_collision = (function() {
       return this;
   };
   function makePhysicPolygon() {
-      var _js2374 = arguments.length;
-      for (var n2373 = 0; n2373 < _js2374; n2373 += 2) {
-          switch (arguments[n2373]) {
+      var _js14338 = arguments.length;
+      for (var n14337 = 0; n14337 < _js14338; n14337 += 2) {
+          switch (arguments[n14337]) {
           case 'parent':
-              parent = arguments[n2373 + 1];
+              parent = arguments[n14337 + 1];
               break;
           case 'children':
-              children = arguments[n2373 + 1];
+              children = arguments[n14337 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n2373 + 1];
+              registerp = arguments[n14337 + 1];
               break;
           case 'kind':
-              kind = arguments[n2373 + 1];
+              kind = arguments[n14337 + 1];
               break;
           case 'offset':
-              offset = arguments[n2373 + 1];
+              offset = arguments[n14337 + 1];
               break;
           case 'target-tags':
-              targetTags = arguments[n2373 + 1];
+              targetTags = arguments[n14337 + 1];
               break;
           case 'bounding-box':
-              boundingBox = arguments[n2373 + 1];
+              boundingBox = arguments[n14337 + 1];
               break;
           case 'on-collision':
-              onCollision = arguments[n2373 + 1];
+              onCollision = arguments[n14337 + 1];
               break;
           case 'pnt-list':
-              pntList = arguments[n2373 + 1];
+              pntList = arguments[n14337 + 1];
           };
       };
       var parent;
@@ -5821,20 +5821,20 @@ var clWeb2dGame_physics_collision = (function() {
   })();
   function makePhysicRect() {
       var process;
-      var _js2376 = arguments.length;
-      for (var n2375 = 0; n2375 < _js2376; n2375 += 2) {
-          switch (arguments[n2375]) {
+      var _js14340 = arguments.length;
+      for (var n14339 = 0; n14339 < _js14340; n14339 += 2) {
+          switch (arguments[n14339]) {
           case 'x':
-              x = arguments[n2375 + 1];
+              x = arguments[n14339 + 1];
               break;
           case 'y':
-              y = arguments[n2375 + 1];
+              y = arguments[n14339 + 1];
               break;
           case 'width':
-              width = arguments[n2375 + 1];
+              width = arguments[n14339 + 1];
               break;
           case 'height':
-              height = arguments[n2375 + 1];
+              height = arguments[n14339 + 1];
           };
       };
       var x = 'undefined' === typeof x ? 0 : x;
@@ -5842,8 +5842,8 @@ var clWeb2dGame_physics_collision = (function() {
       var width = 'undefined' === typeof width ? 0 : width;
       var height = 'undefined' === typeof height ? 0 : height;
       var rest = Array.prototype.slice.call(arguments, 0);
-      for (var key = null, _js_arrvar2378 = ['x', 'y', 'width', 'height'], _js_idx2377 = 0; _js_idx2377 < _js_arrvar2378.length; _js_idx2377 += 1) {
-          key = _js_arrvar2378[_js_idx2377];
+      for (var key = null, _js_arrvar14342 = ['x', 'y', 'width', 'height'], _js_idx14341 = 0; _js_idx14341 < _js_arrvar14342.length; _js_idx14341 += 1) {
+          key = _js_arrvar14342[_js_idx14341];
           if (rest.length % 2 !== 0) {
               throw 'Message: ' + 'Invalid plist: ~A' + '; Args: ' + rest;
           };
@@ -5999,8 +5999,8 @@ var clWeb2dGame_physics_collision = (function() {
   };
   function makeGlobalPointList(coordinate, offset, vecList) {
       var globalPointList = [];
-      for (var vec = null, _js_idx2379 = 0; _js_idx2379 < vecList.length; _js_idx2379 += 1) {
-          vec = vecList[_js_idx2379];
+      for (var vec = null, _js_idx14343 = 0; _js_idx14343 < vecList.length; _js_idx14343 += 1) {
+          vec = vecList[_js_idx14343];
           var point = clonePoint2d(offset);
           incfVector2d(point, vec);
           transformfPoint(point, coordinate);
@@ -6012,33 +6012,33 @@ var clWeb2dGame_physics_collision = (function() {
   };
   /** Update bounding box in the physic in global coordinate */
   function updateBoundingBox(physic, globalCoordinate) {
-      var object2380 = physic.boundingBox;
+      var object14344 = physic.boundingBox;
       var globalPoint = clonePoint2d(physic.offset);
       transformfPoint(globalPoint, globalCoordinate);
-      var gKeyform2381 = physic;
-      if ((gKeyform2381 instanceof (typeof physicCircle === 'string' ? eval(physicCircle) : physicCircle))) {
-          object2380.left = globalPoint.x - physic.r;
-          object2380.right = globalPoint.x + physic.r;
-          object2380.bottom = globalPoint.y - physic.r;
-          object2380.top = globalPoint.y + physic.r;
-      } else if ((gKeyform2381 instanceof (typeof physicPolygon === 'string' ? eval(physicPolygon) : physicPolygon))) {
+      var gKeyform14345 = physic;
+      if ((gKeyform14345 instanceof (typeof physicCircle === 'string' ? eval(physicCircle) : physicCircle))) {
+          object14344.left = globalPoint.x - physic.r;
+          object14344.right = globalPoint.x + physic.r;
+          object14344.bottom = globalPoint.y - physic.r;
+          object14344.top = globalPoint.y + physic.r;
+      } else if ((gKeyform14345 instanceof (typeof physicPolygon === 'string' ? eval(physicPolygon) : physicPolygon))) {
           var bufferPnt = makePoint2d();
           var initializedP = null;
-          for (var pnt = null, _js_arrvar2383 = physic.pntList, _js_idx2382 = 0; _js_idx2382 < _js_arrvar2383.length; _js_idx2382 += 1) {
-              pnt = _js_arrvar2383[_js_idx2382];
+          for (var pnt = null, _js_arrvar14347 = physic.pntList, _js_idx14346 = 0; _js_idx14346 < _js_arrvar14347.length; _js_idx14346 += 1) {
+              pnt = _js_arrvar14347[_js_idx14346];
               copyPoint2dTo(bufferPnt, pnt);
               transformfPoint(bufferPnt, globalPoint);
-              if (!initializedP || bufferPnt.x < object2380.left) {
-                  object2380.left = bufferPnt.x;
+              if (!initializedP || bufferPnt.x < object14344.left) {
+                  object14344.left = bufferPnt.x;
               };
-              if (!initializedP || bufferPnt.x > object2380.right) {
-                  object2380.right = bufferPnt.x;
+              if (!initializedP || bufferPnt.x > object14344.right) {
+                  object14344.right = bufferPnt.x;
               };
-              if (!initializedP || bufferPnt.y < object2380.bottom) {
-                  object2380.bottom = bufferPnt.y;
+              if (!initializedP || bufferPnt.y < object14344.bottom) {
+                  object14344.bottom = bufferPnt.y;
               };
-              if (!initializedP || bufferPnt.y > object2380.top) {
-                  object2380.top = bufferPnt.y;
+              if (!initializedP || bufferPnt.y > object14344.top) {
+                  object14344.top = bufferPnt.y;
               };
               initializedP = true;
           };
@@ -6085,7 +6085,7 @@ var clWeb2dGame_physics_collision = (function() {
       var ph1 = (found = getEcsComponent(physic2d, entity1), found ? found : (function () {
           throw 'PHYSIC-2D is not included in the entity';
       })());
-      var ph2 = (found2384 = getEcsComponent(physic2d, entity2), found2384 ? found2384 : (function () {
+      var ph2 = (found14348 = getEcsComponent(physic2d, entity2), found14348 ? found14348 : (function () {
           throw 'PHYSIC-2D is not included in the entity';
       })());
       __PS_MV_REG = [];
@@ -6103,15 +6103,15 @@ var clWeb2dGame_physics_collision = (function() {
           __PS_MV_REG = [];
           return true;
       };
-      for (var tag = null, _js_arrvar2386 = ph1.targetTags, _js_idx2385 = 0; _js_idx2385 < _js_arrvar2386.length; _js_idx2385 += 1) {
-          tag = _js_arrvar2386[_js_idx2385];
+      for (var tag = null, _js_arrvar14350 = ph1.targetTags, _js_idx14349 = 0; _js_idx14349 < _js_arrvar14350.length; _js_idx14349 += 1) {
+          tag = _js_arrvar14350[_js_idx14349];
           if (hasEntityTag(entity2, tag)) {
               __PS_MV_REG = [];
               return true;
           };
       };
-      for (var tag = null, _js_arrvar2388 = ph2.targetTags, _js_idx2387 = 0; _js_idx2387 < _js_arrvar2388.length; _js_idx2387 += 1) {
-          tag = _js_arrvar2388[_js_idx2387];
+      for (var tag = null, _js_arrvar14352 = ph2.targetTags, _js_idx14351 = 0; _js_idx14351 < _js_arrvar14352.length; _js_idx14351 += 1) {
+          tag = _js_arrvar14352[_js_idx14351];
           if (hasEntityTag(entity1, tag)) {
               __PS_MV_REG = [];
               return true;
@@ -6287,38 +6287,38 @@ var clWeb2dGame_inputs_ui = (function() {
       return this;
   };
   function makeUiComponent() {
-      var _js2390 = arguments.length;
-      for (var n2389 = 0; n2389 < _js2390; n2389 += 2) {
-          switch (arguments[n2389]) {
+      var _js14354 = arguments.length;
+      for (var n14353 = 0; n14353 < _js14354; n14353 += 2) {
+          switch (arguments[n14353]) {
           case 'parent':
-              parent = arguments[n2389 + 1];
+              parent = arguments[n14353 + 1];
               break;
           case 'children':
-              children = arguments[n2389 + 1];
+              children = arguments[n14353 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n2389 + 1];
+              registerp = arguments[n14353 + 1];
               break;
           case 'on-click-down':
-              onClickDown = arguments[n2389 + 1];
+              onClickDown = arguments[n14353 + 1];
               break;
           case 'on-click-up':
-              onClickUp = arguments[n2389 + 1];
+              onClickUp = arguments[n14353 + 1];
               break;
           case 'on-mouse-enter':
-              onMouseEnter = arguments[n2389 + 1];
+              onMouseEnter = arguments[n14353 + 1];
               break;
           case 'on-mouse-leave':
-              onMouseLeave = arguments[n2389 + 1];
+              onMouseLeave = arguments[n14353 + 1];
               break;
           case 'on-mouse-hover':
-              onMouseHover = arguments[n2389 + 1];
+              onMouseHover = arguments[n14353 + 1];
               break;
           case 'on-mouse-not-hover':
-              onMouseNotHover = arguments[n2389 + 1];
+              onMouseNotHover = arguments[n14353 + 1];
               break;
           case 'mouse-hover-p':
-              mouseHoverP = arguments[n2389 + 1];
+              mouseHoverP = arguments[n14353 + 1];
           };
       };
       var parent;
@@ -6366,38 +6366,38 @@ var clWeb2dGame_inputs_ui = (function() {
       this.targetEntities = [];
       this.targetComponentTypes = [point2d, uiComponent, physic2d];
       this.process = function (entity) {
-          var physic2d2391 = (found = getEcsComponent(physic2d, entity), found ? found : (function () {
+          var physic2d14355 = (found = getEcsComponent(physic2d, entity), found ? found : (function () {
               throw 'PHYSIC-2D is not included in the entity';
           })());
-          var uiComponent2392 = (found2393 = getEcsComponent(uiComponent, entity), found2393 ? found2393 : (function () {
+          var uiComponent14356 = (found14357 = getEcsComponent(uiComponent, entity), found14357 ? found14357 : (function () {
               throw 'UI-COMPONENT is not included in the entity';
           })());
           var mousePnt = makePoint2d('x', getMouseX(), 'y', getMouseY());
           var mousePhysic = makePhysicCircle('r', 0);
-          var collideP = collidePhysicsP(physic2d2391, calcGlobalPoint(entity), mousePhysic, mousePnt);
+          var collideP = collidePhysicsP(physic2d14355, calcGlobalPoint(entity), mousePhysic, mousePnt);
           if (collideP) {
-              if (uiComponent2392.onMouseHover) {
-                  uiComponent2392.onMouseHover();
+              if (uiComponent14356.onMouseHover) {
+                  uiComponent14356.onMouseHover();
               };
-              if (uiComponent2392.onMouseEnter && !uiComponent2392.mouseHoverP) {
-                  uiComponent2392.onMouseEnter();
+              if (uiComponent14356.onMouseEnter && !uiComponent14356.mouseHoverP) {
+                  uiComponent14356.onMouseEnter();
               };
-              uiComponent2392.mouseHoverP = true;
+              uiComponent14356.mouseHoverP = true;
           } else {
-              if (uiComponent2392.onMouseNotHover) {
-                  uiComponent2392.onMouseNotHover();
+              if (uiComponent14356.onMouseNotHover) {
+                  uiComponent14356.onMouseNotHover();
               };
-              if (uiComponent2392.onMouseLeave && uiComponent2392.mouseHoverP) {
-                  uiComponent2392.onMouseLeave();
+              if (uiComponent14356.onMouseLeave && uiComponent14356.mouseHoverP) {
+                  uiComponent14356.onMouseLeave();
               };
-              uiComponent2392.mouseHoverP = null;
+              uiComponent14356.mouseHoverP = null;
           };
           switch (getLeftMouseState()) {
           case 'down-now':
               if (collideP) {
                   CURRENTTARGET = entity;
                   __PS_MV_REG = [];
-                  return uiComponent2392.onClickDown ? uiComponent2392.onClickDown() : null;
+                  return uiComponent14356.onClickDown ? uiComponent14356.onClickDown() : null;
               } else {
                   __PS_MV_REG = [];
                   return null;
@@ -6405,7 +6405,7 @@ var clWeb2dGame_inputs_ui = (function() {
           case 'up-now':
               if (collideP && CURRENTTARGET === entity && findTheEntity(entity)) {
                   __PS_MV_REG = [];
-                  return uiComponent2392.onClickUp ? uiComponent2392.onClickUp() : null;
+                  return uiComponent14356.onClickUp ? uiComponent14356.onClickUp() : null;
               } else {
                   __PS_MV_REG = [];
                   return null;
@@ -6424,67 +6424,67 @@ var clWeb2dGame_inputs_ui = (function() {
       return this;
   };
   function makeUiSystem() {
-      var _js2395 = arguments.length;
-      for (var n2394 = 0; n2394 < _js2395; n2394 += 2) {
-          switch (arguments[n2394]) {
+      var _js14359 = arguments.length;
+      for (var n14358 = 0; n14358 < _js14359; n14358 += 2) {
+          switch (arguments[n14358]) {
           case 'enable':
-              enable = arguments[n2394 + 1];
+              enable = arguments[n14358 + 1];
               break;
           case 'target-entities':
-              targetEntities = arguments[n2394 + 1];
+              targetEntities = arguments[n14358 + 1];
               break;
           case 'target-component-types':
-              targetComponentTypes = arguments[n2394 + 1];
+              targetComponentTypes = arguments[n14358 + 1];
               break;
           case 'process':
-              process = arguments[n2394 + 1];
+              process = arguments[n14358 + 1];
               break;
           case 'process-all':
-              processAll = arguments[n2394 + 1];
+              processAll = arguments[n14358 + 1];
               break;
           case 'add-entity-hook':
-              addEntityHook = arguments[n2394 + 1];
+              addEntityHook = arguments[n14358 + 1];
               break;
           case 'delete-entity-hook':
-              deleteEntityHook = arguments[n2394 + 1];
+              deleteEntityHook = arguments[n14358 + 1];
           };
       };
       var enable = 'undefined' === typeof enable ? true : enable;
       var targetEntities = 'undefined' === typeof targetEntities ? [] : targetEntities;
       var targetComponentTypes = 'undefined' === typeof targetComponentTypes ? [point2d, uiComponent, physic2d] : targetComponentTypes;
       var process = 'undefined' === typeof process ? function (entity) {
-          var physic2d2396 = (found = getEcsComponent(physic2d, entity), found ? found : (function () {
+          var physic2d14360 = (found = getEcsComponent(physic2d, entity), found ? found : (function () {
               throw 'PHYSIC-2D is not included in the entity';
           })());
-          var uiComponent2397 = (found2398 = getEcsComponent(uiComponent, entity), found2398 ? found2398 : (function () {
+          var uiComponent14361 = (found14362 = getEcsComponent(uiComponent, entity), found14362 ? found14362 : (function () {
               throw 'UI-COMPONENT is not included in the entity';
           })());
           var mousePnt = makePoint2d('x', getMouseX(), 'y', getMouseY());
           var mousePhysic = makePhysicCircle('r', 0);
-          var collideP = collidePhysicsP(physic2d2396, calcGlobalPoint(entity), mousePhysic, mousePnt);
+          var collideP = collidePhysicsP(physic2d14360, calcGlobalPoint(entity), mousePhysic, mousePnt);
           if (collideP) {
-              if (uiComponent2397.onMouseHover) {
-                  uiComponent2397.onMouseHover();
+              if (uiComponent14361.onMouseHover) {
+                  uiComponent14361.onMouseHover();
               };
-              if (uiComponent2397.onMouseEnter && !uiComponent2397.mouseHoverP) {
-                  uiComponent2397.onMouseEnter();
+              if (uiComponent14361.onMouseEnter && !uiComponent14361.mouseHoverP) {
+                  uiComponent14361.onMouseEnter();
               };
-              uiComponent2397.mouseHoverP = true;
+              uiComponent14361.mouseHoverP = true;
           } else {
-              if (uiComponent2397.onMouseNotHover) {
-                  uiComponent2397.onMouseNotHover();
+              if (uiComponent14361.onMouseNotHover) {
+                  uiComponent14361.onMouseNotHover();
               };
-              if (uiComponent2397.onMouseLeave && uiComponent2397.mouseHoverP) {
-                  uiComponent2397.onMouseLeave();
+              if (uiComponent14361.onMouseLeave && uiComponent14361.mouseHoverP) {
+                  uiComponent14361.onMouseLeave();
               };
-              uiComponent2397.mouseHoverP = null;
+              uiComponent14361.mouseHoverP = null;
           };
           switch (getLeftMouseState()) {
           case 'down-now':
               if (collideP) {
                   CURRENTTARGET = entity;
                   __PS_MV_REG = [];
-                  return uiComponent2397.onClickDown ? uiComponent2397.onClickDown() : null;
+                  return uiComponent14361.onClickDown ? uiComponent14361.onClickDown() : null;
               } else {
                   __PS_MV_REG = [];
                   return null;
@@ -6492,7 +6492,7 @@ var clWeb2dGame_inputs_ui = (function() {
           case 'up-now':
               if (collideP && CURRENTTARGET === entity && findTheEntity(entity)) {
                   __PS_MV_REG = [];
-                  return uiComponent2397.onClickUp ? uiComponent2397.onClickUp() : null;
+                  return uiComponent14361.onClickUp ? uiComponent14361.onClickUp() : null;
               } else {
                   __PS_MV_REG = [];
                   return null;
@@ -6642,32 +6642,32 @@ var clWeb2dGame_graphics_drawModelSystem = (function() {
       return this;
   };
   function makeModel2d() {
-      var _js2400 = arguments.length;
-      for (var n2399 = 0; n2399 < _js2400; n2399 += 2) {
-          switch (arguments[n2399]) {
+      var _js14364 = arguments.length;
+      for (var n14363 = 0; n14363 < _js14364; n14363 += 2) {
+          switch (arguments[n14363]) {
           case 'parent':
-              parent = arguments[n2399 + 1];
+              parent = arguments[n14363 + 1];
               break;
           case 'children':
-              children = arguments[n2399 + 1];
+              children = arguments[n14363 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n2399 + 1];
+              registerp = arguments[n14363 + 1];
               break;
           case 'model':
-              model = arguments[n2399 + 1];
+              model = arguments[n14363 + 1];
               break;
           case 'depth':
-              depth = arguments[n2399 + 1];
+              depth = arguments[n14363 + 1];
               break;
           case 'offset':
-              offset = arguments[n2399 + 1];
+              offset = arguments[n14363 + 1];
               break;
           case 'state':
-              state = arguments[n2399 + 1];
+              state = arguments[n14363 + 1];
               break;
           case 'label':
-              label = arguments[n2399 + 1];
+              label = arguments[n14363 + 1];
           };
       };
       var parent;
@@ -6708,11 +6708,11 @@ var clWeb2dGame_graphics_drawModelSystem = (function() {
       this.targetEntities = [];
       this.targetComponentTypes = [point2d, model2d];
       this.process = function (entity) {
-          var point2d2401 = (found = getEcsComponent(point2d, entity), found ? found : (function () {
+          var point2d14365 = (found = getEcsComponent(point2d, entity), found ? found : (function () {
               throw 'POINT-2D is not included in the entity';
           })());
-          for (var modelc = null, _js_arrvar2403 = entity.components, _js_idx2402 = 0; _js_idx2402 < _js_arrvar2403.length; _js_idx2402 += 1) {
-              modelc = _js_arrvar2403[_js_idx2402];
+          for (var modelc = null, _js_arrvar14367 = entity.components, _js_idx14366 = 0; _js_idx14366 < _js_arrvar14367.length; _js_idx14366 += 1) {
+              modelc = _js_arrvar14367[_js_idx14366];
               if ((modelc instanceof (typeof model2d === 'string' ? eval(model2d) : model2d))) {
                   var newPos = calcGlobalPoint(entity, modelc.offset);
                   modelc.model.position.set(newPos.x, newPos.y, modelc.depth);
@@ -6732,40 +6732,40 @@ var clWeb2dGame_graphics_drawModelSystem = (function() {
       return this;
   };
   function makeDrawModelSystem() {
-      var _js2405 = arguments.length;
-      for (var n2404 = 0; n2404 < _js2405; n2404 += 2) {
-          switch (arguments[n2404]) {
+      var _js14369 = arguments.length;
+      for (var n14368 = 0; n14368 < _js14369; n14368 += 2) {
+          switch (arguments[n14368]) {
           case 'enable':
-              enable = arguments[n2404 + 1];
+              enable = arguments[n14368 + 1];
               break;
           case 'target-entities':
-              targetEntities = arguments[n2404 + 1];
+              targetEntities = arguments[n14368 + 1];
               break;
           case 'target-component-types':
-              targetComponentTypes = arguments[n2404 + 1];
+              targetComponentTypes = arguments[n14368 + 1];
               break;
           case 'process':
-              process = arguments[n2404 + 1];
+              process = arguments[n14368 + 1];
               break;
           case 'process-all':
-              processAll = arguments[n2404 + 1];
+              processAll = arguments[n14368 + 1];
               break;
           case 'add-entity-hook':
-              addEntityHook = arguments[n2404 + 1];
+              addEntityHook = arguments[n14368 + 1];
               break;
           case 'delete-entity-hook':
-              deleteEntityHook = arguments[n2404 + 1];
+              deleteEntityHook = arguments[n14368 + 1];
           };
       };
       var enable = 'undefined' === typeof enable ? true : enable;
       var targetEntities = 'undefined' === typeof targetEntities ? [] : targetEntities;
       var targetComponentTypes = 'undefined' === typeof targetComponentTypes ? [point2d, model2d] : targetComponentTypes;
       var process = 'undefined' === typeof process ? function (entity) {
-          var point2d2406 = (found = getEcsComponent(point2d, entity), found ? found : (function () {
+          var point2d14370 = (found = getEcsComponent(point2d, entity), found ? found : (function () {
               throw 'POINT-2D is not included in the entity';
           })());
-          for (var modelc = null, _js_arrvar2408 = entity.components, _js_idx2407 = 0; _js_idx2407 < _js_arrvar2408.length; _js_idx2407 += 1) {
-              modelc = _js_arrvar2408[_js_idx2407];
+          for (var modelc = null, _js_arrvar14372 = entity.components, _js_idx14371 = 0; _js_idx14371 < _js_arrvar14372.length; _js_idx14371 += 1) {
+              modelc = _js_arrvar14372[_js_idx14371];
               if ((modelc instanceof (typeof model2d === 'string' ? eval(model2d) : model2d))) {
                   var newPos = calcGlobalPoint(entity, modelc.offset);
                   modelc.model.position.set(newPos.x, newPos.y, modelc.depth);
@@ -6810,11 +6810,11 @@ var clWeb2dGame_graphics_drawModelSystem = (function() {
       var SCENEFORDRAWSYSTEM = null;
   };
   function enableModel2dIfState(entity, targetState) {
-      var _js2410 = arguments.length;
-      for (var n2409 = 2; n2409 < _js2410; n2409 += 2) {
-          switch (arguments[n2409]) {
+      var _js14374 = arguments.length;
+      for (var n14373 = 2; n14373 < _js14374; n14373 += 2) {
+          switch (arguments[n14373]) {
           case 'target-model-2d':
-              targetModel2d = arguments[n2409 + 1];
+              targetModel2d = arguments[n14373 + 1];
           };
       };
       var targetModel2d;
@@ -6832,8 +6832,8 @@ var clWeb2dGame_graphics_drawModelSystem = (function() {
           __PS_MV_REG = [];
           return enable(targetModel2d);
       } else {
-          for (var modelc = null, _js_arrvar2414 = entity.components, _js_idx2413 = 0; _js_idx2413 < _js_arrvar2414.length; _js_idx2413 += 1) {
-              modelc = _js_arrvar2414[_js_idx2413];
+          for (var modelc = null, _js_arrvar14378 = entity.components, _js_idx14377 = 0; _js_idx14377 < _js_arrvar14378.length; _js_idx14377 += 1) {
+              modelc = _js_arrvar14378[_js_idx14377];
               if ((modelc instanceof (typeof model2d === 'string' ? eval(model2d) : model2d))) {
                   enable(modelc);
               };
@@ -6841,11 +6841,11 @@ var clWeb2dGame_graphics_drawModelSystem = (function() {
       };
   };
   function enableModel2d(entity) {
-      var _js2416 = arguments.length;
-      for (var n2415 = 1; n2415 < _js2416; n2415 += 2) {
-          switch (arguments[n2415]) {
+      var _js14380 = arguments.length;
+      for (var n14379 = 1; n14379 < _js14380; n14379 += 2) {
+          switch (arguments[n14379]) {
           case 'target-model-2d':
-              targetModel2d = arguments[n2415 + 1];
+              targetModel2d = arguments[n14379 + 1];
           };
       };
       var targetModel2d;
@@ -6853,11 +6853,11 @@ var clWeb2dGame_graphics_drawModelSystem = (function() {
       return enableModel2dIfState(entity, 'disable', 'target-model-2d', targetModel2d);
   };
   function enableInvalidatedModel2d(entity) {
-      var _js2418 = arguments.length;
-      for (var n2417 = 1; n2417 < _js2418; n2417 += 2) {
-          switch (arguments[n2417]) {
+      var _js14382 = arguments.length;
+      for (var n14381 = 1; n14381 < _js14382; n14381 += 2) {
+          switch (arguments[n14381]) {
           case 'target-model-2d':
-              targetModel2d = arguments[n2417 + 1];
+              targetModel2d = arguments[n14381 + 1];
           };
       };
       var targetModel2d;
@@ -6877,19 +6877,19 @@ var clWeb2dGame_graphics_drawModelSystem = (function() {
       return targetModel2d.state = 'invalid';
   };
   function invalidateAllModel2d(entity) {
-      for (var model = null, _js_arrvar2420 = entity.components, _js_idx2419 = 0; _js_idx2419 < _js_arrvar2420.length; _js_idx2419 += 1) {
-          model = _js_arrvar2420[_js_idx2419];
+      for (var model = null, _js_arrvar14384 = entity.components, _js_idx14383 = 0; _js_idx14383 < _js_arrvar14384.length; _js_idx14383 += 1) {
+          model = _js_arrvar14384[_js_idx14383];
           if ((model instanceof (typeof model2d === 'string' ? eval(model2d) : model2d))) {
               invalidateModel2d(model);
           };
       };
   };
   function disableModel2d(entity) {
-      var _js2422 = arguments.length;
-      for (var n2421 = 1; n2421 < _js2422; n2421 += 2) {
-          switch (arguments[n2421]) {
+      var _js14386 = arguments.length;
+      for (var n14385 = 1; n14385 < _js14386; n14385 += 2) {
+          switch (arguments[n14385]) {
           case 'target-model-2d':
-              targetModel2d = arguments[n2421 + 1];
+              targetModel2d = arguments[n14385 + 1];
           };
       };
       var targetModel2d;
@@ -6900,8 +6900,8 @@ var clWeb2dGame_graphics_drawModelSystem = (function() {
           __PS_MV_REG = [];
           return disableModel2dIfRequired(targetModel2d);
       } else {
-          for (var modelc = null, _js_arrvar2426 = entity.components, _js_idx2425 = 0; _js_idx2425 < _js_arrvar2426.length; _js_idx2425 += 1) {
-              modelc = _js_arrvar2426[_js_idx2425];
+          for (var modelc = null, _js_arrvar14390 = entity.components, _js_idx14389 = 0; _js_idx14389 < _js_arrvar14390.length; _js_idx14389 += 1) {
+              modelc = _js_arrvar14390[_js_idx14389];
               if ((modelc instanceof (typeof model2d === 'string' ? eval(model2d) : model2d))) {
                   disableModel2dIfRequired(modelc);
               };
@@ -6915,8 +6915,8 @@ var clWeb2dGame_graphics_drawModelSystem = (function() {
       return addEcsComponent(newModel, entity);
   };
   function findModel2dByLabel(entity, label) {
-      for (var model = null, _js_arrvar2428 = entity.components, _js_idx2427 = 0; _js_idx2427 < _js_arrvar2428.length; _js_idx2427 += 1) {
-          model = _js_arrvar2428[_js_idx2427];
+      for (var model = null, _js_arrvar14392 = entity.components, _js_idx14391 = 0; _js_idx14391 < _js_arrvar14392.length; _js_idx14391 += 1) {
+          model = _js_arrvar14392[_js_idx14391];
           if ((model instanceof (typeof model2d === 'string' ? eval(model2d) : model2d))) {
               if (model.label === label) {
                   __PS_MV_REG = [];
@@ -7066,32 +7066,32 @@ var clWeb2dGame_graphics_textArea = (function() {
       return this;
   };
   function makeTextAreaComponent() {
-      var _js2430 = arguments.length;
-      for (var n2429 = 0; n2429 < _js2430; n2429 += 2) {
-          switch (arguments[n2429]) {
+      var _js14394 = arguments.length;
+      for (var n14393 = 0; n14393 < _js14394; n14393 += 2) {
+          switch (arguments[n14393]) {
           case 'parent':
-              parent = arguments[n2429 + 1];
+              parent = arguments[n14393 + 1];
               break;
           case 'children':
-              children = arguments[n2429 + 1];
+              children = arguments[n14393 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n2429 + 1];
+              registerp = arguments[n14393 + 1];
               break;
           case 'font-size':
-              fontSize = arguments[n2429 + 1];
+              fontSize = arguments[n14393 + 1];
               break;
           case 'text-align':
-              textAlign = arguments[n2429 + 1];
+              textAlign = arguments[n14393 + 1];
               break;
           case 'margin':
-              margin = arguments[n2429 + 1];
+              margin = arguments[n14393 + 1];
               break;
           case 'text-model-list':
-              textModelList = arguments[n2429 + 1];
+              textModelList = arguments[n14393 + 1];
               break;
           case 'depth':
-              depth = arguments[n2429 + 1];
+              depth = arguments[n14393 + 1];
           };
       };
       var parent;
@@ -7132,29 +7132,29 @@ var clWeb2dGame_graphics_textArea = (function() {
    * Note: "y" is top of the text. "x" depends on "text-align"
    */
   function makeTextArea() {
-      var _js2432 = arguments.length;
-      for (var n2431 = 0; n2431 < _js2432; n2431 += 2) {
-          switch (arguments[n2431]) {
+      var _js14396 = arguments.length;
+      for (var n14395 = 0; n14395 < _js14396; n14395 += 2) {
+          switch (arguments[n14395]) {
           case 'font-size':
-              fontSize = arguments[n2431 + 1];
+              fontSize = arguments[n14395 + 1];
               break;
           case 'text-align':
-              textAlign = arguments[n2431 + 1];
+              textAlign = arguments[n14395 + 1];
               break;
           case 'margin':
-              margin = arguments[n2431 + 1];
+              margin = arguments[n14395 + 1];
               break;
           case 'x':
-              x = arguments[n2431 + 1];
+              x = arguments[n14395 + 1];
               break;
           case 'y':
-              y = arguments[n2431 + 1];
+              y = arguments[n14395 + 1];
               break;
           case 'angle':
-              angle = arguments[n2431 + 1];
+              angle = arguments[n14395 + 1];
               break;
           case 'depth':
-              depth = arguments[n2431 + 1];
+              depth = arguments[n14395 + 1];
           };
       };
       var fontSize;
@@ -7166,12 +7166,12 @@ var clWeb2dGame_graphics_textArea = (function() {
       var depth = 'undefined' === typeof depth ? 0 : depth;
       var textAlignList = ['left', 'right', 'center'];
       if (!(function () {
-          for (var x2434 = null, _js_idx2435 = 0; _js_idx2435 < textAlignList.length; _js_idx2435 += 1) {
-              x2434 = textAlignList[_js_idx2435];
-              if ((function (target2433) {
-                  return textAlign === target2433;
-              })(x2434)) {
-                  return x2434;
+          for (var x14398 = null, _js_idx14399 = 0; _js_idx14399 < textAlignList.length; _js_idx14399 += 1) {
+              x14398 = textAlignList[_js_idx14399];
+              if ((function (target14397) {
+                  return textAlign === target14397;
+              })(x14398)) {
+                  return x14398;
               };
           };
       })()) {
@@ -7188,8 +7188,8 @@ var clWeb2dGame_graphics_textArea = (function() {
           throw 'TEXT-AREA-COMPONENT is not included in the entity';
       })());
       var maxWidth = 0;
-      for (var model = null, _js_idx2436 = 0; _js_idx2436 < area.textModelList.length; _js_idx2436 += 1) {
-          model = area.textModelList[_js_idx2436];
+      for (var model = null, _js_idx14400 = 0; _js_idx14400 < area.textModelList.length; _js_idx14400 += 1) {
+          model = area.textModelList[_js_idx14400];
           var width = getMeshWidth(model.model);
           if (width > maxWidth) {
               maxWidth = width;
@@ -7214,14 +7214,14 @@ var clWeb2dGame_graphics_textArea = (function() {
   };
   /** Add a new text to the area. The text is attached to bottom of the previous one. */
   function addTextToArea(areaEntity) {
-      var _js2438 = arguments.length;
-      for (var n2437 = 1; n2437 < _js2438; n2437 += 2) {
-          switch (arguments[n2437]) {
+      var _js14402 = arguments.length;
+      for (var n14401 = 1; n14401 < _js14402; n14401 += 2) {
+          switch (arguments[n14401]) {
           case 'text':
-              text = arguments[n2437 + 1];
+              text = arguments[n14401 + 1];
               break;
           case 'color':
-              color = arguments[n2437 + 1];
+              color = arguments[n14401 + 1];
           };
       };
       var text;
@@ -7243,8 +7243,8 @@ var clWeb2dGame_graphics_textArea = (function() {
       var area = (found = getEcsComponent(textAreaComponent, areaEntity), found ? found : (function () {
           throw 'TEXT-AREA-COMPONENT is not included in the entity';
       })());
-      for (var model = null, _js_idx2439 = 0; _js_idx2439 < area.textModelList.length; _js_idx2439 += 1) {
-          model = area.textModelList[_js_idx2439];
+      for (var model = null, _js_idx14403 = 0; _js_idx14403 < area.textModelList.length; _js_idx14403 += 1) {
+          model = area.textModelList[_js_idx14403];
           registerNextFrameFunc(function () {
               __PS_MV_REG = [];
               return deleteEcsComponent(model, areaEntity);
@@ -7424,14 +7424,14 @@ var clWeb2dGame_physics_collisionSystem = (function() {
           __PS_MV_REG = [];
           return makeModel2d('model', fnMakeGeometry(COLLIDERMODELCOLOR), 'depth', COLLIDERMODELDEPTH, 'offset', clonePoint2d(physic2d.offset));
       };
-      var gKeyform2440 = physic2d;
-      if ((gKeyform2440 instanceof (typeof physicCircle === 'string' ? eval(physicCircle) : physicCircle))) {
+      var gKeyform14404 = physic2d;
+      if ((gKeyform14404 instanceof (typeof physicCircle === 'string' ? eval(physicCircle) : physicCircle))) {
           __PS_MV_REG = [];
           return makeAModel(function (color) {
               __PS_MV_REG = [];
               return makeWiredCircle('color', color, 'r', physic2d.r);
           });
-      } else if ((gKeyform2440 instanceof (typeof physicPolygon === 'string' ? eval(physicPolygon) : physicPolygon))) {
+      } else if ((gKeyform14404 instanceof (typeof physicPolygon === 'string' ? eval(physicPolygon) : physicPolygon))) {
           __PS_MV_REG = [];
           return makeAModel(function (color) {
               __PS_MV_REG = [];
@@ -7446,11 +7446,11 @@ var clWeb2dGame_physics_collisionSystem = (function() {
   function addColliderModel(entity) {
       __PS_MV_REG = [];
       return registerNextFrameFunc(function () {
-          var physic2d2441 = (found = getEcsComponent(physic2d, entity), found ? found : (function () {
+          var physic2d14405 = (found = getEcsComponent(physic2d, entity), found ? found : (function () {
               throw 'PHYSIC-2D is not included in the entity';
           })());
           __PS_MV_REG = [];
-          return !findColliderModel(physic2d2441) ? addEcsComponent(generateColliderModel(physic2d2441), entity, physic2d2441) : null;
+          return !findColliderModel(physic2d14405) ? addEcsComponent(generateColliderModel(physic2d14405), entity, physic2d14405) : null;
       });
   };
   /** Find collider model that should be added as a child of physic */
@@ -7464,10 +7464,10 @@ var clWeb2dGame_physics_collisionSystem = (function() {
   function setfColliderModelEnable(value) {
       if (value !== COLLIDERMODELENABLE) {
           COLLIDERMODELENABLE = value;
-          for (var entity = null, _js_arrvar2443 = clPsEcs_ecs._internal.getEntityList(), _js_idx2442 = 0; _js_idx2442 < _js_arrvar2443.length; _js_idx2442 += 1) {
-              entity = _js_arrvar2443[_js_idx2442];
-              for (var physic = null, _js_arrvar2445 = entity.components, _js_idx2444 = 0; _js_idx2444 < _js_arrvar2445.length; _js_idx2444 += 1) {
-                  physic = _js_arrvar2445[_js_idx2444];
+          for (var entity = null, _js_arrvar14407 = clPsEcs_ecs._internal.getEntityList(), _js_idx14406 = 0; _js_idx14406 < _js_arrvar14407.length; _js_idx14406 += 1) {
+              entity = _js_arrvar14407[_js_idx14406];
+              for (var physic = null, _js_arrvar14409 = entity.components, _js_idx14408 = 0; _js_idx14408 < _js_arrvar14409.length; _js_idx14408 += 1) {
+                  physic = _js_arrvar14409[_js_idx14408];
                   if ((physic instanceof (typeof physic2d === 'string' ? eval(physic2d) : physic2d))) {
                       var model = findColliderModel(physic);
                       if (model) {
@@ -7502,20 +7502,20 @@ var clWeb2dGame_physics_collisionSystem = (function() {
       return this;
   };
   function makeCollisionEntityInfo() {
-      var _js2445 = arguments.length;
-      for (var n2444 = 0; n2444 < _js2445; n2444 += 2) {
-          switch (arguments[n2444]) {
+      var _js14409 = arguments.length;
+      for (var n14408 = 0; n14408 < _js14409; n14408 += 2) {
+          switch (arguments[n14408]) {
           case 'entity':
-              entity = arguments[n2444 + 1];
+              entity = arguments[n14408 + 1];
               break;
           case 'global-point':
-              globalPoint = arguments[n2444 + 1];
+              globalPoint = arguments[n14408 + 1];
               break;
           case 'physic':
-              physic = arguments[n2444 + 1];
+              physic = arguments[n14408 + 1];
               break;
           case 'target-entity-list':
-              targetEntityList = arguments[n2444 + 1];
+              targetEntityList = arguments[n14408 + 1];
           };
       };
       var entity;
@@ -7549,11 +7549,11 @@ var clWeb2dGame_physics_collisionSystem = (function() {
       return this;
   };
   function makeCollisionTargetCache() {
-      var _js2447 = arguments.length;
-      for (var n2446 = 0; n2446 < _js2447; n2446 += 2) {
-          switch (arguments[n2446]) {
+      var _js14411 = arguments.length;
+      for (var n14410 = 0; n14410 < _js14411; n14410 += 2) {
+          switch (arguments[n14410]) {
           case 'cache':
-              cache = arguments[n2446 + 1];
+              cache = arguments[n14410 + 1];
           };
       };
       var cache = 'undefined' === typeof cache ? [] : cache;
@@ -7583,13 +7583,13 @@ var clWeb2dGame_physics_collisionSystem = (function() {
       return cache.cache;
   };
   function findTargetPair(tagList, cache) {
-      for (var x2448 = null, _js_arrvar2450 = cache.cache, _js_idx2449 = 0; _js_idx2449 < _js_arrvar2450.length; _js_idx2449 += 1) {
-          x2448 = _js_arrvar2450[_js_idx2449];
+      for (var x14412 = null, _js_arrvar14414 = cache.cache, _js_idx14413 = 0; _js_idx14413 < _js_arrvar14414.length; _js_idx14413 += 1) {
+          x14412 = _js_arrvar14414[_js_idx14413];
           if ((function (pair) {
               __PS_MV_REG = [];
               return sameTagListP(tagList, pair[0]);
-          })(x2448)) {
-              return x2448;
+          })(x14412)) {
+              return x14412;
           };
       };
   };
@@ -7601,8 +7601,8 @@ var clWeb2dGame_physics_collisionSystem = (function() {
           return pair[1];
       };
       var result = [];
-      for (var info = null, _js_idx2451 = 0; _js_idx2451 < allEntityInfo.length; _js_idx2451 += 1) {
-          info = allEntityInfo[_js_idx2451];
+      for (var info = null, _js_idx14415 = 0; _js_idx14415 < allEntityInfo.length; _js_idx14415 += 1) {
+          info = allEntityInfo[_js_idx14415];
           if (judgeCollisionTargetTags(entityInfo.entity, entityInfo.physic, info.entity, info.physic)) {
               result.unshift(info);
               result;
@@ -7632,13 +7632,13 @@ var clWeb2dGame_physics_collisionSystem = (function() {
           return entity;
       };
       this.processAll = function (system) {
-          var prevNode1169 = clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode;
+          var prevNode2728 = clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode;
           try {
-              var before1170 = performance.now();
-              var element1171 = clWeb2dGame_utils_debug_performance._internal.pickPerformanceTimerElement('collision', 0);
+              var before2729 = performance.now();
+              var element2730 = clWeb2dGame_utils_debug_performance._internal.pickPerformanceTimerElement('collision', 0);
               var infoList = [];
-              for (var entity = null, _js_idx2452 = 0; _js_idx2452 < system.targetEntities.length; _js_idx2452 += 1) {
-                  entity = system.targetEntities[_js_idx2452];
+              for (var entity = null, _js_idx14416 = 0; _js_idx14416 < system.targetEntities.length; _js_idx14416 += 1) {
+                  entity = system.targetEntities[_js_idx14416];
                   var physic = getEcsComponent(physic2d, entity);
                   var globalPoint = calcGlobalPoint(entity);
                   updateBoundingBox(physic, globalPoint);
@@ -7646,19 +7646,19 @@ var clWeb2dGame_physics_collisionSystem = (function() {
                   infoList;
               };
               initTargetListOfInfoList(infoList);
-              var length2453 = infoList.length;
-              var _js2454 = length2453 - 1;
-              for (var outerIdx = 0; outerIdx < _js2454; outerIdx += 1) {
-                  var object2455 = infoList[outerIdx];
-                  for (var info2 = null, _js_idx2456 = 0; _js_idx2456 < object2455.targetEntityList.length; _js_idx2456 += 1) {
-                      info2 = object2455.targetEntityList[_js_idx2456];
-                      processCollision(object2455.entity, object2455.physic, object2455.globalPoint, info2.entity, info2.physic, info2.globalPoint);
+              var length14417 = infoList.length;
+              var _js14418 = length14417 - 1;
+              for (var outerIdx = 0; outerIdx < _js14418; outerIdx += 1) {
+                  var object14419 = infoList[outerIdx];
+                  for (var info2 = null, _js_idx14420 = 0; _js_idx14420 < object14419.targetEntityList.length; _js_idx14420 += 1) {
+                      info2 = object14419.targetEntityList[_js_idx14420];
+                      processCollision(object14419.entity, object14419.physic, object14419.globalPoint, info2.entity, info2.physic, info2.globalPoint);
                   };
               };
               __PS_MV_REG = [];
-              return clWeb2dGame_utils_debug_performance._internal.pushToRingBuffer(performance.now() - before1170, element1171.results);
+              return clWeb2dGame_utils_debug_performance._internal.pushToRingBuffer(performance.now() - before2729, element2730.results);
           } finally {
-              clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode = prevNode1169;
+              clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode = prevNode2728;
           };
       };
       this.addEntityHook = function (entity) {
@@ -7671,29 +7671,29 @@ var clWeb2dGame_physics_collisionSystem = (function() {
       return this;
   };
   function makeCollisionSystem() {
-      var _js2456 = arguments.length;
-      for (var n2455 = 0; n2455 < _js2456; n2455 += 2) {
-          switch (arguments[n2455]) {
+      var _js14420 = arguments.length;
+      for (var n14419 = 0; n14419 < _js14420; n14419 += 2) {
+          switch (arguments[n14419]) {
           case 'enable':
-              enable = arguments[n2455 + 1];
+              enable = arguments[n14419 + 1];
               break;
           case 'target-entities':
-              targetEntities = arguments[n2455 + 1];
+              targetEntities = arguments[n14419 + 1];
               break;
           case 'target-component-types':
-              targetComponentTypes = arguments[n2455 + 1];
+              targetComponentTypes = arguments[n14419 + 1];
               break;
           case 'process':
-              process = arguments[n2455 + 1];
+              process = arguments[n14419 + 1];
               break;
           case 'process-all':
-              processAll = arguments[n2455 + 1];
+              processAll = arguments[n14419 + 1];
               break;
           case 'add-entity-hook':
-              addEntityHook = arguments[n2455 + 1];
+              addEntityHook = arguments[n14419 + 1];
               break;
           case 'delete-entity-hook':
-              deleteEntityHook = arguments[n2455 + 1];
+              deleteEntityHook = arguments[n14419 + 1];
           };
       };
       var enable = 'undefined' === typeof enable ? true : enable;
@@ -7703,13 +7703,13 @@ var clWeb2dGame_physics_collisionSystem = (function() {
           return entity;
       } : process;
       var processAll = 'undefined' === typeof processAll ? function (system) {
-          var prevNode1172 = clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode;
+          var prevNode2731 = clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode;
           try {
-              var before1173 = performance.now();
-              var element1174 = clWeb2dGame_utils_debug_performance._internal.pickPerformanceTimerElement('collision', 0);
+              var before2732 = performance.now();
+              var element2733 = clWeb2dGame_utils_debug_performance._internal.pickPerformanceTimerElement('collision', 0);
               var infoList = [];
-              for (var entity = null, _js_idx2457 = 0; _js_idx2457 < system.targetEntities.length; _js_idx2457 += 1) {
-                  entity = system.targetEntities[_js_idx2457];
+              for (var entity = null, _js_idx14421 = 0; _js_idx14421 < system.targetEntities.length; _js_idx14421 += 1) {
+                  entity = system.targetEntities[_js_idx14421];
                   var physic = getEcsComponent(physic2d, entity);
                   var globalPoint = calcGlobalPoint(entity);
                   updateBoundingBox(physic, globalPoint);
@@ -7717,19 +7717,19 @@ var clWeb2dGame_physics_collisionSystem = (function() {
                   infoList;
               };
               initTargetListOfInfoList(infoList);
-              var length2458 = infoList.length;
-              var _js2459 = length2458 - 1;
-              for (var outerIdx = 0; outerIdx < _js2459; outerIdx += 1) {
-                  var object2460 = infoList[outerIdx];
-                  for (var info2 = null, _js_idx2461 = 0; _js_idx2461 < object2460.targetEntityList.length; _js_idx2461 += 1) {
-                      info2 = object2460.targetEntityList[_js_idx2461];
-                      processCollision(object2460.entity, object2460.physic, object2460.globalPoint, info2.entity, info2.physic, info2.globalPoint);
+              var length14422 = infoList.length;
+              var _js14423 = length14422 - 1;
+              for (var outerIdx = 0; outerIdx < _js14423; outerIdx += 1) {
+                  var object14424 = infoList[outerIdx];
+                  for (var info2 = null, _js_idx14425 = 0; _js_idx14425 < object14424.targetEntityList.length; _js_idx14425 += 1) {
+                      info2 = object14424.targetEntityList[_js_idx14425];
+                      processCollision(object14424.entity, object14424.physic, object14424.globalPoint, info2.entity, info2.physic, info2.globalPoint);
                   };
               };
               __PS_MV_REG = [];
-              return clWeb2dGame_utils_debug_performance._internal.pushToRingBuffer(performance.now() - before1173, element1174.results);
+              return clWeb2dGame_utils_debug_performance._internal.pushToRingBuffer(performance.now() - before2732, element2733.results);
           } finally {
-              clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode = prevNode1172;
+              clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode = prevNode2731;
           };
       } : processAll;
       var addEntityHook = 'undefined' === typeof addEntityHook ? function (entity) {
@@ -7919,47 +7919,47 @@ var clWeb2dGame_graphics_animation = (function() {
       return this;
   };
   function makeAnimation2d() {
-      var _js2461 = arguments.length;
-      for (var n2460 = 0; n2460 < _js2461; n2460 += 2) {
-          switch (arguments[n2460]) {
+      var _js14425 = arguments.length;
+      for (var n14424 = 0; n14424 < _js14425; n14424 += 2) {
+          switch (arguments[n14424]) {
           case 'parent':
-              parent = arguments[n2460 + 1];
+              parent = arguments[n14424 + 1];
               break;
           case 'children':
-              children = arguments[n2460 + 1];
+              children = arguments[n14424 + 1];
               break;
           case 'registerp':
-              registerp = arguments[n2460 + 1];
+              registerp = arguments[n14424 + 1];
               break;
           case 'interval':
-              interval = arguments[n2460 + 1];
+              interval = arguments[n14424 + 1];
               break;
           case 'horiz-count':
-              horizCount = arguments[n2460 + 1];
+              horizCount = arguments[n14424 + 1];
               break;
           case 'vert-count':
-              vertCount = arguments[n2460 + 1];
+              vertCount = arguments[n14424 + 1];
               break;
           case 'model':
-              model = arguments[n2460 + 1];
+              model = arguments[n14424 + 1];
               break;
           case 'texture':
-              texture = arguments[n2460 + 1];
+              texture = arguments[n14424 + 1];
               break;
           case 'animation-end-callback':
-              animationEndCallback = arguments[n2460 + 1];
+              animationEndCallback = arguments[n14424 + 1];
               break;
           case 'goes-to-forward':
-              goesToForward = arguments[n2460 + 1];
+              goesToForward = arguments[n14424 + 1];
               break;
           case 'runs-animation':
-              runsAnimation = arguments[n2460 + 1];
+              runsAnimation = arguments[n14424 + 1];
               break;
           case 'interval-counter':
-              intervalCounter = arguments[n2460 + 1];
+              intervalCounter = arguments[n14424 + 1];
               break;
           case 'image-counter':
-              imageCounter = arguments[n2460 + 1];
+              imageCounter = arguments[n14424 + 1];
           };
       };
       var parent;
@@ -8006,26 +8006,26 @@ var clWeb2dGame_graphics_animation = (function() {
       return animation2d.prototype.constructor = animation2d;
   })();
   function initAnimation2d() {
-      var _js2463 = arguments.length;
-      for (var n2462 = 0; n2462 < _js2463; n2462 += 2) {
-          switch (arguments[n2462]) {
+      var _js14427 = arguments.length;
+      for (var n14426 = 0; n14426 < _js14427; n14426 += 2) {
+          switch (arguments[n14426]) {
           case 'interval':
-              interval = arguments[n2462 + 1];
+              interval = arguments[n14426 + 1];
               break;
           case 'horiz-count':
-              horizCount = arguments[n2462 + 1];
+              horizCount = arguments[n14426 + 1];
               break;
           case 'vert-count':
-              vertCount = arguments[n2462 + 1];
+              vertCount = arguments[n14426 + 1];
               break;
           case 'model':
-              model = arguments[n2462 + 1];
+              model = arguments[n14426 + 1];
               break;
           case 'texture':
-              texture = arguments[n2462 + 1];
+              texture = arguments[n14426 + 1];
               break;
           case 'animation-end-callback':
-              animationEndCallback = arguments[n2462 + 1];
+              animationEndCallback = arguments[n14426 + 1];
           };
       };
       var interval;
@@ -8089,14 +8089,14 @@ var clWeb2dGame_graphics_animation = (function() {
       return anime.goesToForward ? startReversedAnimation(anime) : startAnimation(anime);
   };
   function resetAnimation(anime) {
-      var _js2465 = arguments.length;
-      for (var n2464 = 1; n2464 < _js2465; n2464 += 2) {
-          switch (arguments[n2464]) {
+      var _js14429 = arguments.length;
+      for (var n14428 = 1; n14428 < _js14429; n14428 += 2) {
+          switch (arguments[n14428]) {
           case 'stop-p':
-              stopP = arguments[n2464 + 1];
+              stopP = arguments[n14428 + 1];
               break;
           case 'forward-p':
-              forwardP = arguments[n2464 + 1];
+              forwardP = arguments[n14428 + 1];
           };
       };
       var stopP = 'undefined' === typeof stopP ? true : stopP;
@@ -8119,7 +8119,7 @@ var clWeb2dGame_graphics_animation = (function() {
           throw 'Message: ' + 'The target animation counter is invalid (Max: ~D, Got: ~D)' + '; Args: ' + maxCount + ', ' + nextCounter;
       };
       anime.imageCounter = nextCounter;
-      var xCount = (n2466 = anime.vertCount, (nextCounter % n2466 + n2466) % n2466);
+      var xCount = (n14430 = anime.vertCount, (nextCounter % n14430 + n14430) % n14430);
       var yCount = anime.horizCount - Math.floor(nextCounter / anime.vertCount) - 1;
       var width = 1.0 / anime.vertCount;
       var height = 1.0 / anime.horizCount;
@@ -8265,17 +8265,17 @@ var clWeb2dGame_graphics_animationManager = (function() {
       return this;
   };
   function makeAnimationManager() {
-      var _js2468 = arguments.length;
-      for (var n2467 = 0; n2467 < _js2468; n2467 += 2) {
-          switch (arguments[n2467]) {
+      var _js14432 = arguments.length;
+      for (var n14431 = 0; n14431 < _js14432; n14431 += 2) {
+          switch (arguments[n14431]) {
           case 'entity':
-              entity = arguments[n2467 + 1];
+              entity = arguments[n14431 + 1];
               break;
           case 'animation-table':
-              animationTable = arguments[n2467 + 1];
+              animationTable = arguments[n14431 + 1];
               break;
           case 'current':
-              current = arguments[n2467 + 1];
+              current = arguments[n14431 + 1];
           };
       };
       var entity;
@@ -8299,11 +8299,11 @@ var clWeb2dGame_graphics_animationManager = (function() {
       return makeAnimationManager('entity', entity);
   };
   function switchCurrentAnimation(manager, name) {
-      var _js2470 = arguments.length;
-      for (var n2469 = 2; n2469 < _js2470; n2469 += 2) {
-          switch (arguments[n2469]) {
+      var _js14434 = arguments.length;
+      for (var n14433 = 2; n14433 < _js14434; n14433 += 2) {
+          switch (arguments[n14433]) {
           case 'forward-p':
-              forwardP = arguments[n2469 + 1];
+              forwardP = arguments[n14433 + 1];
           };
       };
       var forwardP = 'undefined' === typeof forwardP ? true : forwardP;
@@ -8460,8 +8460,8 @@ var clWeb2dGame_core_basicSystems = (function() {
       this.targetEntities = [];
       this.targetComponentTypes = [script2d];
       this.process = function (entity) {
-          for (var script = null, _js_arrvar2472 = entity.components, _js_idx2471 = 0; _js_idx2471 < _js_arrvar2472.length; _js_idx2471 += 1) {
-              script = _js_arrvar2472[_js_idx2471];
+          for (var script = null, _js_arrvar14436 = entity.components, _js_idx14435 = 0; _js_idx14435 < _js_arrvar14436.length; _js_idx14435 += 1) {
+              script = _js_arrvar14436[_js_idx14435];
               if ((script instanceof (typeof script2d === 'string' ? eval(script2d) : script2d))) {
                   script.func(entity);
               };
@@ -8479,37 +8479,37 @@ var clWeb2dGame_core_basicSystems = (function() {
       return this;
   };
   function makeScriptSystem() {
-      var _js2474 = arguments.length;
-      for (var n2473 = 0; n2473 < _js2474; n2473 += 2) {
-          switch (arguments[n2473]) {
+      var _js14438 = arguments.length;
+      for (var n14437 = 0; n14437 < _js14438; n14437 += 2) {
+          switch (arguments[n14437]) {
           case 'enable':
-              enable = arguments[n2473 + 1];
+              enable = arguments[n14437 + 1];
               break;
           case 'target-entities':
-              targetEntities = arguments[n2473 + 1];
+              targetEntities = arguments[n14437 + 1];
               break;
           case 'target-component-types':
-              targetComponentTypes = arguments[n2473 + 1];
+              targetComponentTypes = arguments[n14437 + 1];
               break;
           case 'process':
-              process = arguments[n2473 + 1];
+              process = arguments[n14437 + 1];
               break;
           case 'process-all':
-              processAll = arguments[n2473 + 1];
+              processAll = arguments[n14437 + 1];
               break;
           case 'add-entity-hook':
-              addEntityHook = arguments[n2473 + 1];
+              addEntityHook = arguments[n14437 + 1];
               break;
           case 'delete-entity-hook':
-              deleteEntityHook = arguments[n2473 + 1];
+              deleteEntityHook = arguments[n14437 + 1];
           };
       };
       var enable = 'undefined' === typeof enable ? true : enable;
       var targetEntities = 'undefined' === typeof targetEntities ? [] : targetEntities;
       var targetComponentTypes = 'undefined' === typeof targetComponentTypes ? [script2d] : targetComponentTypes;
       var process = 'undefined' === typeof process ? function (entity) {
-          for (var script = null, _js_arrvar2476 = entity.components, _js_idx2475 = 0; _js_idx2475 < _js_arrvar2476.length; _js_idx2475 += 1) {
-              script = _js_arrvar2476[_js_idx2475];
+          for (var script = null, _js_arrvar14440 = entity.components, _js_idx14439 = 0; _js_idx14439 < _js_arrvar14440.length; _js_idx14439 += 1) {
+              script = _js_arrvar14440[_js_idx14439];
               if ((script instanceof (typeof script2d === 'string' ? eval(script2d) : script2d))) {
                   script.func(entity);
               };
@@ -8553,8 +8553,8 @@ var clWeb2dGame_core_basicSystems = (function() {
       this.targetEntities = [];
       this.targetComponentTypes = [animation2d];
       this.process = function (entity) {
-          for (var anime = null, _js_arrvar2478 = entity.components, _js_idx2477 = 0; _js_idx2477 < _js_arrvar2478.length; _js_idx2477 += 1) {
-              anime = _js_arrvar2478[_js_idx2477];
+          for (var anime = null, _js_arrvar14442 = entity.components, _js_idx14441 = 0; _js_idx14441 < _js_arrvar14442.length; _js_idx14441 += 1) {
+              anime = _js_arrvar14442[_js_idx14441];
               if ((anime instanceof (typeof animation2d === 'string' ? eval(animation2d) : animation2d))) {
                   runAnimationProcess(anime);
               };
@@ -8572,37 +8572,37 @@ var clWeb2dGame_core_basicSystems = (function() {
       return this;
   };
   function makeAnimationSystem() {
-      var _js2480 = arguments.length;
-      for (var n2479 = 0; n2479 < _js2480; n2479 += 2) {
-          switch (arguments[n2479]) {
+      var _js14444 = arguments.length;
+      for (var n14443 = 0; n14443 < _js14444; n14443 += 2) {
+          switch (arguments[n14443]) {
           case 'enable':
-              enable = arguments[n2479 + 1];
+              enable = arguments[n14443 + 1];
               break;
           case 'target-entities':
-              targetEntities = arguments[n2479 + 1];
+              targetEntities = arguments[n14443 + 1];
               break;
           case 'target-component-types':
-              targetComponentTypes = arguments[n2479 + 1];
+              targetComponentTypes = arguments[n14443 + 1];
               break;
           case 'process':
-              process = arguments[n2479 + 1];
+              process = arguments[n14443 + 1];
               break;
           case 'process-all':
-              processAll = arguments[n2479 + 1];
+              processAll = arguments[n14443 + 1];
               break;
           case 'add-entity-hook':
-              addEntityHook = arguments[n2479 + 1];
+              addEntityHook = arguments[n14443 + 1];
               break;
           case 'delete-entity-hook':
-              deleteEntityHook = arguments[n2479 + 1];
+              deleteEntityHook = arguments[n14443 + 1];
           };
       };
       var enable = 'undefined' === typeof enable ? true : enable;
       var targetEntities = 'undefined' === typeof targetEntities ? [] : targetEntities;
       var targetComponentTypes = 'undefined' === typeof targetComponentTypes ? [animation2d] : targetComponentTypes;
       var process = 'undefined' === typeof process ? function (entity) {
-          for (var anime = null, _js_arrvar2482 = entity.components, _js_idx2481 = 0; _js_idx2481 < _js_arrvar2482.length; _js_idx2481 += 1) {
-              anime = _js_arrvar2482[_js_idx2481];
+          for (var anime = null, _js_arrvar14446 = entity.components, _js_idx14445 = 0; _js_idx14445 < _js_arrvar14446.length; _js_idx14445 += 1) {
+              anime = _js_arrvar14446[_js_idx14445];
               if ((anime instanceof (typeof animation2d === 'string' ? eval(animation2d) : animation2d))) {
                   runAnimationProcess(anime);
               };
@@ -8646,14 +8646,14 @@ var clWeb2dGame_core_basicSystems = (function() {
       this.targetEntities = [];
       this.targetComponentTypes = [point2d, speed2d];
       this.process = function (entity) {
-          var point2d2483 = (found = getEcsComponent(point2d, entity), found ? found : (function () {
+          var point2d14447 = (found = getEcsComponent(point2d, entity), found ? found : (function () {
               throw 'POINT-2D is not included in the entity';
           })());
-          var speed2d2484 = (found2485 = getEcsComponent(speed2d, entity), found2485 ? found2485 : (function () {
+          var speed2d14448 = (found14449 = getEcsComponent(speed2d, entity), found14449 ? found14449 : (function () {
               throw 'SPEED-2D is not included in the entity';
           })());
           __PS_MV_REG = [];
-          return incfVector2d(point2d2483, speed2d2484);
+          return incfVector2d(point2d14447, speed2d14448);
       };
       this.processAll = function (system) {
           return system;
@@ -8667,43 +8667,43 @@ var clWeb2dGame_core_basicSystems = (function() {
       return this;
   };
   function makeSimpleMoveSystem() {
-      var _js2487 = arguments.length;
-      for (var n2486 = 0; n2486 < _js2487; n2486 += 2) {
-          switch (arguments[n2486]) {
+      var _js14451 = arguments.length;
+      for (var n14450 = 0; n14450 < _js14451; n14450 += 2) {
+          switch (arguments[n14450]) {
           case 'enable':
-              enable = arguments[n2486 + 1];
+              enable = arguments[n14450 + 1];
               break;
           case 'target-entities':
-              targetEntities = arguments[n2486 + 1];
+              targetEntities = arguments[n14450 + 1];
               break;
           case 'target-component-types':
-              targetComponentTypes = arguments[n2486 + 1];
+              targetComponentTypes = arguments[n14450 + 1];
               break;
           case 'process':
-              process = arguments[n2486 + 1];
+              process = arguments[n14450 + 1];
               break;
           case 'process-all':
-              processAll = arguments[n2486 + 1];
+              processAll = arguments[n14450 + 1];
               break;
           case 'add-entity-hook':
-              addEntityHook = arguments[n2486 + 1];
+              addEntityHook = arguments[n14450 + 1];
               break;
           case 'delete-entity-hook':
-              deleteEntityHook = arguments[n2486 + 1];
+              deleteEntityHook = arguments[n14450 + 1];
           };
       };
       var enable = 'undefined' === typeof enable ? true : enable;
       var targetEntities = 'undefined' === typeof targetEntities ? [] : targetEntities;
       var targetComponentTypes = 'undefined' === typeof targetComponentTypes ? [point2d, speed2d] : targetComponentTypes;
       var process = 'undefined' === typeof process ? function (entity) {
-          var point2d2488 = (found = getEcsComponent(point2d, entity), found ? found : (function () {
+          var point2d14452 = (found = getEcsComponent(point2d, entity), found ? found : (function () {
               throw 'POINT-2D is not included in the entity';
           })());
-          var speed2d2489 = (found2490 = getEcsComponent(speed2d, entity), found2490 ? found2490 : (function () {
+          var speed2d14453 = (found14454 = getEcsComponent(speed2d, entity), found14454 ? found14454 : (function () {
               throw 'SPEED-2D is not included in the entity';
           })());
           __PS_MV_REG = [];
-          return incfVector2d(point2d2488, speed2d2489);
+          return incfVector2d(point2d14452, speed2d14453);
       } : process;
       var processAll = 'undefined' === typeof processAll ? function (system) {
           return system;
@@ -8901,10 +8901,10 @@ var clWeb2dGame_core_initializer = (function() {
       STATS = new Stats();
       var stats = STATS;
       stats.setMode(0);
-      var object2491 = stats.domElement.style;
-      object2491.position = 'absolute';
-      object2491.left = '0px';
-      object2491.top = '0px';
+      var object14455 = stats.domElement.style;
+      object14455.position = 'absolute';
+      object14455.left = '0px';
+      object14455.top = '0px';
       document.getElementById('stats-output').appendChild(stats.domElement);
       __PS_MV_REG = [];
       return stats;
@@ -8914,29 +8914,29 @@ var clWeb2dGame_core_initializer = (function() {
       return STATS ? STATS.update() : null;
   };
   function initDefaultSystems() {
-      var _js2493 = arguments.length;
-      for (var n2492 = 0; n2492 < _js2493; n2492 += 2) {
-          switch (arguments[n2492]) {
+      var _js14457 = arguments.length;
+      for (var n14456 = 0; n14456 < _js14457; n14456 += 2) {
+          switch (arguments[n14456]) {
           case 'scene':
-              scene = arguments[n2492 + 1];
+              scene = arguments[n14456 + 1];
               break;
           case 'script-system':
-              scriptSystem = arguments[n2492 + 1];
+              scriptSystem = arguments[n14456 + 1];
               break;
           case 'draw-system':
-              drawSystem = arguments[n2492 + 1];
+              drawSystem = arguments[n14456 + 1];
               break;
           case 'animation-system':
-              animationSystem = arguments[n2492 + 1];
+              animationSystem = arguments[n14456 + 1];
               break;
           case 'collision-system':
-              collisionSystem = arguments[n2492 + 1];
+              collisionSystem = arguments[n14456 + 1];
               break;
           case 'simple-move-system':
-              simpleMoveSystem = arguments[n2492 + 1];
+              simpleMoveSystem = arguments[n14456 + 1];
               break;
           case 'ui-system':
-              uiSystem = arguments[n2492 + 1];
+              uiSystem = arguments[n14456 + 1];
           };
       };
       var scene;
@@ -9010,38 +9010,38 @@ var clWeb2dGame_core_initializer = (function() {
    * We assume that the camera is initalized using cl-web-2d-game[.camera]:init-camera.
    */
   function start2dGame() {
-      var _js2495 = arguments.length;
-      for (var n2494 = 0; n2494 < _js2495; n2494 += 2) {
-          switch (arguments[n2494]) {
+      var _js14459 = arguments.length;
+      for (var n14458 = 0; n14458 < _js14459; n14458 += 2) {
+          switch (arguments[n14458]) {
           case 'screen-width':
-              screenWidth = arguments[n2494 + 1];
+              screenWidth = arguments[n14458 + 1];
               break;
           case 'screen-height':
-              screenHeight = arguments[n2494 + 1];
+              screenHeight = arguments[n14458 + 1];
               break;
           case 'camera':
-              camera = arguments[n2494 + 1];
+              camera = arguments[n14458 + 1];
               break;
           case 'rendered-dom':
-              renderedDom = arguments[n2494 + 1];
+              renderedDom = arguments[n14458 + 1];
               break;
           case 'stats-dom':
-              statsDom = arguments[n2494 + 1];
+              statsDom = arguments[n14458 + 1];
               break;
           case 'monitoring-log-dom':
-              monitoringLogDom = arguments[n2494 + 1];
+              monitoringLogDom = arguments[n14458 + 1];
               break;
           case 'event-log-dom':
-              eventLogDom = arguments[n2494 + 1];
+              eventLogDom = arguments[n14458 + 1];
               break;
           case 'resize-to-screen-p':
-              resizeToScreenP = arguments[n2494 + 1];
+              resizeToScreenP = arguments[n14458 + 1];
               break;
           case 'init-function':
-              initFunction = arguments[n2494 + 1];
+              initFunction = arguments[n14458 + 1];
               break;
           case 'update-function':
-              updateFunction = arguments[n2494 + 1];
+              updateFunction = arguments[n14458 + 1];
           };
       };
       var screenWidth;
@@ -9074,39 +9074,39 @@ var clWeb2dGame_core_initializer = (function() {
       initFunction(scene);
       var renderLoop = function () {
           requestAnimationFrame(renderLoop);
-          var prevNode1175 = clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode;
+          var prevNode2734 = clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode;
           try {
-              var before1176 = performance.now();
-              var element1177 = clWeb2dGame_utils_debug_performance._internal.pickPerformanceTimerElement('loop-top', 0);
-              var prevNode1178 = clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode;
+              var before2735 = performance.now();
+              var element2736 = clWeb2dGame_utils_debug_performance._internal.pickPerformanceTimerElement('loop-top', 0);
+              var prevNode2737 = clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode;
               try {
-                  var before1179 = performance.now();
-                  var element1180 = clWeb2dGame_utils_debug_performance._internal.pickPerformanceTimerElement('render', 0);
+                  var before2738 = performance.now();
+                  var element2739 = clWeb2dGame_utils_debug_performance._internal.pickPerformanceTimerElement('render', 0);
                   var scope = WTF.trace.enterScope('render');
                   renderer.render(scene, camera);
                   WTF.trace.leaveScope(scope, 'render');
-                  clWeb2dGame_utils_debug_performance._internal.pushToRingBuffer(performance.now() - before1179, element1180.results);
+                  clWeb2dGame_utils_debug_performance._internal.pushToRingBuffer(performance.now() - before2738, element2739.results);
               } finally {
-                  clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode = prevNode1178;
+                  clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode = prevNode2737;
               };
               updateStats();
-              var prevNode1181 = clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode;
+              var prevNode2740 = clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode;
               try {
-                  var before1182 = performance.now();
-                  var element1183 = clWeb2dGame_utils_debug_performance._internal.pickPerformanceTimerElement('update', 0);
-                  var scope2496 = WTF.trace.enterScope('update');
+                  var before2741 = performance.now();
+                  var element2742 = clWeb2dGame_utils_debug_performance._internal.pickPerformanceTimerElement('update', 0);
+                  var scope14460 = WTF.trace.enterScope('update');
                   clearMonitoringLog();
                   processInput();
                   ecsMain();
                   updateFunction();
-                  WTF.trace.leaveScope(scope2496, 'update');
-                  clWeb2dGame_utils_debug_performance._internal.pushToRingBuffer(performance.now() - before1182, element1183.results);
+                  WTF.trace.leaveScope(scope14460, 'update');
+                  clWeb2dGame_utils_debug_performance._internal.pushToRingBuffer(performance.now() - before2741, element2742.results);
               } finally {
-                  clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode = prevNode1181;
+                  clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode = prevNode2740;
               };
-              clWeb2dGame_utils_debug_performance._internal.pushToRingBuffer(performance.now() - before1176, element1177.results);
+              clWeb2dGame_utils_debug_performance._internal.pushToRingBuffer(performance.now() - before2735, element2736.results);
           } finally {
-              clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode = prevNode1175;
+              clWeb2dGame_utils_debug_performance._internal.PERFORMANCETIMER.currentNode = prevNode2734;
           };
           __PS_MV_REG = [];
           return addToMonitoringLog(dumpPerformanceCounter());
@@ -9223,23 +9223,23 @@ var clWeb2dGame_utils_debug_debugDrawer = (function() {
   var getDefaultEcsEntityParent = clPsEcs_ecs.getDefaultEcsEntityParent;
   /* --- define objects --- */
   function drawDebugModel() {
-      var _js2498 = arguments.length;
-      for (var n2497 = 0; n2497 < _js2498; n2497 += 2) {
-          switch (arguments[n2497]) {
+      var _js14462 = arguments.length;
+      for (var n14461 = 0; n14461 < _js14462; n14461 += 2) {
+          switch (arguments[n14461]) {
           case 'model':
-              model = arguments[n2497 + 1];
+              model = arguments[n14461 + 1];
               break;
           case 'point':
-              point = arguments[n2497 + 1];
+              point = arguments[n14461 + 1];
               break;
           case 'tag-list':
-              tagList = arguments[n2497 + 1];
+              tagList = arguments[n14461 + 1];
               break;
           case 'parent':
-              parent = arguments[n2497 + 1];
+              parent = arguments[n14461 + 1];
               break;
           case 'fn-delete-condition':
-              fnDeleteCondition = arguments[n2497 + 1];
+              fnDeleteCondition = arguments[n14461 + 1];
           };
       };
       var model;
@@ -9260,8 +9260,8 @@ var clWeb2dGame_utils_debug_debugDrawer = (function() {
       };
       var entity = makeEcsEntity();
       var truePoint = (point instanceof (typeof point2d === 'string' ? eval(point2d) : point2d)) ? point : makePoint2d('x', point.x, 'y', point.y);
-      for (var tag = null, _js_idx2499 = 0; _js_idx2499 < tagList.length; _js_idx2499 += 1) {
-          tag = tagList[_js_idx2499];
+      for (var tag = null, _js_idx14463 = 0; _js_idx14463 < tagList.length; _js_idx14463 += 1) {
+          tag = tagList[_js_idx14463];
           addEntityTag(entity, tag);
       };
       addEcsComponentList(entity, truePoint, model, makeScript2d('func', function (entity) {
@@ -9287,23 +9287,23 @@ var clWeb2dGame_utils_debug_debugDrawer = (function() {
       var STANDARDDEBUGPOINTR = 4;
   };
   function drawDebugPoint() {
-      var _js2501 = arguments.length;
-      for (var n2500 = 0; n2500 < _js2501; n2500 += 2) {
-          switch (arguments[n2500]) {
+      var _js14465 = arguments.length;
+      for (var n14464 = 0; n14464 < _js14465; n14464 += 2) {
+          switch (arguments[n14464]) {
           case 'point':
-              point = arguments[n2500 + 1];
+              point = arguments[n14464 + 1];
               break;
           case 'tag-list':
-              tagList = arguments[n2500 + 1];
+              tagList = arguments[n14464 + 1];
               break;
           case 'parent':
-              parent = arguments[n2500 + 1];
+              parent = arguments[n14464 + 1];
               break;
           case 'r':
-              r = arguments[n2500 + 1];
+              r = arguments[n14464 + 1];
               break;
           case 'fn-delete-condition':
-              fnDeleteCondition = arguments[n2500 + 1];
+              fnDeleteCondition = arguments[n14464 + 1];
           };
       };
       var point;
@@ -9315,23 +9315,23 @@ var clWeb2dGame_utils_debug_debugDrawer = (function() {
       return drawDebugModel('model', makeModel2d('model', makeWiredRegularPolygon('n', 60, 'r', r, 'color', STANDARDDEBUGCOLOR), 'depth', STANDARDDEBUGDEPTH), 'point', point, 'tag-list', tagList, 'parent', parent, 'fn-delete-condition', fnDeleteCondition);
   };
   function drawDebugPointByTime() {
-      var _js2503 = arguments.length;
-      for (var n2502 = 0; n2502 < _js2503; n2502 += 2) {
-          switch (arguments[n2502]) {
+      var _js14467 = arguments.length;
+      for (var n14466 = 0; n14466 < _js14467; n14466 += 2) {
+          switch (arguments[n14466]) {
           case 'point':
-              point = arguments[n2502 + 1];
+              point = arguments[n14466 + 1];
               break;
           case 'tag-list':
-              tagList = arguments[n2502 + 1];
+              tagList = arguments[n14466 + 1];
               break;
           case 'parent':
-              parent = arguments[n2502 + 1];
+              parent = arguments[n14466 + 1];
               break;
           case 'r':
-              r = arguments[n2502 + 1];
+              r = arguments[n14466 + 1];
               break;
           case 'time':
-              time = arguments[n2502 + 1];
+              time = arguments[n14466 + 1];
           };
       };
       var point;
@@ -9343,23 +9343,23 @@ var clWeb2dGame_utils_debug_debugDrawer = (function() {
       return drawDebugPoint('point', point, 'tag-list', tagList, 'parent', parent, 'r', r, 'fn-delete-condition', makeFnTimerCondition(time));
   };
   function drawDebugLine() {
-      var _js2505 = arguments.length;
-      for (var n2504 = 0; n2504 < _js2505; n2504 += 2) {
-          switch (arguments[n2504]) {
+      var _js14469 = arguments.length;
+      for (var n14468 = 0; n14468 < _js14469; n14468 += 2) {
+          switch (arguments[n14468]) {
           case 'point1':
-              point1 = arguments[n2504 + 1];
+              point1 = arguments[n14468 + 1];
               break;
           case 'point2':
-              point2 = arguments[n2504 + 1];
+              point2 = arguments[n14468 + 1];
               break;
           case 'tag-list':
-              tagList = arguments[n2504 + 1];
+              tagList = arguments[n14468 + 1];
               break;
           case 'parent':
-              parent = arguments[n2504 + 1];
+              parent = arguments[n14468 + 1];
               break;
           case 'fn-delete-condition':
-              fnDeleteCondition = arguments[n2504 + 1];
+              fnDeleteCondition = arguments[n14468 + 1];
           };
       };
       var point1;
@@ -9371,23 +9371,23 @@ var clWeb2dGame_utils_debug_debugDrawer = (function() {
       return drawDebugModel('model', makeModel2d('model', makeLine('pos-a', [point1.x, point1.y], 'pos-b', [point2.x, point2.y], 'color', STANDARDDEBUGCOLOR), 'depth', STANDARDDEBUGDEPTH), 'point', makePoint2d(), 'tag-list', tagList, 'parent', parent, 'fn-delete-condition', fnDeleteCondition);
   };
   function drawDebugLineByTime() {
-      var _js2507 = arguments.length;
-      for (var n2506 = 0; n2506 < _js2507; n2506 += 2) {
-          switch (arguments[n2506]) {
+      var _js14471 = arguments.length;
+      for (var n14470 = 0; n14470 < _js14471; n14470 += 2) {
+          switch (arguments[n14470]) {
           case 'point1':
-              point1 = arguments[n2506 + 1];
+              point1 = arguments[n14470 + 1];
               break;
           case 'point2':
-              point2 = arguments[n2506 + 1];
+              point2 = arguments[n14470 + 1];
               break;
           case 'tag-list':
-              tagList = arguments[n2506 + 1];
+              tagList = arguments[n14470 + 1];
               break;
           case 'parent':
-              parent = arguments[n2506 + 1];
+              parent = arguments[n14470 + 1];
               break;
           case 'time':
-              time = arguments[n2506 + 1];
+              time = arguments[n14470 + 1];
           };
       };
       var point1;
@@ -9679,7 +9679,7 @@ var mogewebzou_game_state_globalInit = (function() {
   var getDefaultEcsEntityParent = clPsEcs_ecs.getDefaultEcsEntityParent;
   /* --- define objects --- */
   function gameGlobalInitState() {
-      this.startProcess = function (state1184) {
+      this.startProcess = function (state2743) {
           loadFont('js/');
           loadTexture('path', '/images/test.png', 'name', 'test');
           loadTexture('path', '/images/test2.png', 'name', 'test2', 'x', 0 / 3, 'width', 1 / 3);
@@ -9699,34 +9699,35 @@ var mogewebzou_game_state_globalInit = (function() {
           loadTexture('path', '/images/obj32.png', 'name', 'kinoko', 'x', 3 / 5, 'y', 0 / 3, 'width', 1 / 5, 'height', 1 / 3);
           loadTexture('path', '/images/obj32.png', 'name', '1up', 'x', 4 / 5, 'y', 0 / 3, 'width', 1 / 5, 'height', 1 / 3);
           loadTexture('path', '/images/softblock.png', 'width', 1.0, 'x', 0, 'name', 's-block');
+          loadTexture('path', '/images/kuribo-anime.png', 'name', 'kuribo');
           __PS_MV_REG = [];
           return true;
       };
-      this.process = function (state1185) {
+      this.process = function (state2744) {
           addToEventLog('global');
           __PS_MV_REG = [];
           return makeState('menu');
       };
-      this.endProcess = function (state1186) {
+      this.endProcess = function (state2745) {
           return true;
       };
       return this;
   };
   function makeGameGlobalInitState() {
-      var _js2509 = arguments.length;
-      for (var n2508 = 0; n2508 < _js2509; n2508 += 2) {
-          switch (arguments[n2508]) {
+      var _js14473 = arguments.length;
+      for (var n14472 = 0; n14472 < _js14473; n14472 += 2) {
+          switch (arguments[n14472]) {
           case 'start-process':
-              startProcess = arguments[n2508 + 1];
+              startProcess = arguments[n14472 + 1];
               break;
           case 'process':
-              process = arguments[n2508 + 1];
+              process = arguments[n14472 + 1];
               break;
           case 'end-process':
-              endProcess = arguments[n2508 + 1];
+              endProcess = arguments[n14472 + 1];
           };
       };
-      var startProcess = 'undefined' === typeof startProcess ? function (state1187) {
+      var startProcess = 'undefined' === typeof startProcess ? function (state2746) {
           loadFont('js/');
           loadTexture('path', '/images/test.png', 'name', 'test');
           loadTexture('path', '/images/test2.png', 'name', 'test2', 'x', 0 / 3, 'width', 1 / 3);
@@ -9746,15 +9747,16 @@ var mogewebzou_game_state_globalInit = (function() {
           loadTexture('path', '/images/obj32.png', 'name', 'kinoko', 'x', 3 / 5, 'y', 0 / 3, 'width', 1 / 5, 'height', 1 / 3);
           loadTexture('path', '/images/obj32.png', 'name', '1up', 'x', 4 / 5, 'y', 0 / 3, 'width', 1 / 5, 'height', 1 / 3);
           loadTexture('path', '/images/softblock.png', 'width', 1.0, 'x', 0, 'name', 's-block');
+          loadTexture('path', '/images/kuribo-anime.png', 'name', 'kuribo');
           __PS_MV_REG = [];
           return true;
       } : startProcess;
-      var process = 'undefined' === typeof process ? function (state1188) {
+      var process = 'undefined' === typeof process ? function (state2747) {
           addToEventLog('global');
           __PS_MV_REG = [];
           return makeState('menu');
       } : process;
-      var endProcess = 'undefined' === typeof endProcess ? function (state1189) {
+      var endProcess = 'undefined' === typeof endProcess ? function (state2748) {
           return true;
       } : endProcess;
       var result = new gameGlobalInitState();
@@ -10047,10 +10049,10 @@ var mogewebzou_game_state_gacha = (function() {
   var getDefaultEcsEntityParent = clPsEcs_ecs.getDefaultEcsEntityParent;
   /* --- define objects --- */
   function gameGachaState() {
-      this.startProcess = function (state1190) {
-          var newParent1191 = parent;
+      this.startProcess = function (state2749) {
+          var newParent2750 = parent;
           try {
-              stackDefaultEcsEntityParent(newParent1191);
+              stackDefaultEcsEntityParent(newParent2750);
               var background = makeEcsEntity();
               addEcsComponentList(background, makePoint2d('x', 0, 'y', 0), makeModel2d('model', makeSolidRect('width', 300, 'height', 300, 'color', 15597568), 'depth', 1));
               addEcsEntity(background);
@@ -10060,10 +10062,10 @@ var mogewebzou_game_state_gacha = (function() {
               popDefaultEcsEntityParent();
           };
       };
-      this.process = function (state1192) {
+      this.process = function (state2751) {
           return null;
       };
-      this.endProcess = function (state1193) {
+      this.endProcess = function (state2752) {
           return true;
       };
       this.parent = makeEcsEntity();
@@ -10071,26 +10073,26 @@ var mogewebzou_game_state_gacha = (function() {
       return this;
   };
   function makeGameGachaState() {
-      var _js2511 = arguments.length;
-      for (var n2510 = 0; n2510 < _js2511; n2510 += 2) {
-          switch (arguments[n2510]) {
+      var _js14475 = arguments.length;
+      for (var n14474 = 0; n14474 < _js14475; n14474 += 2) {
+          switch (arguments[n14474]) {
           case 'start-process':
-              startProcess = arguments[n2510 + 1];
+              startProcess = arguments[n14474 + 1];
               break;
           case 'process':
-              process = arguments[n2510 + 1];
+              process = arguments[n14474 + 1];
               break;
           case 'end-process':
-              endProcess = arguments[n2510 + 1];
+              endProcess = arguments[n14474 + 1];
               break;
           case 'parent':
-              parent = arguments[n2510 + 1];
+              parent = arguments[n14474 + 1];
           };
       };
-      var startProcess = 'undefined' === typeof startProcess ? function (state1194) {
-          var newParent1195 = parent;
+      var startProcess = 'undefined' === typeof startProcess ? function (state2753) {
+          var newParent2754 = parent;
           try {
-              stackDefaultEcsEntityParent(newParent1195);
+              stackDefaultEcsEntityParent(newParent2754);
               var background = makeEcsEntity();
               addEcsComponentList(background, makePoint2d('x', 0, 'y', 0), makeModel2d('model', makeSolidRect('width', 300, 'height', 300, 'color', 15597568), 'depth', 1));
               addEcsEntity(background);
@@ -10100,10 +10102,10 @@ var mogewebzou_game_state_gacha = (function() {
               popDefaultEcsEntityParent();
           };
       } : startProcess;
-      var process = 'undefined' === typeof process ? function (state1196) {
+      var process = 'undefined' === typeof process ? function (state2755) {
           return null;
       } : process;
-      var endProcess = 'undefined' === typeof endProcess ? function (state1197) {
+      var endProcess = 'undefined' === typeof endProcess ? function (state2756) {
           return true;
       } : endProcess;
       var parent = 'undefined' === typeof parent ? makeEcsEntity() : parent;
@@ -10411,10 +10413,10 @@ var mogewebzou_game_state_menu = (function() {
       return keyDownNowP('a') || getLeftMouseState() === 'down-now' || getTotalTouchState() === 'down-now';
   };
   function gameMenuState() {
-      this.startProcess = function (state1198) {
-          var newParent1199 = state1198.parent;
+      this.startProcess = function (state2757) {
+          var newParent2758 = state2757.parent;
           try {
-              stackDefaultEcsEntityParent(newParent1199);
+              stackDefaultEcsEntityParent(newParent2758);
               var area = makeTextArea('font-size', 50, 'text-align', 'center');
               addTextToArea(area, 'text', 'Press Z key start HOGE', 'color', 16777215);
               addEcsComponentList(area, makePoint2d('x', 300, 'y', 300));
@@ -10425,17 +10427,17 @@ var mogewebzou_game_state_menu = (function() {
           __PS_MV_REG = [];
           return true;
       };
-      this.process = function (state1200) {
+      this.process = function (state2759) {
           if (startGameP()) {
               addToEventLog('menu');
               __PS_MV_REG = [];
               return makeState('main');
           };
       };
-      this.endProcess = function (state1201) {
+      this.endProcess = function (state2760) {
           registerNextFrameFunc(function () {
               __PS_MV_REG = [];
-              return deleteEcsEntity(state1201.parent);
+              return deleteEcsEntity(state2760.parent);
           });
           __PS_MV_REG = [];
           return true;
@@ -10445,26 +10447,26 @@ var mogewebzou_game_state_menu = (function() {
       return this;
   };
   function makeGameMenuState() {
-      var _js2513 = arguments.length;
-      for (var n2512 = 0; n2512 < _js2513; n2512 += 2) {
-          switch (arguments[n2512]) {
+      var _js14477 = arguments.length;
+      for (var n14476 = 0; n14476 < _js14477; n14476 += 2) {
+          switch (arguments[n14476]) {
           case 'start-process':
-              startProcess = arguments[n2512 + 1];
+              startProcess = arguments[n14476 + 1];
               break;
           case 'process':
-              process = arguments[n2512 + 1];
+              process = arguments[n14476 + 1];
               break;
           case 'end-process':
-              endProcess = arguments[n2512 + 1];
+              endProcess = arguments[n14476 + 1];
               break;
           case 'parent':
-              parent = arguments[n2512 + 1];
+              parent = arguments[n14476 + 1];
           };
       };
-      var startProcess = 'undefined' === typeof startProcess ? function (state1202) {
-          var newParent1203 = state1202.parent;
+      var startProcess = 'undefined' === typeof startProcess ? function (state2761) {
+          var newParent2762 = state2761.parent;
           try {
-              stackDefaultEcsEntityParent(newParent1203);
+              stackDefaultEcsEntityParent(newParent2762);
               var area = makeTextArea('font-size', 50, 'text-align', 'center');
               addTextToArea(area, 'text', 'Press Z key start HOGE', 'color', 16777215);
               addEcsComponentList(area, makePoint2d('x', 300, 'y', 300));
@@ -10475,17 +10477,17 @@ var mogewebzou_game_state_menu = (function() {
           __PS_MV_REG = [];
           return true;
       } : startProcess;
-      var process = 'undefined' === typeof process ? function (state1204) {
+      var process = 'undefined' === typeof process ? function (state2763) {
           if (startGameP()) {
               addToEventLog('menu');
               __PS_MV_REG = [];
               return makeState('main');
           };
       } : process;
-      var endProcess = 'undefined' === typeof endProcess ? function (state1205) {
+      var endProcess = 'undefined' === typeof endProcess ? function (state2764) {
           registerNextFrameFunc(function () {
               __PS_MV_REG = [];
-              return deleteEcsEntity(state1205.parent);
+              return deleteEcsEntity(state2764.parent);
           });
           __PS_MV_REG = [];
           return true;
@@ -10755,59 +10757,62 @@ var mogewebzou_game_parameter = (function() {
   };
   if ('undefined' === typeof PARAMS) {
       var PARAMS = (function () {
-          var result2514;
-          var result2515;
-          var result2516;
-          var result2517;
-          var result2518;
-          var result2519;
-          var result2520;
-          var result2521;
-          var result2522;
-          var result2523;
+          var result14478;
+          var result14479;
+          var result14480;
+          var result14481;
+          var result14482;
+          var result14483;
+          var result14484;
+          var result14485;
+          var result14486;
+          var result14487;
           var result = {  };
-          result['field'] = (result2514 = {  }, (result2514['x'] = 0, result2514['y'] = 0, result2514['width'] = fieldWidth, result2514['height'] = fieldHeight, result2514['depth'] = 0, result2514));
-          result['obj'] = (result2515 = {  }, (result2515['depth'] = 50, result2515));
-          result['ball'] = (result2516 = {  }, (result2516['r'] = function () {
+          result['field'] = (result14478 = {  }, (result14478['x'] = 0, result14478['y'] = 0, result14478['width'] = fieldWidth, result14478['height'] = fieldHeight, result14478['depth'] = 0, result14478['width/2'] = function () {
+              __PS_MV_REG = [];
+              return Math.floor(fieldWidth / 2);
+          }, result14478));
+          result['obj'] = (result14479 = {  }, (result14479['depth'] = 50, result14479));
+          result['ball'] = (result14480 = {  }, (result14480['r'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(10, fieldWidth);
-          }, result2516['color'] = 16755370, result2516['depth'] = 10, result2516['speed'] = (result2517 = {  }, (result2517['base'] = (result2518 = {  }, (result2518['min'] = function () {
+          }, result14480['color'] = 16755370, result14480['depth'] = 10, result14480['speed'] = (result14481 = {  }, (result14481['base'] = (result14482 = {  }, (result14482['min'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(5, fieldHeight);
-          }, result2518['max'] = function () {
+          }, result14482['max'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(10, fieldHeight);
-          }, result2518)), result2517['accell-scale'] = (result2519 = {  }, (result2519['per-block'] = 0.008, result2519['max'] = 1.5, result2519)), result2517)), result2516['angle'] = (result2520 = {  }, (result2520['min'] = function () {
+          }, result14482)), result14481['accell-scale'] = (result14483 = {  }, (result14483['per-block'] = 0.008, result14483['max'] = 1.5, result14483)), result14481)), result14480['angle'] = (result14484 = {  }, (result14484['min'] = function () {
               return Math.PI / 7;
-          }, result2520['max-accele'] = function () {
+          }, result14484['max-accele'] = function () {
               return Math.PI / 8;
-          }, result2520)), result2516['dist-from-paddle'] = function () {
+          }, result14484)), result14480['dist-from-paddle'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(10, fieldHeight);
-          }, result2516));
-          result['paddle'] = (result2521 = {  }, (result2521['width'] = (result2522 = {  }, (result2522['min'] = function () {
+          }, result14480));
+          result['paddle'] = (result14485 = {  }, (result14485['width'] = (result14486 = {  }, (result14486['min'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(130, fieldWidth);
-          }, result2522['max'] = function () {
+          }, result14486['max'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(55, fieldWidth);
-          }, result2522)), result2521['height'] = function () {
+          }, result14486)), result14485['height'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(10, fieldHeight);
-          }, result2521['depth'] = 8, result2521['base-line-height'] = function () {
+          }, result14485['depth'] = 8, result14485['base-line-height'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(80, fieldHeight);
-          }, result2521['lane-space'] = function () {
+          }, result14485['lane-space'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(30, fieldHeight);
-          }, result2521['lane-count'] = 4, result2521));
-          result['gravity'] = (result2523 = {  }, (result2523['value'] = function () {
+          }, result14485['lane-count'] = 4, result14485));
+          result['gravity'] = (result14487 = {  }, (result14487['value'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(1, fieldHeight);
-          }, result2523['range'] = function () {
+          }, result14487['range'] = function () {
               __PS_MV_REG = [];
               return calcAbsoluteLength(200, fieldHeight);
-          }, result2523));
+          }, result14487));
           return result;
       })();
   };
@@ -11085,13 +11090,13 @@ var mogewebzou_game_stage_stage = (function() {
   };
   if ('undefined' === typeof TESTSTAGE) {
       var TESTSTAGE = (function () {
-          var arr2524 = new Array([10, 10]);
-          var init2525 = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]];
-          for (var i2527 = 0; i2527 < Math.min(arr2524.length, init2525.length); i2527 += 1) {
-              arr2524[i2527] = init2525[i2527];
+          var arr14488 = new Array([10, 10]);
+          var init14489 = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]];
+          for (var i14491 = 0; i14491 < Math.min(arr14488.length, init14489.length); i14491 += 1) {
+              arr14488[i14491] = init14489[i14491];
           };
           __PS_MV_REG = [];
-          return arr2524;
+          return arr14488;
       })();
   };
   /* --- extern symbols --- */
@@ -11376,18 +11381,7 @@ var mogewebzou_game_field = (function() {
       __PS_MV_REG = [];
       return getEntityParam(field, 'height');
   };
-  function makeObjUsingInfo(x, y, name) {
-      var width = 32;
-      var height = 32;
-      var result = makeRectBlock(width * x, height * y, width, height);
-      framePromiseThen(makeTextureModelPromise('width', width, 'height', height, 'texture-name', name), function (model) {
-          __PS_MV_REG = [];
-          return addEcsComponentList(result, makeModel2d('model', model, 'depth', 30, 'offset', makePoint2d('x', width / -2, 'y', height / -2)));
-      });
-      __PS_MV_REG = [];
-      return result;
-  };
-  function getObjType(obj) {
+  function getObjName(obj) {
       switch (obj) {
       case 1:
           return 'yuka-blk';
@@ -11422,87 +11416,19 @@ var mogewebzou_game_field = (function() {
           return 'yuka-blk';
       };
   };
-  function generateMogeStage(field) {
-      var value;
-      var width = (value = mogewebzou_game_parameter._internal.PARAMS['field']['width'], typeof value === 'function' ? value() : value);
-      var ymax = STAGE11.length;
-      var xmax = Math.floor(width / 32) + 1;
-      setEntityParam(field, 'objxmax', xmax);
-      for (var y = 0; y < ymax; y += 1) {
-          for (var x = 0; x < xmax; x += 1) {
-              var obj = STAGE11[y][x];
-              if (obj !== 0) {
-                  addEcsEntity(makeObjUsingInfo(x, ymax - 1 - y, getObjType(obj)), field);
-              };
-          };
-      };
-  };
-  function addObj(xmax, field) {
-      var ymax = STAGE11.length;
-      for (var y = 0; y < ymax; y += 1) {
-          var obj = STAGE11[y][xmax];
-          if (obj !== 0) {
-              addEcsEntity(makeObjUsingInfo(xmax, ymax - 1 - y, getObjType(obj)), field);
-          };
-      };
-  };
-  function initField() {
-      var value;
-      var value2528;
-      var value2529;
-      var value2530;
-      var value2531;
-      var field = makeEcsEntity();
-      var width = (value = mogewebzou_game_parameter._internal.PARAMS['field']['width'], typeof value === 'function' ? value() : value);
-      var height = (value2528 = mogewebzou_game_parameter._internal.PARAMS['field']['height'], typeof value2528 === 'function' ? value2528() : value2528);
-      addEntityTag(field, 'field');
-      addEcsComponentList(field, makePoint2d('x', (value2529 = mogewebzou_game_parameter._internal.PARAMS['field']['x'], typeof value2529 === 'function' ? value2529() : value2529), 'y', (value2530 = mogewebzou_game_parameter._internal.PARAMS['field']['y'], typeof value2530 === 'function' ? value2530() : value2530)), makeModel2d('model', makeSolidRect('width', width, 'height', height), 'depth', (value2531 = mogewebzou_game_parameter._internal.PARAMS['field']['depth'], typeof value2531 === 'function' ? value2531() : value2531)), makeScript2d('func', function (entity) {
-          __PS_MV_REG = [];
-          return updateField(entity);
-      }), initEntityParams('width', width, 'height', height, 'objxmax', 0, 'objxmin', 0));
-      addEcsEntity(field);
-      __PS_MV_REG = [];
-      return FIELD = field;
-  };
-  function makeRectBlock(x, y, width, height) {
-      var blk = makeEcsEntity();
-      var hWidth = width / 2;
-      var hHeight = height / 2;
-      var point = makePoint2d('x', x + hWidth, 'y', y + hHeight);
-      addEntityTag(blk, 'block');
-      addEcsComponentList(blk, point, makeScript2d('func', function (entity) {
-          var field = getField();
-          var point2d2532 = (found = getEcsComponent(point2d, field), found ? found : (function () {
-              throw 'POINT-2D is not included in the entity';
-          })());
-          __PS_MV_REG = [];
-          return -point2d2532.x - 100 > point.x ? registerNextFrameFunc(function () {
-              __PS_MV_REG = [];
-              return deleteEcsEntity(entity);
-          }) : null;
-      }), makePhysicPolygon('target-tags', ['ball', 'mouse'], 'pnt-list', [makePoint2d('x', -1 * hWidth, 'y', -1 * hHeight), makePoint2d('x', hWidth, 'y', -1 * hHeight), makePoint2d('x', hWidth, 'y', hHeight), makePoint2d('x', -1 * hWidth, 'y', hHeight)], 'on-collision', function (mine, target) {
-          __PS_MV_REG = [];
-          return hasEntityTag(target, 'ball') ? registerNextFrameFunc(function () {
-              __PS_MV_REG = [];
-              return deleteEcsEntity(mine);
-          }) : null;
-      }), initEntityParams('width', width, 'height', height));
-      __PS_MV_REG = [];
-      return blk;
-  };
   function updateField(field) {
       var moge = findAEntityByTag('moge');
       var point = getEcsComponent(point2d, moge);
       var fieldW = (value = mogewebzou_game_parameter._internal.PARAMS['field']['width'], typeof value === 'function' ? value() : value);
       if (keyDownP('right')) {
-          if (point.x >= (value2533 = mogewebzou_game_parameter._internal.PARAMS['field']['width'], typeof value2533 === 'function' ? value2533() : value2533) / 2) {
-              var point2d2534 = (found = getEcsComponent(point2d, field), found ? found : (function () {
+          if (point.x >= (value14492 = mogewebzou_game_parameter._internal.PARAMS['field']['width/2'], typeof value14492 === 'function' ? value14492() : value14492)) {
+              var point2d14493 = (found = getEcsComponent(point2d, field), found ? found : (function () {
                   throw 'POINT-2D is not included in the entity';
               })());
-              point2d2534.x -= 2;
-              var newObjXmax = Math.floor((fieldW + -point2d2534.x) / 32);
+              point2d14493.x -= 2;
+              var newObjXmax = Math.floor((fieldW + -point2d14493.x) / 32) + 10;
               var oldObjXmax = getEntityParam(field, 'objxmax');
-              var newObjXmin = Math.floor(-point2d2534.x / 32);
+              var newObjXmin = Math.floor(-point2d14493.x / 32);
               var oldObjXmin = getEntityParam(field, 'objxmin');
               if (newObjXmin > oldObjXmin) {
                   setEntityParam(field, 'objxmin', newObjXmin);
@@ -11514,35 +11440,223 @@ var mogewebzou_game_field = (function() {
           };
       };
       if (keyDownP('left')) {
-          var point2d2535 = (found2536 = getEcsComponent(point2d, field), found2536 ? found2536 : (function () {
+          var point2d14494 = (found14495 = getEcsComponent(point2d, field), found14495 ? found14495 : (function () {
               throw 'POINT-2D is not included in the entity';
           })());
-          if (point2d2535.x < 0) {
-              point2d2535.x += 2;
-              var newObjXmin2537 = Math.floor(-point2d2535.x / 32);
-              var oldObjXmin2538 = getEntityParam(field, 'objxmin');
-              if (newObjXmin2537 < oldObjXmin2538) {
-                  setEntityParam(field, 'objxmin', newObjXmin2537);
-                  __PS_MV_REG = [];
-                  return addObj(newObjXmin2537, field);
+          if (point2d14494.x < 0) {
+              point2d14494.x += 2;
+              var newObjXmin14496 = Math.floor(-point2d14494.x / 32);
+              var oldObjXmin14497 = getEntityParam(field, 'objxmin');
+              var newObjXmax14498 = Math.floor((fieldW + -point2d14494.x) / 32) + 10;
+              var oldObjXmax14499 = getEntityParam(field, 'objxmax');
+              if (newObjXmin14496 < oldObjXmin14497) {
+                  setEntityParam(field, 'objxmin', newObjXmin14496);
+                  addObj(newObjXmin14496, field);
+              };
+              __PS_MV_REG = [];
+              return newObjXmax14498 < oldObjXmax14499 ? setEntityParam(field, 'objxmax', newObjXmax14498) : null;
+          };
+      };
+  };
+  function initField() {
+      var value;
+      var value14500;
+      var value14501;
+      var value14502;
+      var value14503;
+      var field = makeEcsEntity();
+      var width = (value = mogewebzou_game_parameter._internal.PARAMS['field']['width'], typeof value === 'function' ? value() : value);
+      var height = (value14500 = mogewebzou_game_parameter._internal.PARAMS['field']['height'], typeof value14500 === 'function' ? value14500() : value14500);
+      addEntityTag(field, 'field');
+      addEcsComponentList(field, makePoint2d('x', (value14501 = mogewebzou_game_parameter._internal.PARAMS['field']['x'], typeof value14501 === 'function' ? value14501() : value14501), 'y', (value14502 = mogewebzou_game_parameter._internal.PARAMS['field']['y'], typeof value14502 === 'function' ? value14502() : value14502)), makeModel2d('model', makeSolidRect('width', width, 'height', height), 'depth', (value14503 = mogewebzou_game_parameter._internal.PARAMS['field']['depth'], typeof value14503 === 'function' ? value14503() : value14503)), makeScript2d('func', function (entity) {
+          __PS_MV_REG = [];
+          return updateField(entity);
+      }), initEntityParams('width', width, 'height', height, 'objxmax', 0, 'objxmin', 0));
+      addEcsEntity(field);
+      __PS_MV_REG = [];
+      return FIELD = field;
+  };
+  function makeObjUsingInfo(x, y, name, field) {
+      var width = 32;
+      var height = 32;
+      var result = makeRectBlock(width * x, height * y, width, height);
+      framePromiseThen(makeTextureModelPromise('width', width, 'height', height, 'texture-name', name), function (model) {
+          __PS_MV_REG = [];
+          return addEcsComponentList(result, makeModel2d('model', model, 'depth', 30, 'offset', makePoint2d('x', width / -2, 'y', height / -2)));
+      });
+      __PS_MV_REG = [];
+      return addEcsEntity(result, field);
+  };
+  function generateMogeStage(field) {
+      var value;
+      var width = (value = mogewebzou_game_parameter._internal.PARAMS['field']['width'], typeof value === 'function' ? value() : value);
+      var ymax = STAGE11.length;
+      var xmax = Math.floor(width / 32) + 10;
+      setEntityParam(field, 'objxmax', xmax);
+      setEntityParam(field, 'objxmin', 0);
+      for (var y = 0; y < ymax; y += 1) {
+          for (var x = 0; x <= xmax; x += 1) {
+              var obj = STAGE11[y][x];
+              var y1 = ymax - 1 - y;
+              if (obj !== 0) {
+                  switch (obj) {
+                  case 'a':
+                      addEnemyModel('x', x, 'y', y1, 'depth', 50, 'texture-name', 'kuribo', 'field', field);
+                      break;
+                  default:
+                      makeObjUsingInfo(x, y1, getObjName(obj), field);
+                  };
               };
           };
       };
   };
+  function addObj(xmax, field) {
+      var ymax = STAGE11.length;
+      for (var y = 0; y < ymax; y += 1) {
+          var obj = STAGE11[y][xmax];
+          var y1 = ymax - 1 - y;
+          if (obj !== 0) {
+              switch (obj) {
+              case 'a':
+                  addEnemyModel('x', xmax, 'y', y1, 'depth', 50, 'texture-name', 'kuribo', 'field', field);
+                  break;
+              default:
+                  makeObjUsingInfo(xmax, y1, getObjName(obj), field);
+              };
+          };
+      };
+  };
+  function deleteMyObj(entity) {
+      var field = getField();
+      var point = getEcsComponent(point2d, entity);
+      var w = (value = mogewebzou_game_parameter._internal.PARAMS['field']['width'], typeof value === 'function' ? value() : value);
+      var point2d14504 = (found = getEcsComponent(point2d, field), found ? found : (function () {
+          throw 'POINT-2D is not included in the entity';
+      })());
+      __PS_MV_REG = [];
+      return point.x > -point2d14504.x + w + 360 || point.x < -point2d14504.x - 320 ? registerNextFrameFunc(function () {
+          __PS_MV_REG = [];
+          return deleteEcsEntity(entity);
+      }) : null;
+  };
+  function offScreenDeleteMyObj(entity) {
+      var field = getField();
+      var point = getEcsComponent(point2d, entity);
+      var w = (value = mogewebzou_game_parameter._internal.PARAMS['field']['width'], typeof value === 'function' ? value() : value);
+      var point2d14505 = (found = getEcsComponent(point2d, field), found ? found : (function () {
+          throw 'POINT-2D is not included in the entity';
+      })());
+      __PS_MV_REG = [];
+      return point.x > -point2d14505.x + w + 360 || point.x < -point2d14505.x - 320 ? registerNextFrameFunc(function () {
+          __PS_MV_REG = [];
+          return deleteEcsEntity(entity);
+      }) : null;
+  };
+  function addEnemyModel() {
+      var _js14507 = arguments.length;
+      for (var n14506 = 0; n14506 < _js14507; n14506 += 2) {
+          switch (arguments[n14506]) {
+          case 'x':
+              x = arguments[n14506 + 1];
+              break;
+          case 'y':
+              y = arguments[n14506 + 1];
+              break;
+          case 'vx':
+              vx = arguments[n14506 + 1];
+              break;
+          case 'vy':
+              vy = arguments[n14506 + 1];
+              break;
+          case 'depth':
+              depth = arguments[n14506 + 1];
+              break;
+          case 'texture-name':
+              textureName = arguments[n14506 + 1];
+              break;
+          case 'field':
+              field = arguments[n14506 + 1];
+          };
+      };
+      var x;
+      var y;
+      var vx;
+      var vy;
+      var depth;
+      var textureName;
+      var field;
+      var rect = makeEcsEntity();
+      var idStr = ('000' + rect.id).slice(-4);
+      var point = makePoint2d('x', x * 32, 'y', y * 32);
+      addToEventLog(idStr + ': Created');
+      addEcsComponentList(rect, point, makeModel2d('model', makeWiredRect('width', 32, 'height', 32), 'depth', depth - 30), makeScript2d('func', function (entity) {
+          offScreenDeleteMyObj(entity);
+          __PS_MV_REG = [];
+          return --point.x;
+      }), initEntityParams('vx', vx, 'vy', vy));
+      __PS_MV_REG = [];
+      return framePromiseThen(getTexturePromise(textureName), function (texture) {
+          var model2d = makeModel2d('model', makeTextureModel('width', 32, 'height', 32, 'texture', texture), 'depth', depth);
+          var anime2d = initAnimation2d('interval', 10, 'vert-count', 4, 'horiz-count', 1, 'model', model2d, 'texture', texture, 'animation-end-callback', function (anime) {
+              switch (2) {
+              case 1:
+                  reverseAnimation(anime);
+                  __PS_MV_REG = [];
+                  return addToEventLog(idStr + ': Reversed');
+              case 2:
+                  resetAnimation(anime, 'stop-p', null);
+                  __PS_MV_REG = [];
+                  return addToEventLog(idStr + ': Repeated');
+              default:
+                  deleteEcsEntity(rect);
+                  __PS_MV_REG = [];
+                  return addToEventLog(idStr + ': Deleted');
+              };
+          });
+          addEcsComponentList(rect, model2d, anime2d);
+          startAnimation(anime2d);
+          __PS_MV_REG = [];
+          return addEcsEntityToBuffer(rect, field);
+      });
+  };
+  function makeRectBlock(x, y, width, height) {
+      var blk = makeEcsEntity();
+      var hWidth = width / 2;
+      var hHeight = height / 2;
+      var point = makePoint2d('x', x + hWidth, 'y', y + hHeight);
+      addEntityTag(blk, 'block');
+      addEcsComponentList(blk, point, makeScript2d('func', function (entity) {
+          var field = getField();
+          var w = (value = mogewebzou_game_parameter._internal.PARAMS['field']['width'], typeof value === 'function' ? value() : value);
+          var point2d14508 = (found = getEcsComponent(point2d, field), found ? found : (function () {
+              throw 'POINT-2D is not included in the entity';
+          })());
+          __PS_MV_REG = [];
+          return point.x > -point2d14508.x + w + 360 || point.x < -point2d14508.x - 320 ? registerNextFrameFunc(function () {
+              __PS_MV_REG = [];
+              return deleteEcsEntity(entity);
+          }) : null;
+      }), makePhysicPolygon('pnt-list', [makePoint2d('x', -1 * hWidth, 'y', -1 * hHeight), makePoint2d('x', hWidth, 'y', -1 * hHeight), makePoint2d('x', hWidth, 'y', hHeight), makePoint2d('x', -1 * hWidth, 'y', hHeight)]), initEntityParams('width', width, 'height', height));
+      __PS_MV_REG = [];
+      return blk;
+  };
   /* --- extern symbols --- */
   return {
     'getField': getField,
-    'generateMogeStage': generateMogeStage,
     'initField': initField,
+    'generateMogeStage': generateMogeStage,
     '_internal': {
       'FIELD': FIELD,
       'fieldWidth': fieldWidth,
       'fieldHeight': fieldHeight,
-      'makeObjUsingInfo': makeObjUsingInfo,
-      'getObjType': getObjType,
-      'addObj': addObj,
-      'makeRectBlock': makeRectBlock,
+      'getObjName': getObjName,
       'updateField': updateField,
+      'makeObjUsingInfo': makeObjUsingInfo,
+      'addObj': addObj,
+      'deleteMyObj': deleteMyObj,
+      'offScreenDeleteMyObj': offScreenDeleteMyObj,
+      'addEnemyModel': addEnemyModel,
+      'makeRectBlock': makeRectBlock,
     }
   };
 })();
@@ -11810,38 +11924,24 @@ var mogewebzou_game_controller = (function() {
       var value;
       var field = findAEntityByTag('field');
       var point = getEcsComponent(point2d, field);
-      var point2d2539 = (found = getEcsComponent(point2d, entity), found ? found : (function () {
+      var point2d14509 = (found = getEcsComponent(point2d, entity), found ? found : (function () {
           throw 'POINT-2D is not included in the entity';
       })());
       if (keyDownP('left') && point.x >= 0) {
-          point2d2539.x -= 2;
+          point2d14509.x -= 2;
       };
-      if (keyDownP('right') && (value = mogewebzou_game_parameter._internal.PARAMS['field']['width'], typeof value === 'function' ? value() : value) / 2 > point2d2539.x) {
-          point2d2539.x += 2;
+      if (keyDownP('right') && (value = mogewebzou_game_parameter._internal.PARAMS['field']['width'], typeof value === 'function' ? value() : value) / 2 > point2d14509.x) {
+          point2d14509.x += 2;
       };
       if (keyDownP('up')) {
-          point2d2539.y += 2;
+          point2d14509.y += 2;
       };
       __PS_MV_REG = [];
-      return keyDownP('down') ? (point2d2539.y -= 2) : null;
+      return keyDownP('down') ? (point2d14509.y -= 2) : null;
   };
   function processController(entity) {
       __PS_MV_REG = [];
       return controlByKeyboard(entity);
-  };
-  function initTest() {
-      var rect = makeEcsEntity();
-      addEntityTag(rect, 'moge');
-      addEcsComponentList(rect, makePoint2d('x', 100, 'y', 100), makeScript2d('func', function (entity) {
-          __PS_MV_REG = [];
-          return processController(entity);
-      }), makeModel2d('model', makeWiredRect('width', 32, 'height', 32, 'color', 65280), 'depth', 10));
-      __PS_MV_REG = [];
-      return framePromiseThen(makeTextureModelPromise('width', 32, 'height', 32, 'texture-name', 'test2'), function (model) {
-          addEcsComponentList(rect, makeModel2d('model', model, 'depth', 50));
-          __PS_MV_REG = [];
-          return addEcsEntity(rect);
-      });
   };
   function initController() {
       __PS_MV_REG = [];
@@ -11854,10 +11954,34 @@ var mogewebzou_game_controller = (function() {
           }), addEcsEntity(logo));
       });
   };
+  function initTest() {
+      var rect = makeEcsEntity();
+      var hWidth = 16;
+      var hHeight = 16;
+      addEntityTag(rect, 'moge');
+      addEcsComponentList(rect, makePoint2d('x', 116, 'y', 116), makeScript2d('func', function (entity) {
+          __PS_MV_REG = [];
+          return processController(entity);
+      }), makePhysicPolygon('target-tags', ['block'], 'pnt-list', [makePoint2d('x', -1 * hWidth, 'y', -1 * hHeight), makePoint2d('x', hWidth, 'y', -1 * hHeight), makePoint2d('x', hWidth, 'y', hHeight), makePoint2d('x', -1 * hWidth, 'y', hHeight)], 'on-collision', function (mine, target) {
+          if (hasEntityTag(target, 'block')) {
+              var point2d14510 = (found = getEcsComponent(point2d, target), found ? found : (function () {
+                  throw 'POINT-2D is not included in the entity';
+              })());
+              __PS_MV_REG = [];
+              return ++point2d14510.y;
+          };
+      }));
+      __PS_MV_REG = [];
+      return framePromiseThen(makeTextureModelPromise('width', 32, 'height', 32, 'texture-name', 'test2'), function (model) {
+          addEcsComponentList(rect, makeModel2d('model', model, 'depth', 50, 'offset', makePoint2d('x', 32 / -2, 'y', 32 / -2)));
+          __PS_MV_REG = [];
+          return addEcsEntity(rect);
+      });
+  };
   /* --- extern symbols --- */
   return {
-    'initTest': initTest,
     'initController': initController,
+    'initTest': initTest,
     '_internal': {
       'controlByKeyboard': controlByKeyboard,
       'processController': processController,
@@ -12152,13 +12276,13 @@ var mogewebzou_game_state_main = (function() {
           }, process())), keyIndex != null ? areaSize[keyIndex + 1] : null) / 2;
           var height = ((areaSize.length % 2 !== 0 ? (function () {
               throw 'Message: ' + 'Invalid plist: ~A' + '; Args: ' + areaSize;
-          })() : null, keyIndex2540 = (process = function () {
+          })() : null, keyIndex14511 = (process = function () {
               for (var i = 0; i < areaSize.length / 2; i += 1) {
                   if (areaSize[i * 2] === 'height') {
                       return i * 2;
                   };
               };
-          }, process())), keyIndex2540 != null ? areaSize[keyIndex2540 + 1] : null);
+          }, process())), keyIndex14511 != null ? areaSize[keyIndex14511 + 1] : null);
           var hoverModel = makeModel2d('model', makeWiredRect('width', 2 * hWidth, 'height', height, 'color', 16746496), 'offset', makePoint2d('x', -1 * hWidth, 'y', -1 * height - margin), 'depth', 100);
           addEcsComponentList(area, initEntityParams('next-state', null), makeUiComponent('on-click-up', function () {
               addToEventLog('popo');
@@ -12188,11 +12312,11 @@ var mogewebzou_game_state_main = (function() {
       };
   };
   function gameMainState() {
-      this.startProcess = function (state1206) {
+      this.startProcess = function (state2765) {
           addToEventLog('hoge');
-          var newParent1207 = state1206.parent;
+          var newParent2766 = state2765.parent;
           try {
-              stackDefaultEcsEntityParent(newParent1207);
+              stackDefaultEcsEntityParent(newParent2766);
               initField();
               addToEventLog('ini');
               var field = getField();
@@ -12206,14 +12330,14 @@ var mogewebzou_game_state_main = (function() {
           __PS_MV_REG = [];
           return true;
       };
-      this.process = function (state1208) {
+      this.process = function (state2767) {
           __PS_MV_REG = [];
           return keyUpNowP('escape') ? makeState('menu') : null;
       };
-      this.endProcess = function (state1209) {
+      this.endProcess = function (state2768) {
           registerNextFrameFunc(function () {
               __PS_MV_REG = [];
-              return deleteEcsEntity(state1209.parent);
+              return deleteEcsEntity(state2768.parent);
           });
           __PS_MV_REG = [];
           return true;
@@ -12223,27 +12347,27 @@ var mogewebzou_game_state_main = (function() {
       return this;
   };
   function makeGameMainState() {
-      var _js2542 = arguments.length;
-      for (var n2541 = 0; n2541 < _js2542; n2541 += 2) {
-          switch (arguments[n2541]) {
+      var _js14513 = arguments.length;
+      for (var n14512 = 0; n14512 < _js14513; n14512 += 2) {
+          switch (arguments[n14512]) {
           case 'start-process':
-              startProcess = arguments[n2541 + 1];
+              startProcess = arguments[n14512 + 1];
               break;
           case 'process':
-              process = arguments[n2541 + 1];
+              process = arguments[n14512 + 1];
               break;
           case 'end-process':
-              endProcess = arguments[n2541 + 1];
+              endProcess = arguments[n14512 + 1];
               break;
           case 'parent':
-              parent = arguments[n2541 + 1];
+              parent = arguments[n14512 + 1];
           };
       };
-      var startProcess = 'undefined' === typeof startProcess ? function (state1210) {
+      var startProcess = 'undefined' === typeof startProcess ? function (state2769) {
           addToEventLog('hoge');
-          var newParent1211 = state1210.parent;
+          var newParent2770 = state2769.parent;
           try {
-              stackDefaultEcsEntityParent(newParent1211);
+              stackDefaultEcsEntityParent(newParent2770);
               initField();
               addToEventLog('ini');
               var field = getField();
@@ -12257,14 +12381,14 @@ var mogewebzou_game_state_main = (function() {
           __PS_MV_REG = [];
           return true;
       } : startProcess;
-      var process = 'undefined' === typeof process ? function (state1212) {
+      var process = 'undefined' === typeof process ? function (state2771) {
           __PS_MV_REG = [];
           return keyUpNowP('escape') ? makeState('menu') : null;
       } : process;
-      var endProcess = 'undefined' === typeof endProcess ? function (state1213) {
+      var endProcess = 'undefined' === typeof endProcess ? function (state2772) {
           registerNextFrameFunc(function () {
               __PS_MV_REG = [];
-              return deleteEcsEntity(state1213.parent);
+              return deleteEcsEntity(state2772.parent);
           });
           __PS_MV_REG = [];
           return true;
